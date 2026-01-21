@@ -1,6 +1,6 @@
 ---
 name: Local/Open Models
-vendor: Various (Meta, Mistral, DeepSeek, etc.)
+vendor: Local Models
 logo: https://cdn.simpleicons.org/ollama/white
 status_page: https://huggingface.co/models
 pricing_page: https://ollama.com/library
@@ -15,85 +15,34 @@ last_verified: 2026-01-20
 
 ---
 
-## Llama 3.3 (Meta)
+## Codestral (Mistral)
 
 | Property | Value |
 |----------|-------|
-| Category | other |
+| Category | coding |
 | Status | ga |
 | Gating | free |
-| URL | https://ai.meta.com/llama/ |
-| Launched | 2024-12-06T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| URL | https://mistral.ai/news/codestral/ |
+| Launched | 2024-05-29T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | 70B parameters, 128K context |
+| Self-hosted | ✅ | Your hardware | 22B code-specialized |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Via Ollama, LM Studio, etc. |
-| macOS | ✅ | Via Ollama, LM Studio, etc. |
-| Linux | ✅ | Native support |
-| iOS | ❌ | Not practical |
-| Android | ⚠️ | Limited, high-end devices only |
-| web | ❌ | Local only |
-| terminal | ✅ | Ollama CLI |
-| API | ✅ | Ollama REST API |
-
-### Regional
-
-No restrictions - runs locally.
-
-### Talking Point
-
-> "Llama 3.3 is Meta's open-weight model. **Completely free to run locally**—you just need the hardware. The 70B model needs ~40GB VRAM for full precision, but quantized versions run on consumer GPUs."
-
-### Sources
-
-- [Llama 3.3 Release](https://ai.meta.com/blog/llama-3-3-70b/)
-- [Ollama Llama](https://ollama.com/library/llama3.3)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-12-06T12:00Z | Initial entry |
-
----
-
-## Mistral Large / Mistral Nemo
-
-| Property | Value |
-|----------|-------|
-| Category | other |
-| Status | ga |
-| Gating | free |
-| URL | https://mistral.ai/technology/ |
-| Launched | 2024-07-18T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | Nemo: 12B, Large: 123B |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Via Ollama, LM Studio |
-| macOS | ✅ | Via Ollama, LM Studio |
+| Windows | ✅ | Via Ollama |
+| macOS | ✅ | Via Ollama |
 | Linux | ✅ | Native support |
 | iOS | ❌ | Not practical |
 | Android | ❌ | Not practical |
+| Chrome | ❌ |  |
 | web | ❌ | Local only |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Ollama REST API |
@@ -104,18 +53,18 @@ No restrictions - runs locally.
 
 ### Talking Point
 
-> "Mistral offers several open models. **Mistral Nemo (12B) runs on consumer hardware**—great for local use. Mistral Large (123B) needs serious GPU power but rivals GPT-4 quality."
+> "Codestral is Mistral's code-specialized model at 22B parameters. **Runs on a good consumer GPU** (16GB+ VRAM recommended) and excels at code completion and generation."
 
 ### Sources
 
-- [Mistral Models](https://mistral.ai/technology/)
-- [Ollama Mistral](https://ollama.com/library/mistral)
+- [Codestral](https://mistral.ai/news/codestral/)
+- [Ollama Codestral](https://ollama.com/library/codestral)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2024-07-18T12:00Z | Initial entry |
+| 2024-05-29T12:00Z | Initial entry |
 
 ---
 
@@ -128,8 +77,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://github.com/deepseek-ai/DeepSeek-V3 |
 | Launched | 2024-12-27T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -146,6 +95,7 @@ No restrictions - runs locally.
 | Linux | ✅ | Best support |
 | iOS | ❌ | Not practical |
 | Android | ❌ | Not practical |
+| Chrome | ❌ |  |
 | web | ❌ | Local only |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Ollama REST API |
@@ -172,85 +122,34 @@ No restrictions - runs locally. Note: DeepSeek is a Chinese company; some orgs r
 
 ---
 
-## Qwen 2.5 (Alibaba)
+## Llama 3.3 (Meta)
 
 | Property | Value |
 |----------|-------|
 | Category | other |
 | Status | ga |
 | Gating | free |
-| URL | https://qwenlm.github.io/blog/qwen2.5/ |
-| Launched | 2024-09-19T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| URL | https://ai.meta.com/llama/ |
+| Launched | 2024-12-06T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | 0.5B to 72B sizes |
+| Self-hosted | ✅ | Your hardware | 70B parameters, 128K context |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Via Ollama, LM Studio |
-| macOS | ✅ | Via Ollama, LM Studio |
+| Windows | ✅ | Via Ollama, LM Studio, etc. |
+| macOS | ✅ | Via Ollama, LM Studio, etc. |
 | Linux | ✅ | Native support |
 | iOS | ❌ | Not practical |
-| Android | ⚠️ | Small models only |
-| web | ❌ | Local only |
-| terminal | ✅ | Ollama CLI |
-| API | ✅ | Ollama REST API |
-
-### Regional
-
-No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs restrict use.
-
-### Talking Point
-
-> "Qwen 2.5 comes in sizes from 0.5B to 72B. **The 7B model runs great on consumer hardware** and punches above its weight. Excellent for coding tasks."
-
-### Sources
-
-- [Qwen 2.5](https://qwenlm.github.io/blog/qwen2.5/)
-- [Ollama Qwen](https://ollama.com/library/qwen2.5)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-09-19T12:00Z | Initial entry |
-
----
-
-## Qwen-Coder
-
-| Property | Value |
-|----------|-------|
-| Category | coding |
-| Status | ga |
-| Gating | free |
-| URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
-| Launched | 2024-09-19T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | Specialized for code |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Via Ollama, LM Studio |
-| macOS | ✅ | Via Ollama, LM Studio |
-| Linux | ✅ | Native support |
-| iOS | ❌ | Not practical |
-| Android | ❌ | Not practical |
+| Android | ⚠️ | Limited, high-end devices only |
+| Chrome | ❌ |  |
 | web | ❌ | Local only |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Ollama REST API |
@@ -261,176 +160,18 @@ No restrictions - runs locally.
 
 ### Talking Point
 
-> "Qwen-Coder is **optimized specifically for coding tasks**. The 7B version runs locally and rivals much larger models for code generation and completion."
+> "Llama 3.3 is Meta's open-weight model. **Completely free to run locally**—you just need the hardware. The 70B model needs ~40GB VRAM for full precision, but quantized versions run on consumer GPUs."
 
 ### Sources
 
-- [Qwen-Coder](https://qwenlm.github.io/blog/qwen2.5-coder/)
-- [Ollama Qwen-Coder](https://ollama.com/library/qwen2.5-coder)
+- [Llama 3.3 Release](https://ai.meta.com/blog/llama-3-3-70b/)
+- [Ollama Llama](https://ollama.com/library/llama3.3)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2024-09-19T12:00Z | Initial entry |
-
----
-
-## Codestral (Mistral)
-
-| Property | Value |
-|----------|-------|
-| Category | coding |
-| Status | ga |
-| Gating | free |
-| URL | https://mistral.ai/news/codestral/ |
-| Launched | 2024-05-29T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | 22B code-specialized |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Via Ollama |
-| macOS | ✅ | Via Ollama |
-| Linux | ✅ | Native support |
-| iOS | ❌ | Not practical |
-| Android | ❌ | Not practical |
-| web | ❌ | Local only |
-| terminal | ✅ | Ollama CLI |
-| API | ✅ | Ollama REST API |
-
-### Regional
-
-No restrictions - runs locally.
-
-### Talking Point
-
-> "Codestral is Mistral's code-specialized model at 22B parameters. **Runs on a good consumer GPU** (16GB+ VRAM recommended) and excels at code completion and generation."
-
-### Sources
-
-- [Codestral](https://mistral.ai/news/codestral/)
-- [Ollama Codestral](https://ollama.com/library/codestral)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-05-29T12:00Z | Initial entry |
-
----
-
-## Local Hosting Options
-
-| Property | Value |
-|----------|-------|
-| Category | other |
-| Status | ga |
-| Gating | free |
-| URL | https://ollama.com/ |
-| Launched | 2023-07-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | Multiple options |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Ollama, LM Studio, text-generation-webui |
-| macOS | ✅ | Ollama, LM Studio |
-| Linux | ✅ | All options |
-| iOS | ❌ |  |
-| Android | ⚠️ | Limited apps |
-| web | ✅ | Web UIs available |
-| terminal | ✅ | Ollama CLI |
-| API | ✅ | Ollama REST API |
-
-### Regional
-
-No restrictions.
-
-### Talking Point
-
-> "To run models locally, use **Ollama** (easiest CLI), **LM Studio** (nice GUI), or **text-generation-webui** (most features). All are free. Hardware requirements: 8GB RAM minimum, 16GB+ VRAM for larger models."
-
-### Sources
-
-- [Ollama](https://ollama.com/)
-- [LM Studio](https://lmstudio.ai/)
-- [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2023-07-01T12:00Z | Initial entry |
-
----
-
-## Qwen 3 (Alibaba)
-
-| Property | Value |
-|----------|-------|
-| Category | other |
-| Status | ga |
-| Gating | free |
-| URL | https://qwenlm.github.io/blog/qwen3/ |
-| Launched | 2025-04-28T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | 0.6B to 235B MoE |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Ollama, LM Studio |
-| macOS | ✅ | Ollama, LM Studio |
-| Linux | ✅ | All options |
-| iOS | ❌ |  |
-| Android | ⚠️ | Limited |
-| web | ✅ | Web UIs |
-| terminal | ✅ | Ollama CLI |
-| API | ✅ | Local API |
-
-### Regional
-
-No restrictions (Apache 2.0 license).
-
-### Talking Point
-
-> "Qwen 3 is Alibaba's latest open model family with **hybrid thinking modes**—switch between reasoning and fast response with `/think`. Sizes from 0.6B to 235B MoE, supports 119 languages. Fully open under Apache 2.0."
-
-### Sources
-
-- [Qwen 3 Blog](https://qwenlm.github.io/blog/qwen3/)
-- [Ollama Qwen 3](https://ollama.com/library/qwen3)
-- [GitHub Qwen 3](https://github.com/QwenLM/Qwen3)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-04-28T12:00Z | Initial entry |
+| 2024-12-06T12:00Z | Initial entry |
 
 ---
 
@@ -443,8 +184,8 @@ No restrictions (Apache 2.0 license).
 | Gating | free |
 | URL | https://www.llama.com/models/llama-4/ |
 | Launched | 2025-04-05T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -461,6 +202,7 @@ No restrictions (Apache 2.0 license).
 | Linux | ✅ | All options |
 | iOS | ❌ |  |
 | Android | ❌ |  |
+| Chrome | ❌ |  |
 | web | ✅ | Web UIs |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Local API |
@@ -487,6 +229,113 @@ Llama 4 Community License (commercial use under 700M MAU).
 
 ---
 
+## Local Hosting Options
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://ollama.com/ |
+| Launched | 2023-07-01T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | Multiple options |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Ollama, LM Studio, text-generation-webui |
+| macOS | ✅ | Ollama, LM Studio |
+| Linux | ✅ | All options |
+| iOS | ❌ |  |
+| Android | ⚠️ | Limited apps |
+| Chrome | ❌ |  |
+| web | ✅ | Web UIs available |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Ollama REST API |
+
+### Regional
+
+No restrictions.
+
+### Talking Point
+
+> "To run models locally, use **Ollama** (easiest CLI), **LM Studio** (nice GUI), or **text-generation-webui** (most features). All are free. Hardware requirements: 8GB RAM minimum, 16GB+ VRAM for larger models."
+
+### Sources
+
+- [Ollama](https://ollama.com/)
+- [LM Studio](https://lmstudio.ai/)
+- [text-generation-webui](https://github.com/oobabooga/text-generation-webui)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2023-07-01T12:00Z | Initial entry |
+
+---
+
+## Mistral Large / Mistral Nemo
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://mistral.ai/technology/ |
+| Launched | 2024-07-18T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | Nemo: 12B, Large: 123B |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via Ollama, LM Studio |
+| macOS | ✅ | Via Ollama, LM Studio |
+| Linux | ✅ | Native support |
+| iOS | ❌ | Not practical |
+| Android | ❌ | Not practical |
+| Chrome | ❌ |  |
+| web | ❌ | Local only |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Ollama REST API |
+
+### Regional
+
+No restrictions - runs locally.
+
+### Talking Point
+
+> "Mistral offers several open models. **Mistral Nemo (12B) runs on consumer hardware**—great for local use. Mistral Large (123B) needs serious GPU power but rivals GPT-4 quality."
+
+### Sources
+
+- [Mistral Models](https://mistral.ai/technology/)
+- [Ollama Mistral](https://ollama.com/library/mistral)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-07-18T12:00Z | Initial entry |
+
+---
+
 ## Mistral Small 3
 
 | Property | Value |
@@ -496,8 +345,8 @@ Llama 4 Community License (commercial use under 700M MAU).
 | Gating | free |
 | URL | https://mistral.ai/news/mistral-small-3 |
 | Launched | 2025-01-30T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -514,6 +363,7 @@ Llama 4 Community License (commercial use under 700M MAU).
 | Linux | ✅ | Single RTX 4090 |
 | iOS | ❌ |  |
 | Android | ❌ |  |
+| Chrome | ❌ |  |
 | web | ✅ | Web UIs |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Local API |
@@ -538,4 +388,164 @@ No restrictions (Apache 2.0 license).
 |------|--------|
 | 2025-06-01T12:00Z | Mistral Small 3.2 with improved function calling |
 | 2025-03-01T12:00Z | Mistral Small 3.1 with vision, 128K context |
-| 2025-01-30T12:00Z | Initial entry
+| 2025-01-30T12:00Z | Initial entry |
+
+---
+
+## Qwen 2.5 (Alibaba)
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://qwenlm.github.io/blog/qwen2.5/ |
+| Launched | 2024-09-19T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | 0.5B to 72B sizes |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via Ollama, LM Studio |
+| macOS | ✅ | Via Ollama, LM Studio |
+| Linux | ✅ | Native support |
+| iOS | ❌ | Not practical |
+| Android | ⚠️ | Small models only |
+| Chrome | ❌ |  |
+| web | ❌ | Local only |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Ollama REST API |
+
+### Regional
+
+No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs restrict use.
+
+### Talking Point
+
+> "Qwen 2.5 comes in sizes from 0.5B to 72B. **The 7B model runs great on consumer hardware** and punches above its weight. Excellent for coding tasks."
+
+### Sources
+
+- [Qwen 2.5](https://qwenlm.github.io/blog/qwen2.5/)
+- [Ollama Qwen](https://ollama.com/library/qwen2.5)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-09-19T12:00Z | Initial entry |
+
+---
+
+## Qwen 3 (Alibaba)
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://qwenlm.github.io/blog/qwen3/ |
+| Launched | 2025-04-28T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | 0.6B to 235B MoE |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Ollama, LM Studio |
+| macOS | ✅ | Ollama, LM Studio |
+| Linux | ✅ | All options |
+| iOS | ❌ |  |
+| Android | ⚠️ | Limited |
+| Chrome | ❌ |  |
+| web | ✅ | Web UIs |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Local API |
+
+### Regional
+
+No restrictions (Apache 2.0 license).
+
+### Talking Point
+
+> "Qwen 3 is Alibaba's latest open model family with **hybrid thinking modes**—switch between reasoning and fast response with `/think`. Sizes from 0.6B to 235B MoE, supports 119 languages. Fully open under Apache 2.0."
+
+### Sources
+
+- [Qwen 3 Blog](https://qwenlm.github.io/blog/qwen3/)
+- [Ollama Qwen 3](https://ollama.com/library/qwen3)
+- [GitHub Qwen 3](https://github.com/QwenLM/Qwen3)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-04-28T12:00Z | Initial entry |
+
+---
+
+## Qwen-Coder
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | ga |
+| Gating | free |
+| URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
+| Launched | 2024-09-19T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | Specialized for code |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via Ollama, LM Studio |
+| macOS | ✅ | Via Ollama, LM Studio |
+| Linux | ✅ | Native support |
+| iOS | ❌ | Not practical |
+| Android | ❌ | Not practical |
+| Chrome | ❌ |  |
+| web | ❌ | Local only |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Ollama REST API |
+
+### Regional
+
+No restrictions - runs locally.
+
+### Talking Point
+
+> "Qwen-Coder is **optimized specifically for coding tasks**. The 7B version runs locally and rivals much larger models for code generation and completion."
+
+### Sources
+
+- [Qwen-Coder](https://qwenlm.github.io/blog/qwen2.5-coder/)
+- [Ollama Qwen-Coder](https://ollama.com/library/qwen2.5-coder)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-09-19T12:00Z | Initial entry |

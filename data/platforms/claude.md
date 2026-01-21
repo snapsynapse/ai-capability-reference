@@ -20,173 +20,6 @@ last_verified: 2026-01-20
 
 ---
 
-## Claude Code
-
-| Property | Value |
-|----------|-------|
-| Category | coding |
-| Status | ga |
-| Gating | paid |
-| URL | https://www.anthropic.com/claude-code |
-| Launched | 2025-02-24T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Pro | ✅ | Usage-based | Standard limits |
-| Max 5x | ✅ | Higher | Extended limits |
-| Max 20x | ✅ | Highest | Extended limits |
-| Team | ✅ | Usage-based | |
-| Enterprise | ✅ | Custom | |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Via terminal |
-| macOS | ✅ | Via terminal |
-| Linux | ✅ | Via terminal |
-| iOS | ❌ | Not applicable |
-| Android | ❌ | Not applicable |
-| web | ❌ | Terminal-based only |
-| terminal | ✅ | Primary interface |
-| API | ✅ | Anthropic API |
-
-### Regional
-
-Available globally via CLI.
-
-### Talking Point
-
-> "Claude Code is Anthropic's terminal-based coding agent. It requires **Pro subscription at minimum—that's $20/month**. It works on any operating system through the command line."
-
-### Sources
-
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- [Claude Pricing](https://claude.ai/pricing)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-02-24T12:00Z | Initial entry |
-
----
-
-## Cowork Mode
-
-| Property | Value |
-|----------|-------|
-| Category | agents |
-| Status | preview |
-| Gating | paid |
-| URL | https://support.anthropic.com/en/articles/13345190-getting-started-with-cowork |
-| Launched | 2026-01-12T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Pro | ❌ | — | Not available |
-| Max 5x | ✅ | Subject to Max limits | Research preview |
-| Max 20x | ✅ | Subject to Max limits | Research preview |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ❌ | Not yet available |
-| macOS | ✅ | Claude Desktop app required |
-| Linux | ❌ |  |
-| iOS | ❌ | Not available |
-| Android | ❌ | Not available |
-| web | ❌ | Desktop app only |
-| terminal | ❌ |  |
-| API | ❌ | Desktop feature only |
-
-### Regional
-
-Available globally where Claude is available, but macOS Desktop only.
-
-### Talking Point
-
-> "Cowork is Claude's newest feature—**it launched January 12, 2026 as a research preview**. It's only available on the Max plan ($100 or $200/month) and only on macOS right now. This may expand soon, so I want to show you what's possible."
-
-### Sources
-
-- [Getting Started with Cowork](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
-- [TechCrunch Coverage](https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2026-01-12T12:00Z | Initial entry |
-
----
-
-## Projects
-
-| Property | Value |
-|----------|-------|
-| Category | local-files |
-| Status | ga |
-| Gating | paid |
-| URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
-| Launched | 2024-06-25T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Pro | ✅ | Standard | Full access |
-| Max 5x | ✅ | Extended | Higher limits |
-| Max 20x | ✅ | Extended | Higher limits |
-| Team | ✅ | Standard | Shared projects |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ⚠️ | View only |
-| Android | ⚠️ | View only |
-| web | ✅ | claude.ai |
-| terminal | ❌ |  |
-| API | ✅ | Anthropic API |
-
-### Regional
-
-Available globally.
-
-### Talking Point
-
-> "Projects let you organize conversations and documents into workspaces with persistent context. It's a **Pro feature and above**—not available on free."
-
-### Sources
-
-- [Projects Documentation](https://support.anthropic.com/en/articles/9517075-what-are-projects)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-06-25T12:00Z | Initial entry |
-
----
-
 ## Artifacts
 
 | Property | Value |
@@ -196,8 +29,8 @@ Available globally.
 | Gating | paid |
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -214,9 +47,10 @@ Available globally.
 |----------|-----------|-------|
 | Windows | ✅ | Desktop app |
 | macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
+| Linux | ✅ | Desktop app |
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
 | web | ✅ | Best experience |
 | terminal | ❌ |  |
 | API | ❌ | Web/app feature only |
@@ -241,6 +75,181 @@ Available globally.
 
 ---
 
+## Claude Code
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | ga |
+| Gating | paid |
+| URL | https://www.anthropic.com/claude-code |
+| Launched | 2025-02-24T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Pro | ✅ | Usage-based | Standard limits |
+| Max 5x | ✅ | Higher | Extended limits |
+| Max 20x | ✅ | Highest | Extended limits |
+| Team | ✅ | Usage-based | |
+| Enterprise | ✅ | Custom | |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via terminal |
+| macOS | ✅ | Via terminal |
+| Linux | ✅ | Via terminal |
+| iOS | ❌ | Not applicable |
+| Android | ❌ | Not applicable |
+| Chrome | ❌ |  |
+| web | ❌ | Terminal-based only |
+| terminal | ✅ | Primary interface |
+| API | ✅ | Anthropic API |
+
+### Regional
+
+Available globally via CLI (Windows, macOS, Linux).
+
+### Talking Point
+
+> "Claude Code is Anthropic's terminal-based coding agent. It requires **Pro subscription at minimum—that's $20/month**. It works on any operating system through the command line."
+
+### Sources
+
+- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
+- [Claude Pricing](https://claude.ai/pricing)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-02-24T12:00Z | Initial entry |
+
+---
+
+## Connectors
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | paid |
+| URL | https://claude.ai/directory |
+| Launched | 2025-05-01T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ⚠️ | Limited | Desktop extensions + GitHub only |
+| Pro | ✅ | Full | All remote connectors |
+| Max 5x | ✅ | Full | All remote connectors |
+| Max 20x | ✅ | Full | All remote connectors |
+| Team | ✅ | Full | Shared connectors |
+| Enterprise | ✅ | Full | Google Drive Cataloging exclusive |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ✅ | Desktop app |
+| iOS | ⚠️ | Use only (setup on desktop) |
+| Android | ⚠️ | Use only (setup on desktop) |
+| Chrome | ❌ |  |
+| web | ✅ | claude.ai |
+| terminal | ✅ | Via Claude Code |
+| API | ✅ | MCP Connector |
+
+### Regional
+
+Available globally where Claude is available.
+
+### Talking Point
+
+> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Pro and above get full access**; free users can only use desktop extensions and GitHub. Browse available connectors at claude.ai/directory."
+
+### Sources
+
+- [Claude Integrations](https://claude.ai/blog/integrations)
+- [Connectors Directory](https://claude.ai/directory)
+- [Setting Up Integrations](https://support.claude.com/en/articles/10168395-setting-up-claude-integrations)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-07-14T12:00Z | Connectors Directory launched |
+| 2025-06-03T12:00Z | Expanded to Pro plan |
+| 2025-05-01T12:00Z | Initial entry
+
+---
+
+## Cowork Mode
+
+| Property | Value |
+|----------|-------|
+| Category | agents |
+| Status | preview |
+| Gating | paid |
+| URL | https://support.anthropic.com/en/articles/13345190-getting-started-with-cowork |
+| Launched | 2026-01-12T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Pro | ❌ | — | Not available |
+| Max 5x | ✅ | Subject to Max limits | Research preview |
+| Max 20x | ✅ | Subject to Max limits | Research preview |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ❌ | Not yet available |
+| macOS | ✅ | Claude Desktop app required |
+| Linux | ❌ |  |
+| iOS | ❌ | Not available |
+| Android | ❌ | Not available |
+| Chrome | ❌ |  |
+| web | ❌ | Desktop app only |
+| terminal | ❌ |  |
+| API | ❌ | Desktop feature only |
+
+### Regional
+
+Available globally where Claude is available; currently macOS Desktop only (Windows coming soon).
+
+### Talking Point
+
+> "Cowork is Claude's newest feature—**it launched January 12, 2026 as a research preview**. It's only available on the Max plan ($100 or $200/month) and only on macOS right now. This may expand soon, so I want to show you what's possible."
+
+### Sources
+
+- [Getting Started with Cowork](https://support.claude.com/en/articles/13345190-getting-started-with-cowork)
+- [TechCrunch Coverage](https://techcrunch.com/2026/01/12/anthropics-new-cowork-tool-offers-claude-code-without-the-code/)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-01-12T12:00Z | Initial entry |
+
+---
+
 ## Extended Thinking
 
 | Property | Value |
@@ -250,8 +259,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.anthropic.com/news/visible-extended-thinking |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -268,9 +277,10 @@ Available globally.
 |----------|-----------|-------|
 | Windows | ✅ |  |
 | macOS | ✅ |  |
-| Linux | ❌ |  |
+| Linux | ✅ |  |
 | iOS | ✅ |  |
 | Android | ✅ |  |
+| Chrome | ❌ |  |
 | web | ✅ |  |
 | terminal | ❌ |  |
 | API | ✅ | Anthropic API |
@@ -295,17 +305,17 @@ Available globally.
 
 ---
 
-## Vision (Image Understanding)
+## MCP (Model Context Protocol)
 
 | Property | Value |
 |----------|-------|
-| Category | vision |
+| Category | integrations |
 | Status | ga |
-| Gating | paid |
-| URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
-| Launched | 2024-03-04T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Gating | free |
+| URL | https://www.anthropic.com/news/model-context-protocol |
+| Launched | 2024-11-25T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -315,17 +325,77 @@ Available globally.
 | Pro | ✅ | Standard | Full access |
 | Max 5x | ✅ | Standard | Full access |
 | Max 20x | ✅ | Standard | Full access |
+| Team | ✅ | Standard | Full access |
+| Enterprise | ✅ | Custom | Advanced deployment options |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Drag and drop |
-| macOS | ✅ | Drag and drop |
-| Linux | ❌ |  |
-| iOS | ✅ | Camera + gallery |
-| Android | ✅ | Camera + gallery |
-| web | ✅ | Upload images |
+| Windows | ✅ | Claude Desktop app |
+| macOS | ✅ | Claude Desktop app |
+| Linux | ✅ | Claude Desktop app |
+| iOS | ❌ | Desktop only |
+| Android | ❌ | Desktop only |
+| Chrome | ❌ |  |
+| web | ❌ | Desktop app only |
+| terminal | ✅ | Via Claude Code |
+| API | ✅ | Anthropic API |
+
+### Regional
+
+Available globally where Claude is available.
+
+### Talking Point
+
+> "MCP is an open standard for connecting Claude to external tools and data sources—databases, file systems, APIs. **Available on all plans including free** via the Claude Desktop app."
+
+### Sources
+
+- [Introducing Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+- [MCP Documentation](https://docs.claude.com/en/docs/mcp)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-11-25T12:00Z | Initial entry |
+
+---
+
+## Projects
+
+| Property | Value |
+|----------|-------|
+| Category | local-files |
+| Status | ga |
+| Gating | paid |
+| URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
+| Launched | 2024-06-25T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Pro | ✅ | Standard | Full access |
+| Max 5x | ✅ | Extended | Higher limits |
+| Max 20x | ✅ | Extended | Higher limits |
+| Team | ✅ | Standard | Shared projects |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ✅ | Desktop app |
+| iOS | ⚠️ | View only |
+| Android | ⚠️ | View only |
+| Chrome | ❌ |  |
+| web | ✅ | claude.ai |
 | terminal | ❌ |  |
 | API | ✅ | Anthropic API |
 
@@ -335,17 +405,17 @@ Available globally.
 
 ### Talking Point
 
-> "Claude can analyze images you upload—documents, screenshots, diagrams. **Available on all plans including free.**"
+> "Projects let you organize conversations and documents into workspaces with persistent context. It's a **Pro feature and above**—not available on free."
 
 ### Sources
 
-- [Vision Documentation](https://docs.anthropic.com/en/docs/build-with-claude/vision)
+- [Projects Documentation](https://support.anthropic.com/en/articles/9517075-what-are-projects)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2024-03-04T12:00Z | Initial entry |
+| 2024-06-25T12:00Z | Initial entry |
 
 ---
 
@@ -378,9 +448,10 @@ Available globally.
 |----------|-----------|-------|
 | Windows | ✅ | Desktop app |
 | macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
+| Linux | ✅ | Desktop app |
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
 | web | ✅ | claude.ai |
 | terminal | ✅ | Via Claude Code |
 | API | ✅ | Anthropic API |
@@ -414,17 +485,17 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 
 ---
 
-## MCP (Model Context Protocol)
+## Vision (Image Understanding)
 
 | Property | Value |
 |----------|-------|
-| Category | integrations |
+| Category | vision |
 | Status | ga |
-| Gating | free |
-| URL | https://www.anthropic.com/news/model-context-protocol |
-| Launched | 2024-11-25T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Gating | paid |
+| URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
+| Launched | 2024-03-04T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -434,97 +505,35 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | Pro | ✅ | Standard | Full access |
 | Max 5x | ✅ | Standard | Full access |
 | Max 20x | ✅ | Standard | Full access |
-| Team | ✅ | Standard | Full access |
-| Enterprise | ✅ | Custom | Advanced deployment options |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Claude Desktop app |
-| macOS | ✅ | Claude Desktop app |
-| Linux | ❌ |  |
-| iOS | ❌ | Desktop only |
-| Android | ❌ | Desktop only |
-| web | ❌ | Desktop app only |
-| terminal | ✅ | Via Claude Code |
+| Windows | ✅ | Drag and drop |
+| macOS | ✅ | Drag and drop |
+| Linux | ✅ | Drag and drop |
+| iOS | ✅ | Camera + gallery |
+| Android | ✅ | Camera + gallery |
+| Chrome | ❌ |  |
+| web | ✅ | Upload images |
+| terminal | ❌ |  |
 | API | ✅ | Anthropic API |
 
 ### Regional
 
-Available globally where Claude is available.
+Available globally.
 
 ### Talking Point
 
-> "MCP is an open standard for connecting Claude to external tools and data sources—databases, file systems, APIs. **Available on all plans including free** via the Claude Desktop app."
+> "Claude can analyze images you upload—documents, screenshots, diagrams. **Available on all plans including free.**"
 
 ### Sources
 
-- [Introducing Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
-- [MCP Documentation](https://docs.claude.com/en/docs/mcp)
+- [Vision Documentation](https://docs.anthropic.com/en/docs/build-with-claude/vision)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2024-11-25T12:00Z | Initial entry |
-
----
-
-## Connectors
-
-| Property | Value |
-|----------|-------|
-| Category | integrations |
-| Status | ga |
-| Gating | paid |
-| URL | https://claude.ai/directory |
-| Launched | 2025-05-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Desktop extensions + GitHub only |
-| Pro | ✅ | Full | All remote connectors |
-| Max 5x | ✅ | Full | All remote connectors |
-| Max 20x | ✅ | Full | All remote connectors |
-| Team | ✅ | Full | Shared connectors |
-| Enterprise | ✅ | Full | Google Drive Cataloging exclusive |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ⚠️ | Use only (setup on desktop) |
-| Android | ⚠️ | Use only (setup on desktop) |
-| web | ✅ | claude.ai |
-| terminal | ✅ | Via Claude Code |
-| API | ✅ | MCP Connector |
-
-### Regional
-
-Available globally where Claude is available.
-
-### Talking Point
-
-> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Pro and above get full access**; free users can only use desktop extensions and GitHub. Browse available connectors at claude.ai/directory."
-
-### Sources
-
-- [Claude Integrations](https://claude.ai/blog/integrations)
-- [Connectors Directory](https://claude.ai/directory)
-- [Setting Up Integrations](https://support.claude.com/en/articles/10168395-setting-up-claude-integrations)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-07-14T12:00Z | Connectors Directory launched |
-| 2025-06-03T12:00Z | Expanded to Pro plan |
-| 2025-05-01T12:00Z | Initial entry
+| 2024-03-04T12:00Z | Initial entry |

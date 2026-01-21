@@ -20,6 +20,75 @@ last_verified: 2026-01-20
 
 ---
 
+## Advanced Voice Mode
+
+| Property | Value |
+|----------|-------|
+| Category | voice |
+| Status | ga |
+| Gating | paid |
+| URL | https://help.openai.com/en/articles/8400625-voice-mode |
+| Launched | 2024-09-24T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ⚠️ | Limited | Basic voice only, not Advanced Voice |
+| Go | ✅ | Standard | Full Advanced Voice |
+| Plus | ✅ | Higher | Priority access |
+| Pro | ✅ | Unlimited | Maximum quality |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ❌ | Retired Jan 15, 2026 |
+| Linux | ❌ |  |
+| iOS | ✅ | Best mobile experience |
+| Android | ✅ | Full support |
+| Chrome | ❌ |  |
+| web | ✅ | Browser with microphone |
+| terminal | ❌ |  |
+| API | ✅ | OpenAI API |
+
+### Regional
+
+Available globally.
+
+### Talking Point
+
+> "Advanced Voice Mode enables natural, real-time conversations with GPT-4o. Available on **Windows, iOS, Android, and web**. **macOS desktop voice was retired January 15, 2026**—Mac users should use the web version instead."
+
+### Notes
+
+**macOS Desktop Deprecation (January 15, 2026):**
+OpenAI retired ALL voice functionality from the ChatGPT macOS desktop app on January 15, 2026, including Advanced Voice Mode. This was done to "focus on more unified and improved voice experiences across our apps."
+
+Mac users can still access Advanced Voice Mode via:
+- **Web browser** at chatgpt.com (Safari, Chrome, etc.)
+- **iOS app** on iPhone/iPad
+- **Windows app** (if using Parallels or Boot Camp)
+
+OpenAI has indicated this may be temporary, with voice potentially returning to macOS in an improved form later.
+
+### Sources
+
+- [Voice Mode Help](https://help.openai.com/en/articles/8400625-voice-mode)
+- [ChatGPT Pricing](https://chatgpt.com/pricing)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-01-15T12:00Z | macOS desktop voice retired |
+| 2024-09-24T12:00Z | Initial entry |
+
+---
+
 ## Agent Mode
 
 | Property | Value |
@@ -29,8 +98,8 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://openai.com/index/introducing-chatgpt-agent/ |
 | Launched | 2025-07-17T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -52,6 +121,7 @@ last_verified: 2026-01-20
 | Linux | ❌ |  |
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
 | web | ✅ | chat.openai.com |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
@@ -78,6 +148,236 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 
 ---
 
+## Atlas Browser
+
+| Property | Value |
+|----------|-------|
+| Category | browser |
+| Status | ga |
+| Gating | free |
+| URL | https://openai.com/index/introducing-chatgpt-atlas/ |
+| Launched | 2025-10-21T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Standard | Browser features, no agent |
+| Go | ✅ | Standard | Browser features, no agent |
+| Plus | ✅ | 40/month | Agent Mode in Atlas |
+| Pro | ✅ | 400/month | Full agent capabilities |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | 🔜 | Expected late Feb 2026 |
+| macOS | ✅ | Apple Silicon, macOS 12+ |
+| Linux | ❌ |  |
+| iOS | 🔜 | Expected 2026 |
+| Android | 🔜 | Expected 2026 |
+| Chrome | ❌ |  |
+| web | ❌ | Not a web app |
+| terminal | ❌ |  |
+| API | ❌ | Atlas is client-only |
+
+### Regional
+
+Available where ChatGPT is available. Same regional restrictions apply.
+
+### Talking Point
+
+> "Atlas is OpenAI's AI-native browser. **Right now it's macOS only**—Windows is expected in the next couple months. You can use the browser on the free plan, but Agent Mode inside Atlas requires Plus or higher."
+
+### Sources
+
+- [Introducing ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/)
+- [Atlas Release Notes](https://help.openai.com/en/articles/12591856-chatgpt-atlas-release-notes)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-10-21T12:00Z | Initial entry |
+
+---
+
+## Canvas
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | ga |
+| Gating | free |
+| URL | https://openai.com/index/introducing-canvas/ |
+| Launched | 2024-10-03T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Standard | Full access |
+| Go | ✅ | Standard | Full access |
+| Plus | ✅ | Standard | Full access |
+| Pro | ✅ | Standard | Full access |
+| Team | ✅ | Standard | Full access |
+| Enterprise | ✅ | Standard | Full access |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ❌ |  |
+| iOS | 🔜 | Coming soon |
+| Android | 🔜 | Coming soon |
+| Chrome | ❌ |  |
+| web | ✅ | chatgpt.com |
+| terminal | ❌ |  |
+| API | ❌ | Not available via API |
+
+### Regional
+
+Available globally where ChatGPT is available.
+
+### Talking Point
+
+> "Canvas is ChatGPT's split-screen workspace for writing and coding projects—edit inline, get suggestions, and refine together. **Available on all plans including free**, but currently desktop and web only. Mobile is coming soon."
+
+### Sources
+
+- [Introducing Canvas](https://openai.com/index/introducing-canvas/)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-10-03T12:00Z | Initial entry |
+
+---
+
+## ChatGPT Search
+
+| Property | Value |
+|----------|-------|
+| Category | search |
+| Status | ga |
+| Gating | free |
+| URL | https://openai.com/index/introducing-chatgpt-search/ |
+| Launched | 2024-10-31T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | 30 turns/hr | Full access |
+| Go | ✅ | Higher | Full access |
+| Plus | ✅ | Higher | Priority |
+| Pro | ✅ | Highest | Priority |
+| Team | ✅ | Higher | Full access |
+| Enterprise | ✅ | Custom | Full access |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ❌ |  |
+| iOS | ✅ | Mobile app |
+| Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
+| web | ✅ | chatgpt.com |
+| terminal | ❌ |  |
+| API | ✅ | web_search_preview tool |
+
+### Regional
+
+Available globally where ChatGPT is available.
+
+### Talking Point
+
+> "ChatGPT Search provides real-time web results with cited sources—news, weather, stocks, and more. **Available on all plans including free** and even logged-out users. Powered by Bing and partner publishers."
+
+### Sources
+
+- [Introducing ChatGPT Search](https://openai.com/index/introducing-chatgpt-search/)
+- [ChatGPT Search Help](https://help.openai.com/en/articles/9237897-chatgpt-search)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-02-05T12:00Z | Available to all users including logged-out |
+| 2024-12-16T12:00Z | Available to all logged-in users |
+| 2024-10-31T12:00Z | Initial entry
+
+---
+
+## Codex (Code Agent)
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | ga |
+| Gating | paid |
+| URL | https://openai.com/index/introducing-codex/ |
+| Launched | 2025-04-16T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Go | ❌ | — | Not available |
+| Plus | ✅ | Included | Access to Codex |
+| Pro | ✅ | Higher | Priority compute |
+| Team | ✅ | Included | |
+| Enterprise | ✅ | Custom | |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ❌ |  |
+| iOS | ⚠️ | Limited |
+| Android | ⚠️ | Limited |
+| Chrome | ❌ |  |
+| web | ✅ | chatgpt.com/codex |
+| terminal | ❌ |  |
+| API | ✅ | Codex API |
+
+### Regional
+
+Available globally.
+
+### Talking Point
+
+> "Codex is ChatGPT's coding agent that can write, run, and debug code autonomously. It requires **Plus or higher**—it's not available on Free or the $8 Go plan."
+
+### Sources
+
+- [ChatGPT Pricing](https://chatgpt.com/pricing)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-04-16T12:00Z | Initial entry |
+
+---
+
 ## Custom GPTs + Actions
 
 | Property | Value |
@@ -87,8 +387,8 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 | Gating | paid |
 | URL | https://chatgpt.com/gpts |
 | Launched | 2023-11-06T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -110,6 +410,7 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 | Linux | ❌ |  |
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
 | web | ✅ | chat.openai.com |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
@@ -137,116 +438,6 @@ Available globally where ChatGPT is available.
 
 ---
 
-## Advanced Voice Mode
-
-| Property | Value |
-|----------|-------|
-| Category | voice |
-| Status | ga |
-| Gating | paid |
-| URL | https://help.openai.com/en/articles/8400625-voice-mode |
-| Launched | 2024-09-24T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Basic voice only, not Advanced Voice |
-| Go | ✅ | Standard | Full Advanced Voice |
-| Plus | ✅ | Higher | Priority access |
-| Pro | ✅ | Unlimited | Maximum quality |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ✅ | Best mobile experience |
-| Android | ✅ | Full support |
-| web | ✅ | Browser with microphone |
-| terminal | ❌ |  |
-| API | ✅ | OpenAI API |
-
-### Regional
-
-Available globally.
-
-### Talking Point
-
-> "Voice input is available on **all ChatGPT plans including free**. The free tier gets basic voice transcription. Go and above unlock **Advanced Voice Mode** with natural, real-time conversations."
-
-### Sources
-
-- [Voice Mode Help](https://help.openai.com/en/articles/8400625-voice-mode)
-- [ChatGPT Pricing](https://chatgpt.com/pricing)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-09-24T12:00Z | Initial entry |
-
----
-
-## Atlas Browser
-
-| Property | Value |
-|----------|-------|
-| Category | browser |
-| Status | ga |
-| Gating | free |
-| URL | https://openai.com/index/introducing-chatgpt-atlas/ |
-| Launched | 2025-10-21T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ✅ | Standard | Browser features, no agent |
-| Go | ✅ | Standard | Browser features, no agent |
-| Plus | ✅ | 40/month | Agent Mode in Atlas |
-| Pro | ✅ | 400/month | Full agent capabilities |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | 🔜 | Expected late Feb 2026 |
-| macOS | ✅ | Apple Silicon, macOS 12+ |
-| Linux | ❌ |  |
-| iOS | 🔜 | Expected 2026 |
-| Android | 🔜 | Expected 2026 |
-| web | ❌ | Not a web app |
-| terminal | ❌ |  |
-| API | ❌ | Atlas is client-only |
-
-### Regional
-
-Available where ChatGPT is available. Same regional restrictions apply.
-
-### Talking Point
-
-> "Atlas is OpenAI's AI-native browser. **Right now it's macOS only**—Windows is expected in the next couple months. You can use the browser on the free plan, but Agent Mode inside Atlas requires Plus or higher."
-
-### Sources
-
-- [Introducing ChatGPT Atlas](https://openai.com/index/introducing-chatgpt-atlas/)
-- [Atlas Release Notes](https://help.openai.com/en/articles/12591856-chatgpt-atlas-release-notes)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-10-21T12:00Z | Initial entry |
-
----
-
 ## DALL-E Image Generation
 
 | Property | Value |
@@ -256,8 +447,8 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | Gating | paid |
 | URL | https://openai.com/index/dall-e-3/ |
 | Launched | 2023-10-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -277,6 +468,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | Linux | ❌ |  |
 | iOS | ✅ |  |
 | Android | ✅ |  |
+| Chrome | ❌ |  |
 | web | ✅ |  |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
@@ -310,8 +502,8 @@ Available globally.
 | Gating | paid |
 | URL | https://help.openai.com/en/articles/11011518-chatgpt-deep-research |
 | Launched | 2025-02-03T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -331,6 +523,7 @@ Available globally.
 | Linux | ❌ |  |
 | iOS | ✅ |  |
 | Android | ✅ |  |
+| Chrome | ❌ |  |
 | web | ✅ |  |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
@@ -355,174 +548,6 @@ Available globally.
 
 ---
 
-## Codex (Code Agent)
-
-| Property | Value |
-|----------|-------|
-| Category | coding |
-| Status | ga |
-| Gating | paid |
-| URL | https://openai.com/index/introducing-codex/ |
-| Launched | 2025-04-16T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Go | ❌ | — | Not available |
-| Plus | ✅ | Included | Access to Codex |
-| Pro | ✅ | Higher | Priority compute |
-| Team | ✅ | Included | |
-| Enterprise | ✅ | Custom | |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ⚠️ | Limited |
-| Android | ⚠️ | Limited |
-| web | ✅ | chatgpt.com/codex |
-| terminal | ❌ |  |
-| API | ✅ | Codex API |
-
-### Regional
-
-Available globally.
-
-### Talking Point
-
-> "Codex is ChatGPT's coding agent that can write, run, and debug code autonomously. It requires **Plus or higher**—it's not available on Free or the $8 Go plan."
-
-### Sources
-
-- [ChatGPT Pricing](https://chatgpt.com/pricing)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-04-16T12:00Z | Initial entry |
-
----
-
-## Canvas
-
-| Property | Value |
-|----------|-------|
-| Category | coding |
-| Status | ga |
-| Gating | free |
-| URL | https://openai.com/index/introducing-canvas/ |
-| Launched | 2024-10-03T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ✅ | Standard | Full access |
-| Go | ✅ | Standard | Full access |
-| Plus | ✅ | Standard | Full access |
-| Pro | ✅ | Standard | Full access |
-| Team | ✅ | Standard | Full access |
-| Enterprise | ✅ | Standard | Full access |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | 🔜 | Coming soon |
-| Android | 🔜 | Coming soon |
-| web | ✅ | chatgpt.com |
-| terminal | ❌ |  |
-| API | ❌ | Not available via API |
-
-### Regional
-
-Available globally where ChatGPT is available.
-
-### Talking Point
-
-> "Canvas is ChatGPT's split-screen workspace for writing and coding projects—edit inline, get suggestions, and refine together. **Available on all plans including free**, but currently desktop and web only. Mobile is coming soon."
-
-### Sources
-
-- [Introducing Canvas](https://openai.com/index/introducing-canvas/)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-10-03T12:00Z | Initial entry |
-
----
-
-## Projects
-
-| Property | Value |
-|----------|-------|
-| Category | local-files |
-| Status | ga |
-| Gating | free |
-| URL | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt |
-| Launched | 2024-12-13T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ✅ | Standard | Full access |
-| Go | ✅ | Standard | Full access |
-| Plus | ✅ | Standard | Full access |
-| Pro | ✅ | Standard | Full access |
-| Team | ✅ | Standard | Shared projects |
-| Enterprise | ✅ | Standard | Admin controls |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ✅ | Mobile app |
-| Android | ✅ | Mobile app |
-| web | ✅ | chatgpt.com |
-| terminal | ❌ |  |
-| API | ⚠️ | Compliance API only |
-
-### Regional
-
-Available globally where ChatGPT is available.
-
-### Talking Point
-
-> "Projects let you group related chats, files, and custom instructions into workspaces. **Available on all plans including free**—organize your work across topics with project-specific context."
-
-### Sources
-
-- [Using Projects in ChatGPT](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2024-12-13T12:00Z | Initial entry |
-
----
-
 ## Memory
 
 | Property | Value |
@@ -532,8 +557,8 @@ Available globally where ChatGPT is available.
 | Gating | free |
 | URL | https://openai.com/index/memory-and-new-controls-for-chatgpt/ |
 | Launched | 2024-09-05T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -555,6 +580,7 @@ Available globally where ChatGPT is available.
 | Linux | ❌ |  |
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
 | web | ✅ | chatgpt.com |
 | terminal | ❌ |  |
 | API | ❌ | Not available via API |
@@ -582,6 +608,63 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 
 ---
 
+## Projects
+
+| Property | Value |
+|----------|-------|
+| Category | local-files |
+| Status | ga |
+| Gating | free |
+| URL | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt |
+| Launched | 2024-12-13T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Standard | Full access |
+| Go | ✅ | Standard | Full access |
+| Plus | ✅ | Standard | Full access |
+| Pro | ✅ | Standard | Full access |
+| Team | ✅ | Standard | Shared projects |
+| Enterprise | ✅ | Standard | Admin controls |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ❌ |  |
+| iOS | ✅ | Mobile app |
+| Android | ✅ | Mobile app |
+| Chrome | ❌ |  |
+| web | ✅ | chatgpt.com |
+| terminal | ❌ |  |
+| API | ⚠️ | Compliance API only |
+
+### Regional
+
+Available globally where ChatGPT is available.
+
+### Talking Point
+
+> "Projects let you group related chats, files, and custom instructions into workspaces. **Available on all plans including free**—organize your work across topics with project-specific context."
+
+### Sources
+
+- [Using Projects in ChatGPT](https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-12-13T12:00Z | Initial entry |
+
+---
+
 ## Sora (Video Generation)
 
 | Property | Value |
@@ -591,8 +674,8 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 | Gating | paid |
 | URL | https://openai.com/index/sora-is-here/ |
 | Launched | 2024-12-09T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -614,6 +697,7 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 | Linux | ❌ |  |
 | iOS | ✅ | Select regions |
 | Android | ✅ | Select regions |
+| Chrome | ❌ |  |
 | web | ✅ | sora.com |
 | terminal | ❌ |  |
 | API | ✅ | Async processing |
@@ -637,63 +721,4 @@ Available in US, Canada, Japan, Korea, Thailand, Vietnam, Taiwan. Not available 
 |------|--------|
 | 2026-01-10T12:00Z | Free tier access discontinued |
 | 2025-10-01T12:00Z | API access launched |
-| 2024-12-09T12:00Z | Initial entry |
-
----
-
-## ChatGPT Search
-
-| Property | Value |
-|----------|-------|
-| Category | search |
-| Status | ga |
-| Gating | free |
-| URL | https://openai.com/index/introducing-chatgpt-search/ |
-| Launched | 2024-10-31T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ✅ | 30 turns/hr | Full access |
-| Go | ✅ | Higher | Full access |
-| Plus | ✅ | Higher | Priority |
-| Pro | ✅ | Highest | Priority |
-| Team | ✅ | Higher | Full access |
-| Enterprise | ✅ | Custom | Full access |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Desktop app |
-| macOS | ✅ | Desktop app |
-| Linux | ❌ |  |
-| iOS | ✅ | Mobile app |
-| Android | ✅ | Mobile app |
-| web | ✅ | chatgpt.com |
-| terminal | ❌ |  |
-| API | ✅ | web_search_preview tool |
-
-### Regional
-
-Available globally where ChatGPT is available.
-
-### Talking Point
-
-> "ChatGPT Search provides real-time web results with cited sources—news, weather, stocks, and more. **Available on all plans including free** and even logged-out users. Powered by Bing and partner publishers."
-
-### Sources
-
-- [Introducing ChatGPT Search](https://openai.com/index/introducing-chatgpt-search/)
-- [ChatGPT Search Help](https://help.openai.com/en/articles/9237897-chatgpt-search)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2025-02-05T12:00Z | Available to all users including logged-out |
-| 2024-12-16T12:00Z | Available to all logged-in users |
-| 2024-10-31T12:00Z | Initial entry
+| 2024-12-09T12:00Z | Initial entry

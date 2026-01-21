@@ -178,10 +178,10 @@
     </style>
 </head>
 <body>
-    <header>
+    <header class="site-header">
         <h1><a href="index.html" onclick="passTheme(this)" style="color: inherit; text-decoration: none;"><img src="assets/favicon-32.png" alt="" class="header-logo" width="28" height="28" aria-hidden="true"> AI Feature Tracker</a></h1>
+        <a href="index.html" class="back-btn" onclick="passTheme(this)">← Back</a>
         <div class="header-meta">
-            <a href="index.html" class="about-link" onclick="passTheme(this)">← Back to Dashboard</a>
             <a href="https://github.com/snapsynapse/ai-feature-tracker" class="github-link">Contribute on GitHub</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓 Theme</button>
         </div>
@@ -200,29 +200,9 @@
                     <th>Examples</th>
                 </tr>
                 <tr>
-                    <td>vision</td>
-                    <td>Image/document understanding (input)</td>
-                    <td>Claude Vision, GPT-4 Vision</td>
-                </tr>
-                <tr>
-                    <td>image-gen</td>
-                    <td>Image creation (output)</td>
-                    <td>DALL-E, Imagen, Aurora</td>
-                </tr>
-                <tr>
-                    <td>voice</td>
-                    <td>Voice input and/or output</td>
-                    <td>Advanced Voice Mode</td>
-                </tr>
-                <tr>
-                    <td>search</td>
-                    <td>Web search capabilities</td>
-                    <td>Real-time X data, Focus Modes</td>
-                </tr>
-                <tr>
-                    <td>research</td>
-                    <td>Deep/agentic research</td>
-                    <td>Deep Research, Pro Search</td>
+                    <td>agents</td>
+                    <td>Autonomous task execution</td>
+                    <td>Agent Mode, Cowork, Operator</td>
                 </tr>
                 <tr>
                     <td>browser</td>
@@ -235,9 +215,9 @@
                     <td>Claude Code, Codex</td>
                 </tr>
                 <tr>
-                    <td>agents</td>
-                    <td>Autonomous task execution</td>
-                    <td>Agent Mode, Cowork, Operator</td>
+                    <td>cloud-files</td>
+                    <td>Cloud storage integration</td>
+                    <td>Copilot in Office, Gemini in Workspace</td>
                 </tr>
                 <tr>
                     <td>local-files</td>
@@ -245,14 +225,34 @@
                     <td>Projects, Artifacts, Collections</td>
                 </tr>
                 <tr>
-                    <td>cloud-files</td>
-                    <td>Cloud storage integration</td>
-                    <td>Copilot in Office, Gemini in Workspace</td>
+                    <td>image-gen</td>
+                    <td>Image creation (output)</td>
+                    <td>DALL-E, Imagen, Aurora</td>
                 </tr>
                 <tr>
-                    <td>video</td>
+                    <td>video-gen</td>
                     <td>Video generation or editing</td>
-                    <td>Sora</td>
+                    <td>Sora, Veo</td>
+                </tr>
+                <tr>
+                    <td>research</td>
+                    <td>Deep/agentic research</td>
+                    <td>Deep Research, Pro Search</td>
+                </tr>
+                <tr>
+                    <td>search</td>
+                    <td>Web search capabilities</td>
+                    <td>Real-time X data, Focus Modes</td>
+                </tr>
+                <tr>
+                    <td>vision</td>
+                    <td>Image/document understanding (input)</td>
+                    <td>Claude Vision, GPT-4 Vision</td>
+                </tr>
+                <tr>
+                    <td>voice</td>
+                    <td>Voice input and/or output</td>
+                    <td>Advanced Voice Mode</td>
                 </tr>
                 <tr>
                     <td>other</td>
@@ -273,7 +273,7 @@
                 <span class="provider-example">Anthropic</span>
                 <span class="provider-example">Perplexity AI</span>
                 <span class="provider-example">xAI</span>
-                <span class="provider-example">Various</span>
+                <span class="provider-example">Local Models</span>
             </div>
 
             <table>
@@ -299,17 +299,62 @@
                 </tr>
                 <tr>
                     <td>Perplexity AI</td>
-                    <td>Perplexity (Free, Pro)</td>
+                    <td>Perplexity (Free, Pro, Max, Enterprise Pro)</td>
                 </tr>
                 <tr>
                     <td>xAI</td>
-                    <td>Grok (Free, X Premium, X Premium+, SuperGrok)</td>
+                    <td>Grok (Free, Premium, Premium+, SuperGrok)</td>
                 </tr>
                 <tr>
-                    <td>Various</td>
-                    <td>Local/open models (Llama, Mistral, DeepSeek, Qwen)</td>
+                    <td>Local Models</td>
+                    <td>Open-weight models (Llama, Mistral, DeepSeek, Qwen)</td>
                 </tr>
             </table>
+        </section>
+
+        <section>
+            <h2>Surfaces</h2>
+            <p>Filter by where you can access a feature. We track 9 platform surfaces:</p>
+
+            <h3>Desktop</h3>
+            <div class="def-grid">
+                <span class="def-term">Windows</span>
+                <span class="def-desc">Native Windows app or web access on Windows</span>
+
+                <span class="def-term">macOS</span>
+                <span class="def-desc">Native Mac app or web access on macOS</span>
+
+                <span class="def-term">Linux</span>
+                <span class="def-desc">Native Linux app or web access on Linux</span>
+            </div>
+
+            <h3>Mobile</h3>
+            <div class="def-grid">
+                <span class="def-term">iOS</span>
+                <span class="def-desc">iPhone/iPad native app</span>
+
+                <span class="def-term">Android</span>
+                <span class="def-desc">Android native app</span>
+            </div>
+
+            <h3>Browser & Developer</h3>
+            <div class="def-grid">
+                <span class="def-term">Chrome</span>
+                <span class="def-desc">Browser extension (Chrome/Chromium)</span>
+
+                <span class="def-term">web</span>
+                <span class="def-desc">Browser-based access (no install required)</span>
+
+                <span class="def-term">terminal</span>
+                <span class="def-desc">Command-line interface (CLI)</span>
+
+                <span class="def-term">API</span>
+                <span class="def-desc">Programmatic access for developers</span>
+            </div>
+
+            <div class="note">
+                <strong>Desktop web vs. native:</strong> Many features are marked available on Windows/macOS/Linux because they work via web browser, even without a dedicated desktop app. Check the Notes column for specifics.
+            </div>
         </section>
 
         <section>

@@ -17,6 +17,119 @@ last_verified: 2026-01-20
 
 ---
 
+## Agent Builder
+
+| Property | Value |
+|----------|-------|
+| Category | agents |
+| Status | ga |
+| Gating | paid |
+| URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
+| Launched | 2025-02-24T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Copilot Pro | ❌ | — | Not available |
+| M365 Copilot | ✅ | Included | No-code agent creation |
+| Copilot Chat (M365 commercial) | ⚠️ | Limited | Free for basic agents |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | M365 apps |
+| macOS | ✅ | M365 apps |
+| Linux | ❌ |  |
+| iOS | ❌ | Not available on mobile |
+| Android | ❌ | Not available on mobile |
+| Chrome | ❌ |  |
+| web | ✅ | microsoft365.com/chat |
+| terminal | ❌ |  |
+| API | ⚠️ | Via Copilot Studio |
+
+### Regional
+
+Available in 17 regions including US, Europe, Asia Pacific.
+
+### Talking Point
+
+> "Agent Builder lets you create custom AI agents using natural language—no coding required. **Requires M365 Copilot ($30/user/mo)** for full access. Basic agents work in Copilot Chat for M365 commercial users. Will be rebranded as 'Copilot Studio Lite'."
+
+### Sources
+
+- [Agent Builder Documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder)
+- [Build Agents Guide](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-11-18T12:00Z | Rebranding to Copilot Studio Lite announced |
+| 2025-02-24T12:00Z | Initial entry |
+
+---
+
+## Copilot Connectors
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | paid |
+| URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
+| Launched | 2023-11-01T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Copilot Pro | ❌ | — | Not available |
+| M365 Copilot | ✅ | Full | 100+ connectors available |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | M365 apps |
+| macOS | ✅ | M365 apps |
+| Linux | ❌ |  |
+| iOS | ✅ | M365 mobile apps |
+| Android | ✅ | M365 mobile apps |
+| Chrome | ❌ |  |
+| web | ✅ | M365 web apps |
+| terminal | ❌ |  |
+| API | ✅ | Microsoft Graph API |
+
+### Regional
+
+Available globally where M365 Copilot is available.
+
+### Talking Point
+
+> "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. MCP support was added in November 2025."
+
+### Sources
+
+- [Copilot Connectors Overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector)
+- [Copilot Connectors Gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-11-01T12:00Z | MCP integration added |
+| 2023-11-01T12:00Z | Initial entry |
+
+---
+
 ## Copilot in Office Apps
 
 | Property | Value |
@@ -26,8 +139,8 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
 | Launched | 2023-11-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -46,9 +159,11 @@ last_verified: 2026-01-20
 | Linux | ❌ |  |
 | iOS | ✅ | Office mobile apps |
 | Android | ✅ | Office mobile apps |
+| Chrome | ❌ |  |
 | web | ✅ | Office web apps |
 | terminal | ❌ |  |
 | API | ❌ | No consumer API |
+
 ### Regional
 
 Available globally.
@@ -69,108 +184,6 @@ Available globally.
 
 ---
 
-## Image Generation (Designer)
-
-| Property | Value |
-|----------|-------|
-| Category | image-gen |
-| Status | ga |
-| Gating | paid |
-| URL | https://designer.microsoft.com/ |
-| Launched | 2023-03-21T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ✅ | 15 boosts/day | Basic generation |
-| Copilot Pro | ✅ | 100 boosts/day | Faster, priority |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ | Native integration |
-| macOS | ✅ |  |
-| Linux | ❌ |  |
-| iOS | ✅ |  |
-| Android | ✅ |  |
-| web | ✅ | copilot.microsoft.com |
-| terminal | ❌ |  |
-| API | ❌ | No consumer API |
-### Regional
-
-Available globally.
-
-### Talking Point
-
-> "Image generation with Designer is **available on free Copilot** with 15 boosts per day. Pro gets 100 boosts and priority generation."
-
-### Sources
-
-- [Microsoft Designer](https://designer.microsoft.com/)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2023-03-21T12:00Z | Initial entry |
-
----
-
-## GPT-4 Access
-
-| Property | Value |
-|----------|-------|
-| Category | other |
-| Status | ga |
-| Gating | paid |
-| URL | https://copilot.microsoft.com/ |
-| Launched | 2023-02-07T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
-
-### Availability
-
-| Plan | Available | Limits | Notes |
-|------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Falls back to faster models at peak |
-| Copilot Pro | ✅ | Priority | Consistent GPT-4 access |
-
-### Platforms
-
-| Platform | Available | Notes |
-|----------|-----------|-------|
-| Windows | ✅ |  |
-| macOS | ✅ |  |
-| Linux | ❌ |  |
-| iOS | ✅ |  |
-| Android | ✅ |  |
-| web | ✅ |  |
-| terminal | ❌ |  |
-| API | ❌ | No consumer API |
-### Regional
-
-Available globally.
-
-### Talking Point
-
-> "Free Copilot uses GPT-4 when available but may fall back to faster models during peak times. **Pro guarantees priority GPT-4 access.**"
-
-### Sources
-
-- [Copilot Pro Features](https://www.microsoft.com/en-us/store/b/copilotpro)
-
-### Changelog
-
-| Date | Change |
-|------|--------|
-| 2023-02-07T12:00Z | Initial entry |
-
----
-
 ## Copilot Vision
 
 | Property | Value |
@@ -180,8 +193,8 @@ Available globally.
 | Gating | paid |
 | URL | https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/ |
 | Launched | 2024-10-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -199,9 +212,11 @@ Available globally.
 | Linux | ❌ |  |
 | iOS | ❌ | Not available |
 | Android | ❌ | Not available |
+| Chrome | ❌ |  |
 | web | ❌ | Edge browser only |
 | terminal | ❌ |  |
 | API | ❌ | No consumer API |
+
 ### Regional
 
 Available in preview; limited regions.
@@ -231,8 +246,8 @@ Available in preview; limited regions.
 | Gating | free |
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
 | Launched | 2024-10-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
@@ -250,6 +265,7 @@ Available in preview; limited regions.
 | Linux | ❌ |  |
 | iOS | ✅ | Copilot app |
 | Android | ✅ | Copilot app |
+| Chrome | ❌ |  |
 | web | ✅ | Browser with microphone |
 | terminal | ❌ |  |
 | API | ❌ | No consumer API |
@@ -274,111 +290,106 @@ Available globally.
 
 ---
 
-## Copilot Connectors
+## GPT-4 Access
 
 | Property | Value |
 |----------|-------|
-| Category | integrations |
+| Category | other |
 | Status | ga |
 | Gating | paid |
-| URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
-| Launched | 2023-11-01T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| URL | https://copilot.microsoft.com/ |
+| Launched | 2023-02-07T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Copilot Pro | ❌ | — | Not available |
-| M365 Copilot | ✅ | Full | 100+ connectors available |
+| Free | ⚠️ | Limited | Falls back to faster models at peak |
+| Copilot Pro | ✅ | Priority | Consistent GPT-4 access |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | M365 apps |
-| macOS | ✅ | M365 apps |
+| Windows | ✅ |  |
+| macOS | ✅ |  |
 | Linux | ❌ |  |
-| iOS | ✅ | M365 mobile apps |
-| Android | ✅ | M365 mobile apps |
-| web | ✅ | M365 web apps |
+| iOS | ✅ |  |
+| Android | ✅ |  |
+| Chrome | ❌ |  |
+| web | ✅ |  |
 | terminal | ❌ |  |
-| API | ✅ | Microsoft Graph API |
+| API | ❌ | No consumer API |
 
 ### Regional
 
-Available globally where M365 Copilot is available.
+Available globally.
 
 ### Talking Point
 
-> "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. MCP support was added in November 2025."
+> "Free Copilot uses GPT-4 when available but may fall back to faster models during peak times. **Pro guarantees priority GPT-4 access.**"
 
 ### Sources
 
-- [Copilot Connectors Overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector)
-- [Copilot Connectors Gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery)
+- [Copilot Pro Features](https://www.microsoft.com/en-us/store/b/copilotpro)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2025-11-01T12:00Z | MCP integration added |
-| 2023-11-01T12:00Z | Initial entry |
+| 2023-02-07T12:00Z | Initial entry |
 
 ---
 
-## Agent Builder
+## Image Generation (Designer)
 
 | Property | Value |
 |----------|-------|
-| Category | agents |
+| Category | image-gen |
 | Status | ga |
 | Gating | paid |
-| URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
-| Launched | 2025-02-24T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| URL | https://designer.microsoft.com/ |
+| Launched | 2023-03-21T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Copilot Pro | ❌ | — | Not available |
-| M365 Copilot | ✅ | Included | No-code agent creation |
-| Copilot Chat (M365 commercial) | ⚠️ | Limited | Free for basic agents |
+| Free | ✅ | 15 boosts/day | Basic generation |
+| Copilot Pro | ✅ | 100 boosts/day | Faster, priority |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | M365 apps |
-| macOS | ✅ | M365 apps |
+| Windows | ✅ | Native integration |
+| macOS | ✅ |  |
 | Linux | ❌ |  |
-| iOS | ❌ | Not available on mobile |
-| Android | ❌ | Not available on mobile |
-| web | ✅ | microsoft365.com/chat |
+| iOS | ✅ |  |
+| Android | ✅ |  |
+| Chrome | ❌ |  |
+| web | ✅ | copilot.microsoft.com |
 | terminal | ❌ |  |
-| API | ⚠️ | Via Copilot Studio |
+| API | ❌ | No consumer API |
 
 ### Regional
 
-Available in 17 regions including US, Europe, Asia Pacific.
+Available globally.
 
 ### Talking Point
 
-> "Agent Builder lets you create custom AI agents using natural language—no coding required. **Requires M365 Copilot ($30/user/mo)** for full access. Basic agents work in Copilot Chat for M365 commercial users. Will be rebranded as 'Copilot Studio Lite'."
+> "Image generation with Designer is **available on free Copilot** with 15 boosts per day. Pro gets 100 boosts and priority generation."
 
 ### Sources
 
-- [Agent Builder Documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder)
-- [Build Agents Guide](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents)
+- [Microsoft Designer](https://designer.microsoft.com/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
-| 2025-11-18T12:00Z | Rebranding to Copilot Studio Lite announced |
-| 2025-02-24T12:00Z | Initial entry
+| 2023-03-21T12:00Z | Initial entry |

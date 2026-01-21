@@ -330,7 +330,11 @@ function generateHTML(platforms) {
     <div class="container" id="main-content">
         <header>
             <h1><img src="assets/favicon-32.png" alt="" class="header-logo" width="28" height="28" aria-hidden="true"> AI Feature Tracker</h1>
-            <div class="header-meta">
+            <span class="feature-count" id="featureCount" aria-live="polite" aria-atomic="true">Showing <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> of <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong></span>
+            <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="mobileMenu">
+                <span class="hamburger-icon"></span>
+            </button>
+            <div class="header-meta" id="mobileMenu">
                 <span class="last-updated">Last built: ${now}</span>
                 <a href="about.html" class="about-link" onclick="passTheme(this)">What is this for?</a>
                 <a href="https://github.com/snapsynapse/ai-feature-tracker" class="github-link">Contribute on GitHub</a>
@@ -343,15 +347,15 @@ function generateHTML(platforms) {
             <div class="provider-toggles">
                 <label>Providers:</label>
                 ${(() => {
-            // Sort vendors by estimated active users (descending), with "Various" last
+            // Sort vendors by estimated active users (descending), with "Local Models" last
             const vendorOrder = ['OpenAI', 'Microsoft', 'Google', 'Anthropic', 'Perplexity AI', 'xAI'];
             const vendors = [...new Set(platforms.map(p => p.vendor))];
             vendors.sort((a, b) => {
                 const aIdx = vendorOrder.indexOf(a);
                 const bIdx = vendorOrder.indexOf(b);
-                // If not in order list, put at end (before "Various" types)
-                const aPos = aIdx === -1 ? (a.startsWith('Various') ? 999 : 100) : aIdx;
-                const bPos = bIdx === -1 ? (b.startsWith('Various') ? 999 : 100) : bIdx;
+                // If not in order list, put at end (before "Local Models")
+                const aPos = aIdx === -1 ? (a === 'Local Models' ? 999 : 100) : aIdx;
+                const bPos = bIdx === -1 ? (b === 'Local Models' ? 999 : 100) : bIdx;
                 return aPos - bPos;
             });
             return vendors.map(vendor => {
@@ -360,29 +364,30 @@ function generateHTML(platforms) {
             }).join('\n                ');
         })()}
             </div>
-            <div class="filter-group">
-                <label>Category:</label>
-                <select id="categoryFilter" onchange="filterFeatures()">
-                    <option value="">All</option>
-                    <option value="agents">Agents</option>
-                    <option value="browser">Browser</option>
-                    <option value="coding">Coding</option>
-                    <option value="cloud-files">Files (cloud)</option>
-                    <option value="local-files">Files (local)</option>
-                    <option value="image-gen">Image Gen</option>
-                    <option value="video-gen">Video Gen</option>
-                    <option value="research">Research</option>
-                    <option value="search">Search</option>
-                    <option value="vision">Vision</option>
-                    <option value="voice">Voice</option>
-                    <option value="other">Other</option>
-                </select>
-            </div>
-            <div class="filter-group">
-                <label>Pricing tier:</label>
-                <select id="tierFilter" onchange="filterFeatures()">
-                    <option value="">All</option>
-                    ${(() => {
+            <div class="filter-dropdowns">
+                <div class="filter-group">
+                    <label>Category:</label>
+                    <select id="categoryFilter" onchange="filterFeatures()">
+                        <option value="">All</option>
+                        <option value="agents">Agents</option>
+                        <option value="browser">Browser</option>
+                        <option value="coding">Coding</option>
+                        <option value="cloud-files">Files (cloud)</option>
+                        <option value="local-files">Files (local)</option>
+                        <option value="image-gen">Image Gen</option>
+                        <option value="video-gen">Video Gen</option>
+                        <option value="research">Research</option>
+                        <option value="search">Search</option>
+                        <option value="vision">Vision</option>
+                        <option value="voice">Voice</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Price:</label>
+                    <select id="tierFilter" onchange="filterFeatures()">
+                        <option value="">All</option>
+                        ${(() => {
             // Build price lookup: plan name → normalized price
             const planPrices = new Map();
             platforms.forEach(p => {
@@ -415,12 +420,27 @@ function generateHTML(platforms) {
 
             const prices = [...allPrices].sort((a, b) => priceOrder(a) - priceOrder(b));
 
-            return prices.map(price => `<option value="${tierToSlug(price)}">${price}</option>`).join('\n                    ');
+            return prices.map(price => `<option value="${tierToSlug(price)}">${price}</option>`).join('\n                        ');
         })()}
-                </select>
+                    </select>
+                </div>
+                <div class="filter-group">
+                    <label>Surface:</label>
+                    <select id="surfaceFilter" onchange="filterFeatures()">
+                        <option value="">All</option>
+                        <option value="windows">Windows</option>
+                        <option value="macos">macOS</option>
+                        <option value="linux">Linux</option>
+                        <option value="ios">iOS</option>
+                        <option value="android">Android</option>
+                        <option value="chrome">Chrome</option>
+                        <option value="web">Web</option>
+                        <option value="terminal">Terminal</option>
+                        <option value="api">API</option>
+                    </select>
+                </div>
+                <a href="definitions.html" class="definitions-link" onclick="passTheme(this)">ℹ️ What's this mean?</a>
             </div>
-            <span class="feature-count" id="featureCount" aria-live="polite" aria-atomic="true">Showing <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> of <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong></span>
-            <a href="definitions.html" class="definitions-link" onclick="passTheme(this)">ℹ️ What's this mean?</a>
         </div>
 
         ${(() => {
@@ -429,8 +449,8 @@ function generateHTML(platforms) {
             const sortedPlatforms = [...platforms].sort((a, b) => {
                 const aIdx = vendorOrder.indexOf(a.vendor);
                 const bIdx = vendorOrder.indexOf(b.vendor);
-                const aPos = aIdx === -1 ? (a.vendor.startsWith('Various') ? 999 : 100) : aIdx;
-                const bPos = bIdx === -1 ? (b.vendor.startsWith('Various') ? 999 : 100) : bIdx;
+                const aPos = aIdx === -1 ? (a.vendor === 'Local Models' ? 999 : 100) : aIdx;
+                const bPos = bIdx === -1 ? (b.vendor === 'Local Models' ? 999 : 100) : bIdx;
                 return aPos - bPos;
             });
             return sortedPlatforms.map(p => {
@@ -459,9 +479,13 @@ function generateHTML(platforms) {
                         .filter(a => a.available.includes('✅') || a.available.includes('⚠️'))
                         .map(a => planPriceMap.get(a.plan))
                         .filter(Boolean))].join('_');
+                    const availableSurfaces = f.platforms
+                        .filter(pl => pl.available.includes('✅') || pl.available.includes('⚠️'))
+                        .map(pl => pl.platform.toLowerCase())
+                        .join('_');
                     const featureId = `${p.name.toLowerCase()}-${f.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}`;
                     return `
-                <div class="feature-card" id="${featureId}" data-category="${f.category}" data-prices="${availablePrices}">
+                <div class="feature-card" id="${featureId}" data-category="${f.category}" data-prices="${availablePrices}" data-surfaces="${availableSurfaces}">
                     <div class="feature-header">
                         <h3>${f.url ? `<a href="${f.url}" target="_blank" class="feature-link">${f.name}</a>` : f.name}</h3>
                         <span class="badges"><button class="permalink-btn" onclick="copyPermalink('${featureId}')" title="Copy link to this feature" aria-label="Copy permalink">🔗</button>${availabilityBadge(f.status)}${gatingBadge(f.gating)}</span>
@@ -479,8 +503,8 @@ function generateHTML(platforms) {
                     </div>
                     <div class="platforms-row">
                         ${(() => {
-                            // Standard platform order: Windows, macOS, Linux, iOS, Android, web, terminal, API
-                            const platformOrder = ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'web', 'terminal', 'API'];
+                            // Standard platform order: Windows, macOS, Linux, iOS, Android, Chrome, web, terminal, API
+                            const platformOrder = ['Windows', 'macOS', 'Linux', 'iOS', 'Android', 'Chrome', 'web', 'terminal', 'API'];
                             const platformMap = new Map(f.platforms.map(pl => [pl.platform.toLowerCase(), pl]));
 
                             return platformOrder.map(plat => {
@@ -630,6 +654,27 @@ function generateHTML(platforms) {
             localStorage.setItem('theme', isLight ? 'light' : 'dark');
         }
 
+        function toggleMobileMenu() {
+            const btn = document.querySelector('.hamburger-btn');
+            const menu = document.getElementById('mobileMenu');
+            const isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        // Close mobile menu when clicking outside
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('mobileMenu');
+            const btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open')) {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
         function passTheme(link) {
             const isLight = document.body.classList.contains('light-mode') || document.documentElement.classList.contains('light-mode');
             if (isLight) {
@@ -650,12 +695,15 @@ function generateHTML(platforms) {
         function filterFeatures(skipURLUpdate) {
             const categorySelect = document.getElementById('categoryFilter');
             const tierSelect = document.getElementById('tierFilter');
+            const surfaceSelect = document.getElementById('surfaceFilter');
             const category = categorySelect.value;
             const price = tierSelect.value;
+            const surface = surfaceSelect.value;
 
             // Highlight active filters
             categorySelect.classList.toggle('active', category !== '');
             tierSelect.classList.toggle('active', price !== '');
+            surfaceSelect.classList.toggle('active', surface !== '');
 
             document.querySelectorAll('.feature-card').forEach(card => {
                 let show = true;
@@ -663,6 +711,10 @@ function generateHTML(platforms) {
                 if (price) {
                     const prices = card.dataset.prices ? card.dataset.prices.split('_') : [];
                     if (!prices.includes(price)) show = false;
+                }
+                if (surface) {
+                    const surfaces = card.dataset.surfaces ? card.dataset.surfaces.split('_') : [];
+                    if (!surfaces.includes(surface)) show = false;
                 }
                 card.style.display = show ? '' : 'none';
             });
@@ -772,6 +824,12 @@ function generateHTML(platforms) {
                 document.getElementById('tierFilter').value = tierParam;
             }
 
+            // Restore surface filter from URL
+            const surfaceParam = params.get('surface');
+            if (surfaceParam) {
+                document.getElementById('surfaceFilter').value = surfaceParam;
+            }
+
             filterProviders();
             filterFeatures(true);  // Skip URL update during init
         }
@@ -829,6 +887,14 @@ function generateHTML(platforms) {
                 url.searchParams.set('tier', tier);
             } else {
                 url.searchParams.delete('tier');
+            }
+
+            // Surface filter
+            const surface = document.getElementById('surfaceFilter').value;
+            if (surface) {
+                url.searchParams.set('surface', surface);
+            } else {
+                url.searchParams.delete('surface');
             }
 
             window.history.replaceState({}, '', url);
@@ -1033,10 +1099,10 @@ function generateAboutHTML() {
 </head>
 <body>
     <a href="#main-content" class="skip-link">Skip to main content</a>
-    <header>
+    <header class="site-header">
         <h1><a href="index.html" onclick="passTheme(this)" style="color: inherit; text-decoration: none;"><img src="assets/favicon-32.png" alt="" class="header-logo" width="28" height="28" aria-hidden="true"> AI Feature Tracker</a></h1>
+        <a href="index.html" class="back-btn" onclick="passTheme(this)">← Back</a>
         <div class="header-meta">
-            <a href="index.html" class="about-link" onclick="passTheme(this)">← Back to Dashboard</a>
             <a href="https://github.com/snapsynapse/ai-feature-tracker" class="github-link">Contribute on GitHub</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓 Theme</button>
         </div>

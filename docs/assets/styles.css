@@ -1,6 +1,10 @@
 /* AI Feature Tracker - Styles */
 /* WCAG 2.1 AA Compliant (4.5:1 contrast ratio minimum) */
 
+/* ========================================
+   ACCESSIBILITY & MOTION
+   ======================================== */
+
 /* Smooth scroll with reduced motion support */
 html {
     scroll-behavior: smooth;
@@ -38,6 +42,10 @@ html {
     top: 0;
 }
 
+/* ========================================
+   CSS VARIABLES (DARK MODE DEFAULT)
+   ======================================== */
+
 :root {
     --bg-gradient-start: #1a1a2e;
     --bg-gradient-end: #16213e;
@@ -64,6 +72,10 @@ html {
     --status-partial-text: #000;
     --status-partial-bg: #5a3000;
 }
+
+/* ========================================
+   LIGHT MODE OVERRIDES
+   ======================================== */
 
 :is(html, body).light-mode {
     --bg-gradient-start: #f5f5f7;
@@ -92,6 +104,45 @@ html {
     --status-partial-bg: #fff3cd;
 }
 
+:is(html, body).light-mode header,
+:is(html, body).light-mode .site-header {
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+:is(html, body).light-mode .platform-status-link {
+    background: #d4edda;
+    color: #155724;
+}
+
+:is(html, body).light-mode .platform-status-link:hover { background: #c3e6cb; }
+
+:is(html, body).light-mode .feature-card:hover {
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+:is(html, body).light-mode .feature-card.keyboard-focus {
+    box-shadow: 0 0 0 2px rgba(0, 85, 170, 0.3);
+}
+
+:is(html, body).light-mode .badge.avail-ga { background: #2e7d32; color: #fff; }
+:is(html, body).light-mode .badge.avail-beta { background: #e65100; color: #fff; }
+
+:is(html, body).light-mode .badge.gate-free { background: #1565c0; color: #fff; }
+:is(html, body).light-mode .badge.gate-paid { background: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
+:is(html, body).light-mode .badge.gate-invite { background: #fce4ec; color: #880e4f; border: 1px solid #880e4f; }
+:is(html, body).light-mode .badge.gate-org { background: #f1f8e9; color: #33691e; border: 1px solid #33691e; }
+
+:is(html, body).light-mode .plat-icon.yes { background: #2e7d32; color: #fff; }
+:is(html, body).light-mode .plat-icon.no { background: #ccc; color: #555; }
+:is(html, body).light-mode .plat-icon.soon { background: #bbb; color: #444; }
+:is(html, body).light-mode .plat-icon.partial { background: #fff3cd; color: #c45500; }
+
+:is(html, body).light-mode .talking-point.copied { background: #2e7d32 !important; color: #fff !important; }
+
+/* ========================================
+   BASE STYLES
+   ======================================== */
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
 
 body {
@@ -104,6 +155,10 @@ body {
 }
 
 .container { max-width: 1600px; margin: 0 auto; padding-top: 70px; }
+
+/* ========================================
+   HEADER
+   ======================================== */
 
 /* Sticky header - shared across all pages */
 header, .site-header {
@@ -123,11 +178,6 @@ header, .site-header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-:is(html, body).light-mode header,
-:is(html, body).light-mode .site-header {
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-}
-
 h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; }
 
 .header-logo {
@@ -137,6 +187,47 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 }
 
 .header-meta { display: flex; gap: 12px; align-items: center; flex-wrap: wrap; }
+
+/* Hamburger menu button - hidden on desktop */
+.hamburger-btn {
+    display: none;
+    background: var(--input-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 6px;
+    padding: 10px;
+    cursor: pointer;
+    min-width: 44px;
+    min-height: 44px;
+    align-items: center;
+    justify-content: center;
+}
+
+.hamburger-icon {
+    display: block;
+    width: 20px;
+    height: 2px;
+    background: var(--text-primary);
+    position: relative;
+}
+
+.hamburger-icon::before,
+.hamburger-icon::after {
+    content: '';
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    background: var(--text-primary);
+    left: 0;
+    transition: transform 0.2s ease;
+}
+
+.hamburger-icon::before { top: -6px; }
+.hamburger-icon::after { top: 6px; }
+
+/* Hamburger X state when menu is open */
+.hamburger-btn.active .hamburger-icon { background: transparent; }
+.hamburger-btn.active .hamburger-icon::before { transform: rotate(45deg); top: 0; }
+.hamburger-btn.active .hamburger-icon::after { transform: rotate(-45deg); top: 0; }
 
 .last-updated {
     background: var(--badge-bg);
@@ -167,6 +258,29 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     outline-offset: 2px;
 }
 
+/* Back button for subpages - always visible */
+.back-btn {
+    background: var(--accent);
+    color: #fff;
+    padding: 8px 16px;
+    border-radius: 16px;
+    font-size: 0.85rem;
+    font-weight: 500;
+    text-decoration: none;
+    white-space: nowrap;
+    flex-shrink: 0;
+}
+
+.back-btn:hover {
+    filter: brightness(1.1);
+}
+
+.back-btn:focus,
+.back-btn:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+
 .theme-toggle {
     background: var(--badge-bg);
     border: 1px solid var(--card-border);
@@ -187,11 +301,23 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     outline-offset: 2px;
 }
 
+/* ========================================
+   FILTERS & CONTROLS
+   ======================================== */
+
 /* Filters */
 .filters {
     display: flex;
     gap: 12px;
     margin-bottom: 24px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+/* Filter dropdowns wrapper - wraps as a single block */
+.filter-dropdowns {
+    display: flex;
+    gap: 12px;
     flex-wrap: wrap;
     align-items: center;
 }
@@ -294,6 +420,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     outline-offset: 2px;
 }
 
+/* ========================================
+   PLATFORM SECTIONS
+   ======================================== */
+
 /* Platform status link (inline with header) */
 .platform-status-link {
     background: #1a3a1a;
@@ -306,14 +436,7 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     margin-left: 8px;
 }
 
-:is(html, body).light-mode .platform-status-link {
-    background: #d4edda;
-    color: #155724;
-}
-
 .platform-status-link:hover { background: #2a4a2a; }
-
-:is(html, body).light-mode .platform-status-link:hover { background: #c3e6cb; }
 
 .platform-status-link:focus,
 .platform-status-link:focus-visible {
@@ -382,6 +505,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 
 .price-tag strong { color: var(--accent); }
 
+/* ========================================
+   FEATURE CARDS
+   ======================================== */
+
 /* Feature cards grid */
 .features-grid {
     display: grid;
@@ -403,17 +530,9 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     transform: translateY(-2px);
 }
 
-:is(html, body).light-mode .feature-card:hover {
-    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-}
-
 .feature-card.keyboard-focus {
     border-color: var(--accent);
     box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.3);
-}
-
-:is(html, body).light-mode .feature-card.keyboard-focus {
-    box-shadow: 0 0 0 2px rgba(0, 85, 170, 0.3);
 }
 
 .feature-header {
@@ -447,6 +566,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     outline-offset: 2px;
 }
 
+/* ========================================
+   BADGES
+   ======================================== */
+
 .badge {
     font-size: 0.65rem;
     padding: 3px 8px;
@@ -462,21 +585,16 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 .badge.avail-preview { background: #9c27b0; color: #fff; }
 .badge.avail-deprecated { background: #757575; color: #fff; }
 
-:is(html, body).light-mode .badge.avail-ga { background: #2e7d32; color: #fff; }
-:is(html, body).light-mode .badge.avail-beta { background: #e65100; color: #fff; }
-
 /* Gating badges (access type) - WCAG compliant */
 .badge.gate-free { background: #1976d2; color: #fff; }
 .badge.gate-paid { background: #1a3a5c; color: #7dd3fc; border: 1px solid #7dd3fc; }
 .badge.gate-invite { background: #5c1a3a; color: #f9a8d4; border: 1px solid #f9a8d4; }
 .badge.gate-org { background: #3a5c1a; color: #bef264; border: 1px solid #bef264; }
 
-:is(html, body).light-mode .badge.gate-free { background: #1565c0; color: #fff; }
-:is(html, body).light-mode .badge.gate-paid { background: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
-:is(html, body).light-mode .badge.gate-invite { background: #fce4ec; color: #880e4f; border: 1px solid #880e4f; }
-:is(html, body).light-mode .badge.gate-org { background: #f1f8e9; color: #33691e; border: 1px solid #33691e; }
+/* ========================================
+   AVAILABILITY GRID
+   ======================================== */
 
-/* Availability grid */
 .avail-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(70px, 1fr));
@@ -551,7 +669,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 .avail.soon { color: var(--status-soon); }
 .avail.partial { color: var(--status-partial); }
 
-/* Platform icons - WCAG compliant */
+/* ========================================
+   PLATFORM ICONS
+   ======================================== */
+
 .platforms-row {
     display: flex;
     gap: 6px;
@@ -571,12 +692,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 .plat-icon.soon { background: #555; color: #aaa; }
 .plat-icon.partial { background: #5a3000; color: #ffb347; }
 
-:is(html, body).light-mode .plat-icon.yes { background: #2e7d32; color: #fff; }
-:is(html, body).light-mode .plat-icon.no { background: #ccc; color: #555; }
-:is(html, body).light-mode .plat-icon.soon { background: #bbb; color: #444; }
-:is(html, body).light-mode .plat-icon.partial { background: #fff3cd; color: #c45500; }
+/* ========================================
+   TALKING POINTS
+   ======================================== */
 
-/* Talking point */
 .talking-point {
     background: var(--input-bg);
     border-left: 3px solid var(--accent);
@@ -598,9 +717,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 .talking-point strong { color: var(--accent); }
 .talking-point.copied { background: #1b5e20 !important; color: #fff !important; }
 
-:is(html, body).light-mode .talking-point.copied { background: #2e7d32 !important; color: #fff !important; }
+/* ========================================
+   DATES & METADATA
+   ======================================== */
 
-/* Date row */
 .dates-row {
     display: flex;
     gap: 12px;
@@ -634,6 +754,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
 .date-item.launched .date-label::before { content: '🚀 '; }
 .date-item.verified .date-label::before { content: '✓ '; }
 .date-item.checked .date-label::before { content: '👁 '; }
+
+/* ========================================
+   TOOLTIPS
+   ======================================== */
 
 /* Notes tooltip */
 .notes-tooltip {
@@ -692,7 +816,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     border-top-color: var(--border);
 }
 
-/* Permalink button */
+/* ========================================
+   PERMALINK & INTERACTIONS
+   ======================================== */
+
 .permalink-btn {
     background: none;
     border: none;
@@ -744,7 +871,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     }
 }
 
-/* Modal */
+/* ========================================
+   MODAL
+   ======================================== */
+
 .modal-overlay {
     display: none;
     position: fixed;
@@ -817,7 +947,10 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     font-family: monospace;
 }
 
-/* Footer */
+/* ========================================
+   FOOTER
+   ======================================== */
+
 footer {
     margin-top: 40px;
     padding-top: 20px;
@@ -837,83 +970,6 @@ footer a:hover {
     text-decoration-thickness: 2px;
 }
 
-@media (max-width: 900px) {
-    /* Increase container padding when header wraps */
-    .container { padding-top: 120px; }
-
-    /* Stack header elements vertically */
-    header, .site-header {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 8px;
-        padding: 10px 16px;
-    }
-
-    .header-meta {
-        width: 100%;
-        justify-content: flex-start;
-    }
-}
-
-@media (max-width: 600px) {
-    .features-grid { grid-template-columns: 1fr; }
-    .avail-grid { grid-template-columns: repeat(3, 1fr); }
-
-    /* Even more padding for very small screens */
-    .container { padding-top: 140px; }
-
-    /* Make filters stack better */
-    .filters {
-        flex-direction: column;
-        align-items: flex-start;
-        gap: 10px;
-    }
-
-    .provider-toggles {
-        width: 100%;
-    }
-
-    .definitions-link {
-        margin-left: 0;
-    }
-
-    /* Larger touch targets for mobile (min 44px per WCAG) */
-    .filter-group select {
-        min-height: 44px;
-        padding: 10px 14px;
-        font-size: 1rem;
-    }
-
-    .provider-toggle {
-        min-height: 44px;
-        padding: 10px 14px;
-        font-size: 0.85rem;
-    }
-
-    .theme-toggle {
-        min-height: 44px;
-        padding: 10px 14px;
-    }
-
-    .github-link,
-    .about-link {
-        min-height: 44px;
-        padding: 10px 14px;
-        display: inline-flex;
-        align-items: center;
-    }
-
-    .definitions-link {
-        min-height: 44px;
-        padding: 10px 14px;
-    }
-
-    .talking-point {
-        padding: 14px 16px;
-    }
-}
-
-/* Footer social links */
 .footer-social {
     display: inline-block;
     background: var(--badge-bg);
@@ -935,4 +991,269 @@ footer a:hover {
 .footer-social:focus-visible {
     outline: 2px solid var(--accent);
     outline-offset: 2px;
+}
+
+/* ========================================
+   RESPONSIVE: TABLET (max-width: 900px)
+   ======================================== */
+
+@media (max-width: 900px) {
+    /* Increase container padding when header wraps */
+    .container { padding-top: 120px; }
+
+    /* Stack header elements vertically */
+    header, .site-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 8px;
+        padding: 10px 16px;
+    }
+
+    .header-meta {
+        width: 100%;
+        justify-content: flex-start;
+    }
+}
+
+/* ========================================
+   RESPONSIVE: MOBILE (max-width: 600px)
+   ======================================== */
+
+@media (max-width: 600px) {
+    /* Reduce body padding on mobile */
+    body {
+        padding: 12px;
+    }
+
+    .features-grid { grid-template-columns: 1fr; }
+    .avail-grid { grid-template-columns: repeat(3, 1fr); }
+
+    /* Reduced padding for mobile header */
+    .container { padding-top: 80px; }
+
+    /* Compact header on mobile - single row layout */
+    header, .site-header {
+        flex-direction: row;
+        flex-wrap: nowrap;
+        align-items: center;
+        padding: 10px 12px;
+        gap: 8px;
+    }
+
+    h1, .site-header h1 {
+        font-size: 1.1rem;
+        flex-shrink: 1;
+        min-width: 0;
+    }
+
+    .feature-count {
+        flex-shrink: 0;
+    }
+
+    /* Show hamburger button on mobile - positioned at right */
+    .hamburger-btn {
+        display: flex;
+        flex-shrink: 0;
+        order: 3;
+    }
+
+    /* Mobile menu - dropdown from upper right */
+    .header-meta {
+        display: none;
+        position: absolute;
+        top: 100%;
+        right: 0;
+        width: auto;
+        min-width: 220px;
+        background: var(--bg-gradient-start);
+        border: 1px solid var(--card-border);
+        border-top: none;
+        border-radius: 0 0 8px 8px;
+        box-shadow: 0 4px 12px rgba(0, 0, 0, 0.3);
+        padding: 12px;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .header-meta.open {
+        display: flex;
+    }
+
+    .header-meta .last-updated,
+    .header-meta .about-link,
+    .header-meta .github-link,
+    .header-meta .theme-toggle {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+        min-height: 44px;
+        padding: 12px 16px;
+    }
+
+    .header-meta .about-link,
+    .header-meta .github-link {
+        display: flex;
+        align-items: center;
+    }
+
+    .header-meta .theme-toggle {
+        background: var(--input-bg);
+        border: 1px solid var(--card-border);
+        border-radius: 6px;
+    }
+
+    /* Make filters stack better */
+    .filters {
+        flex-direction: column;
+        align-items: stretch;
+        gap: 12px;
+        margin-bottom: 16px;
+    }
+
+    /* Provider toggles - wrap on mobile, hide label */
+    .provider-toggles {
+        width: 100%;
+        flex-wrap: wrap;
+        gap: 6px;
+        justify-content: flex-start;
+    }
+
+    .provider-toggles label {
+        display: none; /* Hide "Providers:" label on mobile */
+    }
+
+    .provider-toggle {
+        flex-shrink: 0;
+        white-space: nowrap;
+        font-size: 0.8rem;
+        padding: 8px 12px;
+        min-height: 36px;
+    }
+
+    /* Filter dropdowns - full width on mobile */
+    .filter-dropdowns {
+        width: 100%;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 8px;
+    }
+
+    .filter-group {
+        flex: 1 1 auto;
+        min-width: 0;
+    }
+
+    .filter-group label {
+        display: none; /* Hide labels, use placeholder/selected value */
+    }
+
+    .filter-group select {
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 12px;
+        font-size: 0.9rem;
+    }
+
+    .definitions-link {
+        margin-left: 0;
+        justify-content: center;
+        width: 100%;
+        min-height: 44px;
+        padding: 10px 14px;
+        background: var(--input-bg);
+        border-radius: 6px;
+    }
+
+    /* Feature cards - more compact on mobile */
+    .feature-card {
+        padding: 14px;
+    }
+
+    .feature-header {
+        margin-bottom: 10px;
+    }
+
+    .feature-header h3 {
+        font-size: 0.95rem;
+    }
+
+    /* Platform icons - horizontal scroll */
+    .platforms-row {
+        overflow-x: auto;
+        flex-wrap: nowrap;
+        padding-bottom: 4px;
+        -webkit-overflow-scrolling: touch;
+        gap: 4px;
+    }
+
+    .plat-icon {
+        flex-shrink: 0;
+        font-size: 0.6rem;
+        padding: 3px 6px;
+    }
+
+    /* Talking point */
+    .talking-point {
+        padding: 12px 14px;
+        font-size: 0.82rem;
+    }
+
+    /* Dates row - compact */
+    .dates-row {
+        gap: 8px;
+        margin-top: 8px;
+    }
+
+    .date-item {
+        font-size: 0.62rem;
+    }
+
+    /* Platform section headers */
+    .platform-header h2 {
+        font-size: 1.1rem;
+    }
+
+    .pricing-bar {
+        gap: 8px;
+    }
+
+    .price-tag {
+        font-size: 0.75rem;
+        padding: 4px 10px;
+    }
+
+    /* Footer - more compact */
+    footer {
+        margin-top: 24px;
+        padding-top: 16px;
+        font-size: 0.75rem;
+    }
+
+    .footer-social {
+        padding: 8px 12px;
+        font-size: 0.75rem;
+        margin: 4px 2px;
+    }
+
+    /* Feature count badge */
+    .feature-count {
+        font-size: 0.8rem;
+        padding: 4px 10px;
+    }
+
+    /* Modal improvements for mobile */
+    .modal {
+        width: 95%;
+        padding: 16px;
+        max-height: 85vh;
+    }
+
+    .modal h3 {
+        font-size: 1rem;
+    }
+
+    .changelog-table th, .changelog-table td {
+        padding: 8px 10px;
+        font-size: 0.8rem;
+    }
 }
