@@ -586,7 +586,7 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 
 | Property | Value |
 |----------|-------|
-| Category | image-gen |
+| Category | video-gen |
 | Status | ga |
 | Gating | paid |
 | URL | https://openai.com/index/sora-is-here/ |

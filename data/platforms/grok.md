@@ -121,7 +121,64 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2024-12-09T12:00Z | Initial entry |
+| 2024-12-09T12:00Z | Initial entry
+
+---
+
+## Grok Imagine (Video Generation)
+
+| Property | Value |
+|----------|-------|
+| Category | video-gen |
+| Status | ga |
+| Gating | paid |
+| URL | https://x.ai/blog/grok-imagine |
+| Launched | 2025-08-04T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Premium | ✅ | Limited | Basic video generation |
+| Premium+ | ✅ | Higher | More generations |
+| SuperGrok | ✅ | Highest | Priority + most generations |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via grok.com |
+| macOS | ✅ | Via grok.com |
+| Linux | ❌ |  |
+| iOS | ✅ | X app + standalone |
+| Android | ✅ | X app + standalone |
+| web | ✅ | grok.com, x.com |
+| terminal | ❌ |  |
+| API | ✅ | xAI API |
+
+### Regional
+
+Available globally where X is available.
+
+### Talking Point
+
+> "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Requires Premium ($8/mo) or higher.** Supports text-to-video and image-to-video with multiple styles including realistic, anime, and abstract. Includes 'Spicy Mode' for less restricted content."
+
+### Sources
+
+- [Grok Imagine - TechCrunch](https://techcrunch.com/2025/08/04/grok-imagine-xais-new-ai-image-and-video-generator-lets-you-make-nsfw-content/)
+- [Grok Imagine Text-to-Video](https://supergrok.online/grok-imagine-text-to-video-update/)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-11-01T12:00Z | Text-to-video generation added |
+| 2025-10-06T12:00Z | Major update announced by Elon Musk |
+| 2025-08-04T12:00Z | Initial entry (image-to-video launched) |
 
 ---
 

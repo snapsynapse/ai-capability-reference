@@ -1,6 +1,6 @@
 ---
 name: Local/Open Models
-vendor: Various (Meta, Mistral, DeepSeek, Alibaba)
+vendor: Various (Meta, Mistral, DeepSeek, etc.)
 logo: https://cdn.simpleicons.org/ollama/white
 status_page: https://huggingface.co/models
 pricing_page: https://ollama.com/library

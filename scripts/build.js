@@ -305,6 +305,7 @@ function generateHTML(platforms) {
                     <option value="cloud-files">Files (cloud)</option>
                     <option value="local-files">Files (local)</option>
                     <option value="image-gen">Image Gen</option>
+                    <option value="video-gen">Video Gen</option>
                     <option value="research">Research</option>
                     <option value="search">Search</option>
                     <option value="vision">Vision</option>
@@ -483,7 +484,7 @@ function generateHTML(platforms) {
 
         <footer>
             <p>
-                Community-maintained. Found an error?
+                Community-maintained. Found an error? Got an idea?
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/issues">Open an issue</a> or
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/pulls">submit a PR</a>.
                 <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance" style="margin-left: 8px; vertical-align: middle;"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
@@ -1011,7 +1012,7 @@ function generateAboutHTML() {
 
         <footer>
             <p>
-                Community-maintained. Found an error?
+                Community-maintained. Found an error? Got an idea?
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/issues">Open an issue</a> or
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/pulls">submit a PR</a>.
                 <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance" style="margin-left: 8px; vertical-align: middle;"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>

@@ -643,3 +643,63 @@ Available globally where Gemini is available.
 | 2025-05-20T12:00Z | Free for all users |
 | 2025-04-07T12:00Z | Expanded to Pixel 9 and Galaxy S25 |
 | 2024-12-11T12:00Z | Initial entry
+
+---
+
+## Veo (Video Generation)
+
+| Property | Value |
+|----------|-------|
+| Category | video-gen |
+| Status | ga |
+| Gating | paid |
+| URL | https://deepmind.google/models/veo/ |
+| Launched | 2024-05-14T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| AI Premium | ✅ | Full | Veo 3.1 via Gemini app and Flow |
+| Workspace add-on | ⚠️ | Limited | Veo 3.1 avatars in Google Vids |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Web-based |
+| macOS | ✅ | Web-based |
+| Linux | ❌ |  |
+| iOS | ✅ | Gemini app |
+| Android | ✅ | Gemini app |
+| web | ✅ | gemini.google.com, Flow |
+| terminal | ❌ |  |
+| API | ✅ | Gemini API via AI Studio and Vertex AI |
+
+### Regional
+
+Available in supported regions where Gemini is available. Some features limited in EU.
+
+### Talking Point
+
+> "Veo is Google's video generation model. **Veo 3.1 generates 4K video up to 8 seconds with native audio**—including dialogue, sound effects, and ambient noise. Requires AI Premium ($20/mo). Available in the Gemini app, Flow, and via API. Supports text-to-video and image-to-video with up to 3 reference images for character consistency."
+
+### Sources
+
+- [Veo - Google DeepMind](https://deepmind.google/models/veo/)
+- [Introducing Veo 3.1](https://developers.googleblog.com/introducing-veo-3-1-and-new-creative-capabilities-in-the-gemini-api/)
+- [Gemini AI Video Generator](https://gemini.google/overview/video-generation/)
+- [Veo 2 Generally Available](https://developers.googleblog.com/veo-2-video-generation-now-generally-available/)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-01-13T12:00Z | Veo 3.1 4K resolution and vertical video support |
+| 2025-10-01T12:00Z | Veo 3.1 released in Gemini API |
+| 2025-05-01T12:00Z | Veo 3 released with native audio generation |
+| 2024-12-01T12:00Z | Veo 2 generally available for developers |
+| 2024-05-14T12:00Z | Initial entry (announced at Google I/O 2024)

@@ -144,6 +144,7 @@ These three dates separate **absolute truth** from **confidence**:
 |-------|-------------|
 | `vision` | Image/document understanding (input) |
 | `image-gen` | Image creation (output) |
+| `video-gen` | Video generation (output) |
 | `voice` | Voice input and/or output |
 | `search` | Web search |
 | `research` | Deep/agentic research |
