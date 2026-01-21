@@ -195,14 +195,14 @@ function gatingBadge(gating) {
 }
 
 /**
- * Generate availability badge
+ * Generate availability badge with ARIA labels
  */
 function availBadge(avail) {
-  if (avail.includes('✅')) return '<span class="avail yes">✓</span>';
-  if (avail.includes('❌')) return '<span class="avail no">✗</span>';
-  if (avail.includes('🔜')) return '<span class="avail soon">Soon</span>';
-  if (avail.includes('⚠️')) return '<span class="avail partial">~</span>';
-  return '<span class="avail unknown">?</span>';
+  if (avail.includes('✅')) return '<span class="avail yes" aria-label="Available" role="img">✓</span>';
+  if (avail.includes('❌')) return '<span class="avail no" aria-label="Not available" role="img">✗</span>';
+  if (avail.includes('🔜')) return '<span class="avail soon" aria-label="Coming soon">Soon</span>';
+  if (avail.includes('⚠️')) return '<span class="avail partial" aria-label="Partially available" role="img">~</span>';
+  return '<span class="avail unknown" aria-label="Unknown">?</span>';
 }
 
 /**
@@ -233,7 +233,8 @@ function generateHTML(platforms) {
     </script>
 </head>
 <body>
-    <div class="container">
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <div class="container" id="main-content">
         <header>
             <h1>🤖 AI Feature Tracker</h1>
             <div class="header-meta">
@@ -262,7 +263,7 @@ function generateHTML(platforms) {
                   });
                   return vendors.map(vendor => {
                     const vendorSlug = vendor.toLowerCase().replace(/[^a-z0-9]/g, '-');
-                    return `<span class="provider-toggle active" data-vendor="${vendorSlug}" onclick="toggleProvider('${vendorSlug}')">${vendor}</span>`;
+                    return `<span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="${vendorSlug}" onclick="toggleProvider('${vendorSlug}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('${vendorSlug}')}">${vendor}</span>`;
                   }).join('\n                ');
                 })()}
             </div>
@@ -351,7 +352,7 @@ function generateHTML(platforms) {
                     })()}
                 </select>
             </div>
-            <span class="feature-count" id="featureCount">Showing <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> of <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> features</span>
+            <span class="feature-count" id="featureCount" aria-live="polite" aria-atomic="true">Showing <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> of <strong>${platforms.reduce((sum, p) => sum + p.features.length, 0)}</strong> features</span>
             <a href="definitions.html" class="definitions-link" onclick="passTheme(this)">ℹ️ What's this mean?</a>
         </div>
 
@@ -439,7 +440,7 @@ function generateHTML(platforms) {
                           }).filter(Boolean).join('');
                         })()}
                     </div>
-                    ${f.talking_point ? `<div class="talking-point" onclick="copyTalkingPoint(this)">${f.talking_point.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</div>` : ''}
+                    ${f.talking_point ? `<div class="talking-point" role="button" tabindex="0" aria-label="Click to copy talking point" onclick="copyTalkingPoint(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyTalkingPoint(this)}">${f.talking_point.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</div>` : ''}
                     <div class="dates-row">
                         ${f.launched ? `<span class="date-item launched clickable" onclick="showChangelog('${p.name.toLowerCase()}-${f.name.toLowerCase().replace(/[^a-z0-9]/g, '-')}')"><span class="date-label">Launched</span><span class="date-value">${f.launched}</span></span>` : ''}
                         ${f.verified ? `<span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">${f.verified}</span></span>` : ''}
@@ -457,6 +458,7 @@ function generateHTML(platforms) {
                 Community-maintained. Found an error?
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/issues">Open an issue</a> or
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/pulls">submit a PR</a>.
+                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance" style="margin-left: 8px; vertical-align: middle;"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
             </p>
             <p style="margin-top: 8px;">
                 Made by <a href="https://snapsynapse.com/">Snap Synapse</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | You're welcome.
@@ -465,13 +467,13 @@ function generateHTML(platforms) {
     </div>
 
     <!-- Changelog Modal -->
-    <div class="modal-overlay" id="changelogModal" onclick="if(event.target===this)closeChangelog()">
+    <div class="modal-overlay" id="changelogModal" role="dialog" aria-modal="true" aria-labelledby="changelogTitle" onclick="if(event.target===this)closeChangelog()">
         <div class="modal">
-            <button class="modal-close" onclick="closeChangelog()">&times;</button>
+            <button class="modal-close" onclick="closeChangelog()" aria-label="Close dialog">&times;</button>
             <h3 id="changelogTitle">Changelog</h3>
             <table class="changelog-table">
                 <thead>
-                    <tr><th>Date (UTC)</th><th>Change</th></tr>
+                    <tr><th scope="col">Date (UTC)</th><th scope="col">Change</th></tr>
                 </thead>
                 <tbody id="changelogBody"></tbody>
             </table>
@@ -554,24 +556,60 @@ function generateHTML(platforms) {
             if (!skipURLUpdate) updateURL();
         }
 
+        let lastFocusedElement = null;
+
         function showChangelog(id) {
             const data = CHANGELOGS[id];
             if (!data) return;
+
+            // Store the element that had focus before opening
+            lastFocusedElement = document.activeElement;
 
             document.getElementById('changelogTitle').textContent = data.platform + ' — ' + data.name + ' Changelog';
             document.getElementById('changelogBody').innerHTML = data.changes.map(c =>
                 '<tr><td>' + c.date + '</td><td>' + c.change + '</td></tr>'
             ).join('');
             document.getElementById('changelogModal').classList.add('active');
+
+            // Focus the close button for keyboard users
+            setTimeout(() => {
+                document.querySelector('.modal-close').focus();
+            }, 50);
         }
 
         function closeChangelog() {
             document.getElementById('changelogModal').classList.remove('active');
+            // Restore focus to the element that opened the modal
+            if (lastFocusedElement) {
+                lastFocusedElement.focus();
+                lastFocusedElement = null;
+            }
         }
 
-        // Close modal on Escape key
+        // Close modal on Escape key and trap focus
         document.addEventListener('keydown', e => {
-            if (e.key === 'Escape') closeChangelog();
+            const modal = document.getElementById('changelogModal');
+            if (!modal.classList.contains('active')) return;
+
+            if (e.key === 'Escape') {
+                closeChangelog();
+                return;
+            }
+
+            // Focus trap: Tab key cycles within modal
+            if (e.key === 'Tab') {
+                const focusableElements = modal.querySelectorAll('button, [href], [tabindex]:not([tabindex="-1"])');
+                const firstElement = focusableElements[0];
+                const lastElement = focusableElements[focusableElements.length - 1];
+
+                if (e.shiftKey && document.activeElement === firstElement) {
+                    e.preventDefault();
+                    lastElement.focus();
+                } else if (!e.shiftKey && document.activeElement === lastElement) {
+                    e.preventDefault();
+                    firstElement.focus();
+                }
+            }
         });
 
         // Provider toggle functionality
@@ -592,8 +630,10 @@ function generateHTML(platforms) {
                     const vendor = toggle.dataset.vendor;
                     if (activeProviders.has(vendor)) {
                         toggle.classList.add('active');
+                        toggle.setAttribute('aria-pressed', 'true');
                     } else {
                         toggle.classList.remove('active');
+                        toggle.setAttribute('aria-pressed', 'false');
                     }
                 });
             } else {
@@ -601,6 +641,7 @@ function generateHTML(platforms) {
                 toggles.forEach(toggle => {
                     activeProviders.add(toggle.dataset.vendor);
                     toggle.classList.add('active');
+                    toggle.setAttribute('aria-pressed', 'true');
                 });
             }
 
@@ -628,9 +669,11 @@ function generateHTML(platforms) {
                 if (activeProviders.size === 1) return;
                 activeProviders.delete(vendorSlug);
                 toggle.classList.remove('active');
+                toggle.setAttribute('aria-pressed', 'false');
             } else {
                 activeProviders.add(vendorSlug);
                 toggle.classList.add('active');
+                toggle.setAttribute('aria-pressed', 'true');
             }
 
             updateURL();
@@ -841,6 +884,7 @@ function generateAboutHTML() {
     </style>
 </head>
 <body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
     <header>
         <h1><a href="index.html" onclick="passTheme(this)" style="color: inherit; text-decoration: none;">🤖 AI Feature Tracker</a></h1>
         <div class="header-meta">
@@ -849,7 +893,7 @@ function generateAboutHTML() {
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓 Theme</button>
         </div>
     </header>
-    <div class="container">
+    <div class="container" id="main-content">
         <div class="about-content">
             ${content}
         </div>
@@ -859,6 +903,7 @@ function generateAboutHTML() {
                 Community-maintained. Found an error?
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/issues">Open an issue</a> or
                 <a href="https://github.com/snapsynapse/ai-feature-tracker/pulls">submit a PR</a>.
+                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance" style="margin-left: 8px; vertical-align: middle;"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
             </p>
             <p style="margin-top: 8px;">
                 Made by <a href="https://snapsynapse.com/">Snap Synapse</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | You're welcome.
