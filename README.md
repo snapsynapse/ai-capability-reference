@@ -108,7 +108,40 @@ See [data/_schema.md](data/_schema.md) for the full specification.
 
 ## Deployment
 
-The site auto-deploys to GitHub Pages when changes are merged to `main`. The GitHub Action runs `scripts/build.js` and commits the updated `docs/index.html`.
+The site auto-deploys via GitHub Actions when changes are pushed to `main`.
+
+### How it works
+
+1. **Build job** (`.github/workflows/build.yml`)
+   - Runs `node scripts/build.js` to regenerate `docs/index.html` and `docs/about.html`
+   - If output changed, commits it back to `main` with `[skip ci]` to prevent loops
+   - Runs on both pushes and PRs (PRs only validate the build, no commit)
+
+2. **Deploy job** (same workflow)
+   - Uploads `docs/` folder to GitHub Pages
+   - Only runs on pushes to `main`, not PRs
+
+3. **FTP deploy** (`.github/workflows/deploy-ftp.yml`)
+   - Parallel deployment to snapsynapse.com via locked ftp
+   - Requires `FTP_HOST`, `FTP_USER`, `FTP_PASS` secrets
+
+### GitHub Pages setup
+
+To enable GitHub Pages on a fork:
+
+1. Go to **Settings → Pages**
+2. Under "Build and deployment", select **GitHub Actions**
+3. The workflow will deploy to `https://<username>.github.io/ai-feature-tracker/`
+
+### Manual build
+
+```bash
+node scripts/build.js
+```
+
+Output files:
+- `docs/index.html` — Main dashboard
+- `docs/about.html` — About page (generated from README.md)
 
 ## License
 
@@ -117,8 +150,7 @@ MIT - see [LICENSE](LICENSE)
 ## Credits
 
 Created by [SnapSynapse](https://snapsynapse.com) for the AI training community.
-
-Built with help from Claude.
+With help from Claude Code, of course.
 
 ---
 

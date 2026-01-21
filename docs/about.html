@@ -147,8 +147,40 @@
 
 <h2>Deployment</h2>
 
-<p>The site auto-deploys to GitHub Pages when changes are merged to <code>main</code>. The GitHub Action runs <code>scripts/build.js</code> and commits the updated <code>docs/index.html</code>.</p>
+<p>The site auto-deploys via GitHub Actions when changes are pushed to <code>main</code>.</p>
 
+<h3>How it works</h3>
+
+<p>1. <strong>Build job</strong> (<code>.github/workflows/build.yml</code>)</p>
+<p>   - Runs <code>node scripts/build.js</code> to regenerate <code>docs/index.html</code> and <code>docs/about.html</code></p>
+<p>   - If output changed, commits it back to <code>main</code> with <code>[skip ci]</code> to prevent loops</p>
+<p>   - Runs on both pushes and PRs (PRs only validate the build, no commit)</p>
+
+<p>2. <strong>Deploy job</strong> (same workflow)</p>
+<p>   - Uploads <code>docs/</code> folder to GitHub Pages</p>
+<p>   - Only runs on pushes to <code>main</code>, not PRs</p>
+
+<p>3. <strong>FTP deploy</strong> (<code>.github/workflows/deploy-ftp.yml</code>)</p>
+<p>   - Parallel deployment to snapsynapse.com via locked ftp</p>
+<p>   - Requires <code>FTP_HOST</code>, <code>FTP_USER</code>, <code>FTP_PASS</code> secrets</p>
+
+<h3>GitHub Pages setup</h3>
+
+<p>To enable GitHub Pages on a fork:</p>
+
+<p>1. Go to <strong>Settings → Pages</strong></p>
+<p>2. Under "Build and deployment", select <strong>GitHub Actions</strong></p>
+<p>3. The workflow will deploy to <code>https://<username>.github.io/ai-feature-tracker/</code></p>
+
+<h3>Manual build</h3>
+
+<pre><code>node scripts/build.js
+<p></code></pre></p>
+
+<p>Output files:</p>
+<ul><li><code>docs/index.html</code> — Main dashboard</li>
+<li><code>docs/about.html</code> — About page (generated from README.md)</li>
+<p></ul></p>
 <h2>License</h2>
 
 <p>MIT - see <a href="LICENSE">LICENSE</a></p>
@@ -156,8 +188,7 @@
 <h2>Credits</h2>
 
 <p>Created by <a href="https://snapsynapse.com">SnapSynapse</a> for the AI training community.</p>
-
-<p>Built with help from Claude.</p>
+<p>With help from Claude Code, of course.</p>
 
 <hr>
 
@@ -173,7 +204,13 @@
                 <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance" style="margin-left: 8px; vertical-align: middle;"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
             </p>
             <p style="margin-top: 8px;">
-                Made by <a href="https://snapsynapse.com/">Snap Synapse</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | You're welcome.
+                &copy; 2026 Made by <a href="https://snapsynapse.com/">Snap Synapse</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | You're welcome.
+            </p>
+            <p style="margin-top: 12px;">
+                <a href="https://github.com/snapsynapse/ai-feature-tracker" class="footer-social" title="Star on GitHub">⭐ Star</a>
+                <a href="https://signalsandsubtractions.substack.com/" class="footer-social" title="Subscribe on Substack"><img src="https://substack.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Substack</a>
+                <a href="https://www.linkedin.com/in/samrogers/" class="footer-social" title="Connect on LinkedIn"><img src="https://www.linkedin.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">LinkedIn</a>
+                <a href="https://www.testingcatalog.com/tag/release/" class="footer-social" title="Latest News"><img src="https://www.testingcatalog.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Latest News</a>
             </p>
         </footer>
     </div>

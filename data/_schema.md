@@ -153,6 +153,7 @@ These three dates separate **absolute truth** from **confidence**:
 | `agents` | Autonomous task execution |
 | `local-files` | Local file/document handling |
 | `cloud-files` | Cloud storage integration (Drive, OneDrive, etc.) |
+| `integrations` | External service connections (MCP, connectors, APIs) |
 | `video` | Video generation or editing |
 | `other` | Doesn't fit other categories |
 

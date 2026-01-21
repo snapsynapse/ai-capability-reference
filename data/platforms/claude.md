@@ -358,8 +358,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
-| Verified | 2026-01-20T12:00Z |
-| Checked | 2026-01-20T12:00Z |
+| Verified | 2026-01-21T12:00Z |
+| Checked | 2026-01-21T12:00Z |
 
 ### Availability
 

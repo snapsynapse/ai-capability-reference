@@ -44,8 +44,10 @@ html {
     --text-primary: #e0e0e0;
     --text-secondary: #a0a0a0;
     --text-heading: #fff;
+    --text: #e0e0e0;
     --card-bg: #1e1e30;
     --card-border: #3a3a4a;
+    --border: #3a3a4a;
     --input-bg: #252538;
     --accent: #4fc3f7;
     --accent-bg: #0f3460;
@@ -63,15 +65,16 @@ html {
     --status-partial-bg: #5a3000;
 }
 
-body.light-mode,
-html.light-mode {
+:is(html, body).light-mode {
     --bg-gradient-start: #f5f5f7;
     --bg-gradient-end: #e8e8ed;
     --text-primary: #2d2d2d;
     --text-secondary: #595959;
     --text-heading: #111;
+    --text: #2d2d2d;
     --card-bg: #fff;
     --card-border: #ccc;
+    --border: #ccc;
     --input-bg: #f0f0f5;
     --accent: #0055aa;
     --accent-bg: #e6f2ff;
@@ -120,10 +123,8 @@ header, .site-header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
 }
 
-html.light-mode header,
-html.light-mode .site-header,
-body.light-mode header,
-body.light-mode .site-header {
+:is(html, body).light-mode header,
+:is(html, body).light-mode .site-header {
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
 }
 
@@ -305,16 +306,14 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     margin-left: 8px;
 }
 
-html.light-mode .platform-status-link,
-body.light-mode .platform-status-link {
+:is(html, body).light-mode .platform-status-link {
     background: #d4edda;
     color: #155724;
 }
 
 .platform-status-link:hover { background: #2a4a2a; }
 
-html.light-mode .platform-status-link:hover,
-body.light-mode .platform-status-link:hover { background: #c3e6cb; }
+:is(html, body).light-mode .platform-status-link:hover { background: #c3e6cb; }
 
 .platform-status-link:focus,
 .platform-status-link:focus-visible {
@@ -404,8 +403,7 @@ body.light-mode .platform-status-link:hover { background: #c3e6cb; }
     transform: translateY(-2px);
 }
 
-html.light-mode .feature-card:hover,
-body.light-mode .feature-card:hover {
+:is(html, body).light-mode .feature-card:hover {
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
 }
 
@@ -414,8 +412,7 @@ body.light-mode .feature-card:hover {
     box-shadow: 0 0 0 2px rgba(79, 195, 247, 0.3);
 }
 
-html.light-mode .feature-card.keyboard-focus,
-body.light-mode .feature-card.keyboard-focus {
+:is(html, body).light-mode .feature-card.keyboard-focus {
     box-shadow: 0 0 0 2px rgba(0, 85, 170, 0.3);
 }
 
@@ -465,11 +462,8 @@ body.light-mode .feature-card.keyboard-focus {
 .badge.avail-preview { background: #9c27b0; color: #fff; }
 .badge.avail-deprecated { background: #757575; color: #fff; }
 
-html.light-mode .badge.avail-ga,
-body.light-mode .badge.avail-ga { background: #2e7d32; color: #fff; }
-
-html.light-mode .badge.avail-beta,
-body.light-mode .badge.avail-beta { background: #e65100; color: #fff; }
+:is(html, body).light-mode .badge.avail-ga { background: #2e7d32; color: #fff; }
+:is(html, body).light-mode .badge.avail-beta { background: #e65100; color: #fff; }
 
 /* Gating badges (access type) - WCAG compliant */
 .badge.gate-free { background: #1976d2; color: #fff; }
@@ -477,17 +471,10 @@ body.light-mode .badge.avail-beta { background: #e65100; color: #fff; }
 .badge.gate-invite { background: #5c1a3a; color: #f9a8d4; border: 1px solid #f9a8d4; }
 .badge.gate-org { background: #3a5c1a; color: #bef264; border: 1px solid #bef264; }
 
-html.light-mode .badge.gate-free,
-body.light-mode .badge.gate-free { background: #1565c0; color: #fff; }
-
-html.light-mode .badge.gate-paid,
-body.light-mode .badge.gate-paid { background: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
-
-html.light-mode .badge.gate-invite,
-body.light-mode .badge.gate-invite { background: #fce4ec; color: #880e4f; border: 1px solid #880e4f; }
-
-html.light-mode .badge.gate-org,
-body.light-mode .badge.gate-org { background: #f1f8e9; color: #33691e; border: 1px solid #33691e; }
+:is(html, body).light-mode .badge.gate-free { background: #1565c0; color: #fff; }
+:is(html, body).light-mode .badge.gate-paid { background: #e3f2fd; color: #0d47a1; border: 1px solid #0d47a1; }
+:is(html, body).light-mode .badge.gate-invite { background: #fce4ec; color: #880e4f; border: 1px solid #880e4f; }
+:is(html, body).light-mode .badge.gate-org { background: #f1f8e9; color: #33691e; border: 1px solid #33691e; }
 
 /* Availability grid */
 .avail-grid {
@@ -584,17 +571,10 @@ body.light-mode .badge.gate-org { background: #f1f8e9; color: #33691e; border: 1
 .plat-icon.soon { background: #555; color: #aaa; }
 .plat-icon.partial { background: #5a3000; color: #ffb347; }
 
-html.light-mode .plat-icon.yes,
-body.light-mode .plat-icon.yes { background: #2e7d32; color: #fff; }
-
-html.light-mode .plat-icon.no,
-body.light-mode .plat-icon.no { background: #ccc; color: #555; }
-
-html.light-mode .plat-icon.soon,
-body.light-mode .plat-icon.soon { background: #bbb; color: #444; }
-
-html.light-mode .plat-icon.partial,
-body.light-mode .plat-icon.partial { background: #fff3cd; color: #c45500; }
+:is(html, body).light-mode .plat-icon.yes { background: #2e7d32; color: #fff; }
+:is(html, body).light-mode .plat-icon.no { background: #ccc; color: #555; }
+:is(html, body).light-mode .plat-icon.soon { background: #bbb; color: #444; }
+:is(html, body).light-mode .plat-icon.partial { background: #fff3cd; color: #c45500; }
 
 /* Talking point */
 .talking-point {
@@ -618,8 +598,7 @@ body.light-mode .plat-icon.partial { background: #fff3cd; color: #c45500; }
 .talking-point strong { color: var(--accent); }
 .talking-point.copied { background: #1b5e20 !important; color: #fff !important; }
 
-html.light-mode .talking-point.copied,
-body.light-mode .talking-point.copied { background: #2e7d32 !important; color: #fff !important; }
+:is(html, body).light-mode .talking-point.copied { background: #2e7d32 !important; color: #fff !important; }
 
 /* Date row */
 .dates-row {
@@ -932,4 +911,28 @@ footer a:hover {
     .talking-point {
         padding: 14px 16px;
     }
+}
+
+/* Footer social links */
+.footer-social {
+    display: inline-block;
+    background: var(--badge-bg);
+    color: var(--text-primary);
+    padding: 6px 14px;
+    border-radius: 16px;
+    font-size: 0.8rem;
+    text-decoration: none;
+    margin: 0 4px;
+    transition: background 0.2s;
+}
+
+.footer-social:hover {
+    background: var(--input-bg);
+    color: var(--accent);
+}
+
+.footer-social:focus,
+.footer-social:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
