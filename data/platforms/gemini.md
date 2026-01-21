@@ -426,3 +426,57 @@ Available in supported regions.
 | Date | Change |
 |------|--------|
 | 2024-08-13T12:00Z | Initial entry |
+
+---
+
+## Extensions
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | free |
+| URL | https://support.google.com/gemini/answer/13695044 |
+| Launched | 2023-09-19T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Standard | Google services integration |
+| AI Premium | ✅ | Full | All extensions |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Web-based |
+| macOS | ✅ | Web-based |
+| Linux | ❌ |  |
+| iOS | ✅ | Gemini app |
+| Android | ✅ | Gemini app, deepest integration |
+| web | ✅ | gemini.google.com |
+| terminal | ✅ | Gemini CLI Extensions (MCP-based) |
+| API | ✅ | Gemini API |
+
+### Regional
+
+Available globally where Gemini is available.
+
+### Talking Point
+
+> "Gemini Extensions connect to Google services like Gmail, Drive, YouTube, Maps, and more. **Available on all plans including free.** The Gemini CLI also supports extensions via MCP for developers."
+
+### Sources
+
+- [Gemini Extensions](https://support.google.com/gemini/answer/13695044)
+- [Gemini CLI Extensions](https://blog.google/technology/developers/gemini-cli-extensions/)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-10-01T12:00Z | Gemini CLI Extensions added with MCP support |
+| 2023-09-19T12:00Z | Initial entry |

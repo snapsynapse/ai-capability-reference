@@ -78,11 +78,11 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 
 ---
 
-## Custom GPTs
+## Custom GPTs + Actions
 
 | Property | Value |
 |----------|-------|
-| Category | agents |
+| Category | integrations |
 | Status | ga |
 | Gating | paid |
 | URL | https://chatgpt.com/gpts |
@@ -96,7 +96,7 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 |------|-----------|--------|-------|
 | Free | ⚠️ | Use only | Can use public GPTs, cannot create |
 | Go | ⚠️ | Use only | Can use public GPTs, cannot create |
-| Plus | ✅ | Create & use | Full access to GPT Builder |
+| Plus | ✅ | Create & use | Full access to GPT Builder + Actions |
 | Pro | ✅ | Create & use | Full access |
 | Team | ✅ | Create & share | Private GPTs for team |
 | Enterprise | ✅ | Create & share | Private GPTs + admin controls |
@@ -120,17 +120,19 @@ Available globally where ChatGPT is available.
 
 ### Talking Point
 
-> "Custom GPTs let you create specialized AI assistants with custom instructions, knowledge files, and actions. **Anyone can use public GPTs**, but creating your own requires Plus ($20/mo) or higher. Team and Enterprise add private sharing."
+> "Custom GPTs let you create specialized AI assistants with custom instructions, knowledge files, and **Actions for external API integrations**. Actions replaced the old plugin system in April 2024. **Anyone can use public GPTs**, but creating your own with Actions requires Plus ($20/mo) or higher."
 
 ### Sources
 
 - [Creating a GPT](https://help.openai.com/en/articles/8554397-creating-a-gpt)
+- [GPT Actions Documentation](https://platform.openai.com/docs/actions)
 - [GPT Store](https://chatgpt.com/gpts)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2024-04-09T12:00Z | Plugins deprecated, replaced by Actions |
 | 2023-11-06T12:00Z | Initial entry |
 
 ---

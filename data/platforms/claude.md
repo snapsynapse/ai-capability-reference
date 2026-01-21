@@ -346,3 +346,117 @@ Available globally.
 | Date | Change |
 |------|--------|
 | 2024-03-04T12:00Z | Initial entry |
+
+---
+
+## Skills
+
+| Property | Value |
+|----------|-------|
+| Category | agents |
+| Status | ga |
+| Gating | paid |
+| URL | https://www.anthropic.com/news/skills |
+| Launched | 2025-10-16T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Pro | ✅ | Standard | Full access |
+| Max 5x | ✅ | Extended | Higher limits |
+| Max 20x | ✅ | Extended | Higher limits |
+| Team | ✅ | Standard | Shared skills |
+| Enterprise | ✅ | Custom | |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Desktop app |
+| macOS | ✅ | Desktop app |
+| Linux | ❌ |  |
+| iOS | ✅ | Mobile app |
+| Android | ✅ | Mobile app |
+| web | ✅ | claude.ai |
+| terminal | ✅ | Via Claude Code |
+| API | ✅ | Anthropic API |
+
+### Regional
+
+Available globally where Claude is available.
+
+### Talking Point
+
+> "Skills are modular folders of instructions and resources that Claude can load on demand to perform specialized tasks—like creating Office documents or running workflows. **Available on Pro and above**; not available on the free tier."
+
+### Sources
+
+- [Introducing Skills](https://www.anthropic.com/news/skills)
+- [Skills Documentation](https://docs.anthropic.com/en/docs/skills)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-10-16T12:00Z | Initial entry |
+
+---
+
+## MCP (Model Context Protocol)
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | free |
+| URL | https://www.anthropic.com/news/model-context-protocol |
+| Launched | 2024-11-25T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Standard | Full access |
+| Pro | ✅ | Standard | Full access |
+| Max 5x | ✅ | Standard | Full access |
+| Max 20x | ✅ | Standard | Full access |
+| Team | ✅ | Standard | Full access |
+| Enterprise | ✅ | Custom | Advanced deployment options |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Claude Desktop app |
+| macOS | ✅ | Claude Desktop app |
+| Linux | ❌ |  |
+| iOS | ❌ | Desktop only |
+| Android | ❌ | Desktop only |
+| web | ❌ | Desktop app only |
+| terminal | ✅ | Via Claude Code |
+| API | ✅ | Anthropic API |
+
+### Regional
+
+Available globally where Claude is available.
+
+### Talking Point
+
+> "MCP is an open standard for connecting Claude to external tools and data sources—databases, file systems, APIs. **Available on all plans including free** via the Claude Desktop app."
+
+### Sources
+
+- [Introducing Model Context Protocol](https://www.anthropic.com/news/model-context-protocol)
+- [MCP Documentation](https://docs.claude.com/en/docs/mcp)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-11-25T12:00Z | Initial entry |

@@ -381,3 +381,57 @@ Available globally.
 | Date | Change |
 |------|--------|
 | 2024-10-24T12:00Z | Initial entry |
+
+---
+
+## Enterprise App Connectors
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | paid |
+| URL | https://www.perplexity.ai/enterprise/app-connectors |
+| Launched | 2024-09-01T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Pro | ❌ | — | Not available |
+| Max | ❌ | — | Not available |
+| Enterprise Pro | ✅ | Full | Connected app search |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Web + Comet |
+| macOS | ✅ | Web + Comet |
+| Linux | ❌ |  |
+| iOS | ✅ | Mobile app |
+| Android | ✅ | Mobile app |
+| web | ✅ | perplexity.ai |
+| terminal | ❌ |  |
+| API | ✅ | Perplexity API |
+
+### Regional
+
+Available globally where Perplexity Enterprise is available.
+
+### Talking Point
+
+> "Enterprise App Connectors let you search across company files and connected apps like Google Drive, Confluence, and Slack. **Enterprise Pro only ($40/user/mo)**—not available on consumer plans."
+
+### Sources
+
+- [Perplexity Enterprise App Connectors](https://www.perplexity.ai/enterprise/app-connectors)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2024-09-01T12:00Z | Initial entry |

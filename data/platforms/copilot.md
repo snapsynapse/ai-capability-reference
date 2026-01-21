@@ -271,3 +271,58 @@ Available globally.
 | Date | Change |
 |------|--------|
 | 2024-10-01T12:00Z | Initial entry |
+
+---
+
+## Copilot Connectors
+
+| Property | Value |
+|----------|-------|
+| Category | integrations |
+| Status | ga |
+| Gating | paid |
+| URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
+| Launched | 2023-11-01T12:00Z |
+| Verified | 2026-01-20T12:00Z |
+| Checked | 2026-01-20T12:00Z |
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Copilot Pro | ❌ | — | Not available |
+| M365 Copilot | ✅ | Full | 100+ connectors available |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | M365 apps |
+| macOS | ✅ | M365 apps |
+| Linux | ❌ |  |
+| iOS | ✅ | M365 mobile apps |
+| Android | ✅ | M365 mobile apps |
+| web | ✅ | M365 web apps |
+| terminal | ❌ |  |
+| API | ✅ | Microsoft Graph API |
+
+### Regional
+
+Available globally where M365 Copilot is available.
+
+### Talking Point
+
+> "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. MCP support was added in November 2025."
+
+### Sources
+
+- [Copilot Connectors Overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector)
+- [Copilot Connectors Gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2025-11-01T12:00Z | MCP integration added |
+| 2023-11-01T12:00Z | Initial entry |

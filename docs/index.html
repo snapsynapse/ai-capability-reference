@@ -75,7 +75,7 @@
                     <option value="enterprise">Enterprise</option>
                 </select>
             </div>
-            <span class="feature-count" id="featureCount">Showing <strong>46</strong> of <strong>46</strong> features</span>
+            <span class="feature-count" id="featureCount">Showing <strong>51</strong> of <strong>51</strong> features</span>
             <a href="definitions.html" class="definitions-link" onclick="passTheme(this)">ℹ️ What's this mean?</a>
         </div>
 
@@ -141,9 +141,9 @@
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
                 </div>
-                <div class="feature-card" data-category="agents" data-prices="0_8_20_200_team_enterprise">
+                <div class="feature-card" data-category="integrations" data-prices="0_8_20_200_team_enterprise">
                     <div class="feature-header">
-                        <h3><a href="https://chatgpt.com/gpts" target="_blank" class="feature-link">Custom GPTs</a></h3>
+                        <h3><a href="https://chatgpt.com/gpts" target="_blank" class="feature-link">Custom GPTs + Actions</a></h3>
                         <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-paid">Paid</span></span>
                     </div>
                     <div class="avail-grid">
@@ -176,9 +176,9 @@
                     <div class="platforms-row">
                         <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon yes" title="web">web</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
                     </div>
-                    <div class="talking-point" onclick="copyTalkingPoint(this)">Custom GPTs let you create specialized AI assistants with custom instructions, knowledge files, and actions. <strong>Anyone can use public GPTs</strong>, but creating your own requires Plus ($20/mo) or higher. Team and Enterprise add private sharing.</div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">Custom GPTs let you create specialized AI assistants with custom instructions, knowledge files, and <strong>Actions for external API integrations</strong>. Actions replaced the old plugin system in April 2024. <strong>Anyone can use public GPTs</strong>, but creating your own with Actions requires Plus ($20/mo) or higher.</div>
                     <div class="dates-row">
-                        <span class="date-item launched clickable" onclick="showChangelog('chatgpt-custom-gpts')"><span class="date-label">Launched</span><span class="date-value">2023-11-06T12:00Z</span></span>
+                        <span class="date-item launched clickable" onclick="showChangelog('chatgpt-custom-gpts---actions')"><span class="date-label">Launched</span><span class="date-value">2023-11-06T12:00Z</span></span>
                         <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
@@ -514,6 +514,36 @@
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
                 </div>
+                <div class="feature-card" data-category="integrations" data-prices="">
+                    <div class="feature-header">
+                        <h3><a href="https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector" target="_blank" class="feature-link">Copilot Connectors</a></h3>
+                        <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-paid">Paid</span></span>
+                    </div>
+                    <div class="avail-grid">
+                        
+                        <div class="avail-item">
+                            <span class="plan">Free</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Copilot Pro</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">M365 Copilot</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                    </div>
+                    <div class="platforms-row">
+                        <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon yes" title="web">web</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                    </div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. <strong>Requires M365 Copilot ($30/user/mo)</strong>—not available on free or Pro plans. MCP support was added in November 2025.</div>
+                    <div class="dates-row">
+                        <span class="date-item launched clickable" onclick="showChangelog('microsoft copilot-copilot-connectors')"><span class="date-label">Launched</span><span class="date-value">2023-11-01T12:00Z</span></span>
+                        <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                        <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -741,6 +771,32 @@
                     <div class="talking-point" onclick="copyTalkingPoint(this)">Gemini Live enables natural voice conversations with Gemini. <strong>Basic voice is free; full Gemini Live with interruption and multi-turn requires AI Premium ($20/mo).</strong> Currently mobile only.</div>
                     <div class="dates-row">
                         <span class="date-item launched clickable" onclick="showChangelog('gemini-gemini-live--voice-mode-')"><span class="date-label">Launched</span><span class="date-value">2024-08-13T12:00Z</span></span>
+                        <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                        <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                    </div>
+                </div>
+                <div class="feature-card" data-category="integrations" data-prices="0">
+                    <div class="feature-header">
+                        <h3><a href="https://support.google.com/gemini/answer/13695044" target="_blank" class="feature-link">Extensions</a></h3>
+                        <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-free">Free</span></span>
+                    </div>
+                    <div class="avail-grid">
+                        
+                        <div class="avail-item">
+                            <span class="plan">Free</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">AI Premium</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                    </div>
+                    <div class="platforms-row">
+                        <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                    </div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">Gemini Extensions connect to Google services like Gmail, Drive, YouTube, Maps, and more. <strong>Available on all plans including free.</strong> The Gemini CLI also supports extensions via MCP for developers.</div>
+                    <div class="dates-row">
+                        <span class="date-item launched clickable" onclick="showChangelog('gemini-extensions')"><span class="date-label">Launched</span><span class="date-value">2023-09-19T12:00Z</span></span>
                         <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
@@ -983,6 +1039,90 @@
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
                 </div>
+                <div class="feature-card" data-category="agents" data-prices="20_100_200_team_enterprise">
+                    <div class="feature-header">
+                        <h3><a href="https://www.anthropic.com/news/skills" target="_blank" class="feature-link">Skills</a></h3>
+                        <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-paid">Paid</span></span>
+                    </div>
+                    <div class="avail-grid">
+                        
+                        <div class="avail-item">
+                            <span class="plan">Free</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Pro</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Max 5x</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Max 20x</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Team</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Enterprise</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                    </div>
+                    <div class="platforms-row">
+                        <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                    </div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">Skills are modular folders of instructions and resources that Claude can load on demand to perform specialized tasks—like creating Office documents or running workflows. <strong>Available on Pro and above</strong>; not available on the free tier.</div>
+                    <div class="dates-row">
+                        <span class="date-item launched clickable" onclick="showChangelog('claude-skills')"><span class="date-label">Launched</span><span class="date-value">2025-10-16T12:00Z</span></span>
+                        <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                        <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                    </div>
+                </div>
+                <div class="feature-card" data-category="integrations" data-prices="0_20_100_200_team_enterprise">
+                    <div class="feature-header">
+                        <h3><a href="https://www.anthropic.com/news/model-context-protocol" target="_blank" class="feature-link">MCP (Model Context Protocol)</a></h3>
+                        <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-free">Free</span></span>
+                    </div>
+                    <div class="avail-grid">
+                        
+                        <div class="avail-item">
+                            <span class="plan">Free</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Pro</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Max 5x</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Max 20x</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Team</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Enterprise</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                    </div>
+                    <div class="platforms-row">
+                        <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon no" title="iOS">iOS</span><span class="plat-icon no" title="Android">Android</span><span class="plat-icon no" title="web">web</span><span class="plat-icon yes" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                    </div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">MCP is an open standard for connecting Claude to external tools and data sources—databases, file systems, APIs. <strong>Available on all plans including free</strong> via the Claude Desktop app.</div>
+                    <div class="dates-row">
+                        <span class="date-item launched clickable" onclick="showChangelog('claude-mcp--model-context-protocol-')"><span class="date-label">Launched</span><span class="date-value">2024-11-25T12:00Z</span></span>
+                        <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                        <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                    </div>
+                </div>
             </div>
         </section>
 
@@ -1205,6 +1345,40 @@
                     <div class="talking-point" onclick="copyTalkingPoint(this)">Perplexity Voice allows hands-free search on mobile. <strong>Available on all tiers including free</strong>—just tap the microphone in the app.</div>
                     <div class="dates-row">
                         <span class="date-item launched clickable" onclick="showChangelog('perplexity-voice-mode')"><span class="date-label">Launched</span><span class="date-value">2024-10-24T12:00Z</span></span>
+                        <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                        <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
+                    </div>
+                </div>
+                <div class="feature-card" data-category="integrations" data-prices="team">
+                    <div class="feature-header">
+                        <h3><a href="https://www.perplexity.ai/enterprise/app-connectors" target="_blank" class="feature-link">Enterprise App Connectors</a></h3>
+                        <span class="badges"><span class="badge avail-ga">GA</span><span class="badge gate-paid">Paid</span></span>
+                    </div>
+                    <div class="avail-grid">
+                        
+                        <div class="avail-item">
+                            <span class="plan">Free</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Pro</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Max</span>
+                            <span class="status"><span class="avail no">✗</span></span>
+                        </div>
+                        <div class="avail-item">
+                            <span class="plan">Enterprise Pro</span>
+                            <span class="status"><span class="avail yes">✓</span></span>
+                        </div>
+                    </div>
+                    <div class="platforms-row">
+                        <span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon yes" title="web">web</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                    </div>
+                    <div class="talking-point" onclick="copyTalkingPoint(this)">Enterprise App Connectors let you search across company files and connected apps like Google Drive, Confluence, and Slack. <strong>Enterprise Pro only ($40/user/mo)</strong>—not available on consumer plans.</div>
+                    <div class="dates-row">
+                        <span class="date-item launched clickable" onclick="showChangelog('perplexity-enterprise-app-connectors')"><span class="date-label">Launched</span><span class="date-value">2024-09-01T12:00Z</span></span>
                         <span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">2026-01-20T12:00Z</span></span>
                         <span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">2026-01-20T12:00Z</span></span>
                     </div>
@@ -1644,13 +1818,14 @@
                 checked: "2026-01-20T12:00Z",
                 changes: [{ date: "2025-07-17T12:00Z", change: "Initial entry" }]
             },
-            "chatgpt-custom-gpts": {
-                name: "Custom GPTs",
+            "chatgpt-custom-gpts---actions": {
+                name: "Custom GPTs + Actions",
                 platform: "ChatGPT",
                 launched: "2023-11-06T12:00Z",
                 verified: "2026-01-20T12:00Z",
                 checked: "2026-01-20T12:00Z",
-                changes: [{ date: "2023-11-06T12:00Z", change: "Initial entry" }]
+                changes: [{ date: "2024-04-09T12:00Z", change: "Plugins deprecated, replaced by Actions" },
+                { date: "2023-11-06T12:00Z", change: "Initial entry" }]
             },
             "chatgpt-advanced-voice-mode": {
                 name: "Advanced Voice Mode",
@@ -1740,6 +1915,22 @@
                 checked: "2026-01-20T12:00Z",
                 changes: [{ date: "2024-03-04T12:00Z", change: "Initial entry" }]
             },
+            "claude-skills": {
+                name: "Skills",
+                platform: "Claude",
+                launched: "2025-10-16T12:00Z",
+                verified: "2026-01-20T12:00Z",
+                checked: "2026-01-20T12:00Z",
+                changes: [{ date: "2025-10-16T12:00Z", change: "Initial entry" }]
+            },
+            "claude-mcp--model-context-protocol-": {
+                name: "MCP (Model Context Protocol)",
+                platform: "Claude",
+                launched: "2024-11-25T12:00Z",
+                verified: "2026-01-20T12:00Z",
+                checked: "2026-01-20T12:00Z",
+                changes: [{ date: "2024-11-25T12:00Z", change: "Initial entry" }]
+            },
             "microsoft copilot-copilot-in-office-apps": {
                 name: "Copilot in Office Apps",
                 platform: "Microsoft Copilot",
@@ -1779,6 +1970,15 @@
                 verified: "2026-01-20T12:00Z",
                 checked: "2026-01-20T12:00Z",
                 changes: [{ date: "2024-10-01T12:00Z", change: "Initial entry" }]
+            },
+            "microsoft copilot-copilot-connectors": {
+                name: "Copilot Connectors",
+                platform: "Microsoft Copilot",
+                launched: "2023-11-01T12:00Z",
+                verified: "2026-01-20T12:00Z",
+                checked: "2026-01-20T12:00Z",
+                changes: [{ date: "2025-11-01T12:00Z", change: "MCP integration added" },
+                { date: "2023-11-01T12:00Z", change: "Initial entry" }]
             },
             "gemini-gemini-advanced": {
                 name: "Gemini Advanced",
@@ -1843,6 +2043,15 @@
                 verified: "2026-01-20T12:00Z",
                 checked: "2026-01-20T12:00Z",
                 changes: [{ date: "2024-08-13T12:00Z", change: "Initial entry" }]
+            },
+            "gemini-extensions": {
+                name: "Extensions",
+                platform: "Gemini",
+                launched: "2023-09-19T12:00Z",
+                verified: "2026-01-20T12:00Z",
+                checked: "2026-01-20T12:00Z",
+                changes: [{ date: "2025-10-01T12:00Z", change: "Gemini CLI Extensions added with MCP support" },
+                { date: "2023-09-19T12:00Z", change: "Initial entry" }]
             },
             "grok-grok-chat": {
                 name: "Grok Chat",
@@ -2003,12 +2212,20 @@
                 verified: "2026-01-20T12:00Z",
                 checked: "2026-01-20T12:00Z",
                 changes: [{ date: "2024-10-24T12:00Z", change: "Initial entry" }]
+            },
+            "perplexity-enterprise-app-connectors": {
+                name: "Enterprise App Connectors",
+                platform: "Perplexity",
+                launched: "2024-09-01T12:00Z",
+                verified: "2026-01-20T12:00Z",
+                checked: "2026-01-20T12:00Z",
+                changes: [{ date: "2024-09-01T12:00Z", change: "Initial entry" }]
             }
         };
     </script>
 
     <script>
-        const TOTAL_FEATURES = 46;
+        const TOTAL_FEATURES = 51;
 
         function copyTalkingPoint(el) {
             const text = el.innerText;
