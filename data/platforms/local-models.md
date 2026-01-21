@@ -23,7 +23,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | free |
 | URL | https://ai.meta.com/llama/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-12-06T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -63,7 +63,7 @@ No restrictions - runs locally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-12-06T12:00Z | Initial entry |
 
 ---
 
@@ -75,7 +75,7 @@ No restrictions - runs locally.
 | Status | ga |
 | Gating | free |
 | URL | https://mistral.ai/technology/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-07-18T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -115,7 +115,7 @@ No restrictions - runs locally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-07-18T12:00Z | Initial entry |
 
 ---
 
@@ -127,7 +127,7 @@ No restrictions - runs locally.
 | Status | ga |
 | Gating | free |
 | URL | https://github.com/deepseek-ai/DeepSeek-V3 |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-12-27T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -168,7 +168,7 @@ No restrictions - runs locally. Note: DeepSeek is a Chinese company; some orgs r
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-12-27T12:00Z | Initial entry |
 
 ---
 
@@ -180,7 +180,7 @@ No restrictions - runs locally. Note: DeepSeek is a Chinese company; some orgs r
 | Status | ga |
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-09-19T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -220,7 +220,7 @@ No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs re
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-09-19T12:00Z | Initial entry |
 
 ---
 
@@ -232,7 +232,7 @@ No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs re
 | Status | ga |
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-09-19T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -272,7 +272,7 @@ No restrictions - runs locally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-09-19T12:00Z | Initial entry |
 
 ---
 
@@ -284,7 +284,7 @@ No restrictions - runs locally.
 | Status | ga |
 | Gating | free |
 | URL | https://mistral.ai/news/codestral/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-05-29T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -324,7 +324,7 @@ No restrictions - runs locally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-05-29T12:00Z | Initial entry |
 
 ---
 
@@ -336,7 +336,7 @@ No restrictions - runs locally.
 | Status | ga |
 | Gating | free |
 | URL | https://ollama.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-07-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -377,4 +377,4 @@ No restrictions.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-07-01T12:00Z | Initial entry |

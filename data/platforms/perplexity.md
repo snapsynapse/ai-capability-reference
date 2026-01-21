@@ -26,7 +26,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/comet |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-07-09T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -68,7 +68,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-07-09T12:00Z | Initial entry |
 
 ---
 
@@ -80,7 +80,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/introducing-assistant |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-11-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -120,7 +120,7 @@ Available globally via Comet browser.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-11-01T12:00Z | Initial entry |
 
 ---
 
@@ -132,7 +132,7 @@ Available globally via Comet browser.
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/pro |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-07-02T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -172,7 +172,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-07-02T12:00Z | Initial entry |
 
 ---
 
@@ -184,7 +184,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-01-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -224,7 +224,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-01-01T12:00Z | Initial entry |
 
 ---
 
@@ -236,7 +236,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/pro |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-01-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -276,7 +276,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-01-01T12:00Z | Initial entry |
 
 ---
 
@@ -288,7 +288,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/introducing-spaces |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-10-17T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -328,7 +328,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-10-17T12:00Z | Initial entry |
 
 ---
 
@@ -340,7 +340,7 @@ Available globally.
 | Status | ga |
 | Gating | free |
 | URL | https://www.perplexity.ai/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-10-24T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -380,4 +380,4 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-10-24T12:00Z | Initial entry |

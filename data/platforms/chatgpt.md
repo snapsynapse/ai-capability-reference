@@ -28,7 +28,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | paid |
 | URL | https://openai.com/index/introducing-chatgpt-agent/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-07-17T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -74,7 +74,7 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-07-17T12:00Z | Initial entry |
 
 ---
 
@@ -86,7 +86,7 @@ Not yet available in EEA/Switzerland. Rolling out globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://chatgpt.com/gpts |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-11-06T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -131,7 +131,7 @@ Available globally where ChatGPT is available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-11-06T12:00Z | Initial entry |
 
 ---
 
@@ -143,7 +143,7 @@ Available globally where ChatGPT is available.
 | Status | ga |
 | Gating | paid |
 | URL | https://help.openai.com/en/articles/8400625-voice-mode |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-09-24T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -186,7 +186,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-09-24T12:00Z | Initial entry |
 
 ---
 
@@ -198,7 +198,7 @@ Available globally.
 | Status | ga |
 | Gating | free |
 | URL | https://openai.com/index/introducing-chatgpt-atlas/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-10-21T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -241,7 +241,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-10-21T12:00Z | Initial entry |
 
 ---
 
@@ -253,7 +253,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | Status | ga |
 | Gating | paid |
 | URL | https://openai.com/index/dall-e-3/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-10-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -295,7 +295,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-10-01T12:00Z | Initial entry |
 
 ---
 
@@ -307,7 +307,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://help.openai.com/en/articles/11011518-chatgpt-deep-research |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-02-03T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -349,7 +349,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-02-03T12:00Z | Initial entry |
 
 ---
 
@@ -361,7 +361,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://openai.com/index/introducing-codex/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-04-16T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -405,4 +405,4 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-04-16T12:00Z | Initial entry |

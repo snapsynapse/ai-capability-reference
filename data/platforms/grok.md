@@ -26,7 +26,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/grok |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-11-04T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -68,7 +68,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-11-04T12:00Z | Initial entry |
 
 ---
 
@@ -80,7 +80,7 @@ Available globally where X is available.
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/blog/grok-image-generation |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-12-09T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -121,7 +121,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-12-09T12:00Z | Initial entry |
 
 ---
 
@@ -133,7 +133,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/blog/grok-deepsearch |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-02-17T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -174,7 +174,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-02-17T12:00Z | Initial entry |
 
 ---
 
@@ -186,7 +186,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/blog/grok-3 |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-02-17T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -227,7 +227,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-02-17T12:00Z | Initial entry |
 
 ---
 
@@ -239,7 +239,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/grok |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-11-04T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -280,7 +280,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-11-04T12:00Z | Initial entry |
 
 ---
 
@@ -292,7 +292,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://x.ai/blog/grok-voice |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2025-02-24T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -334,4 +334,4 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2025-02-24T12:00Z | Initial entry |

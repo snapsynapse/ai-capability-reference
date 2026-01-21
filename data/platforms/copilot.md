@@ -25,7 +25,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | paid |
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-11-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -65,7 +65,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-11-01T12:00Z | Initial entry |
 
 ---
 
@@ -77,7 +77,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://designer.microsoft.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-03-21T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -116,7 +116,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-03-21T12:00Z | Initial entry |
 
 ---
 
@@ -128,7 +128,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://copilot.microsoft.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-02-07T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -167,7 +167,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-02-07T12:00Z | Initial entry |
 
 ---
 
@@ -179,7 +179,7 @@ Available globally.
 | Status | preview |
 | Gating | paid |
 | URL | https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-10-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -218,7 +218,7 @@ Available in preview; limited regions.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-10-01T12:00Z | Initial entry |
 
 ---
 
@@ -230,7 +230,7 @@ Available in preview; limited regions.
 | Status | ga |
 | Gating | free |
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-10-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -270,4 +270,4 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-10-01T12:00Z | Initial entry |

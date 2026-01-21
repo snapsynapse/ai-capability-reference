@@ -25,7 +25,7 @@ last_verified: 2026-01-20
 | Status | ga |
 | Gating | paid |
 | URL | https://gemini.google.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-02-08T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -64,7 +64,7 @@ Available in most countries; some features limited in EU.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-02-08T12:00Z | Initial entry |
 
 ---
 
@@ -76,7 +76,7 @@ Available in most countries; some features limited in EU.
 | Status | ga |
 | Gating | free |
 | URL | https://notebooklm.google.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-12-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -116,7 +116,7 @@ Available globally where Google services are available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-12-01T12:00Z | Initial entry |
 
 ---
 
@@ -128,7 +128,7 @@ Available globally where Google services are available.
 | Status | ga |
 | Gating | free |
 | URL | https://aistudio.google.com/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2023-12-13T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -168,7 +168,7 @@ Available globally where Google services are available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2023-12-13T12:00Z | Initial entry |
 
 ---
 
@@ -180,7 +180,7 @@ Available globally where Google services are available.
 | Status | ga |
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-12-11T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -219,7 +219,7 @@ Available globally where Gemini Advanced is available.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-12-11T12:00Z | Initial entry |
 
 ---
 
@@ -231,7 +231,7 @@ Available globally where Gemini Advanced is available.
 | Status | ga |
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gems-ai/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-08-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -270,7 +270,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-08-01T12:00Z | Initial entry |
 
 ---
 
@@ -282,7 +282,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://workspace.google.com/solutions/ai/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-06-24T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -322,7 +322,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-06-24T12:00Z | Initial entry |
 
 ---
 
@@ -334,7 +334,7 @@ Available globally.
 | Status | ga |
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gemini-imagen-3/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-08-01T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -373,7 +373,7 @@ Limited in some regions due to content policies.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-08-01T12:00Z | Initial entry |
 
 ---
 
@@ -385,7 +385,7 @@ Limited in some regions due to content policies.
 | Status | ga |
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gemini-live/ |
-| Launched | 2026-01-20T12:00Z |
+| Launched | 2024-08-13T12:00Z |
 | Verified | 2026-01-20T12:00Z |
 | Checked | 2026-01-20T12:00Z |
 
@@ -425,4 +425,4 @@ Available in supported regions.
 
 | Date | Change |
 |------|--------|
-| 2026-01-20T12:00Z | Initial entry |
+| 2024-08-13T12:00Z | Initial entry |
