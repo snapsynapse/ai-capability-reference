@@ -180,7 +180,9 @@ function batchUpdateCheckedDates(features, date = null) {
 }
 
 /**
- * Batch update both Checked and Verified dates for features with no changes
+ * Batch update Verified dates for features with no changes
+ * Note: Only updates Verified date. Checked date should be updated separately
+ * via batchUpdateCheckedDates for all checked features.
  * @param {Array<{filepath: string, featureName: string}>} features - Features to update
  * @param {string} date - Date to set (defaults to today)
  * @returns {{success: number, failed: number}} Count of successes and failures
@@ -205,18 +207,12 @@ function batchUpdateVerifiedDates(features, date = null) {
             let modified = false;
 
             for (const featureName of featureNames) {
-                // Update both dates
-                let updated = updateFeatureProperty(content, featureName, 'Checked', dateValue);
+                // Only update Verified date
+                const updated = updateFeatureProperty(content, featureName, 'Verified', dateValue);
                 if (updated) {
                     content = updated;
-                    updated = updateFeatureProperty(content, featureName, 'Verified', dateValue);
-                    if (updated) {
-                        content = updated;
-                        modified = true;
-                        success++;
-                    } else {
-                        failed++;
-                    }
+                    modified = true;
+                    success++;
                 } else {
                     failed++;
                 }
