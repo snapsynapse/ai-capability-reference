@@ -64,14 +64,24 @@ Quick version:
 
 ## Automated Verification
 
-This project includes an automated pricing verification system that uses multiple AI models to cross-reference feature data.
+This project includes an automated feature verification system that uses multiple AI models to cross-reference all feature data.
+
+### What gets verified
+
+- **Pricing tiers** — Which subscription plans have access
+- **Platform availability** — Windows, macOS, Linux, iOS, Android, web, terminal, API
+- **Status** — GA, Beta, Preview, Deprecated
+- **Gating** — Free, Paid, Invite-only, Org-only
+- **Regional availability** — Global vs region-restricted features
+- **URLs** — Feature page links are valid and accessible
 
 ### How it works
 
 1. **Multi-model cascade** — Queries Gemini, Perplexity, Grok (X/Twitter), and Claude
 2. **Bias prevention** — Skips same-provider models (e.g., won't ask Gemini about Google features)
 3. **Consensus required** — Needs 3 models to confirm a change before flagging
-4. **Human review** — Creates issues/PRs for review, never auto-merges
+4. **Auto-changelog** — Confirmed changes are logged to each feature's changelog
+5. **Human review** — Creates issues/PRs for review, never auto-merges
 
 ### Running verification
 
@@ -87,6 +97,15 @@ node scripts/verify-features.js --stale-only
 
 # Dry run (no issues created)
 node scripts/verify-features.js --dry-run
+```
+
+### Link checker
+
+A separate workflow validates all URLs weekly:
+
+```bash
+node scripts/check-links.js              # Check all links
+node scripts/check-links.js --broken-only # Show only broken links
 ```
 
 Requires API keys: `GEMINI_API_KEY`, `PERPLEXITY_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`
