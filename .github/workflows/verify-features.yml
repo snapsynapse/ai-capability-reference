@@ -34,13 +34,15 @@ jobs:
     runs-on: ubuntu-latest
 
     permissions:
-      contents: read
+      contents: write
       issues: write
       pull-requests: write
 
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          persist-credentials: true
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
@@ -79,6 +81,21 @@ jobs:
         run: |
           node scripts/verify-features.js ${{ steps.args.outputs.args }}
         continue-on-error: true
+
+      - name: Commit updated dates
+        if: inputs.dry_run != true
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+
+          # Check if there are changes to commit
+          if git diff --quiet data/platforms/; then
+            echo "No changes to commit"
+          else
+            git add data/platforms/
+            git commit -m "Update Checked/Verified dates [skip ci]"
+            git push
+          fi
 
       - name: Upload verification report
         uses: actions/upload-artifact@v4

@@ -24,8 +24,8 @@ last_verified: 2026-01-20
 | Gating | free |
 | URL | https://mistral.ai/news/codestral/ |
 | Launched | 2024-05-29T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -77,8 +77,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://github.com/deepseek-ai/DeepSeek-V3 |
 | Launched | 2024-12-27T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -131,8 +131,8 @@ No restrictions - runs locally. Note: DeepSeek is a Chinese company; some orgs r
 | Gating | free |
 | URL | https://ai.meta.com/llama/ |
 | Launched | 2024-12-06T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -184,8 +184,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://www.llama.com/models/llama-4/ |
 | Launched | 2025-04-05T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -238,8 +238,8 @@ Llama 4 Community License (commercial use under 700M MAU).
 | Gating | free |
 | URL | https://ollama.com/ |
 | Launched | 2023-07-01T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -292,8 +292,8 @@ No restrictions.
 | Gating | free |
 | URL | https://mistral.ai/technology/ |
 | Launched | 2024-07-18T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -345,8 +345,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://mistral.ai/news/mistral-small-3 |
 | Launched | 2025-01-30T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -401,8 +401,8 @@ No restrictions (Apache 2.0 license).
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5/ |
 | Launched | 2024-09-19T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -454,8 +454,8 @@ No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs re
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen3/ |
 | Launched | 2025-04-28T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
@@ -508,8 +508,8 @@ No restrictions (Apache 2.0 license).
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
 | Launched | 2024-09-19T12:00Z |
-| Verified | 2026-01-21T12:00Z |
-| Checked | 2026-01-21T12:00Z |
+| Verified | 2026-01-29|
+| Checked | 2026-01-29|
 
 ### Availability
 
