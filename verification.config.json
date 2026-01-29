@@ -1,0 +1,83 @@
+{
+  "schedule": {
+    "full_verification": "weekly",
+    "staleness_check": "daily",
+    "staleness_threshold_days": 30
+  },
+  "cascade": {
+    "required_confirmations": 3,
+    "models": [
+      {
+        "name": "gemini",
+        "displayName": "Gemini Flash",
+        "provider": "Google",
+        "type": "web_search"
+      },
+      {
+        "name": "perplexity",
+        "displayName": "Perplexity",
+        "provider": "Perplexity AI",
+        "type": "web_search"
+      },
+      {
+        "name": "grok",
+        "displayName": "Grok",
+        "provider": "xAI",
+        "type": "x_twitter_search"
+      },
+      {
+        "name": "claude",
+        "displayName": "Claude",
+        "provider": "Anthropic",
+        "type": "web_search"
+      }
+    ],
+    "skip_rules": {
+      "Google": "gemini",
+      "Perplexity AI": "perplexity",
+      "xAI": "grok",
+      "Anthropic": "claude"
+    }
+  },
+  "output": {
+    "create_pr": true,
+    "create_issues": true,
+    "update_checked_dates": true,
+    "reports_directory": ".verification-reports"
+  },
+  "rate_limits": {
+    "delay_between_queries_ms": 1000,
+    "delay_between_features_ms": 2000,
+    "max_features_per_run": 100
+  },
+  "platforms": {
+    "chatgpt": {
+      "vendor": "OpenAI",
+      "skip_models": []
+    },
+    "claude": {
+      "vendor": "Anthropic",
+      "skip_models": ["claude"]
+    },
+    "gemini": {
+      "vendor": "Google",
+      "skip_models": ["gemini"]
+    },
+    "perplexity": {
+      "vendor": "Perplexity AI",
+      "skip_models": ["perplexity"]
+    },
+    "grok": {
+      "vendor": "xAI",
+      "skip_models": ["grok"]
+    },
+    "copilot": {
+      "vendor": "Microsoft",
+      "skip_models": []
+    },
+    "local-models": {
+      "vendor": "Various",
+      "skip_models": []
+    }
+  }
+}

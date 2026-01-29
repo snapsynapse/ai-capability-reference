@@ -62,6 +62,37 @@ Quick version:
 2. Include a source link
 3. Submit a PR
 
+## Automated Verification
+
+This project includes an automated pricing verification system that uses multiple AI models to cross-reference feature data.
+
+### How it works
+
+1. **Multi-model cascade** — Queries Gemini, Perplexity, Grok (X/Twitter), and Claude
+2. **Bias prevention** — Skips same-provider models (e.g., won't ask Gemini about Google features)
+3. **Consensus required** — Needs 3 models to confirm a change before flagging
+4. **Human review** — Creates issues/PRs for review, never auto-merges
+
+### Running verification
+
+```bash
+# Verify all features
+node scripts/verify-pricing.js
+
+# Verify a specific platform
+node scripts/verify-pricing.js --platform claude
+
+# Check only stale features (>30 days since last check)
+node scripts/verify-pricing.js --stale-only
+
+# Dry run (no issues created)
+node scripts/verify-pricing.js --dry-run
+```
+
+Requires API keys: `GEMINI_API_KEY`, `PERPLEXITY_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`
+
+See [VERIFICATION.md](VERIFICATION.md) for full documentation.
+
 ## Local Development
 
 ```bash
