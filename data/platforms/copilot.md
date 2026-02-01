@@ -26,8 +26,8 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-01|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -84,7 +84,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -139,8 +139,8 @@ Available globally where M365 Copilot is available.
 | Gating | paid |
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
 | Launched | 2023-11-01T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-01|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -194,7 +194,7 @@ Available globally.
 | URL | https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/ |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -247,7 +247,7 @@ Available in preview; limited regions.
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -299,8 +299,8 @@ Available globally.
 | Gating | paid |
 | URL | https://copilot.microsoft.com/ |
 | Launched | 2023-02-07T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-01|
+| Checked | 2026-02-01|
 
 ### Availability
 
@@ -352,8 +352,8 @@ Available globally.
 | Gating | paid |
 | URL | https://designer.microsoft.com/ |
 | Launched | 2023-03-21T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-01|
+| Checked | 2026-02-01|
 
 ### Availability
 
