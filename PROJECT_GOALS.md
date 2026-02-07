@@ -45,21 +45,23 @@ The entire data layer is markdown files. No database, no build dependencies beyo
 
 ## The information model
 
-The project currently tracks **features** — named product capabilities with availability across subscription tiers and platforms. But features are a vendor-centric framing. The same underlying capability gets different names across platforms, and users often think in terms of what they want to *do*, not what a vendor calls their product.
+The project describes AI tools at three levels of abstraction. All three layers are about *the AI tools themselves* — what they can do, how they're packaged, and what people believe about them.
 
-The long-term direction is to serve the same core information through multiple layers of abstraction:
+### Perceptions (what people believe an AI tool can do)
 
-### Perceptions (what people think they know)
+The outermost layer. Common beliefs, misconceptions, and FAQ-shaped questions *about the tools*. "I heard ChatGPT can browse the web now — can it?" or "Is Claude free?" or "Gemini can't handle long documents, right?" Some of these are true, some were true six months ago, and some were never true. This layer meets people where they are — at the level of what they've heard — and routes them to accurate information about what the AI can actually do.
 
-Common beliefs, misconceptions, and FAQ-shaped questions. Things like "I heard ChatGPT can browse the web now — can it?" or "Is Claude free?" This layer meets people where they are and routes them to accurate information.
+### Capabilities (what an AI tool can actually do)
 
-### Capabilities (what you can do)
+The middle layer. What the tool is genuinely able to do, described in platform-neutral terms. "Analyze uploaded PDFs," "generate images from text prompts," "execute code in a sandbox," "search the web for current information." These are the underlying abilities that exist across platforms under different names. This layer is organized by what the AI can do, not what any vendor calls it.
 
-Cross-platform capability descriptions. "Can I upload a PDF and ask questions about it?" — the answer depends on your platform, plan, and sometimes your region. This layer is organized by *user intent*, not vendor terminology.
+### Features (how a vendor packages and gates an AI's capabilities)
 
-### Features (what vendors ship)
+The innermost layer and the current data model. Named product features — "Artifacts," "Canvas," "Deep Research," "Custom GPTs" — with per-plan availability, platform support, status, and sourced verification dates. This is vendor-specific: it reflects how each company names, bundles, and restricts access to the underlying capabilities.
 
-The current data model. Named product features with per-plan availability, platform support, status, and sourced verification dates. This is the ground truth that the other layers are derived from.
+### How they relate
+
+The layers stack: perceptions are often about capabilities, capabilities are delivered through features, and features are what the data tracks today. A single capability like "analyze uploaded documents" might surface as perceptions ("Claude is better at long documents"), map to a capability ("PDF/document analysis"), and be tracked as features across platforms ("Vision" on ChatGPT, "File uploads" on Claude, "Document understanding" on Gemini — each with different plan availability and limits).
 
 The features layer exists today. The capabilities and perceptions layers are aspirational and will likely evolve through experimentation.
 
