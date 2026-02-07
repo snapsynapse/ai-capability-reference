@@ -161,10 +161,19 @@ async function main() {
     console.log(`  ✅ OK: ${results.summary.ok}`);
     console.log(`  ↪️  Redirect: ${results.summary.redirect}`);
     console.log(`  ❌ Broken: ${results.summary.broken}`);
+    console.log(`  🚫 Bot-blocked: ${results.summary.blocked}`);
     console.log(`  ⏱️  Timeout: ${results.summary.timeout}`);
     console.log(`  ⚠️  Invalid: ${results.summary.invalid}`);
 
-    // Print broken links
+    // Bot-blocked links (informational only)
+    if (results.results.blocked.length > 0) {
+        console.log('\n' + '-'.repeat(50));
+        console.log('BOT-BLOCKED (not actionable):');
+        console.log('-'.repeat(50));
+        console.log(`  ${results.results.blocked.length} URLs returned 403 (likely Cloudflare/bot protection)`);
+    }
+
+    // Problem links (truly broken — excludes bot-blocked)
     const problemLinks = [
         ...results.results.broken,
         ...results.results.timeout,

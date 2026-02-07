@@ -7,8 +7,18 @@ const https = require('https');
 const http = require('http');
 const { URL } = require('url');
 
-// Browser-like User-Agent to avoid bot-blocking false positives
-const BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+// Browser-like headers to reduce bot-blocking false positives
+const BROWSER_HEADERS = {
+    'User-Agent': 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36',
+    'Accept': 'text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8',
+    'Accept-Language': 'en-US,en;q=0.9',
+    'Accept-Encoding': 'gzip, deflate, br',
+    'Sec-Fetch-Dest': 'document',
+    'Sec-Fetch-Mode': 'navigate',
+    'Sec-Fetch-Site': 'none',
+    'Sec-Fetch-User': '?1',
+    'Upgrade-Insecure-Requests': '1'
+};
 
 /**
  * Make a single HTTP request
@@ -28,10 +38,7 @@ function makeRequest(url, method, timeout) {
                 {
                     method,
                     timeout,
-                    headers: {
-                        'User-Agent': BROWSER_UA,
-                        'Accept': 'text/html,application/xhtml+xml,*/*'
-                    }
+                    headers: BROWSER_HEADERS
                 },
                 (response) => {
                     // Consume response body to free resources
@@ -116,7 +123,18 @@ async function checkUrl(url, timeout = 10000) {
 
     // If HEAD was blocked, retry with GET before reporting as broken
     if (headResult.statusCode === 403 || headResult.statusCode === 405) {
-        return makeRequest(url, 'GET', timeout);
+        const getResult = await makeRequest(url, 'GET', timeout);
+
+        // If GET also returns 403, this is bot-blocking, not a broken link
+        if (getResult.statusCode === 403) {
+            return {
+                ...getResult,
+                status: 'blocked',
+                error: 'HTTP 403 (bot-blocked)'
+            };
+        }
+
+        return getResult;
     }
 
     return headResult;
@@ -247,6 +265,7 @@ async function checkAllLinks(platforms, options = {}) {
         ok: [],
         redirect: [],
         broken: [],
+        blocked: [],
         timeout: [],
         invalid: []
     };
@@ -261,6 +280,9 @@ async function checkAllLinks(platforms, options = {}) {
                 break;
             case 'redirect':
                 categorized.redirect.push(combined);
+                break;
+            case 'blocked':
+                categorized.blocked.push(combined);
                 break;
             case 'error':
                 categorized.broken.push(combined);
@@ -281,6 +303,7 @@ async function checkAllLinks(platforms, options = {}) {
             ok: categorized.ok.length,
             redirect: categorized.redirect.length,
             broken: categorized.broken.length,
+            blocked: categorized.blocked.length,
             timeout: categorized.timeout.length,
             invalid: categorized.invalid.length
         },
@@ -303,6 +326,7 @@ function generateLinkReport(results) {
     report += `| ✅ OK | ${results.summary.ok} |\n`;
     report += `| ↪️ Redirect | ${results.summary.redirect} |\n`;
     report += `| ❌ Broken | ${results.summary.broken} |\n`;
+    report += `| 🚫 Bot-Blocked | ${results.summary.blocked} |\n`;
     report += `| ⏱️ Timeout | ${results.summary.timeout} |\n`;
     report += `| ⚠️ Invalid | ${results.summary.invalid} |\n`;
     report += `| **Total** | ${results.total} |\n\n`;
@@ -315,6 +339,20 @@ function generateLinkReport(results) {
         for (const link of results.results.broken) {
             const feature = link.feature || '—';
             report += `| ${link.platform} | ${feature} | ${link.type} | ${link.url} | ${link.error} |\n`;
+        }
+        report += `\n`;
+    }
+
+    // Bot-blocked (informational)
+    if (results.results.blocked.length > 0) {
+        report += `## 🚫 Bot-Blocked (Not Actionable)\n\n`;
+        report += `These URLs returned 403 to automated requests but are likely valid. `;
+        report += `Many sites use Cloudflare or similar bot protection.\n\n`;
+        report += `| Platform | Feature | Type | URL |\n`;
+        report += `|----------|---------|------|-----|\n`;
+        for (const link of results.results.blocked) {
+            const feature = link.feature || '—';
+            report += `| ${link.platform} | ${feature} | ${link.type} | ${link.url} |\n`;
         }
         report += `\n`;
     }

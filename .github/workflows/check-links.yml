@@ -65,6 +65,13 @@ jobs:
           BROKEN=$(sed -n '/## ❌ Broken Links/,/## /p' "$REPORT" | head -n -1)
 
           if [ -n "$BROKEN" ]; then
+            # Skip if an open broken-links issue already exists
+            EXISTING=$(gh issue list --state open --label "broken-links" --json number --jq '.[0].number' 2>/dev/null || echo "")
+            if [ -n "$EXISTING" ]; then
+              echo "Open broken-links issue already exists (#$EXISTING), skipping creation"
+              exit 0
+            fi
+
             # Create labels if they don't exist (ignore errors)
             gh label create "broken-links" --color "d73a4a" --description "Broken URL detected" 2>/dev/null || true
             gh label create "needs-review" --color "fbca04" --description "Needs manual review" 2>/dev/null || true
