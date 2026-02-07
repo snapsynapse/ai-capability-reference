@@ -7,13 +7,17 @@ const https = require('https');
 const http = require('http');
 const { URL } = require('url');
 
+// Browser-like User-Agent to avoid bot-blocking false positives
+const BROWSER_UA = 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36';
+
 /**
- * Check if a URL is accessible
+ * Make a single HTTP request
  * @param {string} url - URL to check
- * @param {number} timeout - Timeout in ms (default 10000)
+ * @param {string} method - HTTP method (HEAD or GET)
+ * @param {number} timeout - Timeout in ms
  * @returns {Promise<{url: string, status: string, statusCode: number|null, error: string|null, redirectUrl: string|null}>}
  */
-async function checkUrl(url, timeout = 10000) {
+function makeRequest(url, method, timeout) {
     return new Promise((resolve) => {
         try {
             const parsedUrl = new URL(url);
@@ -22,14 +26,17 @@ async function checkUrl(url, timeout = 10000) {
             const request = protocol.request(
                 url,
                 {
-                    method: 'HEAD',
+                    method,
                     timeout,
                     headers: {
-                        'User-Agent': 'AI-Feature-Tracker-LinkChecker/1.0'
+                        'User-Agent': BROWSER_UA,
+                        'Accept': 'text/html,application/xhtml+xml,*/*'
                     }
                 },
                 (response) => {
-                    // Handle redirects
+                    // Consume response body to free resources
+                    response.resume();
+
                     if (response.statusCode >= 300 && response.statusCode < 400) {
                         resolve({
                             url,
@@ -41,7 +48,6 @@ async function checkUrl(url, timeout = 10000) {
                         return;
                     }
 
-                    // Success
                     if (response.statusCode >= 200 && response.statusCode < 300) {
                         resolve({
                             url,
@@ -53,7 +59,6 @@ async function checkUrl(url, timeout = 10000) {
                         return;
                     }
 
-                    // Client/server errors
                     resolve({
                         url,
                         status: 'error',
@@ -96,6 +101,25 @@ async function checkUrl(url, timeout = 10000) {
             });
         }
     });
+}
+
+/**
+ * Check if a URL is accessible
+ * Tries HEAD first, falls back to GET if the server returns 403 or 405
+ * (many servers block HEAD requests but serve GET normally)
+ * @param {string} url - URL to check
+ * @param {number} timeout - Timeout in ms (default 10000)
+ * @returns {Promise<{url: string, status: string, statusCode: number|null, error: string|null, redirectUrl: string|null}>}
+ */
+async function checkUrl(url, timeout = 10000) {
+    const headResult = await makeRequest(url, 'HEAD', timeout);
+
+    // If HEAD was blocked, retry with GET before reporting as broken
+    if (headResult.statusCode === 403 || headResult.statusCode === 405) {
+        return makeRequest(url, 'GET', timeout);
+    }
+
+    return headResult;
 }
 
 /**

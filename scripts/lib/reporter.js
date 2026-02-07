@@ -277,14 +277,43 @@ const LABEL_COLORS = {
 };
 
 /**
+ * Check if an open issue with the same title already exists
+ * @param {string} title - Issue title to search for
+ * @returns {string|null} Existing issue URL if found, null otherwise
+ */
+function findExistingIssue(title) {
+    try {
+        const searchTitle = title.replace(/"/g, '\\"');
+        const result = execSync(
+            `gh issue list --state open --search "${searchTitle}" --json number,title,url --limit 20`,
+            { encoding: 'utf-8' }
+        );
+        const issues = JSON.parse(result);
+        const match = issues.find(i => i.title === title);
+        return match ? match.url : null;
+    } catch (error) {
+        // If search fails, allow creation to proceed
+        return null;
+    }
+}
+
+/**
  * Create a GitHub issue using gh CLI
+ * Skips creation if an open issue with the same title already exists
  * @param {string} title - Issue title
  * @param {string} body - Issue body
  * @param {Array<string>} labels - Issue labels
- * @returns {string|null} Issue URL or null if failed
+ * @returns {string|null} Issue URL (new or existing) or null if failed
  */
 function createGitHubIssue(title, body, labels = []) {
     try {
+        // Check for existing open issue with the same title
+        const existingUrl = findExistingIssue(title);
+        if (existingUrl) {
+            console.log(`  Skipped (duplicate): ${existingUrl}`);
+            return existingUrl;
+        }
+
         // Create labels if they don't exist (ignore errors)
         for (const label of labels) {
             const color = LABEL_COLORS[label] || 'ededed';
@@ -411,6 +440,7 @@ module.exports = {
     generatePRBody,
     generateContradictionIssue,
     generateInconclusiveIssue,
+    findExistingIssue,
     createGitHubIssue,
     createGitHubPR,
     generateStalenessReport,
