@@ -126,28 +126,46 @@
 
 <h2>Automated Verification</h2>
 
-<p>This project includes an automated pricing verification system that uses multiple AI models to cross-reference feature data.</p>
+<p>This project includes an automated feature verification system that uses multiple AI models to cross-reference all feature data.</p>
 
+<h3>What gets verified</h3>
+
+<ul><li><strong>Pricing tiers</strong> — Which subscription plans have access</li>
+<li><strong>Platform availability</strong> — Windows, macOS, Linux, iOS, Android, web, terminal, API</li>
+<li><strong>Status</strong> — GA, Beta, Preview, Deprecated</li>
+<li><strong>Gating</strong> — Free, Paid, Invite-only, Org-only</li>
+<li><strong>Regional availability</strong> — Global vs region-restricted features</li>
+<li><strong>URLs</strong> — Feature page links are valid and accessible</li>
+<p></ul></p>
 <h3>How it works</h3>
 
 <p>1. <strong>Multi-model cascade</strong> — Queries Gemini, Perplexity, Grok (X/Twitter), and Claude</p>
 <p>2. <strong>Bias prevention</strong> — Skips same-provider models (e.g., won't ask Gemini about Google features)</p>
 <p>3. <strong>Consensus required</strong> — Needs 3 models to confirm a change before flagging</p>
-<p>4. <strong>Human review</strong> — Creates issues/PRs for review, never auto-merges</p>
+<p>4. <strong>Auto-changelog</strong> — Confirmed changes are logged to each feature's changelog</p>
+<p>5. <strong>Human review</strong> — Creates issues/PRs for review, never auto-merges</p>
 
 <h3>Running verification</h3>
 
 <pre><code># Verify all features
-<p>node scripts/verify-pricing.js</p>
+<p>node scripts/verify-features.js</p>
 
 <h1>Verify a specific platform</h1>
-<p>node scripts/verify-pricing.js --platform claude</p>
+<p>node scripts/verify-features.js --platform claude</p>
 
 <h1>Check only stale features (>30 days since last check)</h1>
-<p>node scripts/verify-pricing.js --stale-only</p>
+<p>node scripts/verify-features.js --stale-only</p>
 
 <h1>Dry run (no issues created)</h1>
-<p>node scripts/verify-pricing.js --dry-run</p>
+<p>node scripts/verify-features.js --dry-run</p>
+<p></code></pre></p>
+
+<h3>Link checker</h3>
+
+<p>A separate workflow validates all URLs weekly:</p>
+
+<pre><code>node scripts/check-links.js              # Check all links
+<p>node scripts/check-links.js --broken-only # Show only broken links</p>
 <p></code></pre></p>
 
 <p>Requires API keys: <code>GEMINI_API_KEY</code>, <code>PERPLEXITY_API_KEY</code>, <code>XAI_API_KEY</code>, <code>ANTHROPIC_API_KEY</code></p>
