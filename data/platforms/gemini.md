@@ -27,7 +27,7 @@ last_verified: 2026-01-20
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -81,7 +81,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -136,8 +136,8 @@ Available globally; initially English only, now 50+ languages.
 | Gating | free |
 | URL | https://gemini.google/overview/canvas/ |
 | Launched | 2025-03-18T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -190,8 +190,8 @@ Available globally where Gemini is available.
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -243,8 +243,8 @@ Available globally where Gemini Advanced is available.
 | Gating | free |
 | URL | https://support.google.com/gemini/answer/13695044 |
 | Launched | 2023-09-19T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -299,7 +299,7 @@ Available globally where Gemini is available.
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -352,7 +352,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -406,7 +406,7 @@ Available globally.
 | URL | https://blog.google/products/gemini/google-gemini-live/ |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-02-01|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -458,8 +458,8 @@ Available in supported regions.
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gems-ai/ |
 | Launched | 2024-08-01T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -511,8 +511,8 @@ Available globally.
 | Gating | paid |
 | URL | https://blog.google/products/gemini/google-gemini-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
-| Verified | 2026-02-01|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -564,8 +564,8 @@ Limited in some regions due to content policies.
 | Gating | free |
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
-| Verified | 2026-02-01|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -621,7 +621,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -675,7 +675,7 @@ Available globally where Google services are available.
 | URL | https://deepmind.google/models/project-astra/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-01|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -730,8 +730,8 @@ Available globally where Gemini is available.
 | Gating | paid |
 | URL | https://deepmind.google/models/veo/ |
 | Launched | 2024-05-14T12:00Z |
-| Verified | 2026-02-01|
-| Checked | 2026-02-01|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 

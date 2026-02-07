@@ -27,8 +27,8 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/introducing-assistant |
 | Launched | 2024-11-01T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -81,8 +81,8 @@ Available globally via Comet browser.
 | Gating | free |
 | URL | https://www.perplexity.ai/hub/blog/shop-like-a-pro |
 | Launched | 2024-11-18T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -138,8 +138,8 @@ US only. International users redirected to merchant sites.
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/introducing-spaces |
 | Launched | 2024-10-17T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -192,8 +192,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.perplexity.ai/comet |
 | Launched | 2025-07-09T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -248,8 +248,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.perplexity.ai/enterprise/app-connectors |
 | Launched | 2024-09-01T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -304,7 +304,7 @@ Available globally where Perplexity Enterprise is available.
 | URL | https://www.perplexity.ai/ |
 | Launched | 2024-01-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -358,7 +358,7 @@ Available globally.
 | URL | https://www.perplexity.ai/pro |
 | Launched | 2024-01-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -412,7 +412,7 @@ Available globally.
 | URL | https://www.perplexity.ai/hub/blog/perplexity-pages |
 | Launched | 2024-05-30T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -467,8 +467,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.perplexity.ai/pro |
 | Launched | 2024-07-02T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Verified | 2026-02-07|
+| Checked | 2026-02-07|
 
 ### Availability
 
@@ -522,7 +522,7 @@ Available globally.
 | URL | https://www.perplexity.ai/ |
 | Launched | 2024-10-24T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-01-29|
+| Checked | 2026-02-07|
 
 ### Availability
 
