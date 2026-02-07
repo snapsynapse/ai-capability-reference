@@ -160,15 +160,37 @@
 <p>node scripts/verify-features.js --dry-run</p>
 <p></code></pre></p>
 
-<h3>Link checker</h3>
+<h3>Link checking</h3>
 
-<p>A separate workflow validates all URLs weekly:</p>
+<p>Two link checkers serve different purposes:</p>
+
+<strong>CI checker</strong> (<code>check-links.js</code>) — runs in GitHub Actions weekly. Uses HTTP requests, so sites with Cloudflare/bot protection show as "bot-blocked" (not reported as broken). Good for catching real 404s and server errors.
 
 <pre><code>node scripts/check-links.js              # Check all links
 <p>node scripts/check-links.js --broken-only # Show only broken links</p>
 <p></code></pre></p>
 
-<p>Requires API keys: <code>GEMINI_API_KEY</code>, <code>PERPLEXITY_API_KEY</code>, <code>XAI_API_KEY</code>, <code>ANTHROPIC_API_KEY</code></p>
+<strong>Browser checker</strong> (<code>check-links-browser.js</code>) — runs locally through a real Chrome browser via <a href="https://chromedevtools.github.io/devtools-protocol/">Chrome DevTools Protocol</a>. Bypasses all bot protection, captures page titles for content verification, and shows redirects. Zero external dependencies.
+
+<pre><code># Terminal 1: Start Chrome with remote debugging
+<h1>(--user-data-dir avoids conflicts with your normal browser session)</h1>
+
+<h1>macOS (Chrome)</h1>
+<p>/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \</p>
+<p>  --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check</p>
+
+<h1>macOS (Brave, Edge, or any Chromium browser also works)</h1>
+
+<h1>Linux</h1>
+<p>google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check</p>
+
+<h1>Terminal 2: Run the checker</h1>
+<p>node scripts/check-links-browser.js                # All platforms</p>
+<p>node scripts/check-links-browser.js -p claude       # One platform</p>
+<p>node scripts/check-links-browser.js --help          # All options</p>
+<p></code></pre></p>
+
+<p>Requires API keys (verification only): <code>GEMINI_API_KEY</code>, <code>PERPLEXITY_API_KEY</code>, <code>XAI_API_KEY</code>, <code>ANTHROPIC_API_KEY</code></p>
 
 <p>See <a href="VERIFICATION.md">VERIFICATION.md</a> for full documentation.</p>
 

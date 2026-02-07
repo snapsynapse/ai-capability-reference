@@ -7,15 +7,21 @@
  * bypassing Cloudflare and other bot-protection that blocks automated HTTP requests.
  * Also captures page titles for content verification.
  *
- * Prerequisites — start Chrome with remote debugging:
+ * Prerequisites — start Chrome/Chromium with remote debugging enabled.
+ * IMPORTANT: Use --user-data-dir to avoid conflicts with your normal browser session.
  *
- *   # macOS
- *   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+ *   # macOS (Chrome)
+ *   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+ *     --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+ *
+ *   # macOS (Brave)
+ *   /Applications/Brave\ Browser.app/Contents/MacOS/Brave\ Browser \
+ *     --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
  *
  *   # Linux
- *   google-chrome --remote-debugging-port=9222
+ *   google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
  *
- * Usage:
+ * Then in another terminal:
  *   node scripts/check-links-browser.js
  *   node scripts/check-links-browser.js --platform claude
  *   node scripts/check-links-browser.js --timeout 20000 --delay 1000
@@ -57,18 +63,30 @@ function printHelp() {
     console.log(`
 Browser-Based Link Checker (CDP)
 
-Checks URLs through a real Chrome browser, bypassing bot protection.
+Checks URLs through a real Chrome/Chromium browser, bypassing bot protection.
 Captures HTTP status codes, final URLs (after redirects), and page titles.
 
 PREREQUISITES:
-  Start Chrome with remote debugging enabled:
+  Start Chrome with remote debugging in a SEPARATE terminal.
+  Use --user-data-dir so it doesn't conflict with your normal browser:
 
-    # macOS
+    # macOS (Chrome)
     /Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome \\
-      --remote-debugging-port=9222
+      --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+
+    # macOS (Brave)
+    /Applications/Brave\\ Browser.app/Contents/MacOS/Brave\\ Browser \\
+      --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+
+    # macOS (Edge)
+    /Applications/Microsoft\\ Edge.app/Contents/MacOS/Microsoft\\ Edge \\
+      --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
 
     # Linux
-    google-chrome --remote-debugging-port=9222
+    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+
+  The terminal should stay open (Chrome runs in the foreground).
+  Then run this script in another terminal.
 
 OPTIONS:
     -p, --platform <name>   Check only a specific platform
@@ -107,12 +125,14 @@ async function verifyChrome() {
     } catch (e) {
         throw new Error(
             'Cannot connect to Chrome on port 9222.\n\n' +
-            '  Start it with remote debugging:\n\n' +
+            '  Start Chrome in a separate terminal with:\n\n' +
             '    # macOS\n' +
             '    /Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome \\\n' +
-            '      --remote-debugging-port=9222\n\n' +
+            '      --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check\n\n' +
             '    # Linux\n' +
-            '    google-chrome --remote-debugging-port=9222'
+            '    google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check\n\n' +
+            '  NOTE: --user-data-dir is required so Chrome opens a new instance\n' +
+            '  instead of attaching to your existing browser (which ignores the debug port).'
         );
     }
 }

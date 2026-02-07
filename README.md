@@ -99,16 +99,39 @@ node scripts/verify-features.js --stale-only
 node scripts/verify-features.js --dry-run
 ```
 
-### Link checker
+### Link checking
 
-A separate workflow validates all URLs weekly:
+Two link checkers serve different purposes:
+
+**CI checker** (`check-links.js`) — runs in GitHub Actions weekly. Uses HTTP requests, so sites with Cloudflare/bot protection show as "bot-blocked" (not reported as broken). Good for catching real 404s and server errors.
 
 ```bash
 node scripts/check-links.js              # Check all links
 node scripts/check-links.js --broken-only # Show only broken links
 ```
 
-Requires API keys: `GEMINI_API_KEY`, `PERPLEXITY_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`
+**Browser checker** (`check-links-browser.js`) — runs locally through a real Chrome browser via [Chrome DevTools Protocol](https://chromedevtools.github.io/devtools-protocol/). Bypasses all bot protection, captures page titles for content verification, and shows redirects. Zero external dependencies.
+
+```bash
+# Terminal 1: Start Chrome with remote debugging
+# (--user-data-dir avoids conflicts with your normal browser session)
+
+# macOS (Chrome)
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome \
+  --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+
+# macOS (Brave, Edge, or any Chromium browser also works)
+
+# Linux
+google-chrome --remote-debugging-port=9222 --user-data-dir=/tmp/chrome-link-check
+
+# Terminal 2: Run the checker
+node scripts/check-links-browser.js                # All platforms
+node scripts/check-links-browser.js -p claude       # One platform
+node scripts/check-links-browser.js --help          # All options
+```
+
+Requires API keys (verification only): `GEMINI_API_KEY`, `PERPLEXITY_API_KEY`, `XAI_API_KEY`, `ANTHROPIC_API_KEY`
 
 See [VERIFICATION.md](VERIFICATION.md) for full documentation.
 
