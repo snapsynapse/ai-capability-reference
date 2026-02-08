@@ -30,7 +30,7 @@ last_verified: 2026-01-20
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -85,7 +85,7 @@ Available globally.
 | URL | https://www.anthropic.com/claude-code |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-02-01|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -143,7 +143,7 @@ Available globally via CLI (Windows, macOS, Linux).
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -204,7 +204,7 @@ Available globally where Claude is available.
 | URL | https://support.anthropic.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -260,7 +260,7 @@ Available globally where Claude is available; currently macOS Desktop only (Wind
 | URL | https://www.anthropic.com/news/visible-extended-thinking |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-02-01|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -314,8 +314,8 @@ Available globally.
 | Gating | free |
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-07|
+| Verified | 2026-02-08|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -373,7 +373,7 @@ Available globally where Claude is available.
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -429,7 +429,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
@@ -495,7 +495,7 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Checked | 2026-02-08|
 
 ### Availability
 
