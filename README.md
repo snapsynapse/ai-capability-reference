@@ -103,7 +103,15 @@ node scripts/verify-features.js --dry-run
 
 Two link checkers serve different purposes:
 
-**CI checker** (`check-links.js`) — runs in GitHub Actions weekly. Uses HTTP requests, so sites with Cloudflare/bot protection show as "bot-blocked" (not reported as broken). Good for catching real 404s and server errors.
+**CI checker** (`check-links.js`) — runs in GitHub Actions weekly. Uses canonical categories from the collaboration protocol:
+- `ok`
+- `broken`
+- `soft-blocked` (e.g., persistent 403/bot protection; informational)
+- `rate-limited` (429; informational)
+- `timeout`
+- `needs-manual-review`
+
+The checker fails CI on actionable problems (`broken`, `timeout`) while keeping soft-blocked/rate-limited as non-actionable signals.
 
 ```bash
 node scripts/check-links.js              # Check all links

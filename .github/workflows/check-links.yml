@@ -53,7 +53,7 @@ jobs:
           path: .link-reports/
           retention-days: 30
 
-      - name: Create issue for broken links
+      - name: Create issue for link check problems
         if: steps.check.outcome == 'failure'
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
@@ -61,10 +61,11 @@ jobs:
           # Get the latest report
           REPORT=$(ls -t .link-reports/*.md | head -1)
 
-          # Extract broken links section
+          # Extract broken + timeout sections
           BROKEN=$(sed -n '/## ❌ Broken Links/,/## /p' "$REPORT" | head -n -1)
+          TIMEOUTS=$(sed -n '/## ⏱️ Timed Out/,/## /p' "$REPORT" | head -n -1)
 
-          if [ -n "$BROKEN" ]; then
+          if [ -n "$BROKEN" ] || [ -n "$TIMEOUTS" ]; then
             # Skip if an open broken-links issue already exists
             EXISTING=$(gh issue list --state open --label "broken-links" --json number --jq '.[0].number' 2>/dev/null || echo "")
             if [ -n "$EXISTING" ]; then
@@ -81,6 +82,8 @@ jobs:
               --body "The weekly link check found broken URLs in the feature data.
 
           $BROKEN
+
+          $TIMEOUTS
 
           ## Action Required
 

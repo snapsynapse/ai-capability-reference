@@ -288,7 +288,9 @@ scripts/
     ├── ai-clients.js       # API wrappers for each AI model
     ├── parser.js           # Parse markdown data files
     ├── file-updater.js     # Update dates and changelogs in markdown files
-    ├── link-checker.js     # URL validation module
+    ├── link-checker.js     # URL extraction utilities for platform/feature/source links
+    ├── link-schema.js      # Canonical link check result contract (categories + validation)
+    ├── link-engine.js      # Retry/classify engine with 403 soft-block policy
     └── reporter.js         # Generate PRs, issues, reports
 
 .github/
@@ -320,9 +322,18 @@ node scripts/check-links.js --broken-only
 node scripts/check-links.js --verbose
 ```
 
+Current category model used by `check-links.js`:
+
+- `ok`
+- `broken`
+- `soft-blocked` (informational, not auto-broken)
+- `rate-limited` (informational)
+- `timeout`
+- `needs-manual-review`
+
 ### Scheduled Runs
 
-The link checker runs weekly on **Wednesdays at 00:00 UTC** (offset from feature verification on Sundays). If broken links are found, an issue is automatically created with the list of affected URLs.
+The link checker runs weekly on **Wednesdays at 00:00 UTC** (offset from feature verification on Sundays). If actionable problems are found (broken links/timeouts), an issue is automatically created with the affected URLs.
 
 ## How Grok (X/Twitter) Helps
 
