@@ -635,3 +635,83 @@ Risks/assumptions:
   - Baseline is a snapshot; results will vary as sites change
 Next owner: Maintainer (milestone acceptance review)
 ```
+
+---
+
+### 17:41 — Maintainer validation signal (post-push)
+
+Maintainer reported a manual link-check run completed successfully and **no new PRs were generated**.
+
+Interpretation:
+- Current workflow/CLI behavior is stable in expected no-action state.
+- PR creation safeguards are not producing noise.
+
+Next suggested step:
+- Proceed with PR review/merge for `link-checker-pr3-integration` when ready.
+
+---
+
+### 17:45 — Retro: first 3-way collaboration (Maintainer + Claude + Codex)
+
+Short reflection to improve the next joint session.
+
+#### What worked well
+
+1. **Clear lane ownership prevented collisions**
+   - Claude stayed in engine internals and heuristics.
+   - Codex stayed in CLI/workflow/docs/test integration.
+   - Result: parallel progress with near-zero merge conflicts.
+
+2. **WORKLOG as shared source-of-truth was effective**
+   - Time-stamped entries gave live situational awareness.
+   - “Now Working” + formal handoffs reduced ambiguity.
+
+3. **Deterministic tests + one real baseline run was a strong combo**
+   - Unit/integration tests protected behavior.
+   - Full-platform baseline validated real-world outcomes and reduced speculative tuning.
+
+4. **Counter-recommendations were healthy when logged explicitly**
+   - Disagreement was productive because rationale + decision path were captured.
+
+#### Friction points observed
+
+1. **Entry discoverability degraded as WORKLOG grew**
+   - Needed lots of scrolling to find current status.
+
+2. **Decision history was present but not indexed**
+   - Harder to quickly answer “why did we choose this?”
+
+3. **Readiness state was sometimes implicit**
+   - “Done” vs “ready for review/merge” should be explicit and standardized.
+
+#### How to document better next time (recommended lightweight structure)
+
+For the next session, keep the same WORKLOG but add these conventions at the top:
+
+1. **Current Status Block (always-in-place, 4 lines max)**
+   - `Now Working (Claude): ...`
+   - `Now Working (Codex): ...`
+   - `Maintainer Focus: ...`
+   - `Next Review Checkpoint: ...`
+
+2. **Decision Index (append-only mini table)**
+   - Columns: `Decision | Owner | Timestamp | Link/anchor`
+   - Links to detailed entries below.
+
+3. **Standard handoff footer tags**
+   - `Status: In progress | Ready for review | Ready for merge`
+   - `Blocking items: none | <list>`
+   - `Next owner: <name>`
+
+4. **Close each milestone with a 5-line retro**
+   - `Wins / Risks / Surprises / What to repeat / What to change`
+
+#### Reusable kickoff checklist for next 3-way run
+
+- Confirm lane boundaries (engine vs integration vs approvals)
+- Confirm test strategy (deterministic + optional live baseline)
+- Start “Current Status Block” immediately
+- Require formal handoff block for any ownership transfer
+- End with mini retro + carry-forward actions
+
+Maintainer note: this retro section is intended as the seed playbook for future Claude+Codex+Maintainer sessions.
