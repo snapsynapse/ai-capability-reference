@@ -164,7 +164,15 @@
 
 <p>Two link checkers serve different purposes:</p>
 
-<strong>CI checker</strong> (<code>check-links.js</code>) — runs in GitHub Actions weekly. Uses HTTP requests, so sites with Cloudflare/bot protection show as "bot-blocked" (not reported as broken). Good for catching real 404s and server errors.
+<strong>CI checker</strong> (<code>check-links.js</code>) — runs in GitHub Actions weekly. Uses canonical categories from the collaboration protocol:
+<ul><li><code>ok</code></li>
+<li><code>broken</code></li>
+<li><code>soft-blocked</code> (e.g., persistent 403/bot protection; informational)</li>
+<li><code>rate-limited</code> (429; informational)</li>
+<li><code>timeout</code></li>
+<li><code>needs-manual-review</code></li>
+<p></ul></p>
+<p>The checker fails CI on actionable problems (<code>broken</code>, <code>timeout</code>) while keeping soft-blocked/rate-limited as non-actionable signals.</p>
 
 <pre><code>node scripts/check-links.js              # Check all links
 <p>node scripts/check-links.js --broken-only # Show only broken links</p>
