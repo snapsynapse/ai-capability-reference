@@ -84,7 +84,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-02-15|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -190,49 +190,54 @@ Available globally.
 |----------|-------|
 | Category | browser |
 | Status | preview |
-| Gating | paid |
-| URL | https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/ |
+| Gating | free |
+| URL | https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f |
 | Launched | 2024-10-01T12:00Z |
-| Verified | 2026-02-15|
-| Checked | 2026-02-15|
+| Verified | 2026-02-17|
+| Checked | 2026-02-17|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Copilot Pro | ✅ | Preview | See and discuss webpages |
+| Free | ✅ | Preview | Free in Edge with Microsoft account |
+| Copilot Pro | ✅ | Preview | Same access as free in Edge |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Edge browser |
-| macOS | ⚠️ | Edge on Mac |
+| Windows | ✅ | Edge browser required |
+| macOS | ✅ | Edge on Mac |
 | Linux | ❌ |  |
 | iOS | ❌ | Not available |
 | Android | ❌ | Not available |
-| Chrome | ❌ |  |
-| web | ❌ | Edge browser only |
+| Chrome | ❌ | Edge only |
+| web | ❌ | Edge browser only (not web Copilot) |
 | terminal | ❌ |  |
 | API | ❌ | No consumer API |
 
 ### Regional
 
-Available in preview; limited regions.
+Available in the United States. Broader rollout planned.
 
 ### Talking Point
 
-> "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Pro only, and currently Edge browser on desktop only.**"
+> "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Now free for all Edge users** in the US with a Microsoft account—no Pro subscription needed. Still in preview and Edge-only."
 
 ### Sources
 
-- [Copilot Vision](https://blogs.microsoft.com/blog/2024/10/01/an-ai-companion-for-everyone/)
+- [Using Copilot Vision](https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f)
+- [Copilot Vision Preview Announcement](https://www.microsoft.com/en-us/microsoft-copilot/blog/2024/12/05/copilot-vision-now-in-preview-a-new-way-to-browse/)
+- [Paywall Removed (Windows Central)](https://www.windowscentral.com/software-apps/browsing/microsoft-removes-the-paywall-for-copilot-vision-but-only-for-edge-users)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-02-17T12:00Z | [Verified] Gating changed from paid to free for Edge users; macOS Edge confirmed; US availability confirmed |
+| 2025-03-01T12:00Z | Paywall removed — now free for all Edge users with Microsoft account |
+| 2024-12-05T12:00Z | Preview launched in Edge |
 | 2024-10-01T12:00Z | Initial entry |
 
 ---
@@ -300,7 +305,7 @@ Available globally.
 | URL | https://copilot.microsoft.com/ |
 | Launched | 2023-02-07T12:00Z |
 | Verified | 2026-02-08|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 

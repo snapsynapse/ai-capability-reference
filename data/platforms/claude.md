@@ -4,7 +4,7 @@ vendor: Anthropic
 logo: https://claude.ai/favicon.ico
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-01-20
+last_verified: 2026-02-17
 ---
 
 ## Pricing
@@ -30,7 +30,7 @@ last_verified: 2026-01-20
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -82,10 +82,10 @@ Available globally.
 | Category | coding |
 | Status | ga |
 | Gating | paid |
-| URL | https://www.anthropic.com/claude-code |
+| URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-01|
-| Checked | 2026-02-15|
+| Verified | 2026-02-17|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -102,33 +102,35 @@ Available globally.
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | Via terminal |
-| macOS | ✅ | Via terminal |
-| Linux | ✅ | Via terminal |
-| iOS | ❌ | Not applicable |
-| Android | ❌ | Not applicable |
+| Windows | ✅ | Terminal + VS Code extension |
+| macOS | ✅ | Terminal + VS Code extension + Xcode (via Agent SDK) |
+| Linux | ✅ | Terminal + VS Code extension |
+| iOS | ❌ | Not available |
+| Android | ❌ | Not available |
 | Chrome | ❌ |  |
-| web | ❌ | Terminal-based only |
+| web | ❌ | Terminal/IDE-based only |
 | terminal | ✅ | Primary interface |
 | API | ✅ | Anthropic API |
 
 ### Regional
 
-Available globally via CLI (Windows, macOS, Linux).
+Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 
 ### Talking Point
 
-> "Claude Code is Anthropic's terminal-based coding agent. It requires **Pro subscription at minimum—that's $20/month**. It works on any operating system through the command line."
+> "Claude Code is Anthropic's agentic coding tool. It requires **Pro subscription at minimum—that's $20/month**. Available as a terminal CLI and a **native VS Code extension** (out of beta), plus Xcode integration via the Claude Agent SDK. No JetBrains plugin yet, but JetBrains AI Assistant integrates Claude models."
 
 ### Sources
 
-- [Claude Code Documentation](https://docs.anthropic.com/en/docs/claude-code)
-- [Claude Pricing](https://claude.ai/pricing)
+- [Claude Code Documentation](https://code.claude.com/docs/en/features-overview)
+- [VS Code Extension Guide](https://www.claudelog.com/faqs/how-to-use-claude-code-with-vs-code/)
+- [Apple Xcode + Claude Agent SDK](https://www.anthropic.com/news/apple-xcode-claude-agent-sdk)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-02-17T12:00Z | [Verified] VS Code extension (out of beta) added to platforms; Xcode via Agent SDK noted; URL updated to code.claude.com; talking point updated |
 | 2025-02-24T12:00Z | Initial entry |
 
 ---
@@ -143,7 +145,7 @@ Available globally via CLI (Windows, macOS, Linux).
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -201,25 +203,27 @@ Available globally where Claude is available.
 | Category | agents |
 | Status | preview |
 | Gating | paid |
-| URL | https://support.anthropic.com/en/articles/13345190-getting-started-with-cowork |
+| URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
-| Verified | 2026-02-07|
-| Checked | 2026-02-15|
+| Verified | 2026-02-17|
+| Checked | 2026-02-17|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
-| Pro | ❌ | — | Not available |
+| Pro | ✅ | Standard | Research preview |
 | Max 5x | ✅ | Subject to Max limits | Research preview |
 | Max 20x | ✅ | Subject to Max limits | Research preview |
+| Team | ✅ | Standard | Research preview |
+| Enterprise | ✅ | Custom | Research preview |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ❌ | Not yet available |
+| Windows | ✅ | Claude Desktop app (x64 only, arm64 not supported) |
 | macOS | ✅ | Claude Desktop app required |
 | Linux | ❌ |  |
 | iOS | ❌ | Not available |
@@ -231,11 +235,11 @@ Available globally where Claude is available.
 
 ### Regional
 
-Available globally where Claude is available; currently macOS Desktop only (Windows coming soon).
+Available globally where Claude is available; requires Claude Desktop app (macOS or Windows x64).
 
 ### Talking Point
 
-> "Cowork is Claude's newest feature—**it launched January 12, 2026 as a research preview**. It's only available on the Max plan ($100 or $200/month) and only on macOS right now. This may expand soon, so I want to show you what's possible."
+> "Cowork is Claude's background agent—**it launched January 2026 and expanded to all paid plans in February**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. It's still a research preview but already useful for delegating multi-step tasks."
 
 ### Sources
 
@@ -246,6 +250,7 @@ Available globally where Claude is available; currently macOS Desktop only (Wind
 
 | Date | Change |
 |------|--------|
+| 2026-02-17T12:00Z | [Verified] Expanded to all paid plans (Pro, Team, Enterprise); Windows x64 support added |
 | 2026-01-12T12:00Z | Initial entry |
 
 ---
@@ -257,19 +262,19 @@ Available globally where Claude is available; currently macOS Desktop only (Wind
 | Category | other |
 | Status | ga |
 | Gating | paid |
-| URL | https://www.anthropic.com/news/visible-extended-thinking |
+| URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-01|
-| Checked | 2026-02-15|
+| Verified | 2026-02-17|
+| Checked | 2026-02-17|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
-| Pro | ⚠️ | Limited | Some access |
-| Max 5x | ✅ | Full | Extended reasoning time |
-| Max 20x | ✅ | Full | Extended reasoning time |
+| Pro | ⚠️ | Limited | Some access via claude.ai |
+| Max 5x | ✅ | Full | Adaptive thinking with effort levels |
+| Max 20x | ✅ | Full | Adaptive thinking with effort levels |
 
 ### Platforms
 
@@ -291,16 +296,18 @@ Available globally.
 
 ### Talking Point
 
-> "Extended Thinking lets Claude reason through complex problems step-by-step. **Max plan gets full access**; Pro has limited access. Not available on free."
+> "Extended Thinking lets Claude reason through complex problems step-by-step. With Opus 4.6, **adaptive thinking** is now the recommended mode—Claude decides when deeper reasoning is needed, with four effort levels (low/medium/high/max). Manual thinking mode is deprecated on Opus 4.6. **Max plan gets full access**; Pro has limited access. Not available on free."
 
 ### Sources
 
-- [Extended Thinking](https://www.anthropic.com/news/visible-extended-thinking)
+- [Extended Thinking Documentation](https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking)
+- [Claude Opus 4.6 Announcement](https://www.anthropic.com/news/claude-opus-4-6)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-02-17T12:00Z | [Verified] Adaptive thinking introduced with Opus 4.6; effort levels (low/medium/high/max) added; manual mode deprecated on Opus 4.6; URL updated to platform.claude.com |
 | 2025-02-24T12:00Z | Initial entry |
 
 ---
@@ -315,7 +322,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-02-08|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -373,7 +380,7 @@ Available globally where Claude is available.
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -429,7 +436,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
@@ -495,7 +502,7 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-15|
+| Checked | 2026-02-17|
 
 ### Availability
 
