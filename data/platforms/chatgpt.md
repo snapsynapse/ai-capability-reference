@@ -29,7 +29,7 @@ last_verified: 2026-02-28
 | Gating | paid |
 | URL | https://help.openai.com/en/articles/8400625-voice-mode |
 | Launched | 2024-09-24T12:00Z |
-| Verified | 2026-01-29|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -330,7 +330,7 @@ Available globally where ChatGPT is available.
 | Gating | paid |
 | URL | https://openai.com/index/introducing-codex/ |
 | Launched | 2025-04-16T12:00Z |
-| Verified | 2026-02-08|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -447,7 +447,7 @@ Available globally where ChatGPT is available.
 | Gating | paid |
 | URL | https://openai.com/index/dall-e-3/ |
 | Launched | 2023-10-01T12:00Z |
-| Verified | 2026-02-08|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -620,7 +620,7 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 | Gating | free |
 | URL | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt |
 | Launched | 2024-12-13T12:00Z |
-| Verified | 2026-02-08|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability

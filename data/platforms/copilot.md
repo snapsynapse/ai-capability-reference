@@ -26,7 +26,7 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-15|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -83,7 +83,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
-| Verified | 2026-02-15|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability

@@ -27,7 +27,7 @@ last_verified: 2026-02-28
 | Gating | paid |
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
-| Verified | 2026-01-29|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -82,7 +82,7 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
-| Verified | 2026-02-15|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -253,7 +253,7 @@ Available globally where X is available.
 | Gating | free |
 | URL | https://grok.com |
 | Launched | 2025-04-16T12:00Z |
-| Verified | 2026-01-29|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -420,7 +420,7 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
-| Verified | 2026-02-15|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
