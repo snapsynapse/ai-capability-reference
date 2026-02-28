@@ -4,7 +4,7 @@ vendor: xAI
 logo: https://grok.com/favicon.ico
 status_page: https://status.x.ai
 pricing_page: https://x.ai/grok
-last_verified: 2026-01-20
+last_verified: 2026-02-28
 ---
 
 ## Pricing
@@ -28,7 +28,7 @@ last_verified: 2026-01-20
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-02-15|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -138,16 +138,16 @@ Available globally where X is available.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-image-generation |
 | Launched | 2024-12-09T12:00Z |
-| Verified | 2026-02-15|
-| Checked | 2026-02-22|
+| Verified | 2026-02-28|
+| Checked | 2026-02-28|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Premium | ✅ | Limited | Basic generation |
-| Premium+ | ✅ | Higher | More generations |
+| Free | ⚠️ | ~10/2hrs | Limited free generations |
+| Premium | ✅ | ~20-50/day | Basic generation |
+| Premium+ | ✅ | ~500/day | More generations |
 | SuperGrok | ✅ | Highest | Priority + most generations |
 
 ### Platforms
@@ -170,7 +170,7 @@ Available globally.
 
 ### Talking Point
 
-> "Grok can generate images using Aurora. **Requires Premium ($8/mo) or higher.** SuperGrok gets the most generations per day."
+> "Grok can generate images using Aurora. **Free users get ~10 generations per 2-hour window**; paid tiers unlock higher daily limits. SuperGrok gets the most generations per day."
 
 ### Sources
 
@@ -180,7 +180,8 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2024-12-09T12:00Z | Initial entry
+| 2026-02-28T12:00Z | [Verified] Free tier access confirmed (~10 generations per 2-hour window); paid tier limits updated |
+| 2024-12-09T12:00Z | Initial entry |
 
 ---
 
@@ -193,17 +194,17 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-imagine |
 | Launched | 2025-08-04T12:00Z |
-| Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Verified | 2026-02-28|
+| Checked | 2026-02-28|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Premium | ✅ | Limited | Basic video generation |
-| Premium+ | ✅ | Higher | More generations |
-| SuperGrok | ✅ | Highest | Priority + most generations |
+| Free | ⚠️ | Very limited | ~3/day, 480p previews |
+| Premium | ✅ | 50/day | Basic video generation |
+| Premium+ | ✅ | 100/day | More generations |
+| SuperGrok | ✅ | 500/day | Priority + most generations |
 
 ### Platforms
 
@@ -225,7 +226,7 @@ Available globally where X is available.
 
 ### Talking Point
 
-> "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Requires Premium ($8/mo) or higher.** Supports text-to-video and image-to-video with multiple styles including realistic, anime, and abstract. Includes 'Spicy Mode' for less restricted content."
+> "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Free users get very limited access (~3/day at 480p)**; paid tiers unlock higher limits (up to 500/day on SuperGrok). Supports text-to-video and image-to-video. 'Spicy Mode' requires paid subscription."
 
 ### Sources
 
@@ -236,6 +237,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
+| 2026-02-28T12:00Z | [Verified] Free tier access confirmed (very limited, ~3/day at 480p); paid tier daily limits updated |
 | 2025-11-01T12:00Z | Text-to-video generation added |
 | 2025-10-06T12:00Z | Major update announced by Elon Musk |
 | 2025-08-04T12:00Z | Initial entry (image-to-video launched) |
@@ -252,7 +254,7 @@ Available globally where X is available.
 | URL | https://grok.com |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -307,14 +309,14 @@ Available globally where Grok is available.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-voice |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Verified | 2026-02-28|
+| Checked | 2026-02-28|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
+| Free | ⚠️ | iOS only | Free on iOS; Android requires subscription |
 | Premium | ✅ | Standard | Voice conversations |
 | Premium+ | ✅ | Enhanced | Priority |
 | SuperGrok | ✅ | Highest | Best quality |
@@ -339,7 +341,7 @@ Available globally where X is available.
 
 ### Talking Point
 
-> "Grok Voice Mode allows natural voice conversations with Grok. **Requires Premium ($8/mo) or higher**—not available to free users. Currently mobile only (iOS and Android)."
+> "Grok Voice Mode allows natural voice conversations with Grok. **Free on iOS** for all users; Android requires a paid subscription (Premium $8/mo or higher). Currently mobile only (iOS and Android)."
 
 ### Sources
 
@@ -349,6 +351,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
+| 2026-02-28T12:00Z | [Verified] Free access confirmed for iOS users; Android still requires subscription |
 | 2025-02-24T12:00Z | Initial entry |
 
 ---
@@ -363,7 +366,7 @@ Available globally where X is available.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -418,7 +421,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-02-15|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 

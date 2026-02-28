@@ -4,7 +4,7 @@ vendor: Google
 logo: https://cdn.simpleicons.org/googlegemini/white
 status_page: https://status.cloud.google.com
 pricing_page: https://one.google.com/about/ai-premium
-last_verified: 2026-01-20
+last_verified: 2026-02-28
 ---
 
 ## Pricing
@@ -27,7 +27,7 @@ last_verified: 2026-01-20
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -81,7 +81,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -137,7 +137,7 @@ Available globally; initially English only, now 50+ languages.
 | URL | https://gemini.google/overview/canvas/ |
 | Launched | 2025-03-18T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -191,7 +191,7 @@ Available globally where Gemini is available.
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -241,10 +241,10 @@ Available globally where Gemini Advanced is available.
 | Category | integrations |
 | Status | ga |
 | Gating | free |
-| URL | https://support.google.com/gemini/answer/13695044 |
+| URL | https://support.google.com/gemini/answer/13695044?hl=en |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-02-15|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -277,7 +277,7 @@ Available globally where Gemini is available.
 
 ### Sources
 
-- [Gemini Extensions](https://support.google.com/gemini/answer/13695044)
+- [Gemini Extensions](https://support.google.com/gemini/answer/13695044?hl=en)
 - [Gemini CLI Extensions](https://blog.google/technology/developers/gemini-cli-extensions/)
 
 ### Changelog
@@ -299,7 +299,7 @@ Available globally where Gemini is available.
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -352,7 +352,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -403,10 +403,10 @@ Available globally.
 | Category | voice |
 | Status | ga |
 | Gating | paid |
-| URL | https://blog.google/products/gemini/google-gemini-live/ |
+| URL | https://blog.google/products/gemini/gemini-live-audio-updates/ |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-02-01|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -439,7 +439,7 @@ Available in supported regions.
 
 ### Sources
 
-- [Gemini Live](https://blog.google/products/gemini/google-gemini-live/)
+- [Gemini Live](https://blog.google/products/gemini/gemini-live-audio-updates/)
 
 ### Changelog
 
@@ -455,18 +455,18 @@ Available in supported regions.
 |----------|-------|
 | Category | agents |
 | Status | ga |
-| Gating | paid |
-| URL | https://blog.google/products/gemini/google-gems-ai/ |
+| Gating | free |
+| URL | https://blog.google/products-and-platforms/products/gemini/google-gemini-update-august-2024/ |
 | Launched | 2024-08-01T12:00Z |
-| Verified | 2026-02-15|
-| Checked | 2026-02-22|
+| Verified | 2026-02-28|
+| Checked | 2026-02-28|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| AI Premium | ✅ | Full | Create custom Gems |
+| Free | ✅ | Standard | Create custom Gems (free since March 2025) |
+| AI Premium | ✅ | Full | Higher limits, sharing features |
 
 ### Platforms
 
@@ -488,16 +488,17 @@ Available globally.
 
 ### Talking Point
 
-> "Gems are custom AI experts you create for specific tasks. **AI Premium only.**"
+> "Gems are custom AI experts you create for specific tasks. **Now free for all users**—create premade or custom Gems at no cost. AI Premium gets higher limits and sharing features."
 
 ### Sources
 
-- [Introducing Gems](https://blog.google/products/gemini/google-gems-ai/)
+- [Introducing Gems](https://blog.google/products-and-platforms/products/gemini/google-gemini-update-august-2024/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-02-28T12:00Z | [Verified] Gating changed from paid to free; Gems available to all users since March 2025; URL updated (old blog URL broken) |
 | 2024-08-01T12:00Z | Initial entry |
 
 ---
@@ -509,10 +510,10 @@ Available globally.
 | Category | image-gen |
 | Status | ga |
 | Gating | paid |
-| URL | https://blog.google/products/gemini/google-gemini-imagen-3/ |
+| URL | https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -545,7 +546,7 @@ Limited in some regions due to content policies.
 
 ### Sources
 
-- [Imagen on Gemini](https://blog.google/products/gemini/google-gemini-imagen-3/)
+- [Imagen on Gemini](https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/)
 
 ### Changelog
 
@@ -565,7 +566,7 @@ Limited in some regions due to content policies.
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -621,7 +622,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -675,7 +676,7 @@ Available globally where Google services are available.
 | URL | https://deepmind.google/models/project-astra/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -731,7 +732,7 @@ Available globally where Gemini is available.
 | URL | https://deepmind.google/models/veo/ |
 | Launched | 2024-05-14T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 

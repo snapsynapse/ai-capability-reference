@@ -164,7 +164,7 @@ No restrictions - runs locally.
 
 ### Sources
 
-- [Llama 3.3 Release](https://ai.meta.com/blog/llama-3-3-70b/)
+- [Llama 3.3 Release](https://ai.meta.com/blog/future-of-ai-built-with-llama/)
 - [Ollama Llama](https://ollama.com/library/llama3.3)
 
 ### Changelog

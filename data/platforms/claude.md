@@ -4,7 +4,7 @@ vendor: Anthropic
 logo: https://claude.ai/favicon.ico
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-02-17
+last_verified: 2026-02-28
 ---
 
 ## Pricing
@@ -30,7 +30,7 @@ last_verified: 2026-02-17
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -85,7 +85,7 @@ Available globally.
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -145,7 +145,7 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -206,7 +206,7 @@ Available globally where Claude is available.
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-02-17|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -265,7 +265,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-02-17|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -322,7 +322,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-02-08|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -376,17 +376,17 @@ Available globally where Claude is available.
 |----------|-------|
 | Category | local-files |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
-| Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Verified | 2026-02-28|
+| Checked | 2026-02-28|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
+| Free | ✅ | Standard | Full access (added Feb 2026) |
 | Pro | ✅ | Standard | Full access |
 | Max 5x | ✅ | Extended | Higher limits |
 | Max 20x | ✅ | Extended | Higher limits |
@@ -412,7 +412,7 @@ Available globally.
 
 ### Talking Point
 
-> "Projects let you organize conversations and documents into workspaces with persistent context. It's a **Pro feature and above**—not available on free."
+> "Projects let you organize conversations and documents into workspaces with persistent context. **Now available on all plans including free** as of February 2026."
 
 ### Sources
 
@@ -422,6 +422,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-02-28T12:00Z | [Verified] Free tier access added as part of Anthropic's February 2026 free tier expansion; gating changed from paid to free |
 | 2024-06-25T12:00Z | Initial entry |
 
 ---
@@ -436,7 +437,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-01-29|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
@@ -502,7 +503,7 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-02-22|
+| Checked | 2026-02-28|
 
 ### Availability
 
