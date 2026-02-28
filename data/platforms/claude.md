@@ -29,7 +29,7 @@ last_verified: 2026-02-28
 | Gating | paid |
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
-| Verified | 2026-02-07|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -144,7 +144,7 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | Gating | paid |
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
-| Verified | 2026-02-07|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -205,7 +205,7 @@ Available globally where Claude is available.
 | Gating | paid |
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
-| Verified | 2026-02-17|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -264,7 +264,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | Gating | paid |
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-17|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -321,7 +321,7 @@ Available globally.
 | Gating | free |
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
-| Verified | 2026-02-08|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -436,7 +436,7 @@ Available globally.
 | Gating | paid |
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
-| Verified | 2026-01-29|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
@@ -502,7 +502,7 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | Gating | paid |
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
-| Verified | 2026-02-07|
+| Verified | 2026-02-28|
 | Checked | 2026-02-28|
 
 ### Availability
