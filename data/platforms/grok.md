@@ -4,7 +4,7 @@ vendor: xAI
 logo: https://grok.com/favicon.ico
 status_page: https://status.x.ai
 pricing_page: https://x.ai/grok
-last_verified: 2026-02-28
+last_verified: 2026-03-04
 ---
 
 ## Pricing
@@ -28,7 +28,7 @@ last_verified: 2026-02-28
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -139,7 +139,7 @@ Available globally where X is available.
 | URL | https://x.ai/blog/grok-image-generation |
 | Launched | 2024-12-09T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -195,7 +195,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-imagine |
 | Launched | 2025-08-04T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -254,7 +254,7 @@ Available globally where X is available.
 | URL | https://grok.com |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -310,7 +310,7 @@ Available globally where Grok is available.
 | URL | https://x.ai/blog/grok-voice |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -366,7 +366,7 @@ Available globally where X is available.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -421,7 +421,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 

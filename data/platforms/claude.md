@@ -4,7 +4,7 @@ vendor: Anthropic
 logo: https://claude.ai/favicon.ico
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-02-28
+last_verified: 2026-03-04
 ---
 
 ## Pricing
@@ -30,7 +30,7 @@ last_verified: 2026-02-28
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -85,7 +85,7 @@ Available globally.
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -144,8 +144,8 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | Gating | paid |
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
-| Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Verified | 2026-03-04|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -184,15 +184,16 @@ Available globally where Claude is available.
 
 - [Claude Integrations](https://claude.ai/blog/integrations)
 - [Connectors Directory](https://claude.ai/directory)
-- [Setting Up Integrations](https://support.claude.com/en/articles/10168395-setting-up-claude-integrations)
+- [Setting Up Integrations](https://support.anthropic.com/en/articles/10168395-setting-up-claude-integrations)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-04T12:00Z | [Verified] Fixed broken URL: support.claude.com → support.anthropic.com |
 | 2025-07-14T12:00Z | Connectors Directory launched |
 | 2025-06-03T12:00Z | Expanded to Pro plan |
-| 2025-05-01T12:00Z | Initial entry
+| 2025-05-01T12:00Z | Initial entry |
 
 ---
 
@@ -206,7 +207,7 @@ Available globally where Claude is available.
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -265,7 +266,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -322,7 +323,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -380,7 +381,7 @@ Available globally where Claude is available.
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -437,7 +438,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -503,7 +504,7 @@ Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 

@@ -4,7 +4,7 @@ vendor: Microsoft
 logo: https://copilot.microsoft.com/favicon.ico
 status_page: https://status.office.com
 pricing_page: https://www.microsoft.com/en-us/microsoft-copilot
-last_verified: 2026-01-20
+last_verified: 2026-03-04
 ---
 
 ## Pricing
@@ -27,7 +27,7 @@ last_verified: 2026-01-20
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -84,7 +84,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -140,7 +140,7 @@ Available globally where M365 Copilot is available.
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -194,7 +194,7 @@ Available globally.
 | URL | https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -252,7 +252,7 @@ Available in the United States. Broader rollout planned.
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -305,7 +305,7 @@ Available globally.
 | URL | https://copilot.microsoft.com/ |
 | Launched | 2023-02-07T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
@@ -358,7 +358,7 @@ Available globally.
 | URL | https://designer.microsoft.com/ |
 | Launched | 2023-03-21T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-01|
+| Checked | 2026-03-04|
 
 ### Availability
 
