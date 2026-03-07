@@ -4,14 +4,14 @@ vendor: Anthropic
 logo: https://claude.ai/favicon.ico
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-03-04
+last_verified: 2026-03-07
 ---
 
 ## Pricing
 
 | Plan | Price | Notes |
 |------|-------|-------|
-| Free | $0 | Sonnet 4, usage caps |
+| Free | $0 | Sonnet 4.6, usage caps |
 | Pro | $20/mo | 5x free usage, Opus access |
 | Max 5x | $100/mo | 20x Pro usage, extended thinking |
 | Max 20x | $200/mo | Unlimited standard, highest limits |
@@ -437,14 +437,14 @@ Available globally.
 | Gating | paid |
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-04|
+| Verified | 2026-03-07|
+| Checked | 2026-03-07|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Custom not available |
+| Free | ⚠️ | Limited | Prebuilt skills only; custom skills not available |
 | Pro | ✅ | Standard | Full access |
 | Max 5x | ✅ | Extended | Higher limits |
 | Max 20x | ✅ | Extended | Higher limits |
@@ -471,25 +471,25 @@ Available globally where Claude is available.
 
 ### Talking Point
 
-> "Skills are modular folders of instructions and resources that Claude can load on demand to perform specialized tasks—like creating Office documents or running workflows. **All Skills require a paid plan (Pro and above)**—both prebuilt skills from Anthropic and custom skills you create. Free tier has no access to Skills at all."
+> "Skills are modular folders of instructions and resources that Claude can load on demand to perform specialized tasks—like creating Office documents or running workflows. **Prebuilt skills are available on all plans including free** (added Feb 2026 with Sonnet 4.6). **Custom skills require Pro and above.**"
 
 ### Notes
 
 **Prebuilt vs Custom Skills:**
-- **Prebuilt Skills**: Created and maintained by Anthropic (Excel, Word, PowerPoint, PDF creation). Activate automatically when relevant.
-- **Custom Skills**: User-created skills uploaded as ZIP files. Private to individual accounts; Team/Enterprise can provision org-wide.
-
-Both types require Pro, Max, Team, or Enterprise plans. Free accounts cannot use any Skills.
+- **Prebuilt Skills**: Created and maintained by Anthropic (Excel, Word, PowerPoint, PDF creation). Activate automatically when relevant. Available on all plans including free.
+- **Custom Skills**: User-created skills uploaded as ZIP files. Private to individual accounts; Team/Enterprise can provision org-wide. Require Pro, Max, Team, or Enterprise plans.
 
 ### Sources
 
 - [Introducing Skills](https://www.anthropic.com/news/skills)
 - [Skills Documentation](https://docs.anthropic.com/en/docs/skills)
+- [Claude Sonnet 4.6 Announcement](https://www.anthropic.com/news/claude-sonnet-4-6)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-07T12:00Z | [Verified] Free tier now includes prebuilt skills (confirmed in Sonnet 4.6 announcement); talking point corrected to match availability table |
 | 2025-10-16T12:00Z | Initial entry |
 
 ---
