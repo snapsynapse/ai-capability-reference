@@ -1525,6 +1525,13 @@ footer a:hover {
     box-shadow: 0 4px 24px rgba(0, 0, 0, 0.5);
 }
 
+/* Show the correct hero for the active colour scheme */
+.site-banner-light { display: none; }
+.site-banner-dark  { display: block; }
+
+html.light-mode .site-banner-dark  { display: none; }
+html.light-mode .site-banner-light { display: block; }
+
 /* ========================================
    SITE NAVIGATION
    ======================================== */
