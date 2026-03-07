@@ -5,9 +5,9 @@ argument-hint: [issue-number or "batch" platform-name]
 allowed-tools: Bash, Read, Edit, Write, Grep, Glob, WebFetch, Task
 ---
 
-## Resolve AI Feature Tracker Issue
+## Resolve AI Capability Reference Issue
 
-You are resolving verification issues for the AI Feature Tracker project at `/Users/snap/Git/ai-feature-tracker`.
+You are resolving verification issues for the AI Capability Reference project at `/Users/snap/Git/ai-capability-reference`.
 
 ### Context
 
@@ -29,12 +29,12 @@ This project tracks AI product features across platforms (ChatGPT, Claude, Gemin
 ### Step 1: Fetch the issue
 
 ```
-gh issue view $ARGUMENTS --repo snapsynapse/ai-feature-tracker --json number,title,body,labels
+gh issue view $ARGUMENTS --repo snapsynapse/ai-capability-reference --json number,title,body,labels
 ```
 
 For batch mode, list all open issues for the platform:
 ```
-gh issue list --repo snapsynapse/ai-feature-tracker --state open --search "<platform>" --json number,title,labels
+gh issue list --repo snapsynapse/ai-capability-reference --state open --search "<platform>" --json number,title,labels
 ```
 
 ### Step 2: Read current data
@@ -91,7 +91,7 @@ Edit the feature section in `data/platforms/<platform>.md`:
 
 **For data updates:**
 ```bash
-gh issue close <NUMBER> --repo snapsynapse/ai-feature-tracker --comment "$(cat <<'EOF'
+gh issue close <NUMBER> --repo snapsynapse/ai-capability-reference --comment "$(cat <<'EOF'
 **Resolved — data updated.**
 
 Confirmed via [source](URL): description of what was confirmed.
@@ -106,7 +106,7 @@ EOF
 
 **For no-change closes:**
 ```bash
-gh issue close <NUMBER> --repo snapsynapse/ai-feature-tracker --comment "$(cat <<'EOF'
+gh issue close <NUMBER> --repo snapsynapse/ai-capability-reference --comment "$(cat <<'EOF'
 **Closed — no data change needed.**
 
 Reason: [why this isn't a real change]. Checked date bumped to YYYY-MM-DD.
@@ -116,7 +116,7 @@ EOF
 
 **For duplicate closes:**
 ```bash
-gh issue close <NUMBER> --repo snapsynapse/ai-feature-tracker --comment "$(cat <<'EOF'
+gh issue close <NUMBER> --repo snapsynapse/ai-capability-reference --comment "$(cat <<'EOF'
 **Closed — superseded by #[newer].** Consolidating to the newer issue.
 EOF
 )"

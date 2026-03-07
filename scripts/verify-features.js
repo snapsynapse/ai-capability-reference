@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * AI Feature Tracker - Automated Feature Verification
+ * AI Capability Reference - Automated Feature Verification
  *
  * Multi-model AI cascade for verifying feature data including:
  * pricing tiers, platform availability, status, gating, regional availability, and URLs.
@@ -110,7 +110,7 @@ function parseArgs() {
 
 function printHelp() {
     console.log(`
-AI Feature Tracker - Automated Feature Verification
+AI Capability Reference - Automated Feature Verification
 
 Verifies: pricing tiers, platforms, status, gating, regional availability, URLs
 
@@ -182,7 +182,7 @@ async function main() {
         process.exit(0);
     }
 
-    console.log('\n🔍 AI Feature Tracker - Feature Verification\n');
+    console.log('\n🔍 AI Capability Reference - Feature Verification\n');
 
     // Check API keys
     if (!checkApiKeys()) {

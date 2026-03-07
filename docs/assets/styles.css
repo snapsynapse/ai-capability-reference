@@ -513,6 +513,22 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     padding: 18px;
     border: 1px solid var(--card-border);
     transition: border-color 0.15s, box-shadow 0.15s, transform 0.15s;
+    display: flex;
+    gap: 14px;
+}
+
+.card-main {
+    flex: 1;
+    min-width: 0;
+}
+
+.surface-column {
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+    border-left: 1px solid var(--card-border);
+    padding-left: 12px;
+    flex-shrink: 0;
 }
 
 .feature-card:hover {
@@ -664,18 +680,12 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
    PLATFORM ICONS
    ======================================== */
 
-.platforms-row {
-    display: flex;
-    gap: 6px;
-    margin-bottom: 12px;
-    flex-wrap: wrap;
-}
-
 .plat-icon {
     padding: 3px 8px;
     border-radius: 4px;
     font-size: 0.65rem;
     font-weight: 600;
+    text-align: center;
 }
 
 .plat-icon.yes { background: #4caf50; color: #000; }
@@ -712,21 +722,23 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
    DATES & METADATA
    ======================================== */
 
-.dates-row {
+.surface-dates {
     display: flex;
-    gap: 12px;
-    margin-top: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 2px;
+    margin-top: 6px;
+    border-top: 1px solid var(--card-border);
+    padding-top: 6px;
 }
 
 .date-item {
-    font-size: 0.68rem;
+    font-size: 0.62rem;
     color: var(--text-secondary);
+    white-space: nowrap;
 }
 
-.date-item .date-label {
-    color: var(--text-secondary);
-    margin-right: 4px;
+.date-emoji {
+    margin-right: 3px;
 }
 
 .date-item .date-value {
@@ -742,22 +754,18 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     color: var(--accent);
 }
 
-.date-item.launched .date-label::before { content: '🚀 '; }
-.date-item.verified .date-label::before { content: '✓ '; }
-.date-item.checked .date-label::before { content: '👁 '; }
-
 /* ========================================
    TOOLTIPS
    ======================================== */
 
-/* Notes tooltip */
+/* Notes tooltip - inline within talking point */
 .notes-tooltip {
     position: relative;
-    margin-left: auto;
     cursor: help;
     font-size: 0.75rem;
     opacity: 0.7;
     transition: opacity 0.15s;
+    margin-left: 6px;
 }
 
 .notes-tooltip:hover,
@@ -1094,12 +1102,49 @@ footer a:hover {
 .capability-implementation-header {
     font-size: 0.85rem;
     color: var(--text-secondary);
-    margin-bottom: 12px;
+    margin-bottom: 6px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 8px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    border: 1px solid transparent;
+    transition: background 0.15s, border-color 0.15s;
+}
+.capability-implementation-header:hover {
+    background: var(--input-bg);
+    border-color: var(--card-border);
+}
+.capability-implementation-header:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
+}
+.impl-toggle-group {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+.expand-hint {
+    font-size: 0.75em;
+    color: var(--accent);
+    text-transform: uppercase;
+    letter-spacing: 0.06em;
+}
+.impl-chevron {
+    font-size: 0.65em;
+    opacity: 0.7;
 }
 
 .capability-implementations {
     display: grid;
     gap: 10px;
+    margin-bottom: 6px;
+}
+/* hidden attribute overridden by display:grid above — restore it explicitly */
+.capability-implementations[hidden] {
+    display: none;
 }
 
 .capability-impl {
@@ -1107,6 +1152,15 @@ footer a:hover {
     border: 1px solid var(--card-border);
     border-radius: 10px;
     padding: 14px;
+    cursor: pointer;
+    transition: border-color 0.15s, background 0.15s;
+}
+.capability-impl:hover {
+    border-color: var(--accent);
+}
+.capability-impl:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 2px;
 }
 
 .capability-impl-header {
@@ -1295,6 +1349,17 @@ footer a:hover {
     /* Feature cards - more compact on mobile */
     .feature-card {
         padding: 14px;
+        flex-direction: column;
+    }
+
+    .surface-column {
+        flex-direction: row;
+        flex-wrap: wrap;
+        border-left: none;
+        border-top: 1px solid var(--card-border);
+        padding-left: 0;
+        padding-top: 10px;
+        gap: 4px;
     }
 
     .feature-header {
@@ -1303,15 +1368,6 @@ footer a:hover {
 
     .feature-header h3 {
         font-size: 0.95rem;
-    }
-
-    /* Platform icons - horizontal scroll */
-    .platforms-row {
-        overflow-x: auto;
-        flex-wrap: nowrap;
-        padding-bottom: 4px;
-        -webkit-overflow-scrolling: touch;
-        gap: 4px;
     }
 
     .plat-icon {
@@ -1326,14 +1382,11 @@ footer a:hover {
         font-size: 0.82rem;
     }
 
-    /* Dates row - compact */
-    .dates-row {
-        gap: 8px;
-        margin-top: 8px;
-    }
-
-    .date-item {
-        font-size: 0.62rem;
+    /* Dates in surface column - horizontal on mobile */
+    .surface-dates {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6px;
     }
 
     /* Platform section headers */

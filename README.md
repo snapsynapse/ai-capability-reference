@@ -1,5 +1,7 @@
 # AI Capability Reference
 
+**Previously known as "AI Feature Tracker."** Renamed to "AI Capability Reference" in February 2026 to better reflect the project's ontology-first, capability-centric approach.
+
 Transition note: this repo is actively being reframed toward an "AI Capability Reference" model while preserving the current feature-first site during migration.
 
 - Capability taxonomy draft: [CAPABILITY_TAXONOMY.md](CAPABILITY_TAXONOMY.md)

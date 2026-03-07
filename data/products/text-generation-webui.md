@@ -2,7 +2,7 @@
 id: text-generation-webui
 name: text-generation-webui
 provider: oobabooga
-record_source: data/platforms/oobabooga-runtime.md
+record_source: data/watchlist/oobabooga-runtime.md
 source_heading: text-generation-webui
 pricing_page: https://github.com/oobabooga/text-generation-webui
 default_surfaces:

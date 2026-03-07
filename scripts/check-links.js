@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 
 /**
- * AI Feature Tracker - Dead Link Checker
+ * AI Capability Reference - Dead Link Checker
  *
  * Validates all URLs in feature data:
  * - Platform pricing/status page URLs
@@ -68,7 +68,7 @@ function parseArgs() {
 
 function printHelp() {
     console.log(`
-AI Feature Tracker - Dead Link Checker
+AI Capability Reference - Dead Link Checker
 
 Validates all URLs in feature data including pricing pages, feature URLs, and sources.
 
@@ -229,7 +229,7 @@ async function main() {
         process.exit(0);
     }
 
-    console.log('\n🔗 AI Feature Tracker - Link Checker\n');
+    console.log('\n🔗 AI Capability Reference - Link Checker\n');
 
     // Load platform data
     let platforms;

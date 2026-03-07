@@ -187,14 +187,14 @@ function formatDateForDisplay(isoDate) {
 function renderDateBadges({ launched = '', verified = '', checked = '', featureId = '' } = {}) {
     const launchedBadge = launched
         ? (featureId
-            ? `<span class="date-item launched clickable" onclick="showChangelog('${featureId}')"><span class="date-label">Launched</span><span class="date-value">${formatDateForDisplay(launched)}</span></span>`
-            : `<span class="date-item launched"><span class="date-label">Launched</span><span class="date-value">${formatDateForDisplay(launched)}</span></span>`)
+            ? `<span class="date-item launched clickable" title="Launched" onclick="showChangelog('${featureId}')"><span class="date-emoji">🚀</span><span class="date-value">${formatDateForDisplay(launched)}</span></span>`
+            : `<span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">${formatDateForDisplay(launched)}</span></span>`)
         : '';
     const verifiedBadge = verified
-        ? `<span class="date-item verified"><span class="date-label">Verified</span><span class="date-value">${formatDateForDisplay(verified)}</span></span>`
+        ? `<span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">${formatDateForDisplay(verified)}</span></span>`
         : '';
     const checkedBadge = checked
-        ? `<span class="date-item checked"><span class="date-label">Checked</span><span class="date-value">${formatDateForDisplay(checked)}</span></span>`
+        ? `<span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">${formatDateForDisplay(checked)}</span></span>`
         : '';
 
     return `${launchedBadge}${verifiedBadge}${checkedBadge}`;
@@ -683,21 +683,23 @@ function renderFeaturePlatformsRow(feature) {
 
     return platformOrder.map(plat => {
         const pl = platformMap.get(plat.toLowerCase());
-        if (!pl) return '';
         let cls = 'no';
-        if (pl.available.includes('✅')) cls = 'yes';
-        else if (pl.available.includes('🔜')) cls = 'soon';
-        else if (pl.available.includes('⚠️')) cls = 'partial';
+        if (pl) {
+            if (pl.available.includes('✅')) cls = 'yes';
+            else if (pl.available.includes('🔜')) cls = 'soon';
+            else if (pl.available.includes('⚠️')) cls = 'partial';
+        }
         return `<span class="plat-icon ${cls}" title="${plat}">${plat}</span>`;
-    }).filter(Boolean).join('');
+    }).join('');
 }
 
 function renderSurfaceRow(surfaces) {
     const surfaceOrder = ['web', 'desktop', 'mobile', 'terminal', 'api', 'browser', 'excel', 'word'];
-    return surfaceOrder
-        .filter(surface => (surfaces || []).includes(surface))
-        .map(surface => `<span class="plat-icon yes" title="${humanizeId(surface)}">${humanizeId(surface)}</span>`)
-        .join('');
+    const surfaceSet = new Set((surfaces || []).map(s => s.toLowerCase()));
+    return surfaceOrder.map(surface => {
+        const cls = surfaceSet.has(surface) ? 'yes' : 'no';
+        return `<span class="plat-icon ${cls}" title="${humanizeId(surface)}">${humanizeId(surface)}</span>`;
+    }).join('');
 }
 
 function renderFeatureCard(feature, platform, planPriceMap, options = {}) {
@@ -714,34 +716,35 @@ function renderFeatureCard(feature, platform, planPriceMap, options = {}) {
 
     return `
                 <div class="feature-card" id="${featureId}" data-category="${escapeHTML(dataCategory)}" data-prices="${escapeHTML(availablePrices)}" data-surfaces="${escapeHTML(availableSurfaces)}">
-                    <div class="feature-header">
-                        <h3>${url ? `<a href="${url}" target="_blank" class="feature-link">${escapeHTML(title)}</a>` : escapeHTML(title)}</h3>
-                        <span class="badges"><button class="permalink-btn" onclick="copyPermalink('${featureId}')" title="Copy link to this feature" aria-label="Copy permalink">🔗</button>${badges}</span>
-                    </div>
-                    <div class="avail-grid">
-                        ${(feature.availability || []).map(a => {
+                    <div class="card-main">
+                        <div class="feature-header">
+                            <h3>${url ? `<a href="${url}" target="_blank" class="feature-link">${escapeHTML(title)}</a>` : escapeHTML(title)}</h3>
+                            <span class="badges"><button class="permalink-btn" onclick="copyPermalink('${featureId}')" title="Copy link to this feature" aria-label="Copy permalink">🔗</button>${badges}</span>
+                        </div>
+                        <div class="avail-grid">
+                            ${(feature.availability || []).map(a => {
         const hasTooltip = a.limits || a.notes;
         const tooltipText = [a.limits, a.notes].filter(Boolean).join(' • ').replace(/"/g, '&quot;');
         return `
-                        <div class="avail-item">
-                            <span class="plan${hasTooltip ? ' has-tooltip' : ''}"${hasTooltip ? ' tabindex="0"' : ''}>${escapeHTML(a.plan)}${hasTooltip ? `<span class="plan-tooltip">${tooltipText}</span>` : ''}</span>
-                            <span class="status">${availBadge(a.available)}</span>
-                        </div>`;
+                            <div class="avail-item">
+                                <span class="plan${hasTooltip ? ' has-tooltip' : ''}"${hasTooltip ? ' tabindex="0"' : ''}>${escapeHTML(a.plan)}${hasTooltip ? `<span class="plan-tooltip">${tooltipText}</span>` : ''}</span>
+                                <span class="status">${availBadge(a.available)}</span>
+                            </div>`;
     }).join('')}
+                        </div>
+                        ${talkingPoint ? `<div class="talking-point" role="button" tabindex="0" aria-label="Click to copy talking point" onclick="copyTalkingPoint(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyTalkingPoint(this)}">${talkingPoint.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}${notes ? `<span class="notes-tooltip" tabindex="0" aria-label="Additional notes" onclick="event.stopPropagation()"><span class="notes-icon">ℹ️</span><span class="notes-content">${escapeHTML(notes)}</span></span><span class="notes-text" hidden>${escapeHTML(notes)}</span>` : ''}</div>` : ''}
+                        ${supplemental}
                     </div>
-                    <div class="platforms-row">
+                    <div class="surface-column">
                         ${options.platformsRow || renderFeaturePlatformsRow(feature)}
-                    </div>
-                    ${talkingPoint ? `<div class="talking-point" role="button" tabindex="0" aria-label="Click to copy talking point" onclick="copyTalkingPoint(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();copyTalkingPoint(this)}">${talkingPoint.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>')}</div>` : ''}
-                    ${supplemental}
-                    <div class="dates-row">
-                        ${renderDateBadges({
+                        <div class="surface-dates">
+                            ${renderDateBadges({
         launched: feature.launched,
         verified: feature.verified,
         checked: feature.checked,
         featureId
     })}
-                        ${notes ? `<span class="notes-tooltip" tabindex="0" role="button" aria-label="Additional notes"><span class="notes-icon">ℹ️</span><span class="notes-content">${escapeHTML(notes)}</span></span>` : ''}
+                        </div>
                     </div>
                 </div>`;
 }
@@ -846,6 +849,7 @@ function renderOntologyProviderSections(ontologyData) {
         const vendorSlug = slugify(providerName);
         const runtimeCards = group.runtime_products.map(renderRuntimeProductCard).filter(Boolean).join('');
         const modelAccessCards = group.model_access.map(renderModelAccessCard).filter(Boolean).join('');
+        if (!runtimeCards && !modelAccessCards) return '';
         const verified = latestDate([
             ...group.runtime_products.map(product => product.evidence?.verified || product.last_verified || ''),
             ...group.model_access.map(record => record.evidence?.verified || record.last_verified || '')
@@ -904,9 +908,13 @@ function generateHTML(platforms, ontologyData) {
     ));
     const customOntologyCardCount = (ontologyData?.runtime_products?.length || 0) + (ontologyData?.model_access?.length || 0);
     const totalCards = hostedPlatforms.reduce((sum, p) => sum + p.features.length, 0) + customOntologyCardCount;
+    const activeOntologyGroups = ontologyProviderGroups.filter(group =>
+        group.runtime_products.some(p => p.source?.feature) ||
+        group.model_access.some(r => r.source?.feature)
+    );
     const vendors = [...new Set([
         ...hostedPlatforms.map(platform => platform.vendor),
-        ...ontologyProviderGroups.map(group => providerDisplayName(group.provider_record, group.provider_id))
+        ...activeOntologyGroups.map(group => providerDisplayName(group.provider_record, group.provider_id))
     ])];
 
     return `<!DOCTYPE html>
@@ -1172,7 +1180,16 @@ function generateHTML(platforms, ontologyData) {
         const TOTAL_FEATURES = ${totalCards};
 
         function copyTalkingPoint(el) {
-            const text = el.innerText;
+            const notesEl = el.querySelector('.notes-text');
+            let text = el.childNodes[0].textContent;
+            // Walk text nodes and strong elements before the notes tooltip
+            const parts = [];
+            for (const node of el.childNodes) {
+                if (node.classList && (node.classList.contains('notes-tooltip') || node.classList.contains('notes-text'))) break;
+                parts.push(node.textContent);
+            }
+            text = parts.join('').trim();
+            if (notesEl) text += ' | Note: ' + notesEl.textContent;
             navigator.clipboard.writeText(text);
             el.classList.add('copied');
             setTimeout(() => el.classList.remove('copied'), 1000);
@@ -1516,6 +1533,37 @@ function generateHTML(platforms, ontologyData) {
                     break;
             }
         });
+
+        // Keep tooltips within the viewport
+        document.addEventListener('mouseenter', function(e) {
+            const tip = e.target.closest('.notes-tooltip');
+            if (!tip) return;
+            const content = tip.querySelector('.notes-content');
+            if (!content) return;
+            content.style.right = '';
+            content.style.left = '';
+            content.style.bottom = '';
+            content.style.top = '';
+            const rect = content.getBoundingClientRect();
+            if (rect.left < 8) {
+                content.style.right = 'auto';
+                content.style.left = '0';
+            }
+            if (rect.top < 8) {
+                content.style.bottom = 'auto';
+                content.style.top = 'calc(100% + 6px)';
+            }
+        }, true);
+        document.addEventListener('mouseleave', function(e) {
+            const tip = e.target.closest('.notes-tooltip');
+            if (!tip) return;
+            const content = tip.querySelector('.notes-content');
+            if (!content) return;
+            content.style.right = '';
+            content.style.left = '';
+            content.style.bottom = '';
+            content.style.top = '';
+        }, true);
     </script>
 </body>
 </html>`;
@@ -1630,10 +1678,11 @@ function generateCapabilitiesHTML(ontologyData) {
                     <div class="capability-tags">
                         ${capability.related_terms.map(term => `<span class="provider-toggle active">${escapeHTML(term)}</span>`).join('')}
                     </div>` : ''}
-                    <div class="capability-implementation-header">
-                        <strong>${capability.implementation_count}</strong> implementation${capability.implementation_count === 1 ? '' : 's'} across <strong>${capability.product_count}</strong> product${capability.product_count === 1 ? '' : 's'}
+                    <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
+                        <span><strong>${capability.implementation_count}</strong> implementation${capability.implementation_count === 1 ? '' : 's'} across <strong>${capability.product_count}</strong> product${capability.product_count === 1 ? '' : 's'}</span>
+                        <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
-                    <div class="capability-implementations">
+                    <div class="capability-implementations" hidden>
                         ${capability.implementations.map(item => {
                             const source = item.source;
                             const sourceFeature = source?.feature;
@@ -1644,7 +1693,7 @@ function generateCapabilitiesHTML(ontologyData) {
                                 : item.notes;
 
                             return `
-                        <article class="capability-impl">
+                        <article class="capability-impl" onclick="implCardClick(event, '${permalink}')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'${permalink}');}">
                             <div class="capability-impl-header">
                                 <span class="price-tag">${escapeHTML(item.product_record?.name || humanizeId(item.product))}</span>
                                 <h4><a href="${permalink}" class="feature-link" onclick="passTheme(this)">${escapeHTML(item.source_heading)}</a></h4>
@@ -1664,15 +1713,16 @@ function generateCapabilitiesHTML(ontologyData) {
                         }).join('')}
                     </div>
                     ${capability.model_access_count ? `
-                    <div class="capability-implementation-header model-access-header">
-                        <strong>${capability.model_access_count}</strong> relevant model access record${capability.model_access_count === 1 ? '' : 's'}
+                    <div class="capability-implementation-header model-access-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
+                        <span><strong>${capability.model_access_count}</strong> relevant model access record${capability.model_access_count === 1 ? '' : 's'}</span>
+                        <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
-                    <div class="capability-implementations">
+                    <div class="capability-implementations" hidden>
                         ${capability.model_access.map(record => {
                             const permalink = record.source ? `index.html#${record.source.featureId}` : 'index.html';
                             const runtimes = record.common_runtimes || [];
                             return `
-                        <article class="capability-impl capability-impl-model-access">
+                        <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, '${permalink}')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'${permalink}');}">
                             <div class="capability-impl-header">
                                 <span class="price-tag">${escapeHTML(record.provider_record?.name || humanizeId(record.provider))}</span>
                                 <h4><a href="${permalink}" class="feature-link" onclick="passTheme(this)">${escapeHTML(record.name)}</a></h4>
@@ -1716,6 +1766,25 @@ function generateCapabilitiesHTML(ontologyData) {
                 url.searchParams.set('theme', 'light');
                 link.href = url.pathname.split('/').pop() + url.search + url.hash;
             }
+        }
+
+        function toggleImpls(header) {
+            const impls = header.nextElementSibling;
+            const willExpand = impls.hidden;
+            impls.hidden = !willExpand;
+            header.setAttribute('aria-expanded', willExpand);
+            header.querySelector('.impl-chevron').textContent = willExpand ? '▼' : '▶';
+            const hint = header.querySelector('.expand-hint');
+            if (hint) hint.textContent = willExpand ? 'collapse' : 'expand';
+            header.title = willExpand ? 'Click to collapse' : 'Click to expand';
+        }
+
+        function implCardClick(event, permalink) {
+            if (event.target.closest('a')) return;
+            const isLight = document.body.classList.contains('light-mode') || document.documentElement.classList.contains('light-mode');
+            const url = new URL(permalink, window.location.href);
+            if (isLight) url.searchParams.set('theme', 'light');
+            window.location.href = url.pathname.split('/').pop() + url.search + url.hash;
         }
     </script>
 </body>
@@ -1776,8 +1845,17 @@ function generateAboutHTML() {
     const readmePath = path.join(__dirname, '..', 'README.md');
     let readme = fs.readFileSync(readmePath, 'utf-8');
 
-    // Remove "Local Development" section (not relevant for about page)
-    readme = readme.replace(/## Local Development[\s\S]*?(?=## |$)/, '');
+    // Remove transition note block (internal repo navigation links)
+    readme = readme.replace(/Transition note:[\s\S]*?\n\n(?=\*\*)/, '');
+
+    // Remove sections not relevant to the public about page (Automated Verification through Deployment)
+    // Single greedy match avoids false termination on ## headings inside code blocks
+    readme = readme.replace(/\n## Automated Verification[\s\S]*(?=\n## License)/, '');
+
+    // Rewrite relative markdown links to absolute GitHub URLs
+    readme = readme.replace(/\[([^\]]+)\]\((?!https?:\/\/|\/|#|mailto:)([^)]+)\)/g,
+        (_, text, href) => `[${text}](${REPO_URL}/blob/main/${href})`
+    );
 
     const content = markdownToHTML(readme);
 

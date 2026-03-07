@@ -1,6 +1,6 @@
 # Project Goals
 
-This document captures the intent, philosophy, and direction of AI Feature Tracker. It exists to help humans and LLMs collaborate on this project with a shared understanding of what we're building and why.
+This document captures the intent, philosophy, and direction of AI Capability Reference. It exists to help humans and LLMs collaborate on this project with a shared understanding of what we're building and why.
 
 Other docs cover the **how**: [README.md](README.md) (overview), [CONTRIBUTING.md](CONTRIBUTING.md) (workflow), [VERIFICATION.md](VERIFICATION.md) (automated checking), [data/_schema.md](data/_schema.md) (data format). This document covers the **why**.
 
