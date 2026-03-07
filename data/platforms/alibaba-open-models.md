@@ -2,7 +2,7 @@
 name: Alibaba Open Models
 vendor: Alibaba
 pricing_page: https://qwenlm.github.io/
-last_verified: 2026-02-22
+last_verified: 2026-03-07
 build_visibility: hidden
 ---
 
@@ -171,3 +171,57 @@ No restrictions - runs locally.
 | Date | Change |
 |------|--------|
 | 2024-09-19T12:00Z | Initial entry |
+
+---
+
+## Qwen 3.5 (Alibaba)
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://huggingface.co/Qwen/Qwen3.5-397B-A17B |
+| Launched | 2026-02-16T12:00Z |
+| Verified | 2026-03-07|
+| Checked | 2026-03-07|
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | 0.8B to 397B MoE (17B active) |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Ollama, LM Studio, vLLM |
+| macOS | ✅ | Ollama, LM Studio |
+| Linux | ✅ | All options |
+| iOS | ❌ |  |
+| Android | ⚠️ | Small models only (0.8B-2B) |
+| Chrome | ❌ |  |
+| web | ✅ | Web UIs, Alibaba Cloud Model Studio |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Local API + Alibaba Cloud |
+
+### Regional
+
+No restrictions (Apache 2.0 license).
+
+### Talking Point
+
+> "Qwen 3.5 is Alibaba's latest open model family with **native multimodal vision-language**, hybrid thinking modes, and MoE architecture. The flagship 397B-A17B model activates only 17B params at inference for efficiency. Sizes from **0.8B to 397B**, supports **201 languages**, 256K context (extendable to 1M). The small models (0.8B-9B) are ideal for on-device and edge deployment. Fully open under Apache 2.0."
+
+### Sources
+
+- [Qwen 3.5 on HuggingFace](https://huggingface.co/Qwen/Qwen3.5-397B-A17B)
+- [Ollama Qwen 3.5](https://ollama.com/library/qwen3.5)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-03-03T12:00Z | Qwen 3.5 Small Models released (0.8B, 2B, 4B, 9B) |
+| 2026-02-16T12:00Z | Initial entry — Qwen 3.5 flagship (397B-A17B) released |

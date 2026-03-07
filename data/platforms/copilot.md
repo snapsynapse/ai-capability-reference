@@ -4,7 +4,7 @@ vendor: Microsoft
 logo: https://copilot.microsoft.com/favicon.ico
 status_page: https://status.office.com
 pricing_page: https://www.microsoft.com/en-us/microsoft-copilot
-last_verified: 2026-03-04
+last_verified: 2026-03-07
 ---
 
 ## Pricing
@@ -26,8 +26,8 @@ last_verified: 2026-03-04
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-03-01|
-| Checked | 2026-03-04|
+| Verified | 2026-03-07|
+| Checked | 2026-03-07|
 
 ### Availability
 
@@ -35,15 +35,15 @@ last_verified: 2026-03-04
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
 | Copilot Pro | ❌ | — | Not available |
-| M365 Copilot | ✅ | Included | No-code agent creation |
+| M365 Copilot | ✅ | Included | No-code agent creation + multi-agent coordination |
 | Copilot Chat (M365 commercial) | ⚠️ | Limited | Free for basic agents |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
-| Windows | ✅ | M365 apps |
-| macOS | ✅ | M365 apps |
+| Windows | ✅ | M365 apps + Outlook |
+| macOS | ✅ | M365 apps + Outlook |
 | Linux | ❌ |  |
 | iOS | ❌ | Not available on mobile |
 | Android | ❌ | Not available on mobile |
@@ -58,17 +58,19 @@ Available in 17 regions including US, Europe, Asia Pacific.
 
 ### Talking Point
 
-> "Agent Builder lets you create custom AI agents using natural language—no coding required. **Requires M365 Copilot ($30/user/mo)** for full access. Basic agents work in Copilot Chat for M365 commercial users. Will be rebranded as 'Copilot Studio Lite'."
+> "Agent Builder lets you create custom AI agents using natural language—no coding required. **Requires M365 Copilot ($30/user/mo)** for full access. As of March 2026, **agents can call other agents as tools** (multi-agent coordination), and new agent surfaces include Outlook, OneDrive, and Teams communities."
 
 ### Sources
 
 - [Agent Builder Documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder)
 - [Build Agents Guide](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents)
+- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--february-2026/4496489)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-07T12:00Z | [Verified] Multi-agent coordination added (agents can call other agents as tools); new agent surfaces: Outlook, OneDrive, Teams communities; PowerPoint agentic mode |
 | 2025-11-18T12:00Z | Rebranding to Copilot Studio Lite announced |
 | 2025-02-24T12:00Z | Initial entry |
 
@@ -92,7 +94,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
 | Copilot Pro | ❌ | — | Not available |
-| M365 Copilot | ✅ | Full | 100+ connectors available |
+| M365 Copilot | ✅ | Full | 100+ connectors + federated connectors |
 
 ### Platforms
 
@@ -114,17 +116,19 @@ Available globally where M365 Copilot is available.
 
 ### Talking Point
 
-> "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. MCP support was added in November 2025."
+> "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. As of March 2026, **federated connectors add live data from Notion, HubSpot, Linear, Intercom, Google Contacts, and Google Calendar**."
 
 ### Sources
 
 - [Copilot Connectors Overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector)
 - [Copilot Connectors Gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery)
+- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--february-2026/4496489)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-07T12:00Z | [Verified] Federated connectors added: Notion, HubSpot, Linear, Intercom, Google Contacts, Google Calendar (live data via Researcher tool) |
 | 2025-11-01T12:00Z | MCP integration added |
 | 2023-11-01T12:00Z | Initial entry |
 

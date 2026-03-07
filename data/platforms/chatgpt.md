@@ -4,14 +4,14 @@ vendor: OpenAI
 logo: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
 status_page: https://status.openai.com
 pricing_page: https://chatgpt.com/pricing
-last_verified: 2026-03-04
+last_verified: 2026-03-07
 ---
 
 ## Pricing
 
 | Plan | Price | Notes |
 |------|-------|-------|
-| Free | $0 | GPT-5.2 Instant, ~10 msgs/5hrs then fallback to Mini |
+| Free | $0 | GPT-5.3 Instant, ~10 msgs/5hrs then fallback to Mini |
 | Go | $8/mo | 10x free limits, longer memory, may have ads |
 | Plus | $20/mo | GPT-5.2 Thinking, 5x Go limits, ad-free |
 | Pro | $200/mo | Unlimited GPT-5.2 Pro, Sora 2 Pro, max context |

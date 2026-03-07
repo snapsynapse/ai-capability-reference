@@ -4,7 +4,7 @@ vendor: Google
 logo: https://cdn.simpleicons.org/googlegemini/white
 status_page: https://status.cloud.google.com
 pricing_page: https://one.google.com/intl/en/about/google-ai-plans/
-last_verified: 2026-03-04
+last_verified: 2026-03-07
 ---
 
 ## Pricing
@@ -787,3 +787,56 @@ Available in supported regions where Gemini is available. Some features limited 
 | 2025-05-01T12:00Z | Veo 3 released with native audio generation |
 | 2024-12-01T12:00Z | Veo 2 generally available for developers |
 | 2024-05-14T12:00Z | Initial entry (announced at Google I/O 2024)
+
+---
+
+## Agentic App Actions (Android)
+
+| Property | Value |
+|----------|-------|
+| Category | agents |
+| Status | beta |
+| Gating | free |
+| URL | https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438 |
+| Launched | 2026-03-03T12:00Z |
+| Verified | 2026-03-07|
+| Checked | 2026-03-07|
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ✅ | Beta | Select apps and devices |
+| AI Pro | ✅ | Beta | Select apps and devices |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ❌ |  |
+| macOS | ❌ |  |
+| Linux | ❌ |  |
+| iOS | ❌ | Android only |
+| Android | ✅ | Pixel 6+ and Samsung S26 devices |
+| Chrome | ❌ |  |
+| web | ❌ | Mobile only |
+| terminal | ❌ |  |
+| API | ❌ | Consumer feature only |
+
+### Regional
+
+Beta available in select regions including the US.
+
+### Talking Point
+
+> "Gemini can now **take actions inside third-party apps on Android**—ordering groceries, completing tasks, filling forms—with minimal user supervision. Rolled out in the **March 2026 Pixel Drop**, available on **Pixel 6 and newer plus Samsung S26 devices**. Still in beta, select apps only. No paid plan required."
+
+### Sources
+
+- [March 2026 Pixel Drop](https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-03-03T12:00Z | Initial entry — agentic app actions launched via March 2026 Pixel Drop |

@@ -4,7 +4,7 @@ vendor: Perplexity AI
 logo: https://cdn.simpleicons.org/perplexity/white
 status_page: https://status.perplexity.ai
 pricing_page: https://www.perplexity.ai/pro
-last_verified: 2026-01-20
+last_verified: 2026-03-07
 ---
 
 ## Pricing
@@ -27,8 +27,8 @@ last_verified: 2026-01-20
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/introducing-assistant |
 | Launched | 2024-11-01T12:00Z |
-| Verified | 2026-02-07|
-| Checked | 2026-02-07|
+| Verified | 2026-03-07|
+| Checked | 2026-03-07|
 
 ### Availability
 
@@ -36,7 +36,7 @@ last_verified: 2026-01-20
 |------|-----------|--------|-------|
 | Free | ⚠️ | Basic | Simple actions only |
 | Pro | ✅ | Full | Advanced agent features |
-| Max | ✅ | Full | Priority processing |
+| Max | ✅ | Full | Priority processing + Computer Voice Mode |
 
 ### Platforms
 
@@ -58,16 +58,18 @@ Available globally via Comet browser.
 
 ### Talking Point
 
-> "Perplexity has agentic features built into Comet. **Basic actions work on free**; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows."
+> "Perplexity has agentic features built into Comet. **Basic actions work on free**; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows. **Computer Voice Mode (Mar 2026) adds hands-free voice commands for the agentic Computer—Max plan ($200/mo) only.**"
 
 ### Sources
 
 - [Comet Browser](https://www.perplexity.ai/comet)
+- [Perplexity Computer Voice Mode announcement](https://x.com/perplexity_ai/status/2029302896026853379)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-07T12:00Z | [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer |
 | 2024-11-01T12:00Z | Initial entry |
 
 ---
