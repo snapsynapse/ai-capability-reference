@@ -969,10 +969,12 @@ function generateHTML(platforms, ontologyData) {
 
 
         <div class="filters">
-            <div class="provider-toggles">
-                <label>Providers:</label>
-                ${(() => {
-            // Sort vendors by estimated active users first, then known provider groups, then alphabetical.
+            <div class="filter-dropdowns">
+                <div class="filter-group">
+                    <label>Provider:</label>
+                    <select id="providerFilter" onchange="filterProviders()">
+                        <option value="">All</option>
+                        ${(() => {
             const vendorOrder = ['OpenAI', 'Microsoft', 'Google', 'Anthropic', 'Perplexity AI', 'xAI', 'Meta', 'Mistral', 'DeepSeek', 'Alibaba', 'Ollama', 'LM Studio', 'Oobabooga'];
             vendors.sort((a, b) => {
                 const aIdx = vendorOrder.indexOf(a);
@@ -984,11 +986,11 @@ function generateHTML(platforms, ontologyData) {
             });
             return vendors.map(vendor => {
                 const vendorSlug = slugify(vendor);
-                return `<span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="${vendorSlug}" onclick="toggleProvider('${vendorSlug}')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('${vendorSlug}')}">${vendor}</span>`;
-            }).join('\n                ');
+                return `<option value="${vendorSlug}">${vendor}</option>`;
+            }).join('\n                        ');
         })()}
-            </div>
-            <div class="filter-dropdowns">
+                    </select>
+                </div>
                 <div class="filter-group">
                     <label>Category:</label>
                     <select id="categoryFilter" onchange="filterFeatures()">
@@ -1206,13 +1208,9 @@ function generateHTML(platforms, ontologyData) {
                 const section = card.closest('.platform-section');
                 if (section) {
                     const vendor = section.dataset.vendor;
-                    if (!activeProviders.has(vendor)) {
-                        activeProviders.add(vendor);
-                        const toggle = document.querySelector('.provider-toggle[data-vendor="' + vendor + '"]');
-                        if (toggle) {
-                            toggle.classList.add('active');
-                            toggle.setAttribute('aria-pressed', 'true');
-                        }
+                    const providerSelect = document.getElementById('providerFilter');
+                    if (providerSelect.value !== '' && providerSelect.value !== vendor) {
+                        providerSelect.value = vendor;
                         filterProviders();
                     }
                 }
@@ -1285,6 +1283,8 @@ function generateHTML(platforms, ontologyData) {
             const surface = surfaceSelect.value;
 
             // Highlight active filters
+            const providerSelect = document.getElementById('providerFilter');
+            providerSelect.classList.toggle('active', providerSelect.value !== '');
             categorySelect.classList.toggle('active', category !== '');
             tierSelect.classList.toggle('active', price !== '');
             surfaceSelect.classList.toggle('active', surface !== '');
@@ -1363,37 +1363,13 @@ function generateHTML(platforms, ontologyData) {
             }
         });
 
-        // Provider toggle functionality
-        let activeProviders = new Set();
-
+        // Provider filter functionality
         function initFromURL() {
             const params = new URLSearchParams(window.location.search);
             const pParam = params.get('p');
-            const toggles = document.querySelectorAll('.provider-toggle');
 
             if (pParam) {
-                // Parse underscore-separated providers from URL
-                const urlProviders = pParam.split('_').map(p => p.trim().toLowerCase());
-                activeProviders = new Set(urlProviders);
-
-                // Update toggle states
-                toggles.forEach(toggle => {
-                    const vendor = toggle.dataset.vendor;
-                    if (activeProviders.has(vendor)) {
-                        toggle.classList.add('active');
-                        toggle.setAttribute('aria-pressed', 'true');
-                    } else {
-                        toggle.classList.remove('active');
-                        toggle.setAttribute('aria-pressed', 'false');
-                    }
-                });
-            } else {
-                // All active by default
-                toggles.forEach(toggle => {
-                    activeProviders.add(toggle.dataset.vendor);
-                    toggle.classList.add('active');
-                    toggle.setAttribute('aria-pressed', 'true');
-                });
+                document.getElementById('providerFilter').value = pParam;
             }
 
             // Restore category filter from URL
@@ -1414,47 +1390,29 @@ function generateHTML(platforms, ontologyData) {
                 document.getElementById('surfaceFilter').value = surfaceParam;
             }
 
-            filterProviders();
+            filterProviders(true);
             filterFeatures(true);  // Skip URL update during init
         }
 
-        function toggleProvider(vendorSlug) {
-            const toggle = document.querySelector('.provider-toggle[data-vendor="' + vendorSlug + '"]');
-
-            if (activeProviders.has(vendorSlug)) {
-                // Don't allow deselecting the last one
-                if (activeProviders.size === 1) return;
-                activeProviders.delete(vendorSlug);
-                toggle.classList.remove('active');
-                toggle.setAttribute('aria-pressed', 'false');
-            } else {
-                activeProviders.add(vendorSlug);
-                toggle.classList.add('active');
-                toggle.setAttribute('aria-pressed', 'true');
-            }
-
-            updateURL();
-            filterProviders();
-        }
-
-        function filterProviders() {
+        function filterProviders(skipURLUpdate) {
+            const selected = document.getElementById('providerFilter').value;
             document.querySelectorAll('.platform-section').forEach(section => {
                 const vendor = section.dataset.vendor;
-                section.style.display = activeProviders.has(vendor) ? '' : 'none';
+                section.style.display = (!selected || vendor === selected) ? '' : 'none';
             });
             updateFeatureCount();
+            if (!skipURLUpdate) updateURL();
         }
 
         function updateURL() {
             const url = new URL(window.location);
 
-            // Provider toggles
-            const allToggles = document.querySelectorAll('.provider-toggle');
-            const allVendors = [...allToggles].map(t => t.dataset.vendor);
-            if (activeProviders.size === allVendors.length) {
-                url.searchParams.delete('p');
+            // Provider filter
+            const provider = document.getElementById('providerFilter').value;
+            if (provider) {
+                url.searchParams.set('p', provider);
             } else {
-                url.searchParams.set('p', [...activeProviders].join('_'));
+                url.searchParams.delete('p');
             }
 
             // Category filter

@@ -384,16 +384,7 @@ h1, .site-header h1 { font-size: 1.4rem; color: var(--text-heading); margin: 0; 
     outline-offset: 2px;
 }
 
-/* Provider toggles */
-.provider-toggles {
-    display: flex;
-    gap: 6px;
-    flex-wrap: wrap;
-    align-items: center;
-}
-
-.provider-toggles label { font-size: 0.85rem; color: var(--text-secondary); margin-right: 4px; }
-
+/* Provider/capability tags (used in feature cards and capabilities page) */
 .provider-toggle {
     background: var(--input-bg);
     border: 1px solid var(--card-border);
@@ -1265,26 +1256,6 @@ footer a:hover {
         align-items: stretch;
         gap: 12px;
         margin-bottom: 16px;
-    }
-
-    /* Provider toggles - wrap on mobile, hide label */
-    .provider-toggles {
-        width: 100%;
-        flex-wrap: wrap;
-        gap: 6px;
-        justify-content: flex-start;
-    }
-
-    .provider-toggles label {
-        display: none; /* Hide "Providers:" label on mobile */
-    }
-
-    .provider-toggle {
-        flex-shrink: 0;
-        white-space: nowrap;
-        font-size: 0.8rem;
-        padding: 8px 12px;
-        min-height: 36px;
     }
 
     /* Filter dropdowns - full width on mobile */

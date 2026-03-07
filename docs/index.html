@@ -58,23 +58,26 @@
 
 
         <div class="filters">
-            <div class="provider-toggles">
-                <label>Providers:</label>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="openai" onclick="toggleProvider('openai')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('openai')}">OpenAI</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="microsoft" onclick="toggleProvider('microsoft')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('microsoft')}">Microsoft</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="google" onclick="toggleProvider('google')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('google')}">Google</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="anthropic" onclick="toggleProvider('anthropic')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('anthropic')}">Anthropic</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="perplexity-ai" onclick="toggleProvider('perplexity-ai')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('perplexity-ai')}">Perplexity AI</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="xai" onclick="toggleProvider('xai')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('xai')}">xAI</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="meta" onclick="toggleProvider('meta')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('meta')}">Meta</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="mistral" onclick="toggleProvider('mistral')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('mistral')}">Mistral</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="deepseek" onclick="toggleProvider('deepseek')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('deepseek')}">DeepSeek</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="alibaba" onclick="toggleProvider('alibaba')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('alibaba')}">Alibaba</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="ollama" onclick="toggleProvider('ollama')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('ollama')}">Ollama</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="lm-studio" onclick="toggleProvider('lm-studio')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('lm-studio')}">LM Studio</span>
-                <span class="provider-toggle active" role="button" tabindex="0" aria-pressed="true" data-vendor="oobabooga" onclick="toggleProvider('oobabooga')" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleProvider('oobabooga')}">oobabooga</span>
-            </div>
             <div class="filter-dropdowns">
+                <div class="filter-group">
+                    <label>Provider:</label>
+                    <select id="providerFilter" onchange="filterProviders()">
+                        <option value="">All</option>
+                        <option value="openai">OpenAI</option>
+                        <option value="microsoft">Microsoft</option>
+                        <option value="google">Google</option>
+                        <option value="anthropic">Anthropic</option>
+                        <option value="perplexity-ai">Perplexity AI</option>
+                        <option value="xai">xAI</option>
+                        <option value="meta">Meta</option>
+                        <option value="mistral">Mistral</option>
+                        <option value="deepseek">DeepSeek</option>
+                        <option value="alibaba">Alibaba</option>
+                        <option value="ollama">Ollama</option>
+                        <option value="lm-studio">LM Studio</option>
+                        <option value="oobabooga">oobabooga</option>
+                    </select>
+                </div>
                 <div class="filter-group">
                     <label>Category:</label>
                     <select id="categoryFilter" onchange="filterFeatures()">
@@ -3379,13 +3382,9 @@
                 const section = card.closest('.platform-section');
                 if (section) {
                     const vendor = section.dataset.vendor;
-                    if (!activeProviders.has(vendor)) {
-                        activeProviders.add(vendor);
-                        const toggle = document.querySelector('.provider-toggle[data-vendor="' + vendor + '"]');
-                        if (toggle) {
-                            toggle.classList.add('active');
-                            toggle.setAttribute('aria-pressed', 'true');
-                        }
+                    const providerSelect = document.getElementById('providerFilter');
+                    if (providerSelect.value !== '' && providerSelect.value !== vendor) {
+                        providerSelect.value = vendor;
                         filterProviders();
                     }
                 }
@@ -3458,6 +3457,8 @@
             const surface = surfaceSelect.value;
 
             // Highlight active filters
+            const providerSelect = document.getElementById('providerFilter');
+            providerSelect.classList.toggle('active', providerSelect.value !== '');
             categorySelect.classList.toggle('active', category !== '');
             tierSelect.classList.toggle('active', price !== '');
             surfaceSelect.classList.toggle('active', surface !== '');
@@ -3536,37 +3537,13 @@
             }
         });
 
-        // Provider toggle functionality
-        let activeProviders = new Set();
-
+        // Provider filter functionality
         function initFromURL() {
             const params = new URLSearchParams(window.location.search);
             const pParam = params.get('p');
-            const toggles = document.querySelectorAll('.provider-toggle');
 
             if (pParam) {
-                // Parse underscore-separated providers from URL
-                const urlProviders = pParam.split('_').map(p => p.trim().toLowerCase());
-                activeProviders = new Set(urlProviders);
-
-                // Update toggle states
-                toggles.forEach(toggle => {
-                    const vendor = toggle.dataset.vendor;
-                    if (activeProviders.has(vendor)) {
-                        toggle.classList.add('active');
-                        toggle.setAttribute('aria-pressed', 'true');
-                    } else {
-                        toggle.classList.remove('active');
-                        toggle.setAttribute('aria-pressed', 'false');
-                    }
-                });
-            } else {
-                // All active by default
-                toggles.forEach(toggle => {
-                    activeProviders.add(toggle.dataset.vendor);
-                    toggle.classList.add('active');
-                    toggle.setAttribute('aria-pressed', 'true');
-                });
+                document.getElementById('providerFilter').value = pParam;
             }
 
             // Restore category filter from URL
@@ -3587,47 +3564,29 @@
                 document.getElementById('surfaceFilter').value = surfaceParam;
             }
 
-            filterProviders();
+            filterProviders(true);
             filterFeatures(true);  // Skip URL update during init
         }
 
-        function toggleProvider(vendorSlug) {
-            const toggle = document.querySelector('.provider-toggle[data-vendor="' + vendorSlug + '"]');
-
-            if (activeProviders.has(vendorSlug)) {
-                // Don't allow deselecting the last one
-                if (activeProviders.size === 1) return;
-                activeProviders.delete(vendorSlug);
-                toggle.classList.remove('active');
-                toggle.setAttribute('aria-pressed', 'false');
-            } else {
-                activeProviders.add(vendorSlug);
-                toggle.classList.add('active');
-                toggle.setAttribute('aria-pressed', 'true');
-            }
-
-            updateURL();
-            filterProviders();
-        }
-
-        function filterProviders() {
+        function filterProviders(skipURLUpdate) {
+            const selected = document.getElementById('providerFilter').value;
             document.querySelectorAll('.platform-section').forEach(section => {
                 const vendor = section.dataset.vendor;
-                section.style.display = activeProviders.has(vendor) ? '' : 'none';
+                section.style.display = (!selected || vendor === selected) ? '' : 'none';
             });
             updateFeatureCount();
+            if (!skipURLUpdate) updateURL();
         }
 
         function updateURL() {
             const url = new URL(window.location);
 
-            // Provider toggles
-            const allToggles = document.querySelectorAll('.provider-toggle');
-            const allVendors = [...allToggles].map(t => t.dataset.vendor);
-            if (activeProviders.size === allVendors.length) {
-                url.searchParams.delete('p');
+            // Provider filter
+            const provider = document.getElementById('providerFilter').value;
+            if (provider) {
+                url.searchParams.set('p', provider);
             } else {
-                url.searchParams.set('p', [...activeProviders].join('_'));
+                url.searchParams.delete('p');
             }
 
             // Category filter
