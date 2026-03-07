@@ -148,9 +148,9 @@
 
 <p>Every Sunday, a four-model cascade queries Gemini, Perplexity, Grok, and Claude to cross-check all tracked features — pricing tiers, platform availability, status, gating, and regional restrictions. To prevent provider bias, models are skipped when verifying features from their own platform (e.g. Gemini is not asked about Google features). A change is only flagged when at least three models agree on a discrepancy. Confirmed changes are surfaced as GitHub issues or pull requests for human review — nothing is auto-merged.</p>
 
-<p>Link integrity is checked separately every Wednesday, catching broken or redirected source URLs across all platforms.</p>
+<p>Link integrity is checked separately every Saturday, catching broken or redirected source URLs across all platforms.</p>
 
-<p>Features are also marked with a <code>Checked</code> date. Anything not re-verified within 30 days is treated as stale and prioritised in the next run.</p>
+<p>Features are also marked with a <code>Checked</code> date. Anything not re-verified within 7 days is treated as stale and prioritised in the next run.</p>
 
 <h2>How to Contribute</h2>
 

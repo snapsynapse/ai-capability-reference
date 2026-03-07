@@ -49,7 +49,7 @@ An ontology-first approach is more stable because it models the domain at the le
 
 ## Canonical Ontology
 
-The ontology for this project is defined in [ONTOLOGY.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY.md).
+The ontology for this project is defined in [ONTOLOGY.md](ONTOLOGY.md).
 
 Its core entity types are:
 

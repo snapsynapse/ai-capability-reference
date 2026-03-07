@@ -1,6 +1,6 @@
 # Data Schema
 
-This document describes the current platform-feature markdown format. It remains valid for the existing site, but it should now be read as the legacy or transitional schema during migration toward the ontology-aligned model in [SCHEMA_PROPOSAL.md](/Users/snap/Git/ai-capability-reference/SCHEMA_PROPOSAL.md).
+This document describes the current platform-feature markdown format. It remains valid for the existing site, but it should now be read as the legacy or transitional schema during migration toward the ontology-aligned model in [SCHEMA_PROPOSAL.md](design/SCHEMA_PROPOSAL.md).
 
 This document describes the format for platform feature files.
 

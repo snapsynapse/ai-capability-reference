@@ -87,9 +87,9 @@ When the repo's governance docs change, update the canonical skill source and re
 
 Relevant files:
 
-- [SCOPE.md](/Users/snap/Git/ai-capability-reference/SCOPE.md)
-- [ONTOLOGY.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY.md)
-- [CAPABILITY_TAXONOMY.md](/Users/snap/Git/ai-capability-reference/CAPABILITY_TAXONOMY.md)
+- [SCOPE.md](design/SCOPE.md)
+- [ONTOLOGY.md](design/ONTOLOGY.md)
+- [CAPABILITY_TAXONOMY.md](design/CAPABILITY_TAXONOMY.md)
 - [skills/capability-scanner/src](/Users/snap/Git/ai-capability-reference/skills/capability-scanner/src)
 
 ### Stop the scanner

@@ -224,7 +224,7 @@ function getAllFeatures() {
  * @param {number} thresholdDays - Days since last check to consider stale
  * @returns {Array<{platform: Object, feature: Object, daysSinceChecked: number}>}
  */
-function findStaleFeatures(thresholdDays = 30) {
+function findStaleFeatures(thresholdDays = 7) {
     const allFeatures = getAllFeatures();
     const now = new Date();
     const stale = [];

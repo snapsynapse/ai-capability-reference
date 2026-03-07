@@ -18,10 +18,10 @@ The goal is not to rewrite the repo all at once. The goal is to introduce the sm
 
 This proposal follows:
 
-- [ONTOLOGY_FIRST.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY_FIRST.md)
-- [ONTOLOGY.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY.md)
-- [CAPABILITY_TAXONOMY.md](/Users/snap/Git/ai-capability-reference/CAPABILITY_TAXONOMY.md)
-- [MIGRATION_STRATEGY.md](/Users/snap/Git/ai-capability-reference/MIGRATION_STRATEGY.md)
+- [ONTOLOGY_FIRST.md](ONTOLOGY_FIRST.md)
+- [ONTOLOGY.md](ONTOLOGY.md)
+- [CAPABILITY_TAXONOMY.md](CAPABILITY_TAXONOMY.md)
+- [MIGRATION_STRATEGY.md](MIGRATION_STRATEGY.md)
 
 ## Design Goal
 
@@ -70,7 +70,7 @@ Do not make every ontology entity first-class immediately.
 In particular, keep `Plan`, `Surface`, and `Constraint` embedded inside implementation records at first, even though they are ontological entities. That reduces migration cost.
 `Evidence` is now first-class through [`data/evidence/index.json`](/Users/snap/Git/ai-capability-reference/data/evidence/index.json).
 
-For the open/self-hosted domain, the repo should also introduce first-class `Model Access` records as a parallel extension rather than forcing those entries into the hosted-product implementation map. See [MODEL_ACCESS_EXTENSION.md](/Users/snap/Git/ai-capability-reference/MODEL_ACCESS_EXTENSION.md).
+For the open/self-hosted domain, the repo should also introduce first-class `Model Access` records as a parallel extension rather than forcing those entries into the hosted-product implementation map. See [MODEL_ACCESS_EXTENSION.md](MODEL_ACCESS_EXTENSION.md).
 
 ## Why This Shape
 

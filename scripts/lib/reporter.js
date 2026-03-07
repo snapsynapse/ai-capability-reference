@@ -363,7 +363,7 @@ function generateStalenessReport(staleFeatures) {
     const timestamp = new Date().toISOString();
 
     let report = `# Staleness Report - ${timestamp.split('T')[0]}\n\n`;
-    report += `Found ${staleFeatures.length} features that haven't been checked in over 30 days.\n\n`;
+    report += `Found ${staleFeatures.length} features that haven't been checked in over 7 days.\n\n`;
 
     // Group by platform
     const byPlatform = {};

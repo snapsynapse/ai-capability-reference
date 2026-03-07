@@ -5,11 +5,11 @@ Last updated: 2026-03-07
 
 This document describes how to move toward a capability-first product without breaking or prematurely deleting the current feature-first site.
 
-The governing principle for future decisions is documented in [ONTOLOGY_FIRST.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY_FIRST.md).
+The governing principle for future decisions is documented in [ONTOLOGY_FIRST.md](ONTOLOGY_FIRST.md).
 
-For the higher-level domain model that should guide future schema choices, see [ONTOLOGY.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY.md).
+For the higher-level domain model that should guide future schema choices, see [ONTOLOGY.md](ONTOLOGY.md).
 
-The first concrete repo-facing data shape is proposed in [SCHEMA_PROPOSAL.md](/Users/snap/Git/ai-capability-reference/SCHEMA_PROPOSAL.md).
+The first concrete repo-facing data shape is proposed in [SCHEMA_PROPOSAL.md](SCHEMA_PROPOSAL.md).
 
 ## Decision
 
@@ -183,7 +183,7 @@ When making changes in this repo during migration:
 
 ## Immediate Next Steps
 
-1. Pressure-test [`CAPABILITY_TAXONOMY.md`](/Users/snap/Git/ai-capability-reference/CAPABILITY_TAXONOMY.md) against all current features.
+1. Pressure-test [`CAPABILITY_TAXONOMY.md`](CAPABILITY_TAXONOMY.md) against all current features.
 2. Choose the first persisted capability data format.
 3. Add a thin mapping layer without disturbing verification workflows.
 4. Prototype a capability-first homepage or landing section before any large schema rewrite.

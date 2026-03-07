@@ -167,7 +167,7 @@ jobs:
 
           gh issue create \
             --title "[Automated] ${{ steps.staleness.outputs.count }} features need verification" \
-            --body "The weekly staleness check found ${{ steps.staleness.outputs.count }} features that haven't been verified in over 30 days.
+            --body "The weekly staleness check found ${{ steps.staleness.outputs.count }} features that haven't been verified in over 7 days.
 
           Please run the full verification workflow or manually review these features.
 

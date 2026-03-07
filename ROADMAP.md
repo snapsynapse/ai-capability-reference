@@ -1,6 +1,6 @@
 # Roadmap
 
-Planned features and enhancements for AI Capability Reference. This is a parking lot of ideas, not a committed plan. See [PROJECT_GOALS.md](PROJECT_GOALS.md) for the project's actual priorities.
+Planned features and enhancements for AI Capability Reference. This is a parking lot of ideas, not a committed plan. See [PROJECT_GOALS.md](design/PROJECT_GOALS.md) for the project's actual priorities.
 
 ---
 

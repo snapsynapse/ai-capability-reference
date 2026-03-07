@@ -5,7 +5,7 @@ Last updated: 2026-03-07
 
 This document defines the first-pass capability taxonomy for evolving this project from a feature tracker into a capability-first reference while keeping the existing feature-first view alive during migration.
 
-For the higher-level entity model that sits above this taxonomy, see [ONTOLOGY.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY.md).
+For the higher-level entity model that sits above this taxonomy, see [ONTOLOGY.md](ONTOLOGY.md).
 
 ## Purpose
 

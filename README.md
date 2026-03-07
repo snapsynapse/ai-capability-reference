@@ -83,9 +83,9 @@ Data in this reference is kept current through a semi-automated process combinin
 
 Every Sunday, a four-model cascade queries Gemini, Perplexity, Grok, and Claude to cross-check all tracked features — pricing tiers, platform availability, status, gating, and regional restrictions. To prevent provider bias, models are skipped when verifying features from their own platform (e.g. Gemini is not asked about Google features). A change is only flagged when at least three models agree on a discrepancy. Confirmed changes are surfaced as GitHub issues or pull requests for human review — nothing is auto-merged.
 
-Link integrity is checked separately every Wednesday, catching broken or redirected source URLs across all platforms.
+Link integrity is checked separately every Saturday, catching broken or redirected source URLs across all platforms.
 
-Features are also marked with a `Checked` date. Anything not re-verified within 30 days is treated as stale and prioritised in the next run.
+Features are also marked with a `Checked` date. Anything not re-verified within 7 days is treated as stale and prioritised in the next run.
 
 ## How to Contribute
 
@@ -128,7 +128,7 @@ node scripts/verify-features.js
 # Verify a specific platform
 node scripts/verify-features.js --platform claude
 
-# Check only stale features (>30 days since last check)
+# Check only stale features (>7 days since last check)
 node scripts/verify-features.js --stale-only
 
 # Dry run (no issues created)

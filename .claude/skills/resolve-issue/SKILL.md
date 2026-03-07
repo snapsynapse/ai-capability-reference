@@ -1,6 +1,6 @@
 ---
 name: resolve-issue
-description: Triage and resolve a verification issue from the AI feature tracker. Reads the GitHub issue, compares against current data, researches if needed, updates data files, and closes the issue with an audit comment.
+description: Triage and resolve a verification issue from the AI Capability Reference. Reads the GitHub issue, compares against current data, researches if needed, updates data files, and closes the issue with an audit comment.
 argument-hint: [issue-number or "batch" platform-name]
 allowed-tools: Bash, Read, Edit, Write, Grep, Glob, WebFetch, Task
 ---

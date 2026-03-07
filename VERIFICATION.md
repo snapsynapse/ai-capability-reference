@@ -149,7 +149,7 @@ The workflow runs automatically:
 
 ### Staleness Check
 
-A lightweight check runs daily to identify features with `Checked` date > 30 days old:
+A lightweight check runs daily to identify features with `Checked` date > 7 days old:
 
 ```bash
 node scripts/verify-features.js --stale-only
@@ -252,7 +252,7 @@ Jan 15: Feature verified, no change → Checked=Jan 15, Verified=Jan 15
 
 ### Config File
 
-Optional `verification.config.json` in repo root:
+Optional `scripts/verification.config.json`:
 
 ```json
 {
@@ -333,7 +333,7 @@ Current category model used by `check-links.js`:
 
 ### Scheduled Runs
 
-The link checker runs weekly on **Wednesdays at 00:00 UTC** (offset from feature verification on Sundays). If actionable problems are found (broken links/timeouts), an issue is automatically created with the affected URLs.
+The link checker runs weekly on **Saturdays at 00:00 UTC** (the day before feature verification on Sundays). If actionable problems are found (broken links/timeouts), an issue is automatically created with the affected URLs.
 
 ## How Grok (X/Twitter) Helps
 

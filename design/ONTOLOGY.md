@@ -5,7 +5,7 @@ Last updated: 2026-03-07
 
 This document defines the recommended ontology for the project at a level above the current feature schema.
 
-This ontology should be read alongside the governing principle in [ONTOLOGY_FIRST.md](/Users/snap/Git/ai-capability-reference/ONTOLOGY_FIRST.md).
+This ontology should be read alongside the governing principle in [ONTOLOGY_FIRST.md](ONTOLOGY_FIRST.md).
 
 The goal is to stop organizing the project around unstable buckets like `other` or overloaded buckets like `local models`, and instead describe the domain as a small set of entity types and relationships.
 

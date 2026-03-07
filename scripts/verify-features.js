@@ -143,7 +143,7 @@ EXAMPLES:
     # Verify a specific feature
     node scripts/verify-features.js --platform chatgpt --feature "Agent Mode"
 
-    # Check only stale features (not checked in 30+ days)
+    # Check only stale features (not checked in 7+ days)
     node scripts/verify-features.js --stale-only
 
     # Dry run with verbose output
