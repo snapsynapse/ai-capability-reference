@@ -46,8 +46,8 @@
             <h2>Access & Limits</h2>
             <p class="capability-hero-copy">Find what works for you. Filter AI features by cost, platform, and availability constraints.</p>
             <div class="capability-stats">
-                <span class="feature-count">32 free features</span>
-                <span class="feature-count">39 paid features</span>
+                <span class="feature-count">33 free features</span>
+                <span class="feature-count">38 paid features</span>
                 <span class="feature-count">12 region-limited</span>
             </div>
         </section>
@@ -92,7 +92,7 @@
                 <h2>By Access Tier</h2>
             </div>
 
-            <h3 class="constraint-group-label">Free (32)</h3>
+            <h3 class="constraint-group-label">Free (33)</h3>
             <div class="constraint-grid">
                 <article class="constraint-card" data-gating="free" data-surfaces="macos" data-provider="openai" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
@@ -211,6 +211,21 @@
                         </div>
                         <div class="constraint-surfaces">
                             <span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon no" title="Chrome">Chrome</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
+                        </div>
+                        
+                    </article>
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                        <div class="constraint-card-header">
+                            <span class="price-tag">Claude</span>
+                            <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
+                        </div>
+                        <div class="constraint-card-meta">
+                            <span class="badge avail-ga">GA</span>
+                            <span class="badge gate-free">Free</span>
+                            <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
+                        </div>
+                        <div class="constraint-surfaces">
+                            <span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon yes" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon no" title="Chrome">Chrome</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon no" title="API">API</span>
                         </div>
                         
                     </article>
@@ -576,7 +591,7 @@
                     </article>
             </div>
 
-            <h3 class="constraint-group-label">Paid (39)</h3>
+            <h3 class="constraint-group-label">Paid (38)</h3>
             <div class="constraint-grid">
                 <article class="constraint-card" data-gating="paid" data-surfaces="windows_ios_android_web_api" data-provider="openai" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
@@ -667,21 +682,6 @@
                             <span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon no" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon no" title="Chrome">Chrome</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon yes" title="API">API</span>
                         </div>
                         <p class="constraint-regional">Available in US, Canada, Japan, Korea, Thailand, Vietnam, Taiwan. Not available in UK, EU, Australia.</p>
-                    </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
-                        <div class="constraint-card-header">
-                            <span class="price-tag">Claude</span>
-                            <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
-                        </div>
-                        <div class="constraint-card-meta">
-                            <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
-                            <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
-                        </div>
-                        <div class="constraint-surfaces">
-                            <span class="plat-icon yes" title="web">web</span><span class="plat-icon yes" title="Windows">Windows</span><span class="plat-icon yes" title="macOS">macOS</span><span class="plat-icon yes" title="Linux">Linux</span><span class="plat-icon yes" title="iOS">iOS</span><span class="plat-icon yes" title="Android">Android</span><span class="plat-icon no" title="Chrome">Chrome</span><span class="plat-icon no" title="terminal">terminal</span><span class="plat-icon no" title="API">API</span>
-                        </div>
-                        
                     </article>
                     <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_terminal_api" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
@@ -1370,14 +1370,14 @@
                         </div>
                         
                     </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
@@ -2258,14 +2258,14 @@
                         </div>
                         
                     </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
@@ -3206,14 +3206,14 @@
                         </div>
                         
                     </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
@@ -3959,14 +3959,14 @@
             </div>
             <h3 class="constraint-group-label">Linux (28)</h3>
             <div class="constraint-grid">
-                <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
@@ -4562,14 +4562,14 @@
                         </div>
                         
                     </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
@@ -5450,14 +5450,14 @@
                         </div>
                         
                     </article>
-                    <article class="constraint-card" data-gating="paid" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
+                    <article class="constraint-card" data-gating="free" data-surfaces="windows_macos_linux_ios_android_web" data-provider="anthropic" onclick="implCardClick(event, this)" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event, this);}">
                         <div class="constraint-card-header">
                             <span class="price-tag">Claude</span>
                             <h4><a href="implementations.html?p=anthropic#claude-artifacts" onclick="passTheme(this)">Artifacts</a></h4>
                         </div>
                         <div class="constraint-card-meta">
                             <span class="badge avail-ga">GA</span>
-                            <span class="badge gate-paid">Paid</span>
+                            <span class="badge gate-free">Free</span>
                             <span class="constraint-cap-badge">Make and Edit Documents</span><span class="constraint-cap-badge">Write and Edit Code</span>
                         </div>
                         <div class="constraint-surfaces">
