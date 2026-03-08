@@ -216,6 +216,10 @@ Ontology-native evidence records live in `data/evidence/index.json` and are seed
 
 Canonical cross-platform skill sources live under [skills](skills/).
 
+All repo skills should use `skills/<name>/src/` as the only canonical source location. Do not commit mirrored skill copies under `.claude/skills/`, `.perplexity/skills/`, or other platform-local folders; those are local install locations, not source of truth.
+
+Repo skills also assume the companion `skill-provenance` skill is available anywhere the bundles are imported. Treat it as a required dependency for bundle identity, manifest continuity, and cross-surface handoff.
+
 Build platform exports with:
 
 ```bash

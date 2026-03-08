@@ -20,6 +20,9 @@ npm-debug.log*
 # Build artifacts (docs/index.html is committed intentionally)
 # docs/index.html is generated but committed for GitHub Pages
 skills/*/dist/
+.claude/skills/
+.perplexity/skills/
+.codex/skills/
 
 # Generated reports
 .link-reports/

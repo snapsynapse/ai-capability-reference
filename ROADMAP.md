@@ -37,6 +37,9 @@ Work in this phase:
 - finish implementation-map coverage for all in-scope hosted-product features
 - explicitly track records that intentionally have no capability mapping yet
 - define handling rules for model-access entitlements, reasoning modifiers, and similar edge cases
+- normalize skill layout so canonical sources live in `skills/<name>/src/`, not in repeated surface-local folders
+- remove committed duplicate skill copies from `.claude/skills/`, `.perplexity/skills/`, and similar platform-local locations
+- treat `skill-provenance` as a required companion dependency for reusable repo skills
 - tighten validation so missing links between capability, product, provider, implementation, and evidence records fail fast
 - reconcile counts and terminology across docs, build output, and data folders
 
@@ -131,6 +134,8 @@ These contracts should guide implementation across all phases:
 
 - `data/platforms/` stays the authoritative migration-era source for implementation details, plan constraints, surfaces, changelog, and evidence inputs
 - `data/capabilities/`, `data/providers/`, `data/products/`, `data/model-access/`, and `data/implementations/index.yml` are first-class ontology records that the build and validation pipeline must keep coherent
+- canonical skill sources live under `skills/<name>/src/`; platform-local install folders such as `.claude/skills/` and `.perplexity/skills/` are not source of truth and should not be committed
+- reusable repo skills depend on companion `skill-provenance` for provenance continuity across exported bundles and local installs
 - `scripts/build.js` continues to generate both the capability-first homepage and the feature-first detailed availability view
 - a future export step should generate canonical JSON artifacts from the same ontology-backed source used by the site build
 - any MCP or similar agent interface should sit on top of those generated artifacts, not become a second hand-maintained source of truth
@@ -147,6 +152,7 @@ The roadmap is complete when future implementation can satisfy these checks:
 - machine-readable export readiness: generated JSON includes stable IDs, relationships, freshness fields, and source links for all first-class entities
 - agent-access readiness: core questions can be answered from JSON or MCP-style reads without scraping HTML
 - regression protection: the legacy feature-first availability view remains usable while capability-first stays the primary framing
+- skill-structure hygiene: canonical skills remain single-source under `skills/<name>/src/` with no tracked surface-local duplicates
 - deferred-initiative gate: Tool Check does not move back to active status until the shared-model prerequisites are complete
 
 ## Assumptions

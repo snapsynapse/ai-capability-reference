@@ -8,6 +8,11 @@ const { execFileSync } = require('child_process');
 
 const ROOT = path.join(__dirname, '..');
 const SKILLS_DIR = path.join(ROOT, 'skills');
+const SURFACE_SKILL_DIRS = [
+    '.claude/skills',
+    '.perplexity/skills',
+    '.codex/skills'
+];
 const TARGETS = [
     { id: 'perplexity', ext: '.zip', platform: 'Perplexity', surface: 'Chat' },
     { id: 'claude', ext: '.skill', platform: 'Anthropic Claude', surface: 'Chat' },
@@ -60,6 +65,67 @@ function listSkillNames() {
         .map(entry => entry.name)
         .filter(name => fs.existsSync(path.join(SKILLS_DIR, name, 'src', 'SKILL.md')))
         .sort();
+}
+
+function listSkillDirectories() {
+    if (!fs.existsSync(SKILLS_DIR)) return [];
+    return fs.readdirSync(SKILLS_DIR, { withFileTypes: true })
+        .filter(entry => entry.isDirectory())
+        .map(entry => entry.name)
+        .sort();
+}
+
+function validateCanonicalSkillLayout() {
+    const errors = [];
+
+    listSkillDirectories().forEach(skillName => {
+        const legacyRootSkill = path.join(SKILLS_DIR, skillName, 'SKILL.md');
+        const canonicalSkill = path.join(SKILLS_DIR, skillName, 'src', 'SKILL.md');
+
+        if (fs.existsSync(legacyRootSkill)) {
+            errors.push(`Canonical skill source for "${skillName}" must live at skills/${skillName}/src/SKILL.md, not skills/${skillName}/SKILL.md.`);
+        }
+
+        if (!fs.existsSync(canonicalSkill) && fs.existsSync(path.join(SKILLS_DIR, skillName))) {
+            errors.push(`Skill "${skillName}" is missing src/SKILL.md.`);
+        }
+    });
+
+    if (errors.length) {
+        throw new Error(`Skill layout validation failed:\n- ${errors.join('\n- ')}`);
+    }
+}
+
+function trackedFiles(paths) {
+    try {
+        const output = execFileSync('git', ['ls-files', ...paths], {
+            cwd: ROOT,
+            encoding: 'utf8',
+            stdio: ['ignore', 'pipe', 'ignore']
+        }).trim();
+        return output ? output.split('\n').filter(Boolean) : [];
+    } catch (error) {
+        return [];
+    }
+}
+
+function validateNoTrackedSurfaceSkillCopies() {
+    const trackedSurfaceFiles = trackedFiles(SURFACE_SKILL_DIRS)
+        .filter(filepath => fs.existsSync(path.join(ROOT, filepath)))
+        .filter(filepath => /\/skills\/[^/]+\/SKILL\.md$/.test(filepath));
+
+    if (!trackedSurfaceFiles.length) return;
+
+    const lines = trackedSurfaceFiles.map(filepath => {
+        const parts = filepath.split('/');
+        const skillName = parts[parts.indexOf('skills') + 1] || 'unknown-skill';
+        return `${filepath} -> canonical source should be skills/${skillName}/src/SKILL.md`;
+    });
+
+    throw new Error(
+        'Tracked platform-local skill copies detected. Remove these tracked duplicates and rebuild from canonical sources:\n' +
+        lines.map(line => `- ${line}`).join('\n')
+    );
 }
 
 function walkFiles(dir, baseDir = dir) {
@@ -221,6 +287,9 @@ function packageTarget(skillName, srcDir, distDir, target) {
 }
 
 function main() {
+    validateCanonicalSkillLayout();
+    validateNoTrackedSurfaceSkillCopies();
+
     const requestedSkills = process.argv.slice(2);
     const skillNames = requestedSkills.length ? requestedSkills : listSkillNames();
 

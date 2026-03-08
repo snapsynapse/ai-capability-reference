@@ -33,7 +33,10 @@ Rules:
 - `ops/` holds platform-specific deployment and automation docs
 - `dist/` is generated and ignored by git
 - exported bundles should be rebuilt from `src/`, not hand-edited
+- `.claude/skills/`, `.perplexity/skills/`, and similar surface-local install folders are never canonical and should not be committed
 - repo governance docs remain the ultimate source of truth
+
+All repo skills should treat `skill-provenance` as a companion dependency. It is the shared provenance layer for bundle identity, manifest continuity, and cross-surface handoff.
 
 ## Current Workflow
 
@@ -45,6 +48,8 @@ node scripts/build-skill-bundles.js
 ```
 
 3. Use the generated outputs under `skills/<name>/dist/`
+
+If you need to install a skill into a platform-local folder for testing, do that from the generated export and keep the local install outside git-tracked canonical paths.
 
 ## Platforms
 
@@ -60,7 +65,7 @@ The current build script emits:
 |---|---|---|
 | [capability-scanner](capability-scanner/src/SKILL.md) | Evaluate external candidates (new products, releases, announcements) for inclusion | You see a new product or feature announcement |
 | [capability-audit](capability-audit/src/SKILL.md) | Audit a capability's coverage across tracked products; find and fix mapping and data gaps | A capability card looks thin, or after adding a new capability definition |
-| [resolve-issue](../skills/resolve-issue/SKILL.md) | Triage and close GitHub verification issues | The automated pipeline files an issue |
+| [resolve-issue](resolve-issue/src/SKILL.md) | Triage and close GitHub verification issues | The automated pipeline files an issue |
 
 ### capability-scanner references
 - [src/references/SCAN_WORKFLOW.md](capability-scanner/src/references/SCAN_WORKFLOW.md)
