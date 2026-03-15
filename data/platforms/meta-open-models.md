@@ -3,7 +3,7 @@ name: Meta Open Models
 vendor: Meta
 logo: https://cdn.simpleicons.org/meta
 status_page: https://ai.meta.com/llama/
-pricing_page: https://www.llama.com/models/
+pricing_page: https://llama.meta.com/
 last_verified: 2026-02-22
 build_visibility: hidden
 ---

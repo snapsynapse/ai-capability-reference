@@ -4,7 +4,7 @@ vendor: OpenAI
 logo: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
 status_page: https://status.openai.com
 pricing_page: https://chatgpt.com/pricing
-last_verified: 2026-03-07
+last_verified: 2026-03-14
 ---
 
 ## Pricing
@@ -13,8 +13,8 @@ last_verified: 2026-03-07
 |------|-------|-------|
 | Free | $0 | GPT-5.3 Instant, ~10 msgs/5hrs then fallback to Mini |
 | Go | $8/mo | 10x free limits, longer memory, may have ads |
-| Plus | $20/mo | GPT-5.2 Thinking, 5x Go limits, ad-free |
-| Pro | $200/mo | Unlimited GPT-5.2 Pro, Sora 2 Pro, max context |
+| Plus | $20/mo | GPT-5.4 Thinking, 5x Go limits, ad-free |
+| Pro | $200/mo | Unlimited GPT-5.4 Pro, Sora 2 Pro, 1M context |
 | Team | $25-30/user/mo | Plus features + admin, 2 user minimum |
 | Enterprise | Custom | SSO, advanced security, dedicated support |
 
@@ -377,6 +377,67 @@ Available globally.
 | Date | Change |
 |------|--------|
 | 2025-04-16T12:00Z | Initial entry |
+
+---
+
+## Codex Security
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | preview |
+| Gating | paid |
+| URL | https://openai.com/index/codex-security-now-in-research-preview/ |
+| Launched | 2026-03-06T12:00Z |
+| Verified | 2026-03-14|
+| Checked | 2026-03-14|
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Free | ❌ | — | Not available |
+| Go | ❌ | — | Not available |
+| Plus | ❌ | — | Not available |
+| Pro | ✅ | Included | Research preview, free for first month |
+| Team | ❌ | — | Not available |
+| Enterprise | ✅ | Included | RBAC admin controls |
+| Business | ✅ | Included | Research preview |
+| Edu | ✅ | Included | Research preview |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via Codex web |
+| macOS | ✅ | Via Codex web |
+| Linux | ❌ |  |
+| iOS | ❌ |  |
+| Android | ❌ |  |
+| Chrome | ❌ |  |
+| web | ✅ | chatgpt.com/codex/security |
+| terminal | ❌ |  |
+| API | ❌ | Web-only |
+
+### Regional
+
+Available globally.
+
+### Talking Point
+
+> "Codex Security is OpenAI's AI security agent—it connects to your GitHub repos, builds a codebase-specific threat model, validates vulnerabilities in sandboxed environments, and generates fix PRs. **Requires Pro ($200/mo), Enterprise, Business, or Edu**—not available on Plus or lower. Launched March 6, 2026 as a research preview with free usage for the first month."
+
+### Sources
+
+- [Codex Security: now in research preview](https://openai.com/index/codex-security-now-in-research-preview/)
+- [Codex Security Help](https://help.openai.com/en/articles/20001107-codex-security)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-03-14T12:00Z | Initial entry |
+| 2026-03-06T12:00Z | Research preview launched for Pro/Enterprise/Business/Edu |
 
 ---
 
@@ -807,8 +868,8 @@ Available globally where ChatGPT is available.
 |------|-----------|--------|-------|
 | Free | ✅ | Rate-limited | GPT-5.3 Instant; ~10 msgs/5 hrs then fallback |
 | Go | ✅ | Higher | 10× free limits |
-| Plus | ✅ | Higher | GPT-5.2 Thinking; 5× Go limits |
-| Pro | ✅ | Unlimited | GPT-5.2 Pro; no rate caps |
+| Plus | ✅ | Higher | GPT-5.4 Thinking; 5× Go limits |
+| Pro | ✅ | Unlimited | GPT-5.4 Pro; no rate caps; 1M context |
 | Team | ✅ | Full | Plus features + workspace admin |
 | Enterprise | ✅ | Custom | SSO, advanced security |
 
@@ -824,7 +885,7 @@ Available globally where ChatGPT is available.
 | Chrome   | ❌ | |
 | web      | ✅ | chatgpt.com |
 | terminal | ❌ | |
-| API      | ✅ | OpenAI API (gpt-4o, gpt-4.5, etc.) |
+| API      | ✅ | OpenAI API (GPT-5.4, 1M context) |
 
 ### Regional
 
@@ -832,16 +893,18 @@ Available globally where ChatGPT is permitted. Some advanced features may be US-
 
 ### Talking Point
 
-> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free users get GPT-5.3 Instant with standard rate limits; Plus and higher unlock more capable models and higher quotas."
+> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free users get GPT-5.3 Instant with standard rate limits; Plus unlocks **GPT-5.4 Thinking**; Pro gets **GPT-5.4 Pro** with 1M context. GPT-5.2 Thinking moved to Legacy Models with a 90-day retirement window."
 
 ### Sources
 
 - [ChatGPT](https://chatgpt.com)
 - [ChatGPT Pricing](https://chatgpt.com/pricing)
+- [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-14T12:00Z | [Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool |
 | 2026-03-07T12:00Z | Initial entry |
 | 2022-11-30T12:00Z | ChatGPT launched publicly |

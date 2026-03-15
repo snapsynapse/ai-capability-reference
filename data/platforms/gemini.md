@@ -4,7 +4,7 @@ vendor: Google
 logo: https://cdn.simpleicons.org/googlegemini
 status_page: https://status.cloud.google.com
 pricing_page: https://one.google.com/intl/en/about/google-ai-plans/
-last_verified: 2026-03-07
+last_verified: 2026-03-14
 ---
 
 ## Pricing
@@ -244,7 +244,7 @@ Available globally where Gemini Advanced is available.
 | Category | integrations |
 | Status | ga |
 | Gating | free |
-| URL | https://support.google.com/gemini/answer/13695044 |
+| URL | https://gemini.google.com/extensions |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-03-04|
 | Checked | 2026-03-08|
@@ -280,13 +280,14 @@ Available globally where Gemini is available.
 
 ### Sources
 
-- [Gemini Extensions](https://support.google.com/gemini/answer/13695044)
+- [Gemini Extensions](https://gemini.google.com/extensions)
 - [Gemini CLI Extensions](https://blog.google/technology/developers/gemini-cli-extensions/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-14T12:00Z | [Verified] URL updated: support.google.com/gemini/answer/13695044 → gemini.google.com/extensions (old URL 404) |
 | 2026-03-04T12:00Z | [Verified] Fixed broken URL (removed ?hl=en parameter) |
 | 2025-10-01T12:00Z | Gemini CLI Extensions added with MCP support |
 | 2023-09-19T12:00Z | Initial entry |
@@ -357,16 +358,17 @@ Available in most countries; some features limited in EU.
 | Gating | paid |
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
-| Verified | 2026-03-08|
-| Checked | 2026-03-08|
+| Verified | 2026-03-14|
+| Checked | 2026-03-14|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | Very limited | Basic suggestions |
-| AI Pro | ✅ | Full | Personal Workspace |
-| Workspace add-on | ✅ | Full | Business Workspace |
+| Free | ⚠️ | Very limited | Basic suggestions only |
+| AI Pro | ✅ | Full | Personal Workspace; Help me create, Fill with Gemini |
+| AI Ultra | ✅ | Full | Highest limits |
+| Workspace add-on | ✅ | Full | Business Workspace; AI Ultra Access add-on for advanced features |
 
 ### Platforms
 
@@ -378,26 +380,29 @@ Available in most countries; some features limited in EU.
 | iOS | ✅ | Workspace mobile apps |
 | Android | ✅ | Workspace mobile apps |
 | Chrome | ❌ |  |
-| web | ✅ | In Docs, Sheets, Slides, Gmail |
+| web | ✅ | In Docs, Sheets, Slides, Drive, Gmail |
 | terminal | ❌ |  |
 | API | ✅ | Gemini API |
 
 ### Regional
 
-Available globally.
+Docs, Sheets, Slides features available globally in English. Drive AI features (AI Overviews, Ask Gemini) initially US-only with broader rollout planned.
 
 ### Talking Point
 
-> "Gemini integrates directly into Google Docs, Sheets, and Slides. **Basic features are free; full 'Help me write/create' requires AI Pro or Workspace add-on.**"
+> "Gemini integrates directly into Google Docs, Sheets, Slides, and Drive. **March 2026 beta rollout** adds 'Help me create' in Docs (instant drafts from files/emails), 'Fill with Gemini' in Sheets (auto-populate tables), new slide creation in Slides, and AI Overviews + 'Ask Gemini' in Drive. **Requires AI Pro ($19.99/mo), AI Ultra ($249.99/mo), or Workspace add-on.** Drive features are US-only for now; full deck generation in Slides is coming soon."
 
 ### Sources
 
 - [Gemini for Google Workspace](https://workspace.google.com/solutions/ai/)
+- [Reimagining content creation](https://workspace.google.com/blog/product-announcements/reimagining-content-creation)
+- [Gemini Workspace updates March 2026](https://blog.google/products-and-platforms/products/workspace/gemini-workspace-updates-march-2026/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-14T12:00Z | [Verified] March 2026 beta rollout: Help me create (Docs), Fill with Gemini (Sheets), new slide creation (Slides), AI Overviews + Ask Gemini (Drive); AI Ultra tier added; Drive features US-only initially; English-only; full Slides deck gen coming soon |
 | 2024-06-24T12:00Z | Initial entry |
 
 ---
@@ -850,7 +855,7 @@ Beta available in select regions including the US.
 | Category | other |
 | Status | ga |
 | Gating | free |
-| URL | https://support.google.com/gemini/answer/13695044 |
+| URL | https://support.google.com/gemini/answer/14901455 |
 | Launched | 2026-02-26T12:00Z |
 | Verified | 2026-03-07 |
 | Checked | 2026-03-07 |
