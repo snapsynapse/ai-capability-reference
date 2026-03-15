@@ -26,13 +26,19 @@
           // Pre-build searchable text for each implementation
           var prodMap = {};
           (index.products || []).forEach(function (p) { prodMap[p.id] = p; });
+          var capSearchMap = {};
+          (index.capabilities || []).forEach(function (c) {
+            capSearchMap[c.id] = (c.searchTerms || []).join(' ');
+          });
           index.implementations.forEach(function (impl) {
             var prod = prodMap[impl.product] || {};
+            var capTerms = (impl.capabilities || []).map(function (cid) { return capSearchMap[cid] || ''; }).join(' ');
             impl._search = [
               impl.name,
               impl.productName || prod.name || '',
               prod.providerName || impl.provider || '',
               (impl.capabilityNames || []).join(' '),
+              capTerms,
               impl.talkingPoint || ''
             ].join(' ').toLowerCase();
           });

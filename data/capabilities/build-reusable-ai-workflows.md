@@ -3,6 +3,12 @@ id: build-reusable-ai-workflows
 name: Build Reusable AI Workflows
 group: connect
 status: active
+search_terms:
+  - custom GPTs
+  - AI workflows
+  - custom bots
+  - reusable prompts
+  - AI automation builder
 ---
 
 ## Summary

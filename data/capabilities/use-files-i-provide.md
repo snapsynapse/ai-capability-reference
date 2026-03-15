@@ -3,6 +3,12 @@ id: use-files-i-provide
 name: Use Files I Provide
 group: work-with-my-stuff
 status: active
+search_terms:
+  - upload files
+  - attach files
+  - file analysis
+  - process files
+  - work with files
 ---
 
 ## Summary

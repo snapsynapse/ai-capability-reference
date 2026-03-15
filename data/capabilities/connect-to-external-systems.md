@@ -3,6 +3,12 @@ id: connect-to-external-systems
 name: Connect to External Systems
 group: connect
 status: active
+search_terms:
+  - AI integrations
+  - API access
+  - connect apps
+  - third party plugins
+  - external tools
 ---
 
 ## Summary

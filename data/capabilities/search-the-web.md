@@ -3,6 +3,13 @@ id: search-the-web
 name: Search the Web
 group: act-for-me
 status: active
+search_terms:
+  - web search
+  - web browsing
+  - internet access
+  - real-time information
+  - browse the internet
+  - grounding
 ---
 
 ## Summary

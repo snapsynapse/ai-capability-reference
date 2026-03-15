@@ -3,6 +3,13 @@ id: write-and-edit-code
 name: Write and Edit Code
 group: create
 status: active
+search_terms:
+  - AI code editor
+  - code generation
+  - AI coding assistant
+  - write code
+  - code completion
+  - AI programming
 ---
 
 ## Summary

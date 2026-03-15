@@ -3,6 +3,12 @@ id: generate-video
 name: Generate Video
 group: create
 status: active
+search_terms:
+  - AI video generator
+  - create video
+  - text to video
+  - AI video maker
+  - generate video clips
 ---
 
 ## Summary

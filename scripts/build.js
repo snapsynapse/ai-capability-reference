@@ -2378,6 +2378,7 @@ function buildDataExport(ontologyData) {
         name: c.name,
         group: c.group,
         summary: c.summary || '',
+        searchTerms: c.search_terms || [],
         implementationCount: c.implementation_count || 0,
         productCount: c.product_count || 0
     }));

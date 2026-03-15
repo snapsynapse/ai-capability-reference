@@ -3,6 +3,13 @@ id: read-text-and-documents
 name: Read Text and Documents
 group: understand
 status: active
+search_terms:
+  - upload documents
+  - read PDF
+  - analyze documents
+  - document understanding
+  - file upload
+  - read files
 ---
 
 ## Summary

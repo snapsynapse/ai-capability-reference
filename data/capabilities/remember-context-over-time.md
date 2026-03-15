@@ -3,6 +3,12 @@ id: remember-context-over-time
 name: Remember Context Over Time
 group: work-with-my-stuff
 status: active
+search_terms:
+  - AI memory
+  - remember conversations
+  - persistent context
+  - long-term memory
+  - remember preferences
 ---
 
 ## Summary

@@ -3,6 +3,13 @@ id: generate-images
 name: Generate Images
 group: create
 status: active
+search_terms:
+  - AI image generator
+  - create images
+  - text to image
+  - AI art
+  - generate pictures
+  - image creation
 ---
 
 ## Summary

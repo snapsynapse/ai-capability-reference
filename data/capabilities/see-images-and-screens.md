@@ -3,6 +3,13 @@ id: see-images-and-screens
 name: See Images and Screens
 group: understand
 status: active
+search_terms:
+  - image recognition
+  - vision
+  - analyze images
+  - screenshot analysis
+  - image understanding
+  - upload photos
 ---
 
 ## Summary

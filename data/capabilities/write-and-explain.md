@@ -3,6 +3,13 @@ id: write-and-explain
 name: Write and Explain
 group: respond
 status: active
+search_terms:
+  - AI chat
+  - ask questions
+  - explain things
+  - write text
+  - answer questions
+  - AI writing
 ---
 
 ## Summary

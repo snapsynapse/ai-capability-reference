@@ -3,6 +3,12 @@ id: do-multi-step-research
 name: Do Multi-Step Research
 group: act-for-me
 status: active
+search_terms:
+  - deep research
+  - AI research assistant
+  - multi-step research
+  - research agent
+  - comprehensive research
 ---
 
 ## Summary

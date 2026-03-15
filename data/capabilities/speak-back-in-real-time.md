@@ -3,6 +3,13 @@ id: speak-back-in-real-time
 name: Speak Back in Real Time
 group: respond
 status: active
+search_terms:
+  - voice output
+  - text to speech
+  - AI voice
+  - voice response
+  - talk back
+  - spoken answers
 ---
 
 ## Summary

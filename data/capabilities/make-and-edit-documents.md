@@ -3,6 +3,12 @@ id: make-and-edit-documents
 name: Make and Edit Documents
 group: create
 status: active
+search_terms:
+  - AI document editor
+  - create documents
+  - edit documents
+  - AI writing assistant
+  - collaborative editing
 ---
 
 ## Summary

@@ -3,6 +3,12 @@ id: use-it-on-my-surfaces
 name: Use It on My Surfaces
 group: access-context
 status: active
+search_terms:
+  - AI desktop app
+  - mobile app
+  - API access
+  - browser extension
+  - platform availability
 ---
 
 ## Summary

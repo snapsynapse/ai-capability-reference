@@ -3,6 +3,12 @@ id: organize-work-in-projects
 name: Organize Work in Projects
 group: work-with-my-stuff
 status: active
+search_terms:
+  - AI projects
+  - organize conversations
+  - project folders
+  - workspace organization
+  - group chats
 ---
 
 ## Summary

@@ -3,6 +3,13 @@ id: take-actions-and-run-tools
 name: Take Actions and Run Tools
 group: act-for-me
 status: active
+search_terms:
+  - AI agent
+  - agentic AI
+  - tool use
+  - AI automation
+  - run tasks
+  - computer use
 ---
 
 ## Summary
