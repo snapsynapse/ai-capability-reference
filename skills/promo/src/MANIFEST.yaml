@@ -1,0 +1,41 @@
+bundle: promo
+bundle_version: 1.0.0
+bundle_date: 2026-03-15
+description: >-
+  Draft weekly AI Capability Reference roundup posts for LinkedIn.
+  Reads scan results, selects templates, drafts Post Protocol-compliant
+  posts, and logs published entries to Obsidian.
+
+compatibility:
+  designed_for:
+    platform: Claude Code
+    surface: Terminal
+  tested_on:
+    - platform: Claude Code
+      surface: Terminal
+      status: pass
+      date: 2026-03-15
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+
+files:
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:a9c740f3bb3c0a2ddf4568ff875c9c6a61d56036fa300c740dc5afcbfbd68bac
+  - path: CHANGELOG.md
+    role: reference
+    version: 1
+    hash: sha256:fc5dc474835d2c34af0de0476980382b9a1fe635ebc21a66ab981bc0c589c883
+  - path: post-protocol-rules.md
+    role: reference
+    version: 1
+    hash: sha256:aca80080733b6b26542ed192716080bba37fca2398e17c58b7c77de96951c335
+  - path: roundup-templates.md
+    role: reference
+    version: 1
+    hash: sha256:bd66f3f6fa04a8071c99b173b4723f8dbca028a9846a0188cde31875f9f1ba68
+  - path: MANIFEST.yaml
+    role: reference
+    version: 1
+    hash: self

@@ -1,0 +1,34 @@
+bundle: capability-scanner
+bundle_version: 2.1.0
+bundle_date: 2026-03-15
+description: >-
+  Evaluate AI product announcements, model releases, pricing changes, and
+  candidate providers against the AI Capability Reference ontology and scope
+  rules. Assesses whether something should be added, updated, watched, or
+  skipped in the reference.
+
+compatibility:
+  designed_for:
+    platform: Claude Code
+    surface: Terminal
+  tested_on:
+    - platform: Claude Code
+      surface: Terminal
+      status: pass
+      date: 2026-03-07
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+
+files:
+  - path: SKILL.md
+    role: skill
+    version: 2.1
+    hash: sha256:095344760674ebf6dfe8e137be6e6aa6639f36d5020295bf1a72f3f8c44eaec7
+  - path: CHANGELOG.md
+    role: reference
+    version: 2.1
+    hash: sha256:b4f24492f629e2c24d494b914062314b3e38f7a502eba2bcb57b0e82cd22042d
+  - path: MANIFEST.yaml
+    role: reference
+    version: 2.1
+    hash: self

@@ -1669,8 +1669,16 @@ function generateCapabilitiesHTML(ontologyData) {
     // Compute constraint summaries for each capability
     function capabilityConstraintSummary(capability) {
         const impls = capability.implementations || [];
-        const freeCount = impls.filter(item => item.source?.feature?.gating === 'free').length;
-        const totalCount = impls.length;
+
+        // Count distinct products (not implementations) for the badge
+        const productGating = new Map(); // product → has a free impl?
+        impls.forEach(item => {
+            const pid = item.product;
+            const isFree = item.source?.feature?.gating === 'free';
+            if (!productGating.has(pid) || isFree) productGating.set(pid, isFree);
+        });
+        const totalCount = productGating.size;
+        const freeCount = [...productGating.values()].filter(Boolean).length;
 
         // Collect all surfaces across implementations
         const surfaceCounts = {};
@@ -1712,16 +1720,7 @@ function generateCapabilitiesHTML(ontologyData) {
             }
         }
 
-        // Build comparison line for capabilities with 4+ implementations
-        let comparisonLine = '';
-        if (totalCount >= 4) {
-            const parts = [`Available from ${capability.product_count} products`];
-            if (freeCount > 0) parts.push(`${freeCount} free`);
-            else parts.push('none free');
-            comparisonLine = parts.join('. ') + '.';
-        }
-
-        return { freeCount, totalCount, surfaceBadges, hasRegionLimits, oldestChecked, comparisonLine };
+        return { freeCount, totalCount, surfaceBadges, hasRegionLimits, oldestChecked };
     }
 
     const totalImpls = ontologyData.implementations.filter(item => item.capabilities.length > 0).length;
@@ -1806,7 +1805,6 @@ function generateCapabilitiesHTML(ontologyData) {
                         </span>
                     </div>
                     <p class="capability-summary">${escapeHTML(capability.summary)}</p>
-                    ${cs.comparisonLine ? `<p class="capability-comparison">${escapeHTML(cs.comparisonLine)}</p>` : ''}
                     <div class="constraint-badges">
                         ${cs.totalCount > 0 ? `<span class="constraint-badge ${cs.freeCount > 0 ? 'cb-free' : 'cb-paid'}">${cs.freeCount} of ${cs.totalCount} free</span>` : ''}
                         ${cs.surfaceBadges.map(badge => `<span class="constraint-badge cb-surface">${escapeHTML(badge)}</span>`).join('')}

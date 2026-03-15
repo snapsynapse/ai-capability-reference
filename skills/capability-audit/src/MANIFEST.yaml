@@ -1,0 +1,30 @@
+bundle: capability-audit
+bundle_version: 1.0.0
+bundle_date: 2026-03-15
+description: >-
+  Audit one or more capabilities for implementation coverage gaps. Reads
+  capability definitions and the implementation index, cross-references
+  against platform files, classifies each missing product as a mapping gap
+  or data gap, presents findings, and applies fixes after confirmation.
+
+compatibility:
+  designed_for:
+    platform: Claude Code
+    surface: Terminal
+  tested_on:
+    - platform: Claude Code
+      surface: Terminal
+      status: pass
+      date: 2026-03-15
+  spec_version: agentskills.io/1.0
+  frontmatter_mode: metadata
+
+files:
+  - path: SKILL.md
+    role: skill
+    version: 1
+    hash: sha256:ab8f4316c9e04c07534ae78a8e8f658c5d875825def67e8e80a0f1b0f914375a
+  - path: MANIFEST.yaml
+    role: reference
+    version: 1
+    hash: self

@@ -290,6 +290,19 @@ function validate() {
         }
     });
 
+    // Bidirectional provider ↔ product consistency
+    const providerToProducts = new Map();
+    providers.forEach(record => {
+        providerToProducts.set(record.id, new Set(parseBulletSection(record.body, 'Products')));
+    });
+    products.forEach(record => {
+        const providerId = record.frontmatter.provider;
+        const providerProducts = providerToProducts.get(providerId);
+        if (providerProducts && !providerProducts.has(record.id)) {
+            fail(errors, `Product ${record.id} claims provider ${providerId}, but provider does not list it`);
+        }
+    });
+
     modelAccess.forEach(record => {
         if (record.file === 'README.md') return;
         if (record.id !== record.file.replace(/\.md$/, '')) {
@@ -334,11 +347,20 @@ function validate() {
             fail(errors, `Implementation ${entry.id} references missing provider: ${entry.provider}`);
         }
 
-        (entry.capabilities || []).forEach(capabilityId => {
+        const caps = entry.capabilities || [];
+        caps.forEach(capabilityId => {
             if (!capabilityIds.has(capabilityId)) {
                 fail(errors, `Implementation ${entry.id} references missing capability: ${capabilityId}`);
             }
         });
+
+        // Every implementation must map to at least one capability or be explicitly deferred
+        if (caps.length === 0) {
+            const notes = (entry.notes || '').toLowerCase();
+            if (!notes.includes('transitional')) {
+                fail(errors, `Implementation ${entry.id} has no capabilities and no transitional deferral note`);
+            }
+        }
 
         if (entry.source_file && !fs.existsSync(path.join(ROOT, entry.source_file))) {
             fail(errors, `Implementation ${entry.id} has missing source_file: ${entry.source_file}`);

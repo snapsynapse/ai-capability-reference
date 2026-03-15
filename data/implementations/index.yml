@@ -450,6 +450,8 @@
   source_file: data/platforms/grok.md
   source_heading: Think Mode
   capabilities: []
+  notes: |
+    Transitional reasoning-depth record. No stable primary capability mapping yet.
 - id: grok-memory
   product: grok
   provider: xai
