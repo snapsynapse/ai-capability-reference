@@ -37,6 +37,37 @@ For batch mode, list all open issues for the platform:
 gh issue list --repo snapsynapse/ai-capability-reference --state open --search "<platform>" --json number,title,labels
 ```
 
+**Batch workflow:** When resolving multiple issues for a platform, read all the issues and the data file once, then write a structured assessment document before making any changes. This lets you spot cross-issue patterns and present everything to the user in one pass. Use this format:
+
+```markdown
+# Batch Assessment — [Platform]
+**Date:** YYYY-MM-DD
+**Issues:** #N, #N, #N
+
+---
+## Issue #N — Feature Name
+**Conflict:** [one-line summary of what the models disagreed on]
+
+### Internal Consistency Check
+- [findings from Step 2]
+
+### Research Findings
+- [what external research revealed, or "Unavailable — API outage" with fallback analysis]
+
+### Assessment
+**Resolution: [No change / Data update / Duplicate]** (Confidence: High/Medium/Low)
+[reasoning]
+
+### Proposed Changes
+[numbered list, or "None"]
+
+---
+## Summary Table
+| Issue | Feature | Resolution | Data Change? | Confidence |
+```
+
+Present this document to the user before applying any changes. For no-change closes and duplicates, you can proceed after presenting without waiting for explicit per-issue approval.
+
 ### Step 2: Read current data and check internal consistency
 
 Read the relevant `data/platforms/<platform>.md` file. Identify the feature section that matches the issue.
@@ -70,9 +101,14 @@ Before assessing the issue itself, scan the feature's data for internal contradi
 
 **For all other platforms:** research when Step 3 indicates it's needed, or when the internal consistency check found issues.
 
-When researching, check official sources first:
-1. Fetch the feature's official URL from the data file
-2. Use Perplexity via curl for broader search:
+**Research hierarchy** — try these in order. If a higher-priority source is unavailable (API error, timeout, outage), fall back to the next level:
+
+1. **Perplexity search** (preferred) — broadest, most current. Use `sonar-pro` model with `search_recency_filter: "month"`.
+2. **Official URL fetch** — fetch the feature's URL from the data file directly. Good for confirming specific facts.
+3. **Model consensus + internal consistency** — when external research is completely unavailable, you can still assess using the model responses embedded in the issue plus the internal consistency check from Step 2. This is a valid fallback but carries lower confidence.
+
+When falling back to level 3, note it in your assessment and flag the issue for re-verification when research capability is restored. Downgrade your confidence accordingly.
+
 ```bash
 curl -s -X POST "https://api.perplexity.ai/chat/completions" \
   -H "Authorization: Bearer $(jq -r '.environmentVariables.PERPLEXITY_API_KEY' ~/.claude/settings.json)" \
@@ -97,6 +133,14 @@ Edit the feature section in `data/platforms/<platform>.md`:
 - Add/update source URLs if better ones were found
 
 **If no data change needed**, only bump the `Checked` date.
+
+**Handling temporary state changes** (promotions, trials, limited-time access):
+When a feature's availability is temporarily different from its default (e.g., a paid feature with a free promotion), represent the *current* state in the data since that's what users will encounter:
+- Keep the **Gating** field at the default/permanent value (e.g., `paid`)
+- Set affected availability rows to `⚠️` with a note like `Temporary promotion`
+- Update the **talking point** to mention both the default and the temporary state
+- Add a **changelog entry** describing the promotion
+- The next verification cycle will catch when the promotion ends and revert the rows
 
 ### Step 6: Close the issue with audit comment
 
