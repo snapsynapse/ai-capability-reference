@@ -40,6 +40,8 @@ last_verified: 2026-03-14
 | Go | ✅ | Standard | Full Advanced Voice |
 | Plus | ✅ | Higher | Priority access |
 | Pro | ✅ | Unlimited | Maximum quality |
+| Team | ✅ | Higher | Priority access |
+| Enterprise | ✅ | Custom | Full access |
 
 ### Platforms
 
@@ -84,6 +86,7 @@ OpenAI has indicated this may be temporary, with voice potentially returning to 
 
 | Date | Change |
 |------|--------|
+| 2026-03-15T12:00Z | [Verified] Added Team and Enterprise rows to availability table |
 | 2026-01-15T12:00Z | macOS desktop voice retired |
 | 2024-09-24T12:00Z | Initial entry |
 
@@ -339,8 +342,8 @@ Available globally where ChatGPT is available.
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Go | ❌ | — | Not available |
+| Free | ⚠️ | Limited | Temporary promotion |
+| Go | ⚠️ | Limited | Temporary promotion |
 | Plus | ✅ | Included | Access to Codex |
 | Pro | ✅ | Higher | Priority compute |
 | Team | ✅ | Included | |
@@ -366,7 +369,7 @@ Available globally.
 
 ### Talking Point
 
-> "Codex is ChatGPT's coding agent that can write, run, and debug code autonomously. It requires **Plus or higher**—not available on Free or Go. Available via **web, desktop apps, and CLI** (`npm i -g @openai/codex`) on macOS, Linux, and Windows (WSL)."
+> "Codex is ChatGPT's coding agent that can write, run, and debug code autonomously. Normally requires **Plus or higher**, but **Free and Go users have temporary promotional access** (limited). Available via **web, desktop apps, and CLI** (`npm i -g @openai/codex`) on macOS, Linux, and Windows (WSL)."
 
 ### Sources
 
@@ -378,6 +381,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-03-15T18:00Z | [Verified] Temporary Free/Go promotional access; paid plan rate limits doubled |
 | 2026-03-15T12:00Z | [Verified] Terminal/CLI access added (Codex CLI on macOS/Linux/Windows WSL); Linux support corrected; sources expanded |
 | 2025-04-16T12:00Z | Initial entry |
 
