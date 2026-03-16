@@ -144,14 +144,14 @@
 
     html += '</tbody></table>';
 
-    // Summary
+    // Summary — show capability coverage with context
     var total = index.capabilities.length;
     var summaryParts = selectedProducts.map(function (pid) {
       var count = 0;
       index.capabilities.forEach(function (cap) { if (implMap[pid][cap.id]) count++; });
-      return escapeHtml(prodNames[pid] || pid) + ': ' + count + '/' + total;
+      return '<strong>' + escapeHtml(prodNames[pid] || pid) + '</strong>: ' + count + '/' + total;
     });
-    html = '<p class="compare-summary">' + summaryParts.join(' &bull; ') + '</p>' + html;
+    html = '<p class="compare-summary">' + summaryParts.join(' &bull; ') + ' <span class="compare-summary-note">(capabilities with at least one feature mapped)</span></p>' + html;
 
     container.innerHTML = html;
     if (exportPanel) exportPanel.hidden = false;
@@ -191,8 +191,9 @@
     return { capabilities: index.capabilities, selectedProducts: selectedProducts, prodNames: prodNames, implMap: implMap };
   };
 
-  // Init from URL
+  // Init from URL (overrides HTML defaults) or fall back to pre-checked HTML state
   var initial = readURL();
+  if (!initial.length) initial = getSelectedProducts();
   if (initial.length >= 2) {
     selectedProducts = initial;
     loadIndex(function () {

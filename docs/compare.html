@@ -29,9 +29,9 @@
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
             <a href="index.html" class="site-nav-link" onclick="passTheme(this)">Capabilities</a>
-            <a href="implementations.html" class="site-nav-link" onclick="passTheme(this)">Detailed Availability</a>
+            <a href="implementations.html" class="site-nav-link" onclick="passTheme(this)">Products</a>
             <a href="compare.html" class="site-nav-link active" onclick="passTheme(this)">Compare</a>
-            <a href="constraints.html" class="site-nav-link" onclick="passTheme(this)">Access & Limits</a>
+            <a href="constraints.html" class="site-nav-link" onclick="passTheme(this)">Limits</a>
             <a href="about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
         </nav>
         <div class="header-actions">
@@ -39,17 +39,16 @@
                 <input type="search" id="siteSearchInput" class="search-input" placeholder="Search features..." aria-label="Search features" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
                 <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
             </div>
-            <a href="https://github.com/snapsynapse/ai-capability-reference" class="github-link" title="View on GitHub">GitHub</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓</button>
         </div>
     </header>
-    <main>
+    <div class="container" id="main-content">
         <section class="compare-controls">
             <h2>Compare Products</h2>
-            <p>Select up to 3 products to compare side-by-side.</p>
+            <p>Select up to 3 subscription AI products to compare side-by-side.</p>
             <div class="product-selector" role="group" aria-label="Select products to compare">
-                <label class="product-checkbox"><input type="checkbox" value="chatgpt" onchange="updateComparison()"> ChatGPT</label>
-                <label class="product-checkbox"><input type="checkbox" value="claude" onchange="updateComparison()"> Claude</label>
+                <label class="product-checkbox"><input type="checkbox" value="chatgpt" checked onchange="updateComparison()"> ChatGPT</label>
+                <label class="product-checkbox"><input type="checkbox" value="claude" checked onchange="updateComparison()"> Claude</label>
                 <label class="product-checkbox"><input type="checkbox" value="copilot" onchange="updateComparison()"> Microsoft Copilot</label>
                 <label class="product-checkbox"><input type="checkbox" value="gemini" onchange="updateComparison()"> Gemini</label>
                 <label class="product-checkbox"><input type="checkbox" value="grok" onchange="updateComparison()"> Grok</label>
@@ -61,7 +60,7 @@
             <button onclick="exportCSV()" class="export-btn">Export CSV</button>
             <button onclick="exportJSON()" class="export-btn">Export JSON</button>
         </div>
-    </main>
+    </div>
     <footer>
             <p>
                 Maintained by <a href="https://snapsynapse.com/">SnapSynapse</a>, with public issues and pull requests welcome.

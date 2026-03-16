@@ -46,6 +46,15 @@
   capabilities:
     - write-and-edit-code
     - take-actions-and-run-tools
+- id: chatgpt-codex-security
+  product: chatgpt
+  provider: openai
+  source_file: data/platforms/chatgpt.md
+  source_heading: Codex Security
+  capabilities:
+    - write-and-edit-code
+    - take-actions-and-run-tools
+    - connect-to-external-systems
 - id: chatgpt-custom-gpts-actions
   product: chatgpt
   provider: openai

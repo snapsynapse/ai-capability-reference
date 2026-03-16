@@ -901,9 +901,9 @@ ${runtimeCards}${runtimeCards && modelAccessCards ? '\n' : ''}${modelAccessCards
 function renderSiteNav(activePage) {
     const navItems = [
         { id: 'home', label: 'Capabilities', href: 'index.html' },
-        { id: 'implementations', label: 'Detailed Availability', href: 'implementations.html' },
+        { id: 'implementations', label: 'Products', href: 'implementations.html' },
         { id: 'compare', label: 'Compare', href: 'compare.html' },
-        { id: 'constraints', label: 'Access & Limits', href: 'constraints.html' },
+        { id: 'constraints', label: 'Limits', href: 'constraints.html' },
         { id: 'about', label: 'About', href: 'about.html' }
     ];
 
@@ -922,7 +922,6 @@ function renderSiteNav(activePage) {
                 <input type="search" id="siteSearchInput" class="search-input" placeholder="Search features..." aria-label="Search features" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
                 <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
             </div>
-            <a href="${REPO_URL}" class="github-link" title="View on GitHub">GitHub</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓</button>
         </div>
     </header>`;
@@ -2467,12 +2466,15 @@ function generateCompareHTML(ontologyData) {
 </head>
 <body>
     ${renderSiteNav('compare')}
-    <main>
+    <div class="container" id="main-content">
         <section class="compare-controls">
             <h2>Compare Products</h2>
-            <p>Select up to 3 products to compare side-by-side.</p>
+            <p>Select up to 3 subscription AI products to compare side-by-side.</p>
             <div class="product-selector" role="group" aria-label="Select products to compare">
-                ${products.map(p => `<label class="product-checkbox"><input type="checkbox" value="${p.id}" onchange="updateComparison()"> ${p.name}</label>`).join('\n                ')}
+                ${products.map(p => {
+                    const preselected = ['chatgpt', 'claude'].includes(p.id);
+                    return `<label class="product-checkbox"><input type="checkbox" value="${p.id}"${preselected ? ' checked' : ''} onchange="updateComparison()"> ${p.name}</label>`;
+                }).join('\n                ')}
             </div>
         </section>
         <section id="comparisonResult" class="comparison-result" aria-live="polite"></section>
@@ -2480,7 +2482,7 @@ function generateCompareHTML(ontologyData) {
             <button onclick="exportCSV()" class="export-btn">Export CSV</button>
             <button onclick="exportJSON()" class="export-btn">Export JSON</button>
         </div>
-    </main>
+    </div>
     ${renderSharedFooter()}
     <script src="assets/search.js"></script>
     <script src="assets/compare.js"></script>

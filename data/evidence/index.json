@@ -202,6 +202,33 @@
     "notes": ""
   },
   {
+    "id": "implementation-chatgpt-codex-security",
+    "entity_type": "implementation",
+    "entity_id": "chatgpt-codex-security",
+    "source_file": "data/platforms/chatgpt.md",
+    "source_heading": "Codex Security",
+    "launched": "2026-03-06T12:00Z",
+    "verified": "2026-03-15",
+    "checked": "2026-03-15",
+    "sources": [
+      {
+        "title": "Codex Security: now in research preview",
+        "url": "https://openai.com/index/codex-security-now-in-research-preview/"
+      },
+      {
+        "title": "Codex Security Help",
+        "url": "https://help.openai.com/en/articles/20001107-codex-security"
+      }
+    ],
+    "changelog": [
+      {
+        "date": "2026-03-15T12:00Z",
+        "change": "Initial entry"
+      }
+    ],
+    "notes": ""
+  },
+  {
     "id": "implementation-chatgpt-custom-gpts-actions",
     "entity_type": "implementation",
     "entity_id": "chatgpt-custom-gpts-actions",

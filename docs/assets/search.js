@@ -99,6 +99,8 @@
   }
 
   function navigate(href) {
+    var q = input.value.trim();
+    if (q) href += (href.indexOf('?') === -1 ? '?' : '&') + 'q=' + encodeURIComponent(q);
     var isLight = document.documentElement.classList.contains('light-mode');
     if (isLight) href += (href.indexOf('?') === -1 ? '?' : '&') + 'theme=light';
     window.location.href = href;
@@ -175,4 +177,11 @@
       showResults(false);
     }
   });
+
+  // Restore search query from URL (?q=...) so users can refine after clicking a result
+  var params = new URLSearchParams(window.location.search);
+  var initQuery = params.get('q');
+  if (initQuery) {
+    input.value = initQuery;
+  }
 })();

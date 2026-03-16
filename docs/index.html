@@ -43,9 +43,9 @@
         </button>
         <nav class="site-nav" id="siteNav" aria-label="Main navigation">
             <a href="index.html" class="site-nav-link active" onclick="passTheme(this)">Capabilities</a>
-            <a href="implementations.html" class="site-nav-link" onclick="passTheme(this)">Detailed Availability</a>
+            <a href="implementations.html" class="site-nav-link" onclick="passTheme(this)">Products</a>
             <a href="compare.html" class="site-nav-link" onclick="passTheme(this)">Compare</a>
-            <a href="constraints.html" class="site-nav-link" onclick="passTheme(this)">Access & Limits</a>
+            <a href="constraints.html" class="site-nav-link" onclick="passTheme(this)">Limits</a>
             <a href="about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
         </nav>
         <div class="header-actions">
@@ -53,7 +53,6 @@
                 <input type="search" id="siteSearchInput" class="search-input" placeholder="Search features..." aria-label="Search features" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
                 <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
             </div>
-            <a href="https://github.com/snapsynapse/ai-capability-reference" class="github-link" title="View on GitHub">GitHub</a>
             <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓</button>
         </div>
     </header>
@@ -83,8 +82,8 @@
             </nav>
             <div class="capability-stats">
                 <span class="feature-count">18 capabilities</span>
-                <span class="feature-count">65 implementations</span>
-                <span class="feature-count">Last built: 2026-03-15</span>
+                <span class="feature-count">66 implementations</span>
+                <span class="feature-count">Last built: 2026-03-16</span>
             </div>
         </div>
 
@@ -1183,7 +1182,7 @@
                     </div>
                     
                     <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>7</strong> implementations across <strong>4</strong> products</span>
+                        <span><strong>8</strong> implementations across <strong>4</strong> products</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -1211,6 +1210,19 @@
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
                                 <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2025-04-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
+                            </div>
+                            
+                        </article>
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#chatgpt-codex-security')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#chatgpt-codex-security');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">ChatGPT</span>
+                                <h4><a href="implementations.html#chatgpt-codex-security" class="feature-link" onclick="passTheme(this)">Codex Security</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Codex Security is OpenAI&#39;s AI security agent—it connects to your GitHub repos, builds a codebase-specific threat model, validates vulnerabilities in sandboxed environments, and generates fix PRs. Requires Pro ($200/mo), Enterprise, Business, or Edu—not available on Plus or lower. Launched March 6, 2026 as a research preview with free usage for the first month.</p>
+                            <div class="dates-row">
+                                <span class="badge avail-preview">Preview</span>
+                                <span class="badge gate-paid">Paid</span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-06</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
                             </div>
                             
                         </article>
@@ -1989,7 +2001,7 @@
                     </div>
                     
                     <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>10</strong> implementations across <strong>5</strong> products</span>
+                        <span><strong>11</strong> implementations across <strong>5</strong> products</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -2030,6 +2042,19 @@
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
                                 <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2025-04-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
+                            </div>
+                            
+                        </article>
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#chatgpt-codex-security')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#chatgpt-codex-security');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">ChatGPT</span>
+                                <h4><a href="implementations.html#chatgpt-codex-security" class="feature-link" onclick="passTheme(this)">Codex Security</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Codex Security is OpenAI&#39;s AI security agent—it connects to your GitHub repos, builds a codebase-specific threat model, validates vulnerabilities in sandboxed environments, and generates fix PRs. Requires Pro ($200/mo), Enterprise, Business, or Edu—not available on Plus or lower. Launched March 6, 2026 as a research preview with free usage for the first month.</p>
+                            <div class="dates-row">
+                                <span class="badge avail-preview">Preview</span>
+                                <span class="badge gate-paid">Paid</span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-06</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
                             </div>
                             
                         </article>
@@ -2282,7 +2307,7 @@
                     </div>
                     
                     <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>11</strong> implementations across <strong>6</strong> products</span>
+                        <span><strong>12</strong> implementations across <strong>6</strong> products</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -2297,6 +2322,19 @@
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
                                 <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2025-07-17</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
+                            </div>
+                            
+                        </article>
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#chatgpt-codex-security')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#chatgpt-codex-security');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">ChatGPT</span>
+                                <h4><a href="implementations.html#chatgpt-codex-security" class="feature-link" onclick="passTheme(this)">Codex Security</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Codex Security is OpenAI&#39;s AI security agent—it connects to your GitHub repos, builds a codebase-specific threat model, validates vulnerabilities in sandboxed environments, and generates fix PRs. Requires Pro ($200/mo), Enterprise, Business, or Edu—not available on Plus or lower. Launched March 6, 2026 as a research preview with free usage for the first month.</p>
+                            <div class="dates-row">
+                                <span class="badge avail-preview">Preview</span>
+                                <span class="badge gate-paid">Paid</span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-06</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-15</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-15</span></span>
                             </div>
                             
                         </article>
