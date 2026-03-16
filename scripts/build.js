@@ -2443,6 +2443,265 @@ function buildDataExport(ontologyData) {
     };
 }
 
+// ========================================================================
+// Phase 5B: API Export — canonical JSON artifacts for agents and tools
+// ========================================================================
+
+const API_OUTPUT_DIR = path.join(__dirname, '..', 'docs', 'api', 'v1');
+
+function buildAPIExport(ontologyData) {
+    const timestamp = new Date().toISOString();
+
+    const capabilities = ontologyData.capabilities.map(c => ({
+        id: c.id,
+        name: c.name,
+        group: c.group,
+        status: c.status || 'active',
+        summary: c.summary || '',
+        search_terms: c.search_terms || [],
+        what_counts: c.what_counts || [],
+        what_does_not_count: c.what_does_not_count || [],
+        related_terms: c.related_terms || [],
+        common_constraints: c.common_constraints || [],
+        implementations: (c.implementations || []).map(i => i.id),
+        implementation_count: c.implementation_count || 0,
+        products: [...new Set((c.implementations || []).map(i => i.product))],
+        product_count: c.product_count || 0,
+        model_access: (c.model_access || []).map(m => m.id),
+        model_access_count: c.model_access_count || 0
+    }));
+
+    const products = ontologyData.products.map(p => {
+        const implIds = ontologyData.implementations
+            .filter(i => i.product === p.id && i.source)
+            .map(i => i.id);
+        return {
+            id: p.id,
+            name: p.name,
+            provider: p.provider,
+            product_kind: p.product_kind || 'hosted',
+            pricing_page: p.pricing_page || null,
+            default_surfaces: p.default_surfaces || [],
+            last_verified: p.last_verified || null,
+            summary: p.summary || '',
+            implementations: implIds,
+            implementation_count: implIds.length
+        };
+    });
+
+    const implementations = ontologyData.implementations
+        .filter(impl => impl.source)
+        .map(impl => {
+            const feature = impl.source.feature;
+            const plans = (feature.availability || []).map(row => ({
+                plan: row.plan,
+                available: !!(row.available && row.available.includes('✅')),
+                limits: row.limits || '',
+                notes: row.notes || ''
+            }));
+            const surfaces = (feature.platforms || []).map(row => ({
+                surface: slugify(row.platform),
+                name: row.platform,
+                available: !!(row.available && row.available.includes('✅')),
+                notes: row.notes || ''
+            }));
+            const evidence = impl.evidence;
+            return {
+                id: impl.id,
+                name: feature.name,
+                product: impl.product,
+                provider: impl.provider,
+                source_file: impl.source_file || null,
+                source_heading: impl.source_heading || feature.name,
+                capabilities: impl.capabilities || [],
+                category: feature.category || '',
+                gating: feature.gating || '',
+                status: feature.status || '',
+                plans,
+                surfaces,
+                talking_point: feature.talking_point || '',
+                launched: feature.launched || '',
+                verified: feature.verified || '',
+                evidence_id: evidence ? evidence.id : null,
+                evidence_verified: evidence ? evidence.verified : null
+            };
+        });
+
+    const providers = ontologyData.providers.map(p => ({
+        id: p.id,
+        name: p.name,
+        logo: p.logo || null,
+        website: p.website || null,
+        status_page: p.status_page || null,
+        products: (p.products || [])
+    }));
+
+    const modelAccess = ontologyData.model_access.map(r => {
+        const evidence = r.evidence;
+        return {
+            id: r.id,
+            name: r.name,
+            provider: r.provider,
+            status: r.status || 'active',
+            last_verified: r.last_verified || null,
+            summary: r.summary || '',
+            deployment_modes: r.deployment_modes || [],
+            common_runtimes: r.common_runtimes || [],
+            constraints: r.constraints || [],
+            related_capabilities: r.related_capabilities || [],
+            source_file: r.record_source || null,
+            source_heading: r.source_heading || null,
+            evidence_id: evidence ? evidence.id : null,
+            evidence_verified: evidence ? evidence.verified : null
+        };
+    });
+
+    const evidence = (ontologyData.evidence || []).map(e => ({
+        id: e.id,
+        entity_type: e.entity_type,
+        entity_id: e.entity_id,
+        source_file: e.source_file || null,
+        source_heading: e.source_heading || null,
+        launched: e.launched || null,
+        verified: e.verified || null,
+        checked: e.checked || null,
+        sources: e.sources || [],
+        changelog: e.changelog || [],
+        notes: e.notes || ''
+    }));
+
+    // Derived view: capability × product matrix
+    const hostedProducts = products.filter(p => p.product_kind !== 'runtime');
+    const implByProductCap = new Map();
+    implementations.forEach(impl => {
+        (impl.capabilities || []).forEach(capId => {
+            const key = `${impl.product}::${capId}`;
+            if (!implByProductCap.has(key)) implByProductCap.set(key, []);
+            implByProductCap.get(key).push(impl);
+        });
+    });
+
+    const gatingRank = { free: 0, limited: 1, paid: 2 };
+    const matrixData = {};
+    capabilities.forEach(cap => {
+        const row = {};
+        hostedProducts.forEach(prod => {
+            const impls = implByProductCap.get(`${prod.id}::${cap.id}`) || [];
+            const bestGating = impls.length
+                ? impls.reduce((best, i) => gatingRank[i.gating] < gatingRank[best] ? i.gating : best, impls[0].gating)
+                : null;
+            row[prod.id] = {
+                available: impls.length > 0,
+                implementations: impls.map(i => i.id),
+                best_gating: bestGating
+            };
+        });
+        matrixData[cap.id] = row;
+    });
+
+    const capabilityMatrix = {
+        meta: { generated: timestamp, version: '1.0' },
+        capabilities: capabilities.map(c => c.id),
+        products: hostedProducts.map(p => p.id),
+        matrix: matrixData
+    };
+
+    // Derived view: pairwise product comparisons
+    const productCapSets = new Map();
+    hostedProducts.forEach(prod => {
+        const capSet = new Set();
+        implementations.forEach(impl => {
+            if (impl.product === prod.id) {
+                (impl.capabilities || []).forEach(c => capSet.add(c));
+            }
+        });
+        productCapSets.set(prod.id, capSet);
+    });
+
+    const comparisons = [];
+    for (let i = 0; i < hostedProducts.length; i++) {
+        for (let j = i + 1; j < hostedProducts.length; j++) {
+            const a = hostedProducts[i].id;
+            const b = hostedProducts[j].id;
+            const setA = productCapSets.get(a);
+            const setB = productCapSets.get(b);
+            const shared = [...setA].filter(c => setB.has(c));
+            const onlyA = [...setA].filter(c => !setB.has(c));
+            const onlyB = [...setB].filter(c => !setA.has(c));
+            comparisons.push({
+                products: [a, b],
+                shared_capabilities: shared,
+                only_a: onlyA,
+                only_b: onlyB,
+                shared_count: shared.length,
+                only_a_count: onlyA.length,
+                only_b_count: onlyB.length
+            });
+        }
+    }
+
+    const productComparisons = {
+        meta: { generated: timestamp, version: '1.0' },
+        comparisons
+    };
+
+    // Derived view: plan entitlements
+    const planEntitlements = { meta: { generated: timestamp, version: '1.0' }, products: {} };
+    hostedProducts.forEach(prod => {
+        const prodImpls = implementations.filter(i => i.product === prod.id);
+        const planMap = {};
+        prodImpls.forEach(impl => {
+            (impl.plans || []).forEach(planRow => {
+                if (!planRow.available) return;
+                if (!planMap[planRow.plan]) planMap[planRow.plan] = { implementations: [], capabilities: new Set() };
+                planMap[planRow.plan].implementations.push(impl.id);
+                (impl.capabilities || []).forEach(c => planMap[planRow.plan].capabilities.add(c));
+            });
+        });
+        const plans = {};
+        Object.keys(planMap).forEach(plan => {
+            plans[plan] = {
+                implementations: planMap[plan].implementations,
+                capabilities: [...planMap[plan].capabilities],
+                implementation_count: planMap[plan].implementations.length,
+                capability_count: planMap[plan].capabilities.size
+            };
+        });
+        planEntitlements.products[prod.id] = { plans };
+    });
+
+    // Index manifest
+    const index = {
+        meta: { generated: timestamp, version: '1.0' },
+        description: 'AI Capability Reference — Machine-readable API',
+        documentation: 'https://github.com/snapsynapse/ai-capability-reference',
+        files: {
+            capabilities: { path: 'capabilities.json', description: 'All capabilities with search terms, definitions, and cross-links', count: capabilities.length },
+            products: { path: 'products.json', description: 'All products with provider links and implementation lists', count: products.length },
+            implementations: { path: 'implementations.json', description: 'All implementations with capability mappings and evidence', count: implementations.length },
+            providers: { path: 'providers.json', description: 'All providers with product lists', count: providers.length },
+            'model-access': { path: 'model-access.json', description: 'Model access records with deployment and constraint details', count: modelAccess.length },
+            evidence: { path: 'evidence.json', description: 'Evidence records with sources and changelog', count: evidence.length },
+            'capability-matrix': { path: 'capability-matrix.json', description: 'Capability × product availability grid' },
+            'product-comparisons': { path: 'product-comparisons.json', description: 'Pairwise product capability overlap' },
+            'plan-entitlements': { path: 'plan-entitlements.json', description: 'What each plan tier unlocks per product' }
+        }
+    };
+
+    return {
+        'index.json': index,
+        'capabilities.json': { meta: { generated: timestamp, version: '1.0', count: capabilities.length }, capabilities },
+        'products.json': { meta: { generated: timestamp, version: '1.0', count: products.length }, products },
+        'implementations.json': { meta: { generated: timestamp, version: '1.0', count: implementations.length }, implementations },
+        'providers.json': { meta: { generated: timestamp, version: '1.0', count: providers.length }, providers },
+        'model-access.json': { meta: { generated: timestamp, version: '1.0', count: modelAccess.length }, model_access: modelAccess },
+        'evidence.json': { meta: { generated: timestamp, version: '1.0', count: evidence.length }, evidence },
+        'capability-matrix.json': capabilityMatrix,
+        'product-comparisons.json': productComparisons,
+        'plan-entitlements.json': planEntitlements
+    };
+}
+
 /**
  * Generate the comparison page shell HTML.
  */
@@ -2534,6 +2793,20 @@ function main() {
     const counts = dataExport.meta.counts;
     console.log(`\n✅ Data export written to ${DATA_EXPORT_FILE}`);
     console.log(`   ${counts.providers} providers, ${counts.products} products, ${counts.capabilities} capabilities, ${counts.implementations} implementations (${(dataExportJSON.length / 1024).toFixed(1)} KB)`);
+
+    // Phase 5B: Build API export files
+    if (!fs.existsSync(API_OUTPUT_DIR)) {
+        fs.mkdirSync(API_OUTPUT_DIR, { recursive: true });
+    }
+    const apiExport = buildAPIExport(ontologyData);
+    let apiTotalSize = 0;
+    for (const [filename, data] of Object.entries(apiExport)) {
+        const content = JSON.stringify(data, null, 2);
+        fs.writeFileSync(path.join(API_OUTPUT_DIR, filename), content);
+        apiTotalSize += content.length;
+    }
+    console.log(`✅ API export written to ${API_OUTPUT_DIR}`);
+    console.log(`   ${Object.keys(apiExport).length} files (${(apiTotalSize / 1024).toFixed(1)} KB total)`);
 
     // Phase 2: Generate HTML views from ontology data
     const implementationsHTML = generateHTML(platforms, ontologyData);

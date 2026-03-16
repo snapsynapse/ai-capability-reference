@@ -1,0 +1,275 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0",
+    "count": 9
+  },
+  "model_access": [
+    {
+      "id": "codestral",
+      "name": "Codestral",
+      "provider": "mistral",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Mistral's code-specialized open model line for self-hosted coding workflows.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-api",
+        "terminal"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "local API wrappers"
+      ],
+      "constraints": [
+        "consumer GPU use is realistic only with enough VRAM or quantization",
+        "primarily valuable for coding rather than general-purpose multimodal use",
+        "not a standalone chat product by itself"
+      ],
+      "related_capabilities": [
+        "write-and-edit-code"
+      ],
+      "source_file": "data/platforms/mistral-open-models.md",
+      "source_heading": "Codestral (Mistral)",
+      "evidence_id": "model-access-codestral",
+      "evidence_verified": "2026-02-22"
+    },
+    {
+      "id": "deepseek-v3-r1",
+      "name": "DeepSeek V3 / R1",
+      "provider": "deepseek",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "DeepSeek's open model family spanning large general-purpose and reasoning-oriented self-hosted models.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "local inference stacks"
+      ],
+      "constraints": [
+        "the full flagship models need serious hardware",
+        "local use usually depends on distilled or quantized variants",
+        "organizational policy may restrict use based on provider origin"
+      ],
+      "related_capabilities": [
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/deepseek-open-models.md",
+      "source_heading": "DeepSeek-V3 / DeepSeek-R1",
+      "evidence_id": "model-access-deepseek-v3-r1",
+      "evidence_verified": "2026-03-15"
+    },
+    {
+      "id": "llama-3-3",
+      "name": "Llama 3.3",
+      "provider": "meta",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Meta's open-weight Llama 3.3 family for self-hosted general-purpose use.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio"
+      ],
+      "constraints": [
+        "higher-end variants still need significant VRAM",
+        "practical local use often depends on quantized builds",
+        "not a packaged end-user product by itself"
+      ],
+      "related_capabilities": [
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/meta-open-models.md",
+      "source_heading": "Llama 3.3 (Meta)",
+      "evidence_id": "model-access-llama-3-3",
+      "evidence_verified": "2026-02-22"
+    },
+    {
+      "id": "llama-4",
+      "name": "Llama 4",
+      "provider": "meta",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Meta's Llama 4 family extends local/open model access into multimodal and very large-context self-hosted use.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "LM Studio",
+        "vLLM",
+        "Ollama"
+      ],
+      "constraints": [
+        "model size and context claims can exceed ordinary consumer hardware",
+        "license terms differ from permissive Apache-style models",
+        "multimodal support depends on runtime compatibility"
+      ],
+      "related_capabilities": [
+        "see-images-and-screens",
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/meta-open-models.md",
+      "source_heading": "Llama 4 (Meta)",
+      "evidence_id": "model-access-llama-4",
+      "evidence_verified": "2026-02-22"
+    },
+    {
+      "id": "mistral-large-nemo",
+      "name": "Mistral Large / Nemo",
+      "provider": "mistral",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Mistral's open model family ranges from consumer-friendly Nemo to much larger self-hosted models approaching frontier quality.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio"
+      ],
+      "constraints": [
+        "runtime practicality depends heavily on which model size is chosen",
+        "larger variants need serious GPU capacity",
+        "the model family should not be treated as a single hardware profile"
+      ],
+      "related_capabilities": [
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/mistral-open-models.md",
+      "source_heading": "Mistral Large / Mistral Nemo",
+      "evidence_id": "model-access-mistral-large-nemo",
+      "evidence_verified": "2026-02-22"
+    },
+    {
+      "id": "mistral-small-3",
+      "name": "Mistral Small 3",
+      "provider": "mistral",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Mistral Small 3 is a locally runnable open model line focused on strong general performance at more achievable hardware sizes.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio",
+        "web UIs over local runtimes"
+      ],
+      "constraints": [
+        "consumer use is realistic but still depends on memory and quantization choices",
+        "capabilities change across minor versions",
+        "performance claims depend on runtime and hardware"
+      ],
+      "related_capabilities": [
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/mistral-open-models.md",
+      "source_heading": "Mistral Small 3",
+      "evidence_id": "model-access-mistral-small-3",
+      "evidence_verified": "2026-02-22"
+    },
+    {
+      "id": "qwen-2-5",
+      "name": "Qwen 2.5",
+      "provider": "alibaba",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Alibaba's Qwen 2.5 family offers a broad range of self-hosted model sizes from lightweight local use to much larger deployments.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio"
+      ],
+      "constraints": [
+        "capability and hardware requirements vary substantially by size",
+        "organizational policy may restrict use based on provider origin",
+        "the family includes both practical local sizes and much larger variants"
+      ],
+      "related_capabilities": [
+        "write-and-explain",
+        "write-and-edit-code"
+      ],
+      "source_file": "data/platforms/alibaba-open-models.md",
+      "source_heading": "Qwen 2.5 (Alibaba)",
+      "evidence_id": "model-access-qwen-2-5",
+      "evidence_verified": "2026-03-15"
+    },
+    {
+      "id": "qwen-3",
+      "name": "Qwen 3",
+      "provider": "alibaba",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Alibaba's Qwen 3 family extends local/open model access with a wide size range and hybrid thinking behaviors.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-on-device",
+        "local-api"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio",
+        "local web UIs"
+      ],
+      "constraints": [
+        "model sizes range from practical local options to very large MoE deployments",
+        "reasoning-style behaviors may depend on runtime or prompt controls",
+        "the family is still model access, not a standalone product experience"
+      ],
+      "related_capabilities": [
+        "write-and-explain"
+      ],
+      "source_file": "data/platforms/alibaba-open-models.md",
+      "source_heading": "Qwen 3 (Alibaba)",
+      "evidence_id": "model-access-qwen-3",
+      "evidence_verified": "2026-03-15"
+    },
+    {
+      "id": "qwen-coder",
+      "name": "Qwen-Coder",
+      "provider": "alibaba",
+      "status": "active",
+      "last_verified": "2026-02-22",
+      "summary": "Qwen-Coder is Alibaba's code-focused open model line for self-hosted coding tasks.",
+      "deployment_modes": [
+        "self-hosted",
+        "local-api",
+        "terminal"
+      ],
+      "common_runtimes": [
+        "Ollama",
+        "LM Studio"
+      ],
+      "constraints": [
+        "tuned for coding rather than broad multimodal use",
+        "local performance depends on model size and quantization",
+        "not a packaged end-user coding product by itself"
+      ],
+      "related_capabilities": [
+        "write-and-edit-code"
+      ],
+      "source_file": "data/platforms/alibaba-open-models.md",
+      "source_heading": "Qwen-Coder",
+      "evidence_id": "model-access-qwen-coder",
+      "evidence_verified": "2026-03-15"
+    }
+  ]
+}

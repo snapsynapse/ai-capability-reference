@@ -1,0 +1,816 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0"
+  },
+  "capabilities": [
+    "hear-audio-and-speech",
+    "read-text-and-documents",
+    "see-images-and-screens",
+    "speak-back-in-real-time",
+    "write-and-explain",
+    "generate-images",
+    "generate-video",
+    "make-and-edit-documents",
+    "write-and-edit-code",
+    "organize-work-in-projects",
+    "remember-context-over-time",
+    "use-files-i-provide",
+    "do-multi-step-research",
+    "search-the-web",
+    "take-actions-and-run-tools",
+    "build-reusable-ai-workflows",
+    "connect-to-external-systems",
+    "use-it-on-my-surfaces"
+  ],
+  "products": [
+    "chatgpt",
+    "claude",
+    "copilot",
+    "gemini",
+    "grok",
+    "perplexity"
+  ],
+  "matrix": {
+    "hear-audio-and-speech": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-advanced-voice-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-voice"
+        ],
+        "best_gating": "free"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-live-voice-mode",
+          "gemini-project-astra"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-voice-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-voice-mode"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "read-text-and-documents": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-projects"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-vision-image-understanding"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-office-apps"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-workspace",
+          "gemini-notebooklm"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-collections-spaces"
+        ],
+        "best_gating": "paid"
+      }
+    },
+    "see-images-and-screens": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-vision-image-understanding"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-vision-image-understanding"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-vision"
+        ],
+        "best_gating": "free"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-project-astra"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-vision-image-understanding"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "speak-back-in-real-time": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-advanced-voice-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-voice"
+        ],
+        "best_gating": "free"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-live-voice-mode",
+          "gemini-project-astra"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-voice-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-voice-mode"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "write-and-explain": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-chat"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-chat"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-chat"
+        ],
+        "best_gating": "free"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-chat"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-chat"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-chat"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "generate-images": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-dall-e-image-generation"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-image-generation-designer"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-imagen",
+          "gemini-nano-banana-pro"
+        ],
+        "best_gating": "paid"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-image-generation-aurora"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "generate-video": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-sora-video-generation"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-veo-video-generation"
+        ],
+        "best_gating": "paid"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-imagine-video-generation"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "make-and-edit-documents": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-canvas"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-artifacts"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-office-apps"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-canvas",
+          "gemini-workspace"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-studio"
+        ],
+        "best_gating": "free"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-pages"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "write-and-edit-code": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-canvas",
+          "chatgpt-codex-code-agent",
+          "chatgpt-codex-security"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-artifacts",
+          "claude-claude-code"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-ai-studio",
+          "gemini-canvas"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-studio"
+        ],
+        "best_gating": "free"
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "organize-work-in-projects": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-projects"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-projects"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-notebooklm"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-collections-spaces"
+        ],
+        "best_gating": "paid"
+      }
+    },
+    "remember-context-over-time": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-memory"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-memory"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-past-chats-memory"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-memory"
+        ],
+        "best_gating": "free"
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "use-files-i-provide": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-projects"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-projects"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-workspace",
+          "gemini-notebooklm"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-collections-spaces"
+        ],
+        "best_gating": "paid"
+      }
+    },
+    "do-multi-step-research": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-agent-mode",
+          "chatgpt-deep-research"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-cowork-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-deep-research",
+          "gemini-notebooklm"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-deepsearch"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-agent-mode-agentic-actions",
+          "perplexity-pages",
+          "perplexity-pro-search"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "search-the-web": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-atlas-browser",
+          "chatgpt-search",
+          "chatgpt-deep-research"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "copilot": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-deep-research"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-deepsearch"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-comet-browser",
+          "perplexity-focus-modes",
+          "perplexity-pro-search"
+        ],
+        "best_gating": "paid"
+      }
+    },
+    "take-actions-and-run-tools": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-agent-mode",
+          "chatgpt-atlas-browser",
+          "chatgpt-codex-code-agent",
+          "chatgpt-codex-security"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-claude-code",
+          "claude-cowork-mode"
+        ],
+        "best_gating": "paid"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-agent-builder"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-agentic-app-actions-android"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-agent-mode-agentic-actions",
+          "perplexity-buy-with-pro-shopping",
+          "perplexity-comet-browser"
+        ],
+        "best_gating": "free"
+      }
+    },
+    "build-reusable-ai-workflows": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-custom-gpts-actions"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-skills"
+        ],
+        "best_gating": "paid"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-agent-builder"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-ai-studio",
+          "gemini-gems-custom-chatbots"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      },
+      "perplexity": {
+        "available": false,
+        "implementations": [],
+        "best_gating": null
+      }
+    },
+    "connect-to-external-systems": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-agent-mode",
+          "chatgpt-codex-security",
+          "chatgpt-custom-gpts-actions"
+        ],
+        "best_gating": "paid"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-connectors",
+          "claude-mcp-model-context-protocol"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-connectors",
+          "copilot-office-apps"
+        ],
+        "best_gating": "paid"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-extensions",
+          "gemini-workspace",
+          "gemini-agentic-app-actions-android"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-real-time-x-twitter-data"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-enterprise-app-connectors"
+        ],
+        "best_gating": "paid"
+      }
+    },
+    "use-it-on-my-surfaces": {
+      "chatgpt": {
+        "available": true,
+        "implementations": [
+          "chatgpt-chat"
+        ],
+        "best_gating": "free"
+      },
+      "claude": {
+        "available": true,
+        "implementations": [
+          "claude-claude-code",
+          "claude-chat"
+        ],
+        "best_gating": "free"
+      },
+      "copilot": {
+        "available": true,
+        "implementations": [
+          "copilot-office-apps",
+          "copilot-chat"
+        ],
+        "best_gating": "free"
+      },
+      "gemini": {
+        "available": true,
+        "implementations": [
+          "gemini-workspace",
+          "gemini-chat"
+        ],
+        "best_gating": "free"
+      },
+      "grok": {
+        "available": true,
+        "implementations": [
+          "grok-chat"
+        ],
+        "best_gating": "paid"
+      },
+      "perplexity": {
+        "available": true,
+        "implementations": [
+          "perplexity-chat"
+        ],
+        "best_gating": "free"
+      }
+    }
+  }
+}

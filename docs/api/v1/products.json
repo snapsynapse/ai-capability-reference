@@ -1,0 +1,235 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0",
+    "count": 9
+  },
+  "products": [
+    {
+      "id": "chatgpt",
+      "name": "ChatGPT",
+      "provider": "openai",
+      "product_kind": "hosted",
+      "pricing_page": "https://chatgpt.com/pricing",
+      "default_surfaces": [
+        "web",
+        "desktop",
+        "mobile",
+        "api"
+      ],
+      "last_verified": "2026-03-04",
+      "summary": "OpenAI's general-purpose product spanning chat, voice, research, projects, creation, and agentic work.",
+      "implementations": [
+        "chatgpt-advanced-voice-mode",
+        "chatgpt-agent-mode",
+        "chatgpt-atlas-browser",
+        "chatgpt-canvas",
+        "chatgpt-search",
+        "chatgpt-codex-code-agent",
+        "chatgpt-codex-security",
+        "chatgpt-custom-gpts-actions",
+        "chatgpt-dall-e-image-generation",
+        "chatgpt-deep-research",
+        "chatgpt-memory",
+        "chatgpt-projects",
+        "chatgpt-vision-image-understanding",
+        "chatgpt-sora-video-generation",
+        "chatgpt-chat"
+      ],
+      "implementation_count": 15
+    },
+    {
+      "id": "claude",
+      "name": "Claude",
+      "provider": "anthropic",
+      "product_kind": "hosted",
+      "pricing_page": "https://claude.ai/pricing",
+      "default_surfaces": [
+        "web",
+        "desktop",
+        "mobile",
+        "api",
+        "terminal"
+      ],
+      "last_verified": "2026-03-04",
+      "summary": "Anthropic's product for chat, projects, coding, visual understanding, and connected work.",
+      "implementations": [
+        "claude-artifacts",
+        "claude-claude-code",
+        "claude-connectors",
+        "claude-cowork-mode",
+        "claude-extended-thinking",
+        "claude-mcp-model-context-protocol",
+        "claude-projects",
+        "claude-skills",
+        "claude-vision-image-understanding",
+        "claude-memory",
+        "claude-chat"
+      ],
+      "implementation_count": 11
+    },
+    {
+      "id": "copilot",
+      "name": "Microsoft Copilot",
+      "provider": "microsoft",
+      "product_kind": "hosted",
+      "pricing_page": "https://www.microsoft.com/en-us/microsoft-copilot",
+      "default_surfaces": [
+        "web",
+        "desktop",
+        "mobile",
+        "embedded"
+      ],
+      "last_verified": "2026-03-04",
+      "summary": "Microsoft's Copilot product family centered on chat, office work, connectors, and embedded productivity surfaces.",
+      "implementations": [
+        "copilot-agent-builder",
+        "copilot-connectors",
+        "copilot-office-apps",
+        "copilot-vision",
+        "copilot-voice",
+        "copilot-gpt-4-access",
+        "copilot-image-generation-designer",
+        "copilot-chat"
+      ],
+      "implementation_count": 8
+    },
+    {
+      "id": "gemini",
+      "name": "Gemini",
+      "provider": "google",
+      "product_kind": "hosted",
+      "pricing_page": "https://one.google.com/intl/en/about/google-ai-plans/",
+      "default_surfaces": [
+        "web",
+        "mobile",
+        "api"
+      ],
+      "last_verified": "2026-03-04",
+      "summary": "Google's Gemini product family spanning chat, research, workspace integration, multimodal interaction, and media generation.",
+      "implementations": [
+        "gemini-ai-studio",
+        "gemini-audio-overview",
+        "gemini-canvas",
+        "gemini-deep-research",
+        "gemini-extensions",
+        "gemini-gemini-advanced",
+        "gemini-workspace",
+        "gemini-live-voice-mode",
+        "gemini-gems-custom-chatbots",
+        "gemini-imagen",
+        "gemini-nano-banana-pro",
+        "gemini-notebooklm",
+        "gemini-project-astra",
+        "gemini-veo-video-generation",
+        "gemini-agentic-app-actions-android",
+        "gemini-past-chats-memory",
+        "gemini-chat"
+      ],
+      "implementation_count": 17
+    },
+    {
+      "id": "grok",
+      "name": "Grok",
+      "provider": "xai",
+      "product_kind": "hosted",
+      "pricing_page": "https://x.ai/grok",
+      "default_surfaces": [
+        "web",
+        "mobile",
+        "api"
+      ],
+      "last_verified": "2026-03-04",
+      "summary": "xAI's Grok product for chat, live data access, research, media generation, and voice interaction.",
+      "implementations": [
+        "grok-deepsearch",
+        "grok-chat",
+        "grok-image-generation-aurora",
+        "grok-imagine-video-generation",
+        "grok-studio",
+        "grok-voice-mode",
+        "grok-real-time-x-twitter-data",
+        "grok-think-mode",
+        "grok-memory",
+        "grok-vision-image-understanding"
+      ],
+      "implementation_count": 10
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "provider": "lm-studio",
+      "product_kind": "runtime",
+      "pricing_page": "https://lmstudio.ai/",
+      "default_surfaces": [
+        "desktop",
+        "api"
+      ],
+      "last_verified": "2026-03-07",
+      "summary": "LM Studio is a local desktop runtime product for discovering, loading, and chatting with open models through a GUI and optional local API.",
+      "implementations": [],
+      "implementation_count": 0
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "provider": "ollama",
+      "product_kind": "runtime",
+      "pricing_page": "https://ollama.com/",
+      "default_surfaces": [
+        "desktop",
+        "terminal",
+        "api"
+      ],
+      "last_verified": "2026-03-07",
+      "summary": "Ollama is a local runtime product for downloading, serving, and interacting with open models through a CLI, desktop app, and local API.",
+      "implementations": [],
+      "implementation_count": 0
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "provider": "perplexity",
+      "product_kind": "hosted",
+      "pricing_page": "https://www.perplexity.ai/pro",
+      "default_surfaces": [
+        "web",
+        "mobile",
+        "browser",
+        "api"
+      ],
+      "last_verified": "2026-02-07",
+      "summary": "Perplexity's product for search, research, browsing, projects, and connected agentic workflows.",
+      "implementations": [
+        "perplexity-agent-mode-agentic-actions",
+        "perplexity-buy-with-pro-shopping",
+        "perplexity-collections-spaces",
+        "perplexity-comet-browser",
+        "perplexity-enterprise-app-connectors",
+        "perplexity-focus-modes",
+        "perplexity-model-selection",
+        "perplexity-pages",
+        "perplexity-pro-search",
+        "perplexity-voice-mode",
+        "perplexity-chat"
+      ],
+      "implementation_count": 11
+    },
+    {
+      "id": "text-generation-webui",
+      "name": "text-generation-webui",
+      "provider": "oobabooga",
+      "product_kind": "runtime",
+      "pricing_page": "https://github.com/oobabooga/text-generation-webui",
+      "default_surfaces": [
+        "web",
+        "terminal",
+        "api"
+      ],
+      "last_verified": "2026-03-07",
+      "summary": "text-generation-webui is a flexible self-hosted runtime product for serving and experimenting with local models through a browser UI and advanced configuration options.",
+      "implementations": [],
+      "implementation_count": 0
+    }
+  ]
+}

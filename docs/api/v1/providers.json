@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0",
+    "count": 13
+  },
+  "providers": [
+    {
+      "id": "alibaba",
+      "name": "Alibaba",
+      "logo": "https://www.alibaba.com/favicon.ico",
+      "website": "https://qwenlm.github.io/",
+      "status_page": null,
+      "products": []
+    },
+    {
+      "id": "anthropic",
+      "name": "Anthropic",
+      "logo": "https://cdn.simpleicons.org/anthropic",
+      "website": "https://www.anthropic.com",
+      "status_page": "https://status.anthropic.com",
+      "products": [
+        "claude"
+      ]
+    },
+    {
+      "id": "deepseek",
+      "name": "DeepSeek",
+      "logo": "https://deepseek.com/favicon.ico",
+      "website": "https://github.com/deepseek-ai",
+      "status_page": null,
+      "products": []
+    },
+    {
+      "id": "google",
+      "name": "Google",
+      "logo": "https://cdn.simpleicons.org/googlegemini",
+      "website": "https://about.google",
+      "status_page": "https://status.cloud.google.com",
+      "products": [
+        "gemini"
+      ]
+    },
+    {
+      "id": "lm-studio",
+      "name": "LM Studio",
+      "logo": "https://lmstudio.ai/favicon.ico",
+      "website": "https://lmstudio.ai",
+      "status_page": null,
+      "products": [
+        "lm-studio"
+      ]
+    },
+    {
+      "id": "meta",
+      "name": "Meta",
+      "logo": "https://cdn.simpleicons.org/meta",
+      "website": "https://ai.meta.com/",
+      "status_page": null,
+      "products": []
+    },
+    {
+      "id": "microsoft",
+      "name": "Microsoft",
+      "logo": "https://copilot.microsoft.com/favicon.ico",
+      "website": "https://www.microsoft.com",
+      "status_page": "https://status.office.com",
+      "products": [
+        "copilot"
+      ]
+    },
+    {
+      "id": "mistral",
+      "name": "Mistral",
+      "logo": "https://cdn.simpleicons.org/mistralai",
+      "website": "https://mistral.ai/",
+      "status_page": null,
+      "products": []
+    },
+    {
+      "id": "ollama",
+      "name": "Ollama",
+      "logo": "https://cdn.simpleicons.org/ollama",
+      "website": "https://ollama.com",
+      "status_page": null,
+      "products": [
+        "ollama"
+      ]
+    },
+    {
+      "id": "oobabooga",
+      "name": "oobabooga",
+      "logo": "https://github.com/oobabooga.png",
+      "website": "https://github.com/oobabooga/text-generation-webui",
+      "status_page": null,
+      "products": [
+        "text-generation-webui"
+      ]
+    },
+    {
+      "id": "openai",
+      "name": "OpenAI",
+      "logo": "https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg",
+      "website": "https://openai.com",
+      "status_page": "https://status.openai.com",
+      "products": [
+        "chatgpt"
+      ]
+    },
+    {
+      "id": "perplexity",
+      "name": "Perplexity",
+      "logo": "https://cdn.simpleicons.org/perplexity",
+      "website": "https://www.perplexity.ai",
+      "status_page": "https://status.perplexity.ai",
+      "products": [
+        "perplexity"
+      ]
+    },
+    {
+      "id": "xai",
+      "name": "xAI",
+      "logo": "https://x.ai/favicon.ico",
+      "website": "https://x.ai",
+      "status_page": "https://status.x.ai",
+      "products": [
+        "grok"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,52 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0"
+  },
+  "description": "AI Capability Reference — Machine-readable API",
+  "documentation": "https://github.com/snapsynapse/ai-capability-reference",
+  "files": {
+    "capabilities": {
+      "path": "capabilities.json",
+      "description": "All capabilities with search terms, definitions, and cross-links",
+      "count": 18
+    },
+    "products": {
+      "path": "products.json",
+      "description": "All products with provider links and implementation lists",
+      "count": 9
+    },
+    "implementations": {
+      "path": "implementations.json",
+      "description": "All implementations with capability mappings and evidence",
+      "count": 72
+    },
+    "providers": {
+      "path": "providers.json",
+      "description": "All providers with product lists",
+      "count": 13
+    },
+    "model-access": {
+      "path": "model-access.json",
+      "description": "Model access records with deployment and constraint details",
+      "count": 9
+    },
+    "evidence": {
+      "path": "evidence.json",
+      "description": "Evidence records with sources and changelog",
+      "count": 90
+    },
+    "capability-matrix": {
+      "path": "capability-matrix.json",
+      "description": "Capability × product availability grid"
+    },
+    "product-comparisons": {
+      "path": "product-comparisons.json",
+      "description": "Pairwise product capability overlap"
+    },
+    "plan-entitlements": {
+      "path": "plan-entitlements.json",
+      "description": "What each plan tier unlocks per product"
+    }
+  }
+}

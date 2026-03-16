@@ -1,0 +1,483 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0"
+  },
+  "comparisons": [
+    {
+      "products": [
+        "chatgpt",
+        "claude"
+      ],
+      "shared_capabilities": [
+        "do-multi-step-research",
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "make-and-edit-documents",
+        "write-and-edit-code",
+        "build-reusable-ai-workflows",
+        "remember-context-over-time",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents",
+        "see-images-and-screens",
+        "write-and-explain",
+        "use-it-on-my-surfaces"
+      ],
+      "only_a": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "search-the-web",
+        "generate-images",
+        "generate-video"
+      ],
+      "only_b": [],
+      "shared_count": 13,
+      "only_a_count": 5,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "chatgpt",
+        "copilot"
+      ],
+      "shared_capabilities": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "make-and-edit-documents",
+        "build-reusable-ai-workflows",
+        "generate-images",
+        "read-text-and-documents",
+        "see-images-and-screens",
+        "write-and-explain",
+        "use-it-on-my-surfaces"
+      ],
+      "only_a": [
+        "do-multi-step-research",
+        "search-the-web",
+        "write-and-edit-code",
+        "remember-context-over-time",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "generate-video"
+      ],
+      "only_b": [],
+      "shared_count": 11,
+      "only_a_count": 7,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "chatgpt",
+        "gemini"
+      ],
+      "shared_capabilities": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "do-multi-step-research",
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "search-the-web",
+        "make-and-edit-documents",
+        "write-and-edit-code",
+        "build-reusable-ai-workflows",
+        "generate-images",
+        "remember-context-over-time",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents",
+        "see-images-and-screens",
+        "generate-video",
+        "write-and-explain",
+        "use-it-on-my-surfaces"
+      ],
+      "only_a": [],
+      "only_b": [],
+      "shared_count": 18,
+      "only_a_count": 0,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "chatgpt",
+        "grok"
+      ],
+      "shared_capabilities": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "do-multi-step-research",
+        "connect-to-external-systems",
+        "search-the-web",
+        "make-and-edit-documents",
+        "write-and-edit-code",
+        "generate-images",
+        "remember-context-over-time",
+        "see-images-and-screens",
+        "generate-video",
+        "write-and-explain",
+        "use-it-on-my-surfaces"
+      ],
+      "only_a": [
+        "take-actions-and-run-tools",
+        "build-reusable-ai-workflows",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents"
+      ],
+      "only_b": [],
+      "shared_count": 13,
+      "only_a_count": 5,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "chatgpt",
+        "perplexity"
+      ],
+      "shared_capabilities": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "do-multi-step-research",
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "search-the-web",
+        "make-and-edit-documents",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents",
+        "write-and-explain",
+        "use-it-on-my-surfaces"
+      ],
+      "only_a": [
+        "write-and-edit-code",
+        "build-reusable-ai-workflows",
+        "generate-images",
+        "remember-context-over-time",
+        "see-images-and-screens",
+        "generate-video"
+      ],
+      "only_b": [],
+      "shared_count": 12,
+      "only_a_count": 6,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "claude",
+        "copilot"
+      ],
+      "shared_capabilities": [
+        "make-and-edit-documents",
+        "take-actions-and-run-tools",
+        "use-it-on-my-surfaces",
+        "connect-to-external-systems",
+        "build-reusable-ai-workflows",
+        "see-images-and-screens",
+        "read-text-and-documents",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "write-and-edit-code",
+        "do-multi-step-research",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "remember-context-over-time"
+      ],
+      "only_b": [
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "generate-images"
+      ],
+      "shared_count": 8,
+      "only_a_count": 5,
+      "only_b_count": 3
+    },
+    {
+      "products": [
+        "claude",
+        "gemini"
+      ],
+      "shared_capabilities": [
+        "make-and-edit-documents",
+        "write-and-edit-code",
+        "take-actions-and-run-tools",
+        "use-it-on-my-surfaces",
+        "connect-to-external-systems",
+        "do-multi-step-research",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "build-reusable-ai-workflows",
+        "see-images-and-screens",
+        "read-text-and-documents",
+        "remember-context-over-time",
+        "write-and-explain"
+      ],
+      "only_a": [],
+      "only_b": [
+        "search-the-web",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "generate-images",
+        "generate-video"
+      ],
+      "shared_count": 13,
+      "only_a_count": 0,
+      "only_b_count": 5
+    },
+    {
+      "products": [
+        "claude",
+        "grok"
+      ],
+      "shared_capabilities": [
+        "make-and-edit-documents",
+        "write-and-edit-code",
+        "use-it-on-my-surfaces",
+        "connect-to-external-systems",
+        "do-multi-step-research",
+        "see-images-and-screens",
+        "remember-context-over-time",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "take-actions-and-run-tools",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "build-reusable-ai-workflows",
+        "read-text-and-documents"
+      ],
+      "only_b": [
+        "search-the-web",
+        "generate-images",
+        "generate-video",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time"
+      ],
+      "shared_count": 8,
+      "only_a_count": 5,
+      "only_b_count": 5
+    },
+    {
+      "products": [
+        "claude",
+        "perplexity"
+      ],
+      "shared_capabilities": [
+        "make-and-edit-documents",
+        "take-actions-and-run-tools",
+        "use-it-on-my-surfaces",
+        "connect-to-external-systems",
+        "do-multi-step-research",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "write-and-edit-code",
+        "build-reusable-ai-workflows",
+        "see-images-and-screens",
+        "remember-context-over-time"
+      ],
+      "only_b": [
+        "search-the-web",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time"
+      ],
+      "shared_count": 9,
+      "only_a_count": 4,
+      "only_b_count": 3
+    },
+    {
+      "products": [
+        "copilot",
+        "gemini"
+      ],
+      "shared_capabilities": [
+        "build-reusable-ai-workflows",
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "make-and-edit-documents",
+        "read-text-and-documents",
+        "use-it-on-my-surfaces",
+        "see-images-and-screens",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "generate-images",
+        "write-and-explain"
+      ],
+      "only_a": [],
+      "only_b": [
+        "write-and-edit-code",
+        "do-multi-step-research",
+        "search-the-web",
+        "use-files-i-provide",
+        "organize-work-in-projects",
+        "generate-video",
+        "remember-context-over-time"
+      ],
+      "shared_count": 11,
+      "only_a_count": 0,
+      "only_b_count": 7
+    },
+    {
+      "products": [
+        "copilot",
+        "grok"
+      ],
+      "shared_capabilities": [
+        "connect-to-external-systems",
+        "make-and-edit-documents",
+        "use-it-on-my-surfaces",
+        "see-images-and-screens",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "generate-images",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "build-reusable-ai-workflows",
+        "take-actions-and-run-tools",
+        "read-text-and-documents"
+      ],
+      "only_b": [
+        "do-multi-step-research",
+        "search-the-web",
+        "generate-video",
+        "write-and-edit-code",
+        "remember-context-over-time"
+      ],
+      "shared_count": 8,
+      "only_a_count": 3,
+      "only_b_count": 5
+    },
+    {
+      "products": [
+        "copilot",
+        "perplexity"
+      ],
+      "shared_capabilities": [
+        "take-actions-and-run-tools",
+        "connect-to-external-systems",
+        "make-and-edit-documents",
+        "read-text-and-documents",
+        "use-it-on-my-surfaces",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "build-reusable-ai-workflows",
+        "see-images-and-screens",
+        "generate-images"
+      ],
+      "only_b": [
+        "do-multi-step-research",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "search-the-web"
+      ],
+      "shared_count": 8,
+      "only_a_count": 3,
+      "only_b_count": 4
+    },
+    {
+      "products": [
+        "gemini",
+        "grok"
+      ],
+      "shared_capabilities": [
+        "write-and-edit-code",
+        "make-and-edit-documents",
+        "do-multi-step-research",
+        "search-the-web",
+        "connect-to-external-systems",
+        "use-it-on-my-surfaces",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "generate-images",
+        "see-images-and-screens",
+        "generate-video",
+        "remember-context-over-time",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "build-reusable-ai-workflows",
+        "read-text-and-documents",
+        "use-files-i-provide",
+        "organize-work-in-projects",
+        "take-actions-and-run-tools"
+      ],
+      "only_b": [],
+      "shared_count": 13,
+      "only_a_count": 5,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "gemini",
+        "perplexity"
+      ],
+      "shared_capabilities": [
+        "make-and-edit-documents",
+        "do-multi-step-research",
+        "search-the-web",
+        "connect-to-external-systems",
+        "read-text-and-documents",
+        "use-files-i-provide",
+        "use-it-on-my-surfaces",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "organize-work-in-projects",
+        "take-actions-and-run-tools",
+        "write-and-explain"
+      ],
+      "only_a": [
+        "write-and-edit-code",
+        "build-reusable-ai-workflows",
+        "generate-images",
+        "see-images-and-screens",
+        "generate-video",
+        "remember-context-over-time"
+      ],
+      "only_b": [],
+      "shared_count": 12,
+      "only_a_count": 6,
+      "only_b_count": 0
+    },
+    {
+      "products": [
+        "grok",
+        "perplexity"
+      ],
+      "shared_capabilities": [
+        "do-multi-step-research",
+        "search-the-web",
+        "write-and-explain",
+        "use-it-on-my-surfaces",
+        "make-and-edit-documents",
+        "hear-audio-and-speech",
+        "speak-back-in-real-time",
+        "connect-to-external-systems"
+      ],
+      "only_a": [
+        "generate-images",
+        "generate-video",
+        "write-and-edit-code",
+        "remember-context-over-time",
+        "see-images-and-screens"
+      ],
+      "only_b": [
+        "take-actions-and-run-tools",
+        "organize-work-in-projects",
+        "use-files-i-provide",
+        "read-text-and-documents"
+      ],
+      "shared_count": 8,
+      "only_a_count": 5,
+      "only_b_count": 4
+    }
+  ]
+}

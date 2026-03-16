@@ -1,0 +1,840 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0"
+  },
+  "products": {
+    "chatgpt": {
+      "plans": {
+        "Go": {
+          "implementations": [
+            "chatgpt-advanced-voice-mode",
+            "chatgpt-atlas-browser",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-dall-e-image-generation",
+            "chatgpt-memory",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "search-the-web",
+            "take-actions-and-run-tools",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "generate-images",
+            "remember-context-over-time",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 9,
+          "capability_count": 14
+        },
+        "Plus": {
+          "implementations": [
+            "chatgpt-advanced-voice-mode",
+            "chatgpt-agent-mode",
+            "chatgpt-atlas-browser",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-codex-code-agent",
+            "chatgpt-custom-gpts-actions",
+            "chatgpt-dall-e-image-generation",
+            "chatgpt-deep-research",
+            "chatgpt-memory",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-sora-video-generation",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "do-multi-step-research",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems",
+            "search-the-web",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "build-reusable-ai-workflows",
+            "generate-images",
+            "remember-context-over-time",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "generate-video",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 14,
+          "capability_count": 18
+        },
+        "Pro": {
+          "implementations": [
+            "chatgpt-advanced-voice-mode",
+            "chatgpt-agent-mode",
+            "chatgpt-atlas-browser",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-codex-code-agent",
+            "chatgpt-codex-security",
+            "chatgpt-custom-gpts-actions",
+            "chatgpt-dall-e-image-generation",
+            "chatgpt-deep-research",
+            "chatgpt-memory",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-sora-video-generation",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "do-multi-step-research",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems",
+            "search-the-web",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "build-reusable-ai-workflows",
+            "generate-images",
+            "remember-context-over-time",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "generate-video",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 15,
+          "capability_count": 18
+        },
+        "Team": {
+          "implementations": [
+            "chatgpt-advanced-voice-mode",
+            "chatgpt-agent-mode",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-codex-code-agent",
+            "chatgpt-custom-gpts-actions",
+            "chatgpt-deep-research",
+            "chatgpt-memory",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "do-multi-step-research",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "search-the-web",
+            "build-reusable-ai-workflows",
+            "remember-context-over-time",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 11,
+          "capability_count": 16
+        },
+        "Enterprise": {
+          "implementations": [
+            "chatgpt-advanced-voice-mode",
+            "chatgpt-agent-mode",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-codex-code-agent",
+            "chatgpt-codex-security",
+            "chatgpt-custom-gpts-actions",
+            "chatgpt-deep-research",
+            "chatgpt-memory",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "do-multi-step-research",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "search-the-web",
+            "build-reusable-ai-workflows",
+            "remember-context-over-time",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 12,
+          "capability_count": 16
+        },
+        "Free": {
+          "implementations": [
+            "chatgpt-atlas-browser",
+            "chatgpt-canvas",
+            "chatgpt-search",
+            "chatgpt-projects",
+            "chatgpt-vision-image-understanding",
+            "chatgpt-chat"
+          ],
+          "capabilities": [
+            "search-the-web",
+            "take-actions-and-run-tools",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "see-images-and-screens",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 6,
+          "capability_count": 10
+        },
+        "Business": {
+          "implementations": [
+            "chatgpt-codex-security"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems"
+          ],
+          "implementation_count": 1,
+          "capability_count": 3
+        },
+        "Edu": {
+          "implementations": [
+            "chatgpt-codex-security"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems"
+          ],
+          "implementation_count": 1,
+          "capability_count": 3
+        }
+      }
+    },
+    "claude": {
+      "plans": {
+        "Free": {
+          "implementations": [
+            "claude-artifacts",
+            "claude-mcp-model-context-protocol",
+            "claude-projects",
+            "claude-vision-image-understanding",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "connect-to-external-systems",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "see-images-and-screens",
+            "read-text-and-documents",
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 6,
+          "capability_count": 10
+        },
+        "Pro": {
+          "implementations": [
+            "claude-artifacts",
+            "claude-claude-code",
+            "claude-connectors",
+            "claude-cowork-mode",
+            "claude-mcp-model-context-protocol",
+            "claude-projects",
+            "claude-skills",
+            "claude-vision-image-understanding",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "use-it-on-my-surfaces",
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "build-reusable-ai-workflows",
+            "see-images-and-screens",
+            "read-text-and-documents",
+            "remember-context-over-time",
+            "write-and-explain"
+          ],
+          "implementation_count": 10,
+          "capability_count": 13
+        },
+        "Max 5x": {
+          "implementations": [
+            "claude-artifacts",
+            "claude-claude-code",
+            "claude-connectors",
+            "claude-cowork-mode",
+            "claude-extended-thinking",
+            "claude-mcp-model-context-protocol",
+            "claude-projects",
+            "claude-skills",
+            "claude-vision-image-understanding",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "use-it-on-my-surfaces",
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "build-reusable-ai-workflows",
+            "see-images-and-screens",
+            "read-text-and-documents",
+            "remember-context-over-time",
+            "write-and-explain"
+          ],
+          "implementation_count": 11,
+          "capability_count": 13
+        },
+        "Max 20x": {
+          "implementations": [
+            "claude-artifacts",
+            "claude-claude-code",
+            "claude-connectors",
+            "claude-cowork-mode",
+            "claude-extended-thinking",
+            "claude-mcp-model-context-protocol",
+            "claude-projects",
+            "claude-skills",
+            "claude-vision-image-understanding",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "use-it-on-my-surfaces",
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "build-reusable-ai-workflows",
+            "see-images-and-screens",
+            "read-text-and-documents",
+            "remember-context-over-time",
+            "write-and-explain"
+          ],
+          "implementation_count": 11,
+          "capability_count": 13
+        },
+        "Team": {
+          "implementations": [
+            "claude-claude-code",
+            "claude-connectors",
+            "claude-cowork-mode",
+            "claude-mcp-model-context-protocol",
+            "claude-projects",
+            "claude-skills",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "use-it-on-my-surfaces",
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "build-reusable-ai-workflows",
+            "remember-context-over-time",
+            "write-and-explain"
+          ],
+          "implementation_count": 8,
+          "capability_count": 10
+        },
+        "Enterprise": {
+          "implementations": [
+            "claude-claude-code",
+            "claude-connectors",
+            "claude-cowork-mode",
+            "claude-mcp-model-context-protocol",
+            "claude-skills",
+            "claude-memory",
+            "claude-chat"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "take-actions-and-run-tools",
+            "use-it-on-my-surfaces",
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "build-reusable-ai-workflows",
+            "remember-context-over-time",
+            "write-and-explain"
+          ],
+          "implementation_count": 7,
+          "capability_count": 8
+        }
+      }
+    },
+    "copilot": {
+      "plans": {
+        "M365 Copilot": {
+          "implementations": [
+            "copilot-agent-builder",
+            "copilot-connectors",
+            "copilot-office-apps",
+            "copilot-chat"
+          ],
+          "capabilities": [
+            "build-reusable-ai-workflows",
+            "take-actions-and-run-tools",
+            "connect-to-external-systems",
+            "make-and-edit-documents",
+            "read-text-and-documents",
+            "use-it-on-my-surfaces",
+            "write-and-explain"
+          ],
+          "implementation_count": 4,
+          "capability_count": 7
+        },
+        "Copilot Pro": {
+          "implementations": [
+            "copilot-office-apps",
+            "copilot-vision",
+            "copilot-voice",
+            "copilot-gpt-4-access",
+            "copilot-image-generation-designer",
+            "copilot-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "read-text-and-documents",
+            "connect-to-external-systems",
+            "use-it-on-my-surfaces",
+            "see-images-and-screens",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "generate-images",
+            "write-and-explain"
+          ],
+          "implementation_count": 6,
+          "capability_count": 9
+        },
+        "Free": {
+          "implementations": [
+            "copilot-vision",
+            "copilot-voice",
+            "copilot-image-generation-designer",
+            "copilot-chat"
+          ],
+          "capabilities": [
+            "see-images-and-screens",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "generate-images",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 4,
+          "capability_count": 6
+        }
+      }
+    },
+    "gemini": {
+      "plans": {
+        "Free": {
+          "implementations": [
+            "gemini-ai-studio",
+            "gemini-audio-overview",
+            "gemini-canvas",
+            "gemini-extensions",
+            "gemini-gems-custom-chatbots",
+            "gemini-notebooklm",
+            "gemini-project-astra",
+            "gemini-agentic-app-actions-android",
+            "gemini-past-chats-memory",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "build-reusable-ai-workflows",
+            "make-and-edit-documents",
+            "connect-to-external-systems",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "do-multi-step-research",
+            "see-images-and-screens",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "take-actions-and-run-tools",
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 10,
+          "capability_count": 15
+        },
+        "AI Pro": {
+          "implementations": [
+            "gemini-ai-studio",
+            "gemini-audio-overview",
+            "gemini-canvas",
+            "gemini-deep-research",
+            "gemini-extensions",
+            "gemini-gemini-advanced",
+            "gemini-workspace",
+            "gemini-live-voice-mode",
+            "gemini-gems-custom-chatbots",
+            "gemini-imagen",
+            "gemini-nano-banana-pro",
+            "gemini-notebooklm",
+            "gemini-project-astra",
+            "gemini-veo-video-generation",
+            "gemini-agentic-app-actions-android"
+          ],
+          "capabilities": [
+            "write-and-edit-code",
+            "build-reusable-ai-workflows",
+            "make-and-edit-documents",
+            "do-multi-step-research",
+            "search-the-web",
+            "connect-to-external-systems",
+            "read-text-and-documents",
+            "use-files-i-provide",
+            "use-it-on-my-surfaces",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "generate-images",
+            "organize-work-in-projects",
+            "see-images-and-screens",
+            "generate-video",
+            "take-actions-and-run-tools"
+          ],
+          "implementation_count": 15,
+          "capability_count": 16
+        },
+        "AI Plus": {
+          "implementations": [
+            "gemini-gemini-advanced"
+          ],
+          "capabilities": [],
+          "implementation_count": 1,
+          "capability_count": 0
+        },
+        "AI Ultra": {
+          "implementations": [
+            "gemini-workspace"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "read-text-and-documents",
+            "connect-to-external-systems",
+            "use-files-i-provide",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 1,
+          "capability_count": 5
+        },
+        "Workspace add-on": {
+          "implementations": [
+            "gemini-workspace",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "read-text-and-documents",
+            "connect-to-external-systems",
+            "use-files-i-provide",
+            "use-it-on-my-surfaces",
+            "write-and-explain"
+          ],
+          "implementation_count": 2,
+          "capability_count": 6
+        },
+        "Google AI Plus": {
+          "implementations": [
+            "gemini-past-chats-memory",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 2,
+          "capability_count": 3
+        },
+        "Google AI Pro": {
+          "implementations": [
+            "gemini-past-chats-memory",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 2,
+          "capability_count": 3
+        },
+        "Google AI Ultra": {
+          "implementations": [
+            "gemini-past-chats-memory",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 2,
+          "capability_count": 3
+        }
+      }
+    },
+    "grok": {
+      "plans": {
+        "Premium+": {
+          "implementations": [
+            "grok-deepsearch",
+            "grok-chat",
+            "grok-image-generation-aurora",
+            "grok-imagine-video-generation",
+            "grok-studio",
+            "grok-voice-mode",
+            "grok-real-time-x-twitter-data",
+            "grok-think-mode",
+            "grok-memory",
+            "grok-vision-image-understanding"
+          ],
+          "capabilities": [
+            "do-multi-step-research",
+            "search-the-web",
+            "write-and-explain",
+            "use-it-on-my-surfaces",
+            "generate-images",
+            "generate-video",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "connect-to-external-systems",
+            "remember-context-over-time",
+            "see-images-and-screens"
+          ],
+          "implementation_count": 10,
+          "capability_count": 13
+        },
+        "SuperGrok": {
+          "implementations": [
+            "grok-deepsearch",
+            "grok-chat",
+            "grok-image-generation-aurora",
+            "grok-imagine-video-generation",
+            "grok-studio",
+            "grok-voice-mode",
+            "grok-real-time-x-twitter-data",
+            "grok-think-mode",
+            "grok-memory",
+            "grok-vision-image-understanding"
+          ],
+          "capabilities": [
+            "do-multi-step-research",
+            "search-the-web",
+            "write-and-explain",
+            "use-it-on-my-surfaces",
+            "generate-images",
+            "generate-video",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "connect-to-external-systems",
+            "remember-context-over-time",
+            "see-images-and-screens"
+          ],
+          "implementation_count": 10,
+          "capability_count": 13
+        },
+        "Premium": {
+          "implementations": [
+            "grok-chat",
+            "grok-image-generation-aurora",
+            "grok-imagine-video-generation",
+            "grok-studio",
+            "grok-voice-mode",
+            "grok-real-time-x-twitter-data",
+            "grok-think-mode",
+            "grok-memory",
+            "grok-vision-image-understanding"
+          ],
+          "capabilities": [
+            "write-and-explain",
+            "use-it-on-my-surfaces",
+            "generate-images",
+            "generate-video",
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "connect-to-external-systems",
+            "remember-context-over-time",
+            "see-images-and-screens"
+          ],
+          "implementation_count": 9,
+          "capability_count": 11
+        },
+        "Free": {
+          "implementations": [
+            "grok-studio",
+            "grok-memory"
+          ],
+          "capabilities": [
+            "make-and-edit-documents",
+            "write-and-edit-code",
+            "remember-context-over-time"
+          ],
+          "implementation_count": 2,
+          "capability_count": 3
+        }
+      }
+    },
+    "perplexity": {
+      "plans": {
+        "Pro": {
+          "implementations": [
+            "perplexity-agent-mode-agentic-actions",
+            "perplexity-buy-with-pro-shopping",
+            "perplexity-collections-spaces",
+            "perplexity-comet-browser",
+            "perplexity-focus-modes",
+            "perplexity-model-selection",
+            "perplexity-pages",
+            "perplexity-pro-search",
+            "perplexity-voice-mode",
+            "perplexity-chat"
+          ],
+          "capabilities": [
+            "take-actions-and-run-tools",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "search-the-web",
+            "make-and-edit-documents",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 10,
+          "capability_count": 11
+        },
+        "Max": {
+          "implementations": [
+            "perplexity-agent-mode-agentic-actions",
+            "perplexity-buy-with-pro-shopping",
+            "perplexity-collections-spaces",
+            "perplexity-comet-browser",
+            "perplexity-focus-modes",
+            "perplexity-model-selection",
+            "perplexity-pages",
+            "perplexity-pro-search",
+            "perplexity-chat"
+          ],
+          "capabilities": [
+            "take-actions-and-run-tools",
+            "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "search-the-web",
+            "make-and-edit-documents",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 9,
+          "capability_count": 9
+        },
+        "Free": {
+          "implementations": [
+            "perplexity-buy-with-pro-shopping",
+            "perplexity-collections-spaces",
+            "perplexity-comet-browser",
+            "perplexity-focus-modes",
+            "perplexity-pages",
+            "perplexity-voice-mode",
+            "perplexity-chat"
+          ],
+          "capabilities": [
+            "take-actions-and-run-tools",
+            "organize-work-in-projects",
+            "use-files-i-provide",
+            "read-text-and-documents",
+            "search-the-web",
+            "do-multi-step-research",
+            "make-and-edit-documents",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 7,
+          "capability_count": 11
+        },
+        "Enterprise Pro": {
+          "implementations": [
+            "perplexity-enterprise-app-connectors",
+            "perplexity-pages",
+            "perplexity-chat"
+          ],
+          "capabilities": [
+            "connect-to-external-systems",
+            "do-multi-step-research",
+            "make-and-edit-documents",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 3,
+          "capability_count": 5
+        }
+      }
+    }
+  }
+}

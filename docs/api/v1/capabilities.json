@@ -1,0 +1,907 @@
+{
+  "meta": {
+    "generated": "2026-03-16T00:26:55.138Z",
+    "version": "1.0",
+    "count": 18
+  },
+  "capabilities": [
+    {
+      "id": "hear-audio-and-speech",
+      "name": "Hear Audio and Speech",
+      "group": "understand",
+      "status": "active",
+      "summary": "Can accept spoken or audio input for understanding.",
+      "search_terms": [
+        "voice input",
+        "voice mode",
+        "speech recognition",
+        "talk to AI",
+        "audio input",
+        "voice chat"
+      ],
+      "what_counts": [
+        "microphone input in conversation",
+        "understanding spoken prompts",
+        "multimodal listening modes"
+      ],
+      "what_does_not_count": [
+        "text-only chat",
+        "outputting audio without taking spoken input"
+      ],
+      "related_terms": [
+        "Voice input",
+        "Live",
+        "Voice Mode"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-advanced-voice-mode",
+        "copilot-voice",
+        "gemini-live-voice-mode",
+        "gemini-project-astra",
+        "grok-voice-mode",
+        "perplexity-voice-mode"
+      ],
+      "implementation_count": 6,
+      "products": [
+        "chatgpt",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 5,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "read-text-and-documents",
+      "name": "Read Text and Documents",
+      "group": "understand",
+      "status": "active",
+      "summary": "Can interpret text, documents, PDFs, and similar uploaded or pasted materials.",
+      "search_terms": [
+        "upload documents",
+        "read PDF",
+        "analyze documents",
+        "document understanding",
+        "file upload",
+        "read files"
+      ],
+      "what_counts": [
+        "reading attached documents",
+        "parsing structured textual files",
+        "understanding document content for analysis"
+      ],
+      "what_does_not_count": [
+        "merely storing a file without interpreting it",
+        "only connecting to a system without reading its contents"
+      ],
+      "related_terms": [
+        "file analysis",
+        "document understanding",
+        "spreadsheet parsing"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-projects",
+        "claude-vision-image-understanding",
+        "copilot-office-apps",
+        "gemini-workspace",
+        "gemini-notebooklm",
+        "perplexity-collections-spaces"
+      ],
+      "implementation_count": 6,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "perplexity"
+      ],
+      "product_count": 5,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "see-images-and-screens",
+      "name": "See Images and Screens",
+      "group": "understand",
+      "status": "active",
+      "summary": "Can interpret images, screenshots, camera views, or other visual interface context.",
+      "search_terms": [
+        "image recognition",
+        "vision",
+        "analyze images",
+        "screenshot analysis",
+        "image understanding",
+        "upload photos"
+      ],
+      "what_counts": [
+        "image understanding",
+        "screenshot interpretation",
+        "live visual context in apps or browsers"
+      ],
+      "what_does_not_count": [
+        "image generation",
+        "text-only reasoning with no visual input"
+      ],
+      "related_terms": [
+        "Vision",
+        "Project Astra",
+        "screen understanding"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-vision-image-understanding",
+        "claude-vision-image-understanding",
+        "copilot-vision",
+        "gemini-project-astra",
+        "grok-vision-image-understanding"
+      ],
+      "implementation_count": 5,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "grok"
+      ],
+      "product_count": 5,
+      "model_access": [
+        "llama-4"
+      ],
+      "model_access_count": 1
+    },
+    {
+      "id": "speak-back-in-real-time",
+      "name": "Speak Back in Real Time",
+      "group": "respond",
+      "status": "active",
+      "summary": "Can respond with live or near-live speech in a conversational flow.",
+      "search_terms": [
+        "voice output",
+        "text to speech",
+        "AI voice",
+        "voice response",
+        "talk back",
+        "spoken answers"
+      ],
+      "what_counts": [
+        "back-and-forth spoken conversation",
+        "real-time voice replies",
+        "low-latency live voice modes"
+      ],
+      "what_does_not_count": [
+        "downloadable audio only",
+        "delayed audio generation without conversation"
+      ],
+      "related_terms": [
+        "Advanced Voice Mode",
+        "Gemini Live",
+        "Voice Mode"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-advanced-voice-mode",
+        "copilot-voice",
+        "gemini-live-voice-mode",
+        "gemini-project-astra",
+        "grok-voice-mode",
+        "perplexity-voice-mode"
+      ],
+      "implementation_count": 6,
+      "products": [
+        "chatgpt",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 5,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "write-and-explain",
+      "name": "Write and Explain",
+      "group": "respond",
+      "status": "active",
+      "summary": "Can produce useful written responses, explanations, summaries, and structured output.",
+      "search_terms": [
+        "AI chat",
+        "ask questions",
+        "explain things",
+        "write text",
+        "answer questions",
+        "AI writing"
+      ],
+      "what_counts": [
+        "core chat responses",
+        "explanatory writing",
+        "structured written answers"
+      ],
+      "what_does_not_count": [
+        "model entitlement with no distinct output behavior",
+        "actions or tool use without a written result"
+      ],
+      "related_terms": [
+        "chat",
+        "explanation",
+        "summary"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-chat",
+        "claude-chat",
+        "copilot-chat",
+        "gemini-chat",
+        "grok-chat",
+        "perplexity-chat"
+      ],
+      "implementation_count": 6,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 6,
+      "model_access": [
+        "deepseek-v3-r1",
+        "llama-3-3",
+        "llama-4",
+        "mistral-large-nemo",
+        "mistral-small-3",
+        "qwen-2-5",
+        "qwen-3"
+      ],
+      "model_access_count": 7
+    },
+    {
+      "id": "generate-images",
+      "name": "Generate Images",
+      "group": "create",
+      "status": "active",
+      "summary": "Can create or transform images from prompts, edits, or multimodal instructions.",
+      "search_terms": [
+        "AI image generator",
+        "create images",
+        "text to image",
+        "AI art",
+        "generate pictures",
+        "image creation"
+      ],
+      "what_counts": [
+        "text-to-image generation",
+        "image editing or variation",
+        "branded image generation tools"
+      ],
+      "what_does_not_count": [
+        "only understanding an image",
+        "producing text descriptions without making an image"
+      ],
+      "related_terms": [
+        "DALL-E",
+        "Imagen",
+        "Designer",
+        "Aurora"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-dall-e-image-generation",
+        "copilot-image-generation-designer",
+        "gemini-imagen",
+        "gemini-nano-banana-pro",
+        "grok-image-generation-aurora"
+      ],
+      "implementation_count": 5,
+      "products": [
+        "chatgpt",
+        "copilot",
+        "gemini",
+        "grok"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "generate-video",
+      "name": "Generate Video",
+      "group": "create",
+      "status": "active",
+      "summary": "Can create or transform video outputs from prompts or edits.",
+      "search_terms": [
+        "AI video generator",
+        "create video",
+        "text to video",
+        "AI video maker",
+        "generate video clips"
+      ],
+      "what_counts": [
+        "text-to-video generation",
+        "short generated clips",
+        "vendor video generation modes"
+      ],
+      "what_does_not_count": [
+        "static image generation",
+        "ordinary screen recording tools"
+      ],
+      "related_terms": [
+        "Sora",
+        "Veo",
+        "Imagine"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-sora-video-generation",
+        "gemini-veo-video-generation",
+        "grok-imagine-video-generation"
+      ],
+      "implementation_count": 3,
+      "products": [
+        "chatgpt",
+        "gemini",
+        "grok"
+      ],
+      "product_count": 3,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "make-and-edit-documents",
+      "name": "Make and Edit Documents",
+      "group": "create",
+      "status": "active",
+      "summary": "Can create, revise, or iteratively develop documents, presentations, notes, or other standalone work products.",
+      "search_terms": [
+        "AI document editor",
+        "create documents",
+        "edit documents",
+        "AI writing assistant",
+        "collaborative editing"
+      ],
+      "what_counts": [
+        "writing workspaces",
+        "artifact/document generation",
+        "editing inside office or document environments"
+      ],
+      "what_does_not_count": [
+        "simple single-message answers without document context",
+        "code-only workflows when no document artifact is involved"
+      ],
+      "related_terms": [
+        "Artifacts",
+        "Canvas",
+        "Office integration"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-canvas",
+        "claude-artifacts",
+        "copilot-office-apps",
+        "gemini-canvas",
+        "gemini-workspace",
+        "grok-studio",
+        "perplexity-pages"
+      ],
+      "implementation_count": 7,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 6,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "write-and-edit-code",
+      "name": "Write and Edit Code",
+      "group": "create",
+      "status": "active",
+      "summary": "Can generate, refactor, debug, or execute code-oriented work.",
+      "search_terms": [
+        "AI code editor",
+        "code generation",
+        "AI coding assistant",
+        "write code",
+        "code completion",
+        "AI programming"
+      ],
+      "what_counts": [
+        "coding agents",
+        "code editing workspaces",
+        "code generation and review"
+      ],
+      "what_does_not_count": [
+        "general writing features with no coding support",
+        "model access alone without a coding workflow"
+      ],
+      "related_terms": [
+        "Claude Code",
+        "Codex",
+        "AI Studio",
+        "Grok Studio"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-canvas",
+        "chatgpt-codex-code-agent",
+        "chatgpt-codex-security",
+        "claude-artifacts",
+        "claude-claude-code",
+        "gemini-ai-studio",
+        "gemini-canvas",
+        "grok-studio"
+      ],
+      "implementation_count": 8,
+      "products": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok"
+      ],
+      "product_count": 4,
+      "model_access": [
+        "codestral",
+        "qwen-2-5",
+        "qwen-coder"
+      ],
+      "model_access_count": 3
+    },
+    {
+      "id": "organize-work-in-projects",
+      "name": "Organize Work in Projects",
+      "group": "work-with-my-stuff",
+      "status": "active",
+      "summary": "Can keep ongoing work organized in named projects, spaces, collections, or similar containers.",
+      "search_terms": [
+        "AI projects",
+        "organize conversations",
+        "project folders",
+        "workspace organization",
+        "group chats"
+      ],
+      "what_counts": [
+        "persistent project workspaces",
+        "reusable folders of context",
+        "grouped research or collaboration spaces"
+      ],
+      "what_does_not_count": [
+        "one-off chats with no persistent organization",
+        "generic chat history without project structure"
+      ],
+      "related_terms": [
+        "Projects",
+        "Spaces",
+        "Collections"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-projects",
+        "claude-projects",
+        "gemini-notebooklm",
+        "perplexity-collections-spaces"
+      ],
+      "implementation_count": 4,
+      "products": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "perplexity"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "remember-context-over-time",
+      "name": "Remember Context Over Time",
+      "group": "work-with-my-stuff",
+      "status": "active",
+      "summary": "Can retain preferences, memory, or persistent context across sessions.",
+      "search_terms": [
+        "AI memory",
+        "remember conversations",
+        "persistent context",
+        "long-term memory",
+        "remember preferences"
+      ],
+      "what_counts": [
+        "explicit memory features",
+        "saved preferences reused later",
+        "persistent user context across chats"
+      ],
+      "what_does_not_count": [
+        "only remembering content inside a single active session",
+        "temporary context windows with no persistence"
+      ],
+      "related_terms": [
+        "Memory",
+        "saved preferences"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-memory",
+        "claude-memory",
+        "gemini-past-chats-memory",
+        "grok-memory"
+      ],
+      "implementation_count": 4,
+      "products": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "use-files-i-provide",
+      "name": "Use Files I Provide",
+      "group": "work-with-my-stuff",
+      "status": "active",
+      "summary": "Can work with files or documents the user uploads or attaches directly.",
+      "search_terms": [
+        "upload files",
+        "attach files",
+        "file analysis",
+        "process files",
+        "work with files"
+      ],
+      "what_counts": [
+        "uploaded documents",
+        "attached spreadsheets",
+        "local file analysis in chat or project workspaces"
+      ],
+      "what_does_not_count": [
+        "live app integrations without file upload",
+        "generic chat with no file handling"
+      ],
+      "related_terms": [
+        "uploads",
+        "attachments",
+        "file analysis"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-projects",
+        "claude-projects",
+        "gemini-workspace",
+        "gemini-notebooklm",
+        "perplexity-collections-spaces"
+      ],
+      "implementation_count": 5,
+      "products": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "perplexity"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "do-multi-step-research",
+      "name": "Do Multi-Step Research",
+      "group": "act-for-me",
+      "status": "active",
+      "summary": "Can plan, search, synthesize, and return a more developed research output across multiple steps or sources.",
+      "search_terms": [
+        "deep research",
+        "AI research assistant",
+        "multi-step research",
+        "research agent",
+        "comprehensive research"
+      ],
+      "what_counts": [
+        "deep research reports",
+        "multi-query synthesis",
+        "cited research workflows"
+      ],
+      "what_does_not_count": [
+        "a single simple web lookup",
+        "unsupported claims without evidence gathering"
+      ],
+      "related_terms": [
+        "Deep Research",
+        "DeepSearch",
+        "Pro Search",
+        "Pages"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-agent-mode",
+        "chatgpt-deep-research",
+        "claude-cowork-mode",
+        "gemini-deep-research",
+        "gemini-notebooklm",
+        "grok-deepsearch",
+        "perplexity-agent-mode-agentic-actions",
+        "perplexity-pages",
+        "perplexity-pro-search"
+      ],
+      "implementation_count": 9,
+      "products": [
+        "chatgpt",
+        "claude",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 5,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "search-the-web",
+      "name": "Search the Web",
+      "group": "act-for-me",
+      "status": "active",
+      "summary": "Can retrieve current information from the web as part of an interaction.",
+      "search_terms": [
+        "web search",
+        "web browsing",
+        "internet access",
+        "real-time information",
+        "browse the internet",
+        "grounding"
+      ],
+      "what_counts": [
+        "built-in web search",
+        "browser-assisted web lookup",
+        "current-information retrieval"
+      ],
+      "what_does_not_count": [
+        "answers based only on training data",
+        "private system connectors that do not search the open web"
+      ],
+      "related_terms": [
+        "Search",
+        "Browse",
+        "Web lookup"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-atlas-browser",
+        "chatgpt-search",
+        "chatgpt-deep-research",
+        "gemini-deep-research",
+        "grok-deepsearch",
+        "perplexity-comet-browser",
+        "perplexity-focus-modes",
+        "perplexity-pro-search"
+      ],
+      "implementation_count": 8,
+      "products": [
+        "chatgpt",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "take-actions-and-run-tools",
+      "name": "Take Actions and Run Tools",
+      "group": "act-for-me",
+      "status": "active",
+      "summary": "Can go beyond plain chat by taking actions, using tools, browsing interfaces, or running task steps on the user's behalf.",
+      "search_terms": [
+        "AI agent",
+        "agentic AI",
+        "tool use",
+        "AI automation",
+        "run tasks",
+        "computer use"
+      ],
+      "what_counts": [
+        "agentic actions",
+        "tool use",
+        "form filling or workflow execution"
+      ],
+      "what_does_not_count": [
+        "text suggestions that the user must execute manually",
+        "static answers without tool or action support"
+      ],
+      "related_terms": [
+        "Agent Mode",
+        "Comet actions",
+        "Code agents"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-agent-mode",
+        "chatgpt-atlas-browser",
+        "chatgpt-codex-code-agent",
+        "chatgpt-codex-security",
+        "claude-claude-code",
+        "claude-cowork-mode",
+        "copilot-agent-builder",
+        "gemini-agentic-app-actions-android",
+        "perplexity-agent-mode-agentic-actions",
+        "perplexity-buy-with-pro-shopping",
+        "perplexity-comet-browser"
+      ],
+      "implementation_count": 11,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "perplexity"
+      ],
+      "product_count": 5,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "build-reusable-ai-workflows",
+      "name": "Build Reusable AI Workflows",
+      "group": "connect",
+      "status": "active",
+      "summary": "Can create reusable assistants, agents, GPTs, gems, skills, or other repeatable AI setups.",
+      "search_terms": [
+        "custom GPTs",
+        "AI workflows",
+        "custom bots",
+        "reusable prompts",
+        "AI automation builder"
+      ],
+      "what_counts": [
+        "building a named reusable assistant",
+        "packaging instructions or tools for repeated use",
+        "creating no-code or low-code agent workflows"
+      ],
+      "what_does_not_count": [
+        "one-off prompts in a single chat",
+        "temporary settings that do not create a reusable artifact"
+      ],
+      "related_terms": [
+        "Custom GPTs",
+        "Gems",
+        "Skills",
+        "Agent Builder"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-custom-gpts-actions",
+        "claude-skills",
+        "copilot-agent-builder",
+        "gemini-ai-studio",
+        "gemini-gems-custom-chatbots"
+      ],
+      "implementation_count": 5,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini"
+      ],
+      "product_count": 4,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "connect-to-external-systems",
+      "name": "Connect to External Systems",
+      "group": "connect",
+      "status": "active",
+      "summary": "Can connect to external apps, services, APIs, data sources, or tool ecosystems beyond the base chat product.",
+      "search_terms": [
+        "AI integrations",
+        "API access",
+        "connect apps",
+        "third party plugins",
+        "external tools"
+      ],
+      "what_counts": [
+        "connectors to cloud services",
+        "MCP or similar tool connections",
+        "actions that call external systems"
+      ],
+      "what_does_not_count": [
+        "uploading a file directly into chat",
+        "reading only the text already present in the conversation"
+      ],
+      "related_terms": [
+        "Connectors",
+        "MCP",
+        "Actions",
+        "Extensions"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-agent-mode",
+        "chatgpt-codex-security",
+        "chatgpt-custom-gpts-actions",
+        "claude-connectors",
+        "claude-mcp-model-context-protocol",
+        "copilot-connectors",
+        "copilot-office-apps",
+        "gemini-extensions",
+        "gemini-workspace",
+        "gemini-agentic-app-actions-android",
+        "grok-real-time-x-twitter-data",
+        "perplexity-enterprise-app-connectors"
+      ],
+      "implementation_count": 12,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 6,
+      "model_access": [],
+      "model_access_count": 0
+    },
+    {
+      "id": "use-it-on-my-surfaces",
+      "name": "Use It on My Surfaces",
+      "group": "access-context",
+      "status": "active",
+      "summary": "Can be accessed across the surfaces that matter to the user, such as web, desktop, mobile, terminal, API, or embedded environments.",
+      "search_terms": [
+        "AI desktop app",
+        "mobile app",
+        "API access",
+        "browser extension",
+        "platform availability"
+      ],
+      "what_counts": [
+        "access on distinct user surfaces",
+        "native or embedded interface availability",
+        "API or terminal availability when relevant"
+      ],
+      "what_does_not_count": [
+        "a capability claim with no actual surface support",
+        "broad branding claims with no surface detail"
+      ],
+      "related_terms": [
+        "web",
+        "mobile",
+        "terminal",
+        "API"
+      ],
+      "common_constraints": [],
+      "implementations": [
+        "chatgpt-chat",
+        "claude-claude-code",
+        "claude-chat",
+        "copilot-office-apps",
+        "copilot-chat",
+        "gemini-workspace",
+        "gemini-chat",
+        "grok-chat",
+        "perplexity-chat"
+      ],
+      "implementation_count": 9,
+      "products": [
+        "chatgpt",
+        "claude",
+        "copilot",
+        "gemini",
+        "grok",
+        "perplexity"
+      ],
+      "product_count": 6,
+      "model_access": [],
+      "model_access_count": 0
+    }
+  ]
+}
