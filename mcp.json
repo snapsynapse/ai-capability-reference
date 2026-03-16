@@ -1,0 +1,9 @@
+{
+  "mcpServers": {
+    "ai-capability-reference": {
+      "command": "node",
+      "args": ["scripts/mcp-server.js"],
+      "type": "stdio"
+    }
+  }
+}

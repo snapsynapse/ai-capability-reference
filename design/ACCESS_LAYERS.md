@@ -184,21 +184,27 @@ Let agents query the reference without downloading and parsing files. Read-only.
 - backed by generated artifacts — reads from JSON export, not from markdown directly
 - no bespoke logic — if a query requires complex joins, the JSON export should pre-compute the view
 
-### Candidate tools
+### Implementation
+
+**Status:** Implemented — `scripts/mcp-server.js` (zero dependencies, stdio transport)
+
+**Configuration:** See `mcp.json` in the project root.
 
 | Tool | Parameters | Returns |
 |---|---|---|
 | `list_capabilities` | (none) | All capabilities with IDs, names, groups, search terms |
 | `get_capability` | `id` | Full capability record with implementations and availability |
-| `list_products` | (none) | All products with IDs, names, providers |
+| `list_products` | `kind` (optional: hosted/runtime) | All products with IDs, names, providers |
 | `get_product` | `id` | Full product record with implementations and plan tiers |
 | `compare_products` | `product_a`, `product_b` | Capability overlap, differences, plan comparison |
 | `check_availability` | `product`, `capability` | Whether and how the product implements the capability, with constraints |
 | `search` | `query` | Fuzzy match across capabilities, implementations, and search terms |
 
+Every tool response includes freshness metadata (`meta.generated`, `meta.freshness_note`) so callers can present data with appropriate date context.
+
 ### Source data
 
-All MCP tools read from the generated JSON artifacts. If the JSON export changes shape, the MCP layer updates to match. The JSON contract is the interface boundary.
+All MCP tools read from the generated JSON artifacts in `docs/api/v1/`. If the JSON export changes shape, the MCP layer updates to match. The JSON contract is the interface boundary.
 
 ## Shared Data Contract
 
@@ -219,7 +225,7 @@ These fields should be present in capability records and survive into all access
 
 | Roadmap phase | Access layer work |
 |---|---|
-| Phase 5: Agent-Readable Data Access | JSON export + MCP layer |
+| Phase 5: Agent-Readable Data Access | JSON export (done) + MCP layer (done) |
 | Not yet in roadmap | SEO vocabulary, bridge pages, structured data |
 
 The SEO work should be added to the roadmap. It shares infrastructure with Phase 5 and should be sequenced alongside it, not after.
