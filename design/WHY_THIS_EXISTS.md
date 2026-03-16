@@ -21,7 +21,7 @@ The AI ecosystem has a measurement problem. It measures the wrong layer.
 
 The industry has converged on benchmarks as the standard way to evaluate AI. There are leaderboards for everything: GPQA Diamond for reasoning, SWE-Bench for coding, AIME for math, MMLU for general knowledge. Resources like Artificial Analysis track 295+ models by intelligence score, speed, latency, and price. WhatLLM.org updates weekly. Vellum, LLM-Stats, and a dozen others rank models across standardized tests.
 
-This infrastructure is mature, structured, and increasingly machine-readable. If you want to know how GPT-4o performs on graduate-level physics questions compared to Claude 3.5 Sonnet, the data exists.
+This infrastructure is mature, structured, and increasingly machine-readable. If you want to know how GPT-5 performs on graduate-level physics questions compared to Claude 4.5 Sonnet, the data exists.
 
 ### What's poorly measured: products
 

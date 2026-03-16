@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Knowledge as Code - AI Capability Reference</title>
+    <meta name="description" content="Knowledge as Code: a development pattern for AI-verified, plain-text knowledge bases with zero dependencies. The architecture behind the AI Capability Reference.">
+    <meta name="theme-color" content="#1a1a2e">
+    <link rel="canonical" href="https://airef.snapsynapse.com/pattern.html">
+
+    <link rel="icon" type="image/png" sizes="56x56" href="assets/favicon-56.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon-32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon-16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/apple-touch-icon.png">
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Knowledge as Code">
+    <meta property="og:description" content="A development pattern for AI-verified, plain-text knowledge bases with zero dependencies.">
+    <meta property="og:image" content="https://airef.snapsynapse.com/assets/og-image.jpg">
+
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Knowledge as Code">
+    <meta name="twitter:description" content="A development pattern for AI-verified, plain-text knowledge bases with zero dependencies.">
+    <meta name="twitter:image" content="https://airef.snapsynapse.com/assets/og-image.jpg">
+
+    <link rel="stylesheet" href="assets/styles.css">
+    <script>
+        (function() {
+            var params = new URLSearchParams(window.location.search);
+            var urlTheme = params.get('theme');
+            var storedTheme = localStorage.getItem('theme');
+            if (urlTheme === 'light' || storedTheme === 'light') {
+                document.documentElement.classList.add('light-mode');
+                localStorage.setItem('theme', 'light');
+            }
+        })();
+    </script>
+    <style>
+        .about-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+        .about-content h1 { font-size: 2rem; margin-bottom: 0.5rem; }
+        .about-content h2 { font-size: 1.5rem; margin-top: 2rem; margin-bottom: 1rem; border-bottom: 1px solid var(--card-border); padding-bottom: 0.5rem; }
+        .about-content h3 { font-size: 1.2rem; margin-top: 1.5rem; margin-bottom: 0.75rem; }
+        .about-content p { margin-bottom: 1rem; line-height: 1.6; }
+        .about-content ul { margin-bottom: 1rem; padding-left: 1.5rem; }
+        .about-content li { margin-bottom: 0.5rem; line-height: 1.5; }
+        .about-content a { color: var(--accent); }
+        .about-content code { background: var(--card-bg); padding: 0.2em 0.4em; border-radius: 3px; font-size: 0.9em; }
+        .about-content pre { background: var(--card-bg); padding: 1rem; border-radius: 8px; overflow-x: auto; margin-bottom: 1rem; }
+        .about-content pre code { background: none; padding: 0; }
+        .about-content blockquote { border-left: 3px solid var(--accent); padding-left: 1rem; margin: 1rem 0; font-style: italic; opacity: 0.9; }
+        .about-content table { width: 100%; border-collapse: collapse; margin-bottom: 1rem; }
+        .about-content th, .about-content td { padding: 0.5rem; text-align: left; border-bottom: 1px solid var(--card-border); }
+        .about-content th { font-weight: 600; }
+        .about-content hr { border: none; border-top: 1px solid var(--card-border); margin: 2rem 0; }
+        .pattern-label { display: inline-block; background: var(--card-bg); border: 1px solid var(--card-border); padding: 0.15em 0.5em; border-radius: 4px; font-size: 0.85em; margin-right: 0.25em; }
+    </style>
+</head>
+<body>
+    <a href="#main-content" class="skip-link">Skip to main content</a>
+    <header class="site-header">
+        <h1><a href="index.html" onclick="passTheme(this)" style="color: inherit; text-decoration: none;"><img src="assets/favicon-32.png" alt="" class="header-logo" width="28" height="28" aria-hidden="true"> AI Capability Reference</a></h1>
+        <button class="hamburger-btn" onclick="toggleMobileMenu()" aria-label="Toggle menu" aria-expanded="false" aria-controls="siteNav">
+            <span class="hamburger-icon"></span>
+        </button>
+        <nav class="site-nav" id="siteNav" aria-label="Main navigation">
+            <a href="index.html" class="site-nav-link" onclick="passTheme(this)">Capabilities</a>
+            <a href="implementations.html" class="site-nav-link" onclick="passTheme(this)">Products</a>
+            <a href="compare.html" class="site-nav-link" onclick="passTheme(this)">Compare</a>
+            <a href="constraints.html" class="site-nav-link" onclick="passTheme(this)">Limits</a>
+            <a href="about.html" class="site-nav-link" onclick="passTheme(this)">About</a>
+        </nav>
+        <div class="header-actions">
+            <div class="site-search" role="combobox" aria-expanded="false" aria-haspopup="listbox" aria-owns="searchResults">
+                <input type="search" id="siteSearchInput" class="search-input" placeholder="Search features..." aria-label="Search features" aria-autocomplete="list" aria-controls="searchResults" autocomplete="off">
+                <ul id="searchResults" class="search-results" role="listbox" hidden></ul>
+            </div>
+            <button class="theme-toggle" onclick="toggleTheme()" title="Toggle light/dark mode">🌓</button>
+        </div>
+    </header>
+    <div class="container" id="main-content">
+        <div class="about-content">
+
+<h1>Knowledge as Code</h1>
+<p><em>A development pattern for building knowledge bases that verify themselves, resist decay, and serve both humans and machines from plain text files.</em></p>
+<p><strong>Status:</strong> Working title. This pattern emerged from building the <a href="about.html" onclick="passTheme(this)">AI Capability Reference</a>. We're documenting it as we go and actively looking for prior art. <a href="https://github.com/snapsynapse/ai-capability-reference/discussions">Join the discussion.</a></p>
+
+<hr>
+
+<h2>The pattern</h2>
+
+<p>Knowledge as Code applies software engineering practices to knowledge management. The knowledge lives in version-controlled plain text files. It is validated by automated processes. It produces multiple outputs from a single source. And it actively resists becoming outdated.</p>
+
+<p>This site is an instance of the pattern. The page you're reading was built by it.</p>
+
+<h3>Six properties</h3>
+
+<table>
+<thead><tr><th>Property</th><th>What it means</th><th>In this project</th></tr></thead>
+<tbody>
+<tr>
+    <td><strong>Plain text canonical</strong></td>
+    <td>Knowledge lives in human-readable, version-controlled files. No database, no CMS, no vendor lock-in.</td>
+    <td>Markdown and YAML files in <code>data/</code></td>
+</tr>
+<tr>
+    <td><strong>Self-healing</strong></td>
+    <td>Automated verification detects when the knowledge has drifted from reality. The system flags decay before humans notice it.</td>
+    <td>Multi-model cascade cross-checks all data twice weekly, opens GitHub issues for human review</td>
+</tr>
+<tr>
+    <td><strong>Multi-output</strong></td>
+    <td>One source produces every format needed &mdash; human-readable, machine-readable, agent-queryable, search-optimized.</td>
+    <td>HTML site, JSON API, MCP server, 125 SEO bridge pages, sitemap, <code>llms.txt</code></td>
+</tr>
+<tr>
+    <td><strong>Zero-dependency</strong></td>
+    <td>No external packages. The build uses only language built-ins. Nothing breaks when you come back in a year.</td>
+    <td>One Node.js script, no <code>package.json</code>, no <code>node_modules</code></td>
+</tr>
+<tr>
+    <td><strong>Git-native</strong></td>
+    <td>Git is the collaboration layer, the audit trail, the deployment trigger, and the contribution workflow.</td>
+    <td>Issues, PRs, CI/CD, version history &mdash; all through Git</td>
+</tr>
+<tr>
+    <td><strong>Ontology-driven</strong></td>
+    <td>A vendor-neutral taxonomy of concepts maps to vendor-specific implementations. The structure is the data model.</td>
+    <td>18 capabilities map to 72 implementations across 12 products</td>
+</tr>
+</tbody>
+</table>
+
+<h2>Why these choices compound</h2>
+
+<p>Any one of these properties is a reasonable design choice. The value is in the combination:</p>
+
+<ul>
+<li><strong>Plain text + Git</strong> means anyone can contribute with no dev environment. Edit a file, open a PR.</li>
+<li><strong>Plain text + zero-dependency build</strong> means the project still builds in five years. Nothing to update, nothing to break.</li>
+<li><strong>Ontology + multi-output</strong> means one correction fixes the site, the API, the MCP server, and every bridge page at once.</li>
+<li><strong>Self-healing + Git</strong> means verification results are tracked as issues with full audit trail. Nothing is silently changed.</li>
+<li><strong>Zero-dependency + self-healing</strong> means maintenance cost stays low even as the knowledge grows. The system scales through automation, not staffing.</li>
+</ul>
+
+<h2>Standing on shoulders</h2>
+
+<p>This pattern didn't appear from nowhere. It draws from established ideas and the people who developed them:</p>
+
+<h3>File over app</h3>
+<blockquote>"If you want to create digital artifacts that last, they must be files you can control, in formats that are easy to retrieve and read." &mdash; <a href="https://stephango.com/file-over-app">Steph Ango</a>, 2023</blockquote>
+<p>Also: <a href="https://sive.rs/plaintext">Derek Sivers</a> on plain text permanence. The <a href="https://permacomputing.net/">permacomputing</a> movement on resilient, minimal-dependency software.</p>
+
+<h3>Docs as code</h3>
+<p>The practice of managing documentation with the same tools as software &mdash; version control, pull requests, CI, plain text formats. Popularized by the <a href="https://www.writethedocs.org/guide/docs-as-code/">Write the Docs</a> community. Key figures: Tom Preston-Werner (Jekyll, 2008), Eric Holscher (Read the Docs), Anne Gentle (<em>Docs Like Code</em>, 2017), Andrew Etter (<em>Modern Technical Writing</em>, 2016), Riona MacNamara (docs-as-code at Google).</p>
+
+<h3>Living documentation</h3>
+<p>Cyrille Martraire's <em><a href="https://www.informit.com/store/living-documentation-continuous-knowledge-sharing-by-9780134689326">Living Documentation</a></em> (2019) argues that documentation should evolve at the same pace as the system it describes. His framework generates docs from code annotations and tests. This project extends the idea: the knowledge isn't derived from code, and verification uses AI models rather than test suites.</p>
+
+<h3>GitOps</h3>
+<p>Coined by <a href="https://www.weave.works/">Weaveworks</a> (2017). Git as single source of truth, with automated agents that detect drift between declared state and actual state, then reconcile. Originally for infrastructure &mdash; but the pattern maps directly to knowledge:</p>
+<table>
+<thead><tr><th>GitOps (infrastructure)</th><th>Knowledge as Code</th></tr></thead>
+<tbody>
+<tr><td>YAML declares desired state</td><td>Markdown declares what's true</td></tr>
+<tr><td>Controller detects drift</td><td>AI cascade detects drift from reality</td></tr>
+<tr><td>Auto-reconciliation or alert</td><td>GitHub issues for human review</td></tr>
+<tr><td>Git as single source of truth</td><td>Git as single source of truth</td></tr>
+</tbody>
+</table>
+
+<h3>Anti-entropy</h3>
+<p>In distributed systems (Dynamo, Cassandra), anti-entropy is the process that detects and repairs divergence from desired state. The scheduled verification cascade is an anti-entropy process for knowledge &mdash; it finds where reality has moved away from what the files say and flags the gap.</p>
+
+<h3>Multi-model verification</h3>
+<p>Academic foundations for using multiple AI models as cross-checking judges:</p>
+<ul>
+<li><a href="https://arxiv.org/abs/2306.05685">Zheng et al., "Judging LLM-as-a-Judge"</a> (NeurIPS 2023) &mdash; established AI-as-evaluator with identified biases</li>
+<li><a href="https://arxiv.org/abs/2404.18796">Verga et al., "PoLL: Panel of LLM Evaluators"</a> (2024) &mdash; multiple smaller models outperform a single large judge</li>
+<li><a href="https://arxiv.org/abs/2305.14325">Du et al., "Multiagent Debate"</a> (2023) &mdash; LLM instances debate to reduce hallucinations</li>
+<li><a href="https://arxiv.org/abs/2310.01798">Huang &amp; Zhou, "LLMs Cannot Self-Correct Reasoning Yet"</a> (ICLR 2024) &mdash; validates why multi-model beats single-model</li>
+</ul>
+
+<h3>Wiki philosophy</h3>
+<p>Ward Cunningham's original wiki (1995) established the idea of knowledge that evolves incrementally, maintained by a community, with every change tracked. Mike Caulfield's "<a href="https://hapgood.us/2015/10/17/the-garden-and-the-stream-a-technopastoral/">The Garden and the Stream</a>" (2015) distinguished gardens (networked, iterative knowledge) from streams (chronological feeds). The <a href="https://maggieappleton.com/garden-history">digital gardens movement</a> extended this into personal knowledge management. This project is a tended garden with AI gardeners.</p>
+
+<h2>What we think is new</h2>
+
+<p>We haven't found prior art for these specific applications. If you know of any, please <a href="https://github.com/snapsynapse/ai-capability-reference/discussions">tell us</a>:</p>
+
+<ul>
+<li><strong>"Knowledge as Code" as a named pattern</strong> &mdash; the "-as-code" lineage (infrastructure, policy, docs, everything) is well-established, but this specific application to maintained knowledge bases doesn't appear to be named</li>
+<li><strong>AI verification cascades for documentation</strong> &mdash; multi-model evaluation exists in academic literature, but applying it as a scheduled process to maintain a knowledge base's factual accuracy</li>
+<li><strong>Multi-format output from the same plain text</strong> &mdash; HTML + JSON API + MCP endpoints + SEO bridge pages, all from markdown/YAML, with zero dependencies</li>
+<li><strong>Ontology-driven static site generation</strong> &mdash; using a formal taxonomy to drive site structure, navigation, and programmatic pages</li>
+</ul>
+
+<h2>Try it</h2>
+
+<p>The entire project is open source. There is nothing to install.</p>
+
+<pre><code>git clone https://github.com/snapsynapse/ai-capability-reference.git
+cd ai-capability-reference
+node scripts/build.js
+open docs/index.html</code></pre>
+
+<p>To understand the architecture: <a href="https://github.com/snapsynapse/ai-capability-reference/blob/main/design/ARCHITECTURE_PATTERNS.md">design/ARCHITECTURE_PATTERNS.md</a></p>
+<p>To understand the data model: <a href="https://github.com/snapsynapse/ai-capability-reference/blob/main/design/ONTOLOGY.md">design/ONTOLOGY.md</a></p>
+<p>To understand the verification system: <a href="https://github.com/snapsynapse/ai-capability-reference/blob/main/VERIFICATION.md">VERIFICATION.md</a></p>
+<p>To contribute: <a href="https://github.com/snapsynapse/ai-capability-reference/blob/main/CONTRIBUTING.md">CONTRIBUTING.md</a></p>
+
+<hr>
+
+<p><strong>This page is itself an instance of the pattern.</strong> It lives in a Git repo, gets deployed by CI, and will be verified alongside everything else. If something here is wrong or incomplete, <a href="https://github.com/snapsynapse/ai-capability-reference/issues">open an issue</a> or <a href="https://github.com/snapsynapse/ai-capability-reference/discussions">start a discussion</a>.</p>
+
+        </div>
+
+        <footer>
+            <p>
+                Maintained by <a href="https://snapsynapse.com/">SnapSynapse</a>, with public issues and pull requests welcome.
+                <a href="https://github.com/snapsynapse/ai-capability-reference/issues">Open an issue</a> or
+                <a href="https://github.com/snapsynapse/ai-capability-reference/pulls">submit a PR</a>.
+            </p>
+            <p style="margin-top: 8px;">
+                &copy; 2026 | Made by <a href="https://snapsynapse.com/">Snap Synapse</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | No trackers here, you're welcome.
+            </p>
+            <p style="margin-top: 12px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;">
+                <a href="https://github.com/snapsynapse/ai-capability-reference" class="footer-social" title="Star on GitHub">⭐ Star</a>
+                <a href="https://signalsandsubtractions.substack.com/" class="footer-social" title="Subscribe on Substack"><img src="https://substack.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Substack</a>
+                <a href="https://www.linkedin.com/in/samrogers/" class="footer-social" title="Connect on LinkedIn"><img src="https://www.linkedin.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">LinkedIn</a>
+                <a href="https://www.testingcatalog.com/tag/release/" class="footer-social" title="Latest News"><img src="https://www.testingcatalog.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Latest News</a>
+                <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
+            </p>
+        </footer>
+    </div>
+    <script src="assets/search.js"></script>
+    <script>
+        function toggleTheme() {
+            document.documentElement.classList.toggle('light-mode');
+            const isLight = document.documentElement.classList.contains('light-mode');
+            localStorage.setItem('theme', isLight ? 'light' : 'dark');
+        }
+
+        function toggleMobileMenu() {
+            const btn = document.querySelector('.hamburger-btn');
+            const menu = document.getElementById('siteNav');
+            const isOpen = menu.classList.toggle('open');
+            btn.classList.toggle('active', isOpen);
+            btn.setAttribute('aria-expanded', isOpen);
+        }
+
+        document.addEventListener('click', function(e) {
+            const menu = document.getElementById('siteNav');
+            const btn = document.querySelector('.hamburger-btn');
+            if (menu && btn && menu.classList.contains('open')) {
+                if (!menu.contains(e.target) && !btn.contains(e.target)) {
+                    menu.classList.remove('open');
+                    btn.classList.remove('active');
+                    btn.setAttribute('aria-expanded', 'false');
+                }
+            }
+        });
+
+        function passTheme(link) {
+            const isLight = document.documentElement.classList.contains('light-mode');
+            if (isLight) {
+                const url = new URL(link.href, window.location.href);
+                url.searchParams.set('theme', 'light');
+                link.href = url.pathname.split('/').pop() + url.search + url.hash;
+            }
+        }
+
+        (function() {
+            var btn = document.createElement('button');
+            btn.className = 'back-to-top';
+            btn.setAttribute('aria-label', 'Back to top');
+            btn.textContent = '\u2191';
+            document.body.appendChild(btn);
+            window.addEventListener('scroll', function() {
+                btn.classList.toggle('visible', window.scrollY > 400);
+            });
+            btn.addEventListener('click', function() {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+        })();
+    </script>
+</body>
+</html>
