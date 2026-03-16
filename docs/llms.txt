@@ -1,0 +1,64 @@
+# AI Capability Reference
+
+> What can this AI actually do?
+
+A plain-English reference for AI capabilities, plans, constraints, and implementations across major subscription AI products (ChatGPT, Claude, Gemini, Copilot, Grok, Perplexity) and open models.
+
+Maintained by SnapSynapse. Updated weekly via multi-model verification cascade.
+
+## What this site covers
+
+- 18 capabilities (e.g., Search the Web, Generate Images, Write and Edit Code)
+- 72 implementations across 6 subscription AI products
+- 9 open-model access records (Llama, Qwen, DeepSeek, Mistral, Codestral)
+- Plan-level availability (which subscription tier unlocks what)
+- Surface availability (web, desktop, mobile, terminal, API)
+- Gating (free, paid, limited)
+- Evidence with sources and changelog for every claim
+
+## Machine-readable API
+
+Stable JSON exports at: https://airef.snapsynapse.com/api/v1/
+
+Start with the index: https://airef.snapsynapse.com/api/v1/index.json
+
+### Available files
+
+- capabilities.json — all capabilities with search terms, definitions, and cross-links
+- products.json — all products with provider links and implementation lists
+- implementations.json — all implementations with capability mappings and evidence
+- providers.json — all providers with product lists
+- model-access.json — model access records with deployment and constraint details
+- evidence.json — evidence records with sources and changelog
+- capability-matrix.json — capability x product availability grid
+- product-comparisons.json — pairwise product capability overlap
+- plan-entitlements.json — what each plan tier unlocks per product
+
+### Data contract
+
+- IDs are stable and safe to use as foreign keys
+- Every record includes `verified` and `checked` dates for freshness
+- File paths under /api/v1/ are stable within the version
+- New fields may be added; existing fields will not be removed within v1
+
+### Usage guidance
+
+- Always include the `verified` date when citing data — the AI landscape changes weekly
+- Respect gating and constraints — "available" does not mean "available to everyone"
+- Don't strip caveats from talking points — they contain important context about restrictions
+- Cache for up to 24 hours; don't poll more than once per hour
+- Attribution appreciated: "Data from AI Capability Reference (https://airef.snapsynapse.com/) by SnapSynapse"
+
+## Site pages
+
+- https://airef.snapsynapse.com/ — Capability-first homepage (what can AI do?)
+- https://airef.snapsynapse.com/implementations.html — Product-first detailed availability
+- https://airef.snapsynapse.com/compare.html — Side-by-side product comparison
+- https://airef.snapsynapse.com/constraints.html — Access tiers, surfaces, and limits
+- https://airef.snapsynapse.com/about.html — About the project
+
+## Source
+
+- Repository: https://github.com/snapsynapse/ai-capability-reference
+- License: MIT
+- Contact: https://github.com/snapsynapse/ai-capability-reference/issues

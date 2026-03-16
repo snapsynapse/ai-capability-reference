@@ -1,0 +1,7 @@
+# Security contact for AI Capability Reference
+# https://securitytxt.org/
+
+Contact: https://github.com/snapsynapse/ai-capability-reference/issues
+Preferred-Languages: en
+Canonical: https://airef.snapsynapse.com/.well-known/security.txt
+Policy: https://github.com/snapsynapse/ai-capability-reference/blob/main/SECURITY.md

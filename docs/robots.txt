@@ -1,0 +1,16 @@
+# AI Capability Reference - https://airef.snapsynapse.com
+# The JSON API at /api/v1/ is intended for machine consumption.
+# Please cache responses and avoid polling more than once per hour.
+
+User-agent: *
+Allow: /
+
+# Crawl-delay is advisory; we ask that automated consumers
+# space requests by at least 1 second.
+Crawl-delay: 1
+
+Sitemap: https://airef.snapsynapse.com/sitemap.xml
+
+# For LLMs and AI agents
+# See https://llmstxt.org for the specification
+LLMs-Txt: https://airef.snapsynapse.com/llms.txt

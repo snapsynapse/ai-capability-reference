@@ -224,6 +224,36 @@ These fields should be present in capability records and survive into all access
 
 The SEO work should be added to the roadmap. It shares infrastructure with Phase 5 and should be sequenced alongside it, not after.
 
+## Security and Usage Considerations
+
+The project is a static site with no server, no database, and no user data. The "API" is pre-generated JSON files. This constrains the risk surface but does not eliminate it.
+
+### Risks that actually matter
+
+1. **Stale data cited as current.** The AI landscape changes weekly. Every record includes `verified` and `checked` dates. Consumers must surface these dates — presenting undated claims as fact is the primary misuse vector.
+
+2. **Stripped caveats.** An agent that says "ChatGPT can do X" without mentioning it requires a paid plan or isn't available in certain regions is misleading. The data includes gating, plan availability, and constraints specifically to prevent this.
+
+3. **Bandwidth abuse.** GitHub Pages has soft bandwidth limits. Aggressive polling or hotlinking could cause throttling. The `robots.txt` asks for 1-second crawl delays; the API usage guide recommends hourly polling at most.
+
+4. **Misrepresentation.** Someone could modify the data and present it as canonical. Generation timestamps and stable source URLs help but cannot prevent this.
+
+### Risks that do not apply
+
+- **Injection attacks** — no server-side execution, no database, no user input processing
+- **Authentication bypass** — no authentication exists; all data is intentionally public
+- **Data exfiltration** — no private data; everything published is meant to be read
+- **Supply chain** — zero npm dependencies; build uses only Node.js built-ins
+
+### MCP-specific guidance
+
+- The MCP layer must be **read-only**. No mutations, no writes, no side effects.
+- Tool responses should include freshness metadata (`verified` date) so the calling agent can present it.
+- Tools should preserve gating and constraint context — never return a bare "yes" for availability without the plan/surface/regional qualifiers.
+- The MCP layer reads from generated JSON artifacts. It should not parse markdown, scrape HTML, or maintain its own data.
+
+See `SECURITY.md` for the full security policy and `docs/api/v1/USAGE.md` for consumer guidance.
+
 ## What Not To Do
 
 - Do not create a separate database or API server — the generated JSON files are the data layer
