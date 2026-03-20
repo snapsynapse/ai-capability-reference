@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-19T03:40:16.406Z",
+    "generated": "2026-03-20T04:47:23.657Z",
     "version": "1.0"
   },
   "capabilities": [
@@ -531,6 +531,7 @@
       "perplexity": {
         "available": true,
         "implementations": [
+          "perplexity-agent-mode-agentic-actions",
           "perplexity-collections-spaces"
         ],
         "best_gating": "paid"
@@ -575,6 +576,7 @@
       "perplexity": {
         "available": true,
         "implementations": [
+          "perplexity-agent-mode-agentic-actions",
           "perplexity-agent-mode-agentic-actions",
           "perplexity-pages",
           "perplexity-pro-search"
@@ -760,6 +762,7 @@
       "perplexity": {
         "available": true,
         "implementations": [
+          "perplexity-agent-mode-agentic-actions",
           "perplexity-enterprise-app-connectors"
         ],
         "best_gating": "paid"

@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-19T03:40:16.406Z",
+    "generated": "2026-03-20T04:47:23.657Z",
     "version": "1.0"
   },
   "description": "AI Capability Reference — Machine-readable API",
@@ -29,7 +29,7 @@
     "model-access": {
       "path": "model-access.json",
       "description": "Model access records with deployment and constraint details",
-      "count": 10
+      "count": 11
     },
     "evidence": {
       "path": "evidence.json",

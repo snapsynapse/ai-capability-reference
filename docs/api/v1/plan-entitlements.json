@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-19T03:40:16.406Z",
+    "generated": "2026-03-20T04:47:23.657Z",
     "version": "1.0"
   },
   "products": {
@@ -753,8 +753,9 @@
           "capabilities": [
             "take-actions-and-run-tools",
             "do-multi-step-research",
-            "organize-work-in-projects",
+            "connect-to-external-systems",
             "use-files-i-provide",
+            "organize-work-in-projects",
             "read-text-and-documents",
             "search-the-web",
             "make-and-edit-documents",
@@ -764,7 +765,7 @@
             "use-it-on-my-surfaces"
           ],
           "implementation_count": 10,
-          "capability_count": 11
+          "capability_count": 12
         },
         "Max": {
           "implementations": [
@@ -781,8 +782,9 @@
           "capabilities": [
             "take-actions-and-run-tools",
             "do-multi-step-research",
-            "organize-work-in-projects",
+            "connect-to-external-systems",
             "use-files-i-provide",
+            "organize-work-in-projects",
             "read-text-and-documents",
             "search-the-web",
             "make-and-edit-documents",
@@ -790,7 +792,28 @@
             "use-it-on-my-surfaces"
           ],
           "implementation_count": 9,
-          "capability_count": 9
+          "capability_count": 10
+        },
+        "Enterprise Pro": {
+          "implementations": [
+            "perplexity-agent-mode-agentic-actions",
+            "perplexity-comet-browser",
+            "perplexity-enterprise-app-connectors",
+            "perplexity-pages",
+            "perplexity-chat"
+          ],
+          "capabilities": [
+            "take-actions-and-run-tools",
+            "do-multi-step-research",
+            "connect-to-external-systems",
+            "use-files-i-provide",
+            "search-the-web",
+            "make-and-edit-documents",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 5,
+          "capability_count": 8
         },
         "Free": {
           "implementations": [
@@ -817,22 +840,6 @@
           ],
           "implementation_count": 7,
           "capability_count": 11
-        },
-        "Enterprise Pro": {
-          "implementations": [
-            "perplexity-enterprise-app-connectors",
-            "perplexity-pages",
-            "perplexity-chat"
-          ],
-          "capabilities": [
-            "connect-to-external-systems",
-            "do-multi-step-research",
-            "make-and-edit-documents",
-            "write-and-explain",
-            "use-it-on-my-surfaces"
-          ],
-          "implementation_count": 3,
-          "capability_count": 5
         }
       }
     }

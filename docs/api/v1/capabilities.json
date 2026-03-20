@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-19T03:40:16.406Z",
+    "generated": "2026-03-20T04:47:23.657Z",
     "version": "1.0",
     "count": 18
   },
@@ -149,9 +149,10 @@
       ],
       "product_count": 5,
       "model_access": [
-        "llama-4"
+        "llama-4",
+        "mistral-small-4"
       ],
-      "model_access_count": 1
+      "model_access_count": 2
     },
     {
       "id": "speak-back-in-real-time",
@@ -255,10 +256,11 @@
         "llama-4",
         "mistral-large-nemo",
         "mistral-small-3",
+        "mistral-small-4",
         "qwen-2-5",
         "qwen-3"
       ],
-      "model_access_count": 7
+      "model_access_count": 8
     },
     {
       "id": "generate-images",
@@ -452,10 +454,11 @@
       "model_access": [
         "codestral",
         "leanstral",
+        "mistral-small-4",
         "qwen-2-5",
         "qwen-coder"
       ],
-      "model_access_count": 4
+      "model_access_count": 5
     },
     {
       "id": "organize-work-in-projects",
@@ -579,9 +582,10 @@
         "claude-projects",
         "gemini-workspace",
         "gemini-notebooklm",
+        "perplexity-agent-mode-agentic-actions",
         "perplexity-collections-spaces"
       ],
-      "implementation_count": 5,
+      "implementation_count": 6,
       "products": [
         "chatgpt",
         "claude",
@@ -746,9 +750,10 @@
       ],
       "product_count": 5,
       "model_access": [
-        "leanstral"
+        "leanstral",
+        "mistral-small-4"
       ],
-      "model_access_count": 1
+      "model_access_count": 2
     },
     {
       "id": "build-reusable-ai-workflows",
@@ -838,9 +843,10 @@
         "gemini-workspace",
         "gemini-agentic-app-actions-android",
         "grok-real-time-x-twitter-data",
+        "perplexity-agent-mode-agentic-actions",
         "perplexity-enterprise-app-connectors"
       ],
-      "implementation_count": 12,
+      "implementation_count": 13,
       "products": [
         "chatgpt",
         "claude",

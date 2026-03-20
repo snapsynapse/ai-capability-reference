@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-19T03:40:16.406Z",
+    "generated": "2026-03-20T04:47:23.657Z",
     "version": "1.0",
     "count": 72
   },
@@ -446,7 +446,7 @@
       ],
       "talking_point": "Canvas is ChatGPT's split-screen workspace for writing and coding projects—edit inline, get suggestions, and refine together. **Available on all plans including free**, but currently desktop and web only. Mobile is coming soon.",
       "launched": "2024-10-03T12:00Z",
-      "verified": "2026-03-08",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-chatgpt-canvas",
       "evidence_verified": "2026-03-08"
     },
@@ -1015,7 +1015,7 @@
       ],
       "talking_point": "DALL-E image generation is available on **all plans including free**, but free users get very limited generations per day. Plus and Pro have much higher or unlimited limits.",
       "launched": "2023-10-01T12:00Z",
-      "verified": "2026-03-08",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-chatgpt-dall-e-image-generation",
       "evidence_verified": "2026-03-08"
     },
@@ -1242,7 +1242,7 @@
       ],
       "talking_point": "Memory lets ChatGPT remember your preferences and context across conversations. **All plans get saved memories**; Plus/Pro also get full chat history reference for richer personalization.",
       "launched": "2024-09-05T12:00Z",
-      "verified": "2026-03-15",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-chatgpt-memory",
       "evidence_verified": "2026-03-15"
     },
@@ -1357,7 +1357,7 @@
       ],
       "talking_point": "Projects let you group related chats, files, and custom instructions into workspaces. **Available on all plans including free**—organize your work across topics with project-specific context.",
       "launched": "2024-12-13T12:00Z",
-      "verified": "2026-03-01",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-chatgpt-projects",
       "evidence_verified": "2026-03-01"
     },
@@ -1470,7 +1470,7 @@
       ],
       "talking_point": "GPT-4o understands images natively—upload a photo, screenshot, chart, or diagram and ChatGPT will analyze it. **Available on all plans including free**, subject to your plan's message quota. Works across web, desktop, iOS, and Android. Also accessible via the OpenAI API using the `gpt-4o` model.",
       "launched": "2024-05-13T12:00Z",
-      "verified": "2026-03-15",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-chatgpt-vision-image-understanding",
       "evidence_verified": "2026-03-15"
     },
@@ -2676,7 +2676,7 @@
       ],
       "talking_point": "Claude can analyze images you upload—documents, screenshots, diagrams. **Available on all plans including free.**",
       "launched": "2024-03-04T12:00Z",
-      "verified": "2026-03-15",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-claude-vision-image-understanding",
       "evidence_verified": "2026-03-15"
     },
@@ -2789,7 +2789,7 @@
       ],
       "talking_point": "Memory lets Claude remember your preferences and context across conversations—corrections, working style, recurring topics. **Free on all plans** since March 2026. Enable it in Settings → Capabilities → Memory. You can also import memories from other AI tools using the memory import tool.",
       "launched": "2025-10-01T12:00Z",
-      "verified": "2026-03-07",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-claude-memory",
       "evidence_verified": "2026-03-07"
     },
@@ -3100,7 +3100,7 @@
       ],
       "talking_point": "Copilot Connectors let M365 Copilot access external data from services like Salesforce, ServiceNow, Box, and more. **Requires M365 Copilot ($30/user/mo)**—not available on free or Pro plans. As of March 2026, **federated connectors add live data from Notion, HubSpot, Linear, Intercom, Google Contacts, and Google Calendar**.",
       "launched": "2023-11-01T12:00Z",
-      "verified": "2026-03-15",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-copilot-connectors",
       "evidence_verified": "2026-03-15"
     },
@@ -3377,7 +3377,7 @@
       ],
       "talking_point": "Copilot Voice is **available on all tiers including free**. You can speak to Copilot on desktop, mobile, and web.",
       "launched": "2024-10-01T12:00Z",
-      "verified": "2026-03-08",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-copilot-voice",
       "evidence_verified": "2026-03-08"
     },
@@ -3464,7 +3464,7 @@
       ],
       "talking_point": "Free Copilot uses GPT-4 when available but may fall back to faster models during peak times. **Pro guarantees priority GPT-4 access.**",
       "launched": "2023-02-07T12:00Z",
-      "verified": "2026-03-08",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-copilot-gpt-4-access",
       "evidence_verified": "2026-03-08"
     },
@@ -3553,7 +3553,7 @@
       ],
       "talking_point": "Image generation with Designer is **available on free Copilot** with 15 boosts per day. Pro gets 100 boosts and priority generation.",
       "launched": "2023-03-21T12:00Z",
-      "verified": "2026-03-15",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-copilot-image-generation-designer",
       "evidence_verified": "2026-03-15"
     },
@@ -5532,7 +5532,7 @@
       ],
       "talking_point": "Grok can generate images using Aurora. **Free users get ~10 generations per 2-hour window**; paid tiers unlock higher daily limits. SuperGrok gets the most generations per day.",
       "launched": "2024-12-09T12:00Z",
-      "verified": "2026-02-28",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-grok-image-generation-aurora",
       "evidence_verified": "2026-02-28"
     },
@@ -5735,7 +5735,7 @@
       ],
       "talking_point": "Grok Studio is a split-screen workspace for creating documents, running code, and building games—similar to Canvas or Artifacts. **Available on all tiers including free** at grok.com. Supports Python, JavaScript, TypeScript, C++, and HTML preview.",
       "launched": "2025-04-16T12:00Z",
-      "verified": "2026-02-28",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-grok-studio",
       "evidence_verified": "2026-02-28"
     },
@@ -5938,7 +5938,7 @@
       ],
       "talking_point": "Grok has **real-time access to X/Twitter posts**—its unique advantage over other chatbots. Even free users get some access to this.",
       "launched": "2023-11-04T12:00Z",
-      "verified": "2026-02-22",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-grok-real-time-x-twitter-data",
       "evidence_verified": "2026-02-22"
     },
@@ -6037,7 +6037,7 @@
       ],
       "talking_point": "Think Mode lets Grok reason through complex problems step-by-step. **Available on all paid tiers**, with SuperGrok getting the longest thinking time.",
       "launched": "2025-02-17T12:00Z",
-      "verified": "2026-03-01",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-grok-think-mode",
       "evidence_verified": "2026-03-01"
     },
@@ -6245,13 +6245,16 @@
     },
     {
       "id": "perplexity-agent-mode-agentic-actions",
-      "name": "Agent Mode (Agentic Actions)",
+      "name": "Agent Mode (Agentic Actions) / Perplexity Computer",
       "product": "perplexity",
       "provider": "perplexity",
       "source_file": "data/platforms/perplexity.md",
-      "source_heading": "Agent Mode (Agentic Actions)",
+      "source_heading": "Agent Mode (Agentic Actions) / Perplexity Computer",
       "capabilities": [
         "take-actions-and-run-tools",
+        "do-multi-step-research",
+        "connect-to-external-systems",
+        "use-files-i-provide",
         "do-multi-step-research"
       ],
       "category": "agents",
@@ -6274,7 +6277,13 @@
           "plan": "Max",
           "available": true,
           "limits": "Full",
-          "notes": "Priority processing + Computer Voice Mode"
+          "notes": "Computer + Voice Mode + Personal Computer (waitlist)"
+        },
+        {
+          "plan": "Enterprise Pro",
+          "available": true,
+          "limits": "Full",
+          "notes": "Computer for Enterprise + Slack workflows"
         }
       ],
       "surfaces": [
@@ -6288,7 +6297,7 @@
           "surface": "macos",
           "name": "macOS",
           "available": true,
-          "notes": "Via Comet"
+          "notes": "Via Comet + Personal Computer (dedicated Mac mini)"
         },
         {
           "surface": "linux",
@@ -6306,7 +6315,7 @@
           "surface": "android",
           "name": "Android",
           "available": true,
-          "notes": "Via Comet"
+          "notes": "Via Comet + Samsung Galaxy S26 integration"
         },
         {
           "surface": "chrome",
@@ -6317,8 +6326,8 @@
         {
           "surface": "web",
           "name": "web",
-          "available": false,
-          "notes": "Via Comet only"
+          "available": true,
+          "notes": "Cloud-based Computer agent"
         },
         {
           "surface": "terminal",
@@ -6330,12 +6339,12 @@
           "surface": "api",
           "name": "API",
           "available": true,
-          "notes": "Perplexity API"
+          "notes": "Agent API + Search API"
         }
       ],
-      "talking_point": "Perplexity has agentic features built into Comet. **Basic actions work on free**; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows. **Computer Voice Mode (Mar 2026) adds hands-free voice commands for the agentic Computer—Max plan ($200/mo) only.**",
+      "talking_point": "Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. **Basic actions work on free**; Pro ($20/mo) unlocks advanced capabilities. **Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer**—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers.",
       "launched": "2024-11-01T12:00Z",
-      "verified": "2026-03-07",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-perplexity-agent-mode-agentic-actions",
       "evidence_verified": "2026-03-07"
     },
@@ -6563,6 +6572,12 @@
           "available": true,
           "limits": "Full",
           "notes": "All features"
+        },
+        {
+          "plan": "Enterprise Pro",
+          "available": true,
+          "limits": "Managed",
+          "notes": "Comet Enterprise: admin controls, MDM, audit logs"
         }
       ],
       "surfaces": [
@@ -6587,8 +6602,8 @@
         {
           "surface": "ios",
           "name": "iOS",
-          "available": false,
-          "notes": "Expected late 2026"
+          "available": true,
+          "notes": "Comet for iPhone launched"
         },
         {
           "surface": "android",
@@ -6621,9 +6636,9 @@
           "notes": "Perplexity API"
         }
       ],
-      "talking_point": "Perplexity's Comet browser is **actually free now**—you just need a Perplexity account. It's available on Mac, Windows, Linux, and Android. **No iOS yet**; that's expected later this year.",
+      "talking_point": "Perplexity's Comet browser is **free for all users**—available on Mac, Windows, Linux, Android, and now iPhone. **Comet Enterprise** (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security.",
       "launched": "2025-07-09T12:00Z",
-      "verified": "2026-02-07",
+      "verified": "2026-03-19",
       "evidence_id": "implementation-perplexity-comet-browser",
       "evidence_verified": "2026-02-07"
     },

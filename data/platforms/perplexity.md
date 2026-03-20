@@ -4,7 +4,7 @@ vendor: Perplexity AI
 logo: https://cdn.simpleicons.org/perplexity
 status_page: https://status.perplexity.ai
 pricing_page: https://www.perplexity.ai/pro
-last_verified: 2026-03-07
+last_verified: 2026-03-19
 ---
 
 ## Pricing
@@ -18,16 +18,16 @@ last_verified: 2026-03-07
 
 ---
 
-## Agent Mode (Agentic Actions)
+## Agent Mode (Agentic Actions) / Perplexity Computer
 
 | Property | Value |
 |----------|-------|
 | Category | agents |
 | Status | ga |
 | Gating | paid |
-| URL | https://www.perplexity.ai/hub/blog/introducing-assistant |
+| URL | https://www.perplexity.ai/hub/blog/everything-is-computer |
 | Launched | 2024-11-01T12:00Z |
-| Verified | 2026-03-07|
+| Verified | 2026-03-19|
 | Checked | 2026-03-19|
 
 ### Availability
@@ -36,39 +36,42 @@ last_verified: 2026-03-07
 |------|-----------|--------|-------|
 | Free | ⚠️ | Basic | Simple actions only |
 | Pro | ✅ | Full | Advanced agent features |
-| Max | ✅ | Full | Priority processing + Computer Voice Mode |
+| Max | ✅ | Full | Computer + Voice Mode + Personal Computer (waitlist) |
+| Enterprise Pro | ✅ | Full | Computer for Enterprise + Slack workflows |
 
 ### Platforms
 
 | Platform | Available | Notes |
 |----------|-----------|-------|
 | Windows | ✅ | Via Comet |
-| macOS | ✅ | Via Comet |
+| macOS | ✅ | Via Comet + Personal Computer (dedicated Mac mini) |
 | Linux | ✅ | Via Comet |
 | iOS | 🔜 | When Comet iOS launches |
-| Android | ✅ | Via Comet |
+| Android | ✅ | Via Comet + Samsung Galaxy S26 integration |
 | Chrome | ❌ | Comet only |
-| web | ❌ | Via Comet only |
+| web | ✅ | Cloud-based Computer agent |
 | terminal | ❌ |  |
-| API | ✅ | Perplexity API |
+| API | ✅ | Agent API + Search API |
 
 ### Regional
 
-Available globally via Comet browser.
+Available globally via Comet browser and web. Personal Computer limited to initial cohort (waitlist).
 
 ### Talking Point
 
-> "Perplexity has agentic features built into Comet. **Basic actions work on free**; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows. **Computer Voice Mode (Mar 2026) adds hands-free voice commands for the agentic Computer—Max plan ($200/mo) only.**"
+> "Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. **Basic actions work on free**; Pro ($20/mo) unlocks advanced capabilities. **Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer**—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers."
 
 ### Sources
 
-- [Comet Browser](https://www.perplexity.ai/comet)
+- [Everything is Computer](https://www.perplexity.ai/hub/blog/everything-is-computer)
+- [Introducing Perplexity Computer](https://www.perplexity.ai/hub/blog/introducing-perplexity-computer)
 - [Perplexity Computer Voice Mode announcement](https://x.com/perplexity_ai/status/2029302896026853379)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-19T12:00Z | [Verified] Major expansion: Personal Computer (dedicated Mac mini, Max plan, waitlist); Computer for Enterprise (Slack/Snowflake/Salesforce, Enterprise plan); 4 platform APIs (Search, Agent, Embeddings, Sandbox); Samsung Galaxy S26 integration; section renamed to include "Perplexity Computer" |
 | 2026-03-07T12:00Z | [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer |
 | 2024-11-01T12:00Z | Initial entry |
 
@@ -194,7 +197,7 @@ Available globally.
 | Gating | paid |
 | URL | https://www.perplexity.ai/comet |
 | Launched | 2025-07-09T12:00Z |
-| Verified | 2026-02-07|
+| Verified | 2026-03-19|
 | Checked | 2026-03-19|
 
 ### Availability
@@ -204,6 +207,7 @@ Available globally.
 | Free | ✅ | Standard | Full browser access |
 | Pro | ✅ | Enhanced | Pro features in browser |
 | Max | ✅ | Full | All features |
+| Enterprise Pro | ✅ | Managed | Comet Enterprise: admin controls, MDM, audit logs |
 
 ### Platforms
 
@@ -212,7 +216,7 @@ Available globally.
 | Windows | ✅ | Full support |
 | macOS | ✅ | Full support |
 | Linux | ✅ | Full support |
-| iOS | 🔜 | Expected late 2026 |
+| iOS | ✅ | Comet for iPhone launched |
 | Android | ✅ | Released Nov 2025 |
 | Chrome | ❌ | Standalone app only |
 | web | ❌ | Standalone app only |
@@ -225,18 +229,20 @@ Available globally.
 
 ### Talking Point
 
-> "Perplexity's Comet browser is **actually free now**—you just need a Perplexity account. It's available on Mac, Windows, Linux, and Android. **No iOS yet**; that's expected later this year."
+> "Perplexity's Comet browser is **free for all users**—available on Mac, Windows, Linux, Android, and now iPhone. **Comet Enterprise** (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security."
 
 ### Sources
 
 - [Comet Browser](https://www.perplexity.ai/comet)
 - [Comet Now Available Worldwide](https://www.perplexity.ai/hub/blog/comet-is-now-available-to-everyone-worldwide)
 - [Comet for Android](https://www.perplexity.ai/hub/blog/comet-for-android-is-here)
+- [Comet Enterprise](https://www.perplexity.ai/hub/blog/comet-enterprise-is-here)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-19T12:00Z | [Verified] Comet Enterprise launched (Mar 2026): managed browser with admin controls, MDM deployment, audit logs, CrowdStrike Falcon integration; iOS now available (Comet for iPhone); Enterprise Pro row added |
 | 2025-07-09T12:00Z | Initial entry |
 
 ---

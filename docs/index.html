@@ -86,7 +86,7 @@
             <div class="capability-stats">
                 <span class="feature-count">18 capabilities</span>
                 <span class="feature-count">66 implementations</span>
-                <span class="feature-count">Last built: 2026-03-19</span>
+                <span class="feature-count">Last built: 2026-03-20</span>
             </div>
         </div>
 
@@ -450,7 +450,7 @@
                     </div>
                     
                     <div class="capability-implementation-header model-access-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>1</strong> relevant model access record</span>
+                        <span><strong>2</strong> relevant model access records</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -466,6 +466,18 @@
                             </div>
                             <div class="capability-tags"><span class="provider-toggle active">LM Studio</span><span class="provider-toggle active">vLLM</span><span class="provider-toggle active">Ollama</span></div>
                             <p class="capability-note">model size and context claims can exceed ordinary consumer hardware</p>
+                        </article>
+                        <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#mistral-open-models-mistral-small-4')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#mistral-open-models-mistral-small-4');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Mistral</span>
+                                <h4><a href="implementations.html#mistral-open-models-mistral-small-4" class="feature-link" onclick="passTheme(this)">Mistral Small 4</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Mistral Small 4 is a 119B Mixture-of-Experts model (128 experts, 4 active per token, ~6B active parameters) that unifies instruct, reasoning, multimodal, and agentic coding into a single open model. Apache 2.0 license. 256k context window with native vision and a configurable `reasoning_effort` parameter. Available via Mistral API and self-hosted, but requires datacenter-class GPUs (4× H100 minimum).</p>
+                            <div class="dates-row">
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-19</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
+                            </div>
+                            <div class="capability-tags"><span class="provider-toggle active">vLLM</span><span class="provider-toggle active">SGLang</span><span class="provider-toggle active">llama.cpp</span><span class="provider-toggle active">NVIDIA NIM</span><span class="provider-toggle active">Mistral API</span></div>
+                            <p class="capability-note">datacenter-class hardware required: minimum 4× H100 or 2× H200 or 1× DGX B200</p>
                         </article>
                     </div>
                 </article>
@@ -723,7 +735,7 @@
                     </div>
                     
                     <div class="capability-implementation-header model-access-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>7</strong> relevant model access records</span>
+                        <span><strong>8</strong> relevant model access records</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -787,6 +799,18 @@
                             </div>
                             <div class="capability-tags"><span class="provider-toggle active">Ollama</span><span class="provider-toggle active">LM Studio</span><span class="provider-toggle active">web UIs over local runtimes</span></div>
                             <p class="capability-note">consumer use is realistic but still depends on memory and quantization choices</p>
+                        </article>
+                        <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#mistral-open-models-mistral-small-4')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#mistral-open-models-mistral-small-4');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Mistral</span>
+                                <h4><a href="implementations.html#mistral-open-models-mistral-small-4" class="feature-link" onclick="passTheme(this)">Mistral Small 4</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Mistral Small 4 is a 119B Mixture-of-Experts model (128 experts, 4 active per token, ~6B active parameters) that unifies instruct, reasoning, multimodal, and agentic coding into a single open model. Apache 2.0 license. 256k context window with native vision and a configurable `reasoning_effort` parameter. Available via Mistral API and self-hosted, but requires datacenter-class GPUs (4× H100 minimum).</p>
+                            <div class="dates-row">
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-19</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
+                            </div>
+                            <div class="capability-tags"><span class="provider-toggle active">vLLM</span><span class="provider-toggle active">SGLang</span><span class="provider-toggle active">llama.cpp</span><span class="provider-toggle active">NVIDIA NIM</span><span class="provider-toggle active">Mistral API</span></div>
+                            <p class="capability-note">datacenter-class hardware required: minimum 4× H100 or 2× H200 or 1× DGX B200</p>
                         </article>
                         <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#alibaba-open-models-qwen-2-5-alibaba')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#alibaba-open-models-qwen-2-5-alibaba');}">
                             <div class="capability-impl-header">
@@ -1297,7 +1321,7 @@
                     </div>
                     
                     <div class="capability-implementation-header model-access-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>4</strong> relevant model access records</span>
+                        <span><strong>5</strong> relevant model access records</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -1321,10 +1345,22 @@
                             </div>
                             <p class="capability-impl-copy">Mistral&#39;s open-source code agent specialized for Lean 4 proof engineering. Apache 2.0 weights with MCP tool-use training. Also available via the Mistral Labs API endpoint `labs-leanstral-2603` and agent mode in Mistral Vibe.</p>
                             <div class="dates-row">
-                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-17</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-17</span></span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-17</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
                             </div>
                             <div class="capability-tags"><span class="provider-toggle active">Ollama</span><span class="provider-toggle active">local API wrappers</span><span class="provider-toggle active">Mistral Vibe (agent mode)</span><span class="provider-toggle active">Mistral Labs API</span></div>
                             <p class="capability-note">specialized for Lean 4 formal verification, not general-purpose coding</p>
+                        </article>
+                        <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#mistral-open-models-mistral-small-4')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#mistral-open-models-mistral-small-4');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Mistral</span>
+                                <h4><a href="implementations.html#mistral-open-models-mistral-small-4" class="feature-link" onclick="passTheme(this)">Mistral Small 4</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Mistral Small 4 is a 119B Mixture-of-Experts model (128 experts, 4 active per token, ~6B active parameters) that unifies instruct, reasoning, multimodal, and agentic coding into a single open model. Apache 2.0 license. 256k context window with native vision and a configurable `reasoning_effort` parameter. Available via Mistral API and self-hosted, but requires datacenter-class GPUs (4× H100 minimum).</p>
+                            <div class="dates-row">
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-19</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
+                            </div>
+                            <div class="capability-tags"><span class="provider-toggle active">vLLM</span><span class="provider-toggle active">SGLang</span><span class="provider-toggle active">llama.cpp</span><span class="provider-toggle active">NVIDIA NIM</span><span class="provider-toggle active">Mistral API</span></div>
+                            <p class="capability-note">datacenter-class hardware required: minimum 4× H100 or 2× H200 or 1× DGX B200</p>
                         </article>
                         <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#alibaba-open-models-qwen-2-5-alibaba')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#alibaba-open-models-qwen-2-5-alibaba');}">
                             <div class="capability-impl-header">
@@ -1589,7 +1625,7 @@
                     </div>
                     
                     <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>5</strong> implementations across <strong>4</strong> products</span>
+                        <span><strong>6</strong> implementations across <strong>4</strong> products</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -1643,6 +1679,19 @@
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-free">Free</span>
                                 <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2023-12-01</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-02-28</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-08</span></span>
+                            </div>
+                            
+                        </article>
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Perplexity</span>
+                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions) / Perplexity Computer</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. Basic actions work on free; Pro ($20/mo) unlocks advanced capabilities. Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers.</p>
+                            <div class="dates-row">
+                                <span class="badge avail-ga">GA</span>
+                                <span class="badge gate-paid">Paid</span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2024-11-01</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-07</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-07</span></span>
                             </div>
                             
                         </article>
@@ -1792,12 +1841,12 @@
                             </div>
                             
                         </article>
-                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions');}">
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer');}">
                             <div class="capability-impl-header">
                                 <span class="price-tag">Perplexity</span>
-                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions)</a></h4>
+                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions) / Perplexity Computer</a></h4>
                             </div>
-                            <p class="capability-impl-copy">Perplexity has agentic features built into Comet. Basic actions work on free; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows. Computer Voice Mode (Mar 2026) adds hands-free voice commands for the agentic Computer—Max plan ($200/mo) only.</p>
+                            <p class="capability-impl-copy">Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. Basic actions work on free; Pro ($20/mo) unlocks advanced capabilities. Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers.</p>
                             <div class="dates-row">
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
@@ -1944,7 +1993,7 @@
                                 <span class="price-tag">Perplexity</span>
                                 <h4><a href="implementations.html#perplexity-comet-browser" class="feature-link" onclick="passTheme(this)">Comet Browser</a></h4>
                             </div>
-                            <p class="capability-impl-copy">Perplexity&#39;s Comet browser is actually free now—you just need a Perplexity account. It&#39;s available on Mac, Windows, Linux, and Android. No iOS yet; that&#39;s expected later this year.</p>
+                            <p class="capability-impl-copy">Perplexity&#39;s Comet browser is free for all users—available on Mac, Windows, Linux, Android, and now iPhone. Comet Enterprise (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security.</p>
                             <div class="dates-row">
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
@@ -2125,12 +2174,12 @@
                             </div>
                             
                         </article>
-                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions');}">
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer');}">
                             <div class="capability-impl-header">
                                 <span class="price-tag">Perplexity</span>
-                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions)</a></h4>
+                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions) / Perplexity Computer</a></h4>
                             </div>
-                            <p class="capability-impl-copy">Perplexity has agentic features built into Comet. Basic actions work on free; Pro at $20/month unlocks more powerful agent capabilities like form filling and multi-step workflows. Computer Voice Mode (Mar 2026) adds hands-free voice commands for the agentic Computer—Max plan ($200/mo) only.</p>
+                            <p class="capability-impl-copy">Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. Basic actions work on free; Pro ($20/mo) unlocks advanced capabilities. Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers.</p>
                             <div class="dates-row">
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
@@ -2156,7 +2205,7 @@
                                 <span class="price-tag">Perplexity</span>
                                 <h4><a href="implementations.html#perplexity-comet-browser" class="feature-link" onclick="passTheme(this)">Comet Browser</a></h4>
                             </div>
-                            <p class="capability-impl-copy">Perplexity&#39;s Comet browser is actually free now—you just need a Perplexity account. It&#39;s available on Mac, Windows, Linux, and Android. No iOS yet; that&#39;s expected later this year.</p>
+                            <p class="capability-impl-copy">Perplexity&#39;s Comet browser is free for all users—available on Mac, Windows, Linux, Android, and now iPhone. Comet Enterprise (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security.</p>
                             <div class="dates-row">
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
@@ -2167,7 +2216,7 @@
                     </div>
                     
                     <div class="capability-implementation-header model-access-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>1</strong> relevant model access record</span>
+                        <span><strong>2</strong> relevant model access records</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -2179,10 +2228,22 @@
                             </div>
                             <p class="capability-impl-copy">Mistral&#39;s open-source code agent specialized for Lean 4 proof engineering. Apache 2.0 weights with MCP tool-use training. Also available via the Mistral Labs API endpoint `labs-leanstral-2603` and agent mode in Mistral Vibe.</p>
                             <div class="dates-row">
-                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-17</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-17</span></span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-17</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
                             </div>
                             <div class="capability-tags"><span class="provider-toggle active">Ollama</span><span class="provider-toggle active">local API wrappers</span><span class="provider-toggle active">Mistral Vibe (agent mode)</span><span class="provider-toggle active">Mistral Labs API</span></div>
                             <p class="capability-note">specialized for Lean 4 formal verification, not general-purpose coding</p>
+                        </article>
+                        <article class="capability-impl capability-impl-model-access" onclick="implCardClick(event, 'implementations.html#mistral-open-models-mistral-small-4')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#mistral-open-models-mistral-small-4');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Mistral</span>
+                                <h4><a href="implementations.html#mistral-open-models-mistral-small-4" class="feature-link" onclick="passTheme(this)">Mistral Small 4</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Mistral Small 4 is a 119B Mixture-of-Experts model (128 experts, 4 active per token, ~6B active parameters) that unifies instruct, reasoning, multimodal, and agentic coding into a single open model. Apache 2.0 license. 256k context window with native vision and a configurable `reasoning_effort` parameter. Available via Mistral API and self-hosted, but requires datacenter-class GPUs (4× H100 minimum).</p>
+                            <div class="dates-row">
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2026-03-16</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-19</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-19</span></span>
+                            </div>
+                            <div class="capability-tags"><span class="provider-toggle active">vLLM</span><span class="provider-toggle active">SGLang</span><span class="provider-toggle active">llama.cpp</span><span class="provider-toggle active">NVIDIA NIM</span><span class="provider-toggle active">Mistral API</span></div>
+                            <p class="capability-note">datacenter-class hardware required: minimum 4× H100 or 2× H200 or 1× DGX B200</p>
                         </article>
                     </div>
                 </article>
@@ -2341,7 +2402,7 @@
                     </div>
                     
                     <div class="capability-implementation-header" role="button" tabindex="0" aria-expanded="false" title="Click to expand" onclick="toggleImpls(this)" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();toggleImpls(this);}">
-                        <span><strong>12</strong> implementations across <strong>6</strong> products</span>
+                        <span><strong>13</strong> implementations across <strong>6</strong> products</span>
                         <span class="impl-toggle-group"><span class="expand-hint">expand</span><span class="impl-chevron" aria-hidden="true">▶</span></span>
                     </div>
                     <div class="capability-implementations" hidden>
@@ -2486,6 +2547,19 @@
                                 <span class="badge avail-ga">GA</span>
                                 <span class="badge gate-paid">Paid</span>
                                 <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2023-11-04</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-02-22</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-04</span></span>
+                            </div>
+                            
+                        </article>
+                        <article class="capability-impl" onclick="implCardClick(event, 'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer')" tabindex="0" onkeydown="if(event.key==='Enter'){implCardClick(event,'implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer');}">
+                            <div class="capability-impl-header">
+                                <span class="price-tag">Perplexity</span>
+                                <h4><a href="implementations.html#perplexity-agent-mode-agentic-actions-perplexity-computer" class="feature-link" onclick="passTheme(this)">Agent Mode (Agentic Actions) / Perplexity Computer</a></h4>
+                            </div>
+                            <p class="capability-impl-copy">Perplexity Computer is a cloud-based agent that orchestrates 19+ AI models for multi-step workflows. Basic actions work on free; Pro ($20/mo) unlocks advanced capabilities. Max ($200/mo) adds full Computer access, Voice Mode, and Personal Computer—a dedicated Mac mini that runs 24/7 as your local agent. Enterprise gets Computer for Enterprise with Slack/Snowflake/Salesforce integrations. Four platform APIs (Search, Agent, Embeddings, Sandbox) are now available for developers.</p>
+                            <div class="dates-row">
+                                <span class="badge avail-ga">GA</span>
+                                <span class="badge gate-paid">Paid</span>
+                                <span class="date-item launched" title="Launched"><span class="date-emoji">🚀</span><span class="date-value">2024-11-01</span></span><span class="date-item verified" title="Verified"><span class="date-emoji">✓</span><span class="date-value">2026-03-07</span></span><span class="date-item checked" title="Checked"><span class="date-emoji">👁</span><span class="date-value">2026-03-07</span></span>
                             </div>
                             
                         </article>

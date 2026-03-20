@@ -3,7 +3,7 @@ name: Mistral Open Models
 vendor: Mistral
 logo: https://cdn.simpleicons.org/mistralai
 pricing_page: https://mistral.ai/models
-last_verified: 2026-02-22
+last_verified: 2026-03-19
 build_visibility: hidden
 ---
 
@@ -174,6 +174,62 @@ No restrictions (Apache 2.0 license).
 | 2025-06-01T12:00Z | Mistral Small 3.2 with improved function calling |
 | 2025-03-01T12:00Z | Mistral Small 3.1 with vision, 128K context |
 | 2025-01-30T12:00Z | Initial entry |
+
+---
+
+## Mistral Small 4
+
+| Property | Value |
+|----------|-------|
+| Category | other |
+| Status | ga |
+| Gating | free |
+| URL | https://mistral.ai/news/mistral-small-4 |
+| Launched | 2026-03-16T12:00Z |
+| Verified | 2026-03-19|
+| Checked | 2026-03-19|
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | 119B MoE (6B active); datacenter GPUs required |
+| Mistral API | ✅ | Usage-based | Hosted endpoint: mistral-small-2603 |
+| NVIDIA NIM | ✅ | Usage-based | Day-0 NIM support |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ⚠️ | Via vLLM/SGLang; requires datacenter GPU |
+| macOS | ❌ | Not practical (GPU requirements) |
+| Linux | ✅ | Primary deployment target |
+| iOS | ❌ | Not practical |
+| Android | ❌ | Not practical |
+| Chrome | ❌ |  |
+| web | ❌ | Self-hosted or API only |
+| terminal | ✅ | Via vLLM/SGLang CLI |
+| API | ✅ | Mistral API + local API |
+
+### Regional
+
+No restrictions (Apache 2.0 license). Mistral API availability may vary.
+
+### Talking Point
+
+> "Mistral Small 4 is a 119B Mixture-of-Experts model with only 6B active parameters per token. It combines instruct, reasoning, vision, and code in one open model. **Apache 2.0 license**, but requires **datacenter GPUs (4× H100 minimum)**—this is not a consumer-hardware model. Also available via the Mistral API as `mistral-small-2603`."
+
+### Sources
+
+- [Mistral Small 4 Announcement](https://mistral.ai/news/mistral-small-4)
+- [Mistral Small 4 Docs](https://docs.mistral.ai/models/mistral-small-4-0-26-03)
+- [HuggingFace Model Card](https://huggingface.co/mistralai/Mistral-Small-4-119B-2603)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-03-16T12:00Z | Initial entry |
 
 ---
 

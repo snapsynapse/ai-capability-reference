@@ -481,9 +481,12 @@
   product: perplexity
   provider: perplexity
   source_file: data/platforms/perplexity.md
-  source_heading: Agent Mode (Agentic Actions)
+  source_heading: Agent Mode (Agentic Actions) / Perplexity Computer
   capabilities:
     - take-actions-and-run-tools
+    - do-multi-step-research
+    - connect-to-external-systems
+    - use-files-i-provide
     - do-multi-step-research
 - id: perplexity-buy-with-pro-shopping
   product: perplexity
