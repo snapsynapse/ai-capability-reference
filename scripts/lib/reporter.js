@@ -340,11 +340,23 @@ function createGitHubIssue(title, body, labels = []) {
             }
         }
 
-        const labelArgs = labels.map(l => `-l "${l}"`).join(' ');
-        const cmd = `gh issue create --title "${title}" --body "${body.replace(/"/g, '\\"')}" ${labelArgs}`;
+        // Write body to a temp file to avoid shell escaping issues
+        // (backticks in markdown code fences get interpreted as command
+        // substitution when passed via shell string interpolation)
+        const os = require('os');
+        const tmpFile = path.join(os.tmpdir(), `gh-issue-body-${Date.now()}.md`);
+        fs.writeFileSync(tmpFile, body, 'utf-8');
 
-        const result = execSync(cmd, { encoding: 'utf-8' });
-        return result.trim();
+        try {
+            const labelArgs = labels.map(l => `-l "${l}"`).join(' ');
+            const cmd = `gh issue create --title "${title.replace(/"/g, '\\"')}" --body-file "${tmpFile}" ${labelArgs}`;
+
+            const result = execSync(cmd, { encoding: 'utf-8' });
+            return result.trim();
+        } finally {
+            // Clean up temp file
+            try { fs.unlinkSync(tmpFile); } catch (e) { /* ignore */ }
+        }
     } catch (error) {
         console.error('Failed to create GitHub issue:', error.message);
         return null;

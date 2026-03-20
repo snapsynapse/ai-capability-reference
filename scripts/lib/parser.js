@@ -255,7 +255,7 @@ function findStaleFeatures(thresholdDays = 7) {
  * @returns {Object} Normalized feature data
  */
 function serializeFeature(feature) {
-    return {
+    return JSON.stringify({
         name: feature.name,
         category: feature.category,
         status: feature.status,
@@ -271,7 +271,7 @@ function serializeFeature(feature) {
             available: p.available,
             notes: p.notes || ''
         }))
-    };
+    }, null, 2);
 }
 
 module.exports = {

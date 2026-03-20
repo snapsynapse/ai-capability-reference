@@ -20,24 +20,35 @@ const PROVIDER_MODEL_MAP = {
  * @returns {string} The prompt to send to AI models
  */
 function buildVerificationPrompt(platform, feature) {
+    const { serializeFeature } = require('./parser');
     const planList = platform.pricing.map(p => p.plan).join(', ');
     const featureUrl = feature.url ? `\n   Current stored URL: ${feature.url}` : '';
     const regional = feature.regional ? `\n   Current stored regional info: "${feature.regional}"` : '';
+    const storedData = serializeFeature(feature);
 
-    return `For ${platform.name}'s "${feature.name}" feature, please verify the current:
+    return `We track ${platform.name}'s "${feature.name}" feature in our reference database.
+Here is what we currently have stored:
+
+${storedData}
+
+Please verify whether this data is still accurate by checking:
 
 1. Pricing tier availability:
    - Which subscription plans have access? (Plans for ${platform.name}: ${planList})
    - What are the usage limits per tier (if any)?
+   - Does this match our stored availability data above?
 
 2. Platform/surface availability:
    - Is it available on: Windows, macOS, Linux, iOS, Android, web, terminal, API?
+   - Does this match our stored platforms data above?
 
 3. Current status:
    - Is it GA (generally available), Beta, Preview, or Deprecated?
+   - Does this match our stored status "${feature.status}" above?
 
 4. Access gating:
    - Is it free, paid-only, invite-only, or org-only?
+   - Does this match our stored gating "${feature.gating}" above?
 
 5. Regional availability:
    - Is this feature available globally or restricted to certain regions?
@@ -50,8 +61,9 @@ function buildVerificationPrompt(platform, feature) {
 7. Recent changes:
    - Any announcements or changes in the last 30 days?
 
-Please provide specific, factual information and cite official sources where possible.
-Respond in a structured format.`;
+For each section, explicitly state whether our stored data is CORRECT or INCORRECT.
+If incorrect, describe exactly what changed. If everything matches, say "no change detected."
+Cite official sources where possible.`;
 }
 
 /**
@@ -73,7 +85,14 @@ function buildGrokPrompt(platform, feature) {
 
     const accounts = twitterAccounts[platform.name] || `official ${platform.vendor} accounts`;
 
-    return `Search X/Twitter for recent posts from ${accounts} about "${feature.name}" feature.
+    const { serializeFeature } = require('./parser');
+    const storedData = serializeFeature(feature);
+
+    return `We track ${platform.name}'s "${feature.name}" feature. Here is our current stored data:
+
+${storedData}
+
+Search X/Twitter for recent posts from ${accounts} about "${feature.name}" feature.
 
 Look for:
 1. Any announcements about pricing changes, new tier availability, or plan restrictions
@@ -83,6 +102,7 @@ Look for:
 5. Any changes in the last 30-60 days
 
 Focus on official announcements and verified account posts.
+State whether our stored data above is still accurate or if something has changed.
 Summarize what you find about current availability and any recent changes.`;
 }
 
