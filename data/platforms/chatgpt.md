@@ -30,7 +30,7 @@ last_verified: 2026-03-14
 | URL | https://help.openai.com/en/articles/8400625-voice-mode |
 | Launched | 2024-09-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -101,8 +101,8 @@ OpenAI has indicated this may be temporary, with voice potentially returning to 
 | Gating | paid |
 | URL | https://openai.com/index/introducing-chatgpt-agent/ |
 | Launched | 2025-07-17T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -161,8 +161,8 @@ Available globally including EEA. Some Connector-based agent actions remain rest
 | Gating | free |
 | URL | https://openai.com/index/introducing-chatgpt-atlas/ |
 | Launched | 2025-10-21T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -219,7 +219,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | URL | https://openai.com/index/introducing-canvas/ |
 | Launched | 2024-10-03T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -275,8 +275,8 @@ Available globally where ChatGPT is available.
 | Gating | free |
 | URL | https://openai.com/index/introducing-chatgpt-search/ |
 | Launched | 2024-10-31T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -336,7 +336,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/introducing-codex/ |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -397,7 +397,7 @@ Available globally.
 | URL | https://openai.com/index/codex-security-now-in-research-preview/ |
 | Launched | 2026-03-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -458,7 +458,7 @@ Available globally.
 | URL | https://chatgpt.com/gpts |
 | Launched | 2023-11-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -518,7 +518,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/dall-e-3/ |
 | Launched | 2023-10-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -572,8 +572,8 @@ Available globally.
 | Gating | free |
 | URL | https://help.openai.com/en/articles/11011518-chatgpt-deep-research |
 | Launched | 2025-02-03T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -631,7 +631,7 @@ Available globally.
 | URL | https://openai.com/index/memory-and-new-controls-for-chatgpt/ |
 | Launched | 2024-09-05T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -690,8 +690,8 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 | Gating | free |
 | URL | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt |
 | Launched | 2024-12-13T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -748,7 +748,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/sora-is-here/ |
 | Launched | 2024-12-09T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -808,7 +808,7 @@ Available in US, Canada, Japan, Korea, Thailand, Vietnam, Taiwan. Not available 
 | URL | https://openai.com/index/hello-gpt-4o/ |
 | Launched | 2024-05-13T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 

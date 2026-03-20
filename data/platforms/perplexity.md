@@ -28,7 +28,7 @@ last_verified: 2026-03-19
 | URL | https://www.perplexity.ai/hub/blog/everything-is-computer |
 | Launched | 2024-11-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -87,7 +87,7 @@ Available globally via Comet browser and web. Personal Computer limited to initi
 | URL | https://www.perplexity.ai/hub/blog/shop-like-a-pro |
 | Launched | 2024-11-18T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -144,7 +144,7 @@ US only. International users redirected to merchant sites.
 | URL | https://www.perplexity.ai/hub/blog/introducing-spaces |
 | Launched | 2024-10-17T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -198,7 +198,7 @@ Available globally.
 | URL | https://www.perplexity.ai/comet |
 | Launched | 2025-07-09T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -257,7 +257,7 @@ Available globally.
 | URL | https://www.perplexity.ai/enterprise/app-connectors |
 | Launched | 2024-09-01T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
