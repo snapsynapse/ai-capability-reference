@@ -27,8 +27,8 @@ last_verified: 2026-03-19
 | Gating | paid |
 | URL | https://www.perplexity.ai/hub/blog/everything-is-computer |
 | Launched | 2024-11-01T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-20|
+| Verified | 2026-03-21|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -46,7 +46,7 @@ last_verified: 2026-03-19
 | Windows | ✅ | Via Comet |
 | macOS | ✅ | Via Comet + Personal Computer (dedicated Mac mini) |
 | Linux | ✅ | Via Comet |
-| iOS | 🔜 | When Comet iOS launches |
+| iOS | ✅ | Via Comet for iPhone (launched Mar 2026) |
 | Android | ✅ | Via Comet + Samsung Galaxy S26 integration |
 | Chrome | ❌ | Comet only |
 | web | ✅ | Cloud-based Computer agent |
@@ -87,7 +87,7 @@ Available globally via Comet browser and web. Personal Computer limited to initi
 | URL | https://www.perplexity.ai/hub/blog/shop-like-a-pro |
 | Launched | 2024-11-18T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-20|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -144,7 +144,7 @@ US only. International users redirected to merchant sites.
 | URL | https://www.perplexity.ai/hub/blog/introducing-spaces |
 | Launched | 2024-10-17T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-20|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -198,7 +198,7 @@ Available globally.
 | URL | https://www.perplexity.ai/comet |
 | Launched | 2025-07-09T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-20|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -257,7 +257,7 @@ Available globally.
 | URL | https://www.perplexity.ai/enterprise/app-connectors |
 | Launched | 2024-09-01T12:00Z |
 | Verified | 2026-02-07|
-| Checked | 2026-03-20|
+| Checked | 2026-03-21|
 
 ### Availability
 

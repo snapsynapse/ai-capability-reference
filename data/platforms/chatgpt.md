@@ -4,15 +4,15 @@ vendor: OpenAI
 logo: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
 status_page: https://status.openai.com
 pricing_page: https://chatgpt.com/pricing
-last_verified: 2026-03-14
+last_verified: 2026-03-21
 ---
 
 ## Pricing
 
 | Plan | Price | Notes |
 |------|-------|-------|
-| Free | $0 | GPT-5.3 Instant, ~10 msgs/5hrs then fallback to Mini |
-| Go | $8/mo | 10x free limits, longer memory, may have ads |
+| Free | $0 | GPT-5.4 Mini (Thinking menu); ~10 msgs/5hrs then fallback |
+| Go | $8/mo | GPT-5.4 Mini; 10x free limits, longer memory, may have ads |
 | Plus | $20/mo | GPT-5.4 Thinking, 5x Go limits, ad-free |
 | Pro | $200/mo | Unlimited GPT-5.4 Pro, Sora 2 Pro, 1M context |
 | Team | $25-30/user/mo | Plus features + admin, 2 user minimum |
@@ -866,17 +866,17 @@ Available globally where ChatGPT is available.
 | Gating   | free |
 | URL      | https://chatgpt.com |
 | Launched | 2022-11-30T12:00Z |
-| Verified | 2026-03-15|
-| Checked  | 2026-03-07 |
+| Verified | 2026-03-21|
+| Checked  | 2026-03-21 |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ✅ | Rate-limited | GPT-5.3 Instant; ~10 msgs/5 hrs then fallback |
-| Go | ✅ | Higher | 10× free limits |
-| Plus | ✅ | Higher | GPT-5.4 Thinking; 5× Go limits |
-| Pro | ✅ | Unlimited | GPT-5.4 Pro; no rate caps; 1M context |
+| Free | ✅ | Rate-limited | GPT-5.4 Mini (Thinking menu); ~10 msgs/5 hrs then fallback |
+| Go | ✅ | Higher | GPT-5.4 Mini; 10× free limits |
+| Plus | ✅ | Higher | GPT-5.4 Thinking + Mini; 5× Go limits |
+| Pro | ✅ | Unlimited | GPT-5.4 Pro + Mini; no rate caps; 1M context |
 | Team | ✅ | Full | Plus features + workspace admin |
 | Enterprise | ✅ | Custom | SSO, advanced security |
 
@@ -892,7 +892,7 @@ Available globally where ChatGPT is available.
 | Chrome   | ❌ | |
 | web      | ✅ | chatgpt.com |
 | terminal | ❌ | |
-| API      | ✅ | OpenAI API (GPT-5.4, 1M context) |
+| API      | ✅ | OpenAI API (GPT-5.4, Mini, Nano; 1M context) |
 
 ### Regional
 
@@ -900,18 +900,21 @@ Available globally where ChatGPT is permitted. Some advanced features may be US-
 
 ### Talking Point
 
-> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free users get GPT-5.3 Instant with standard rate limits; Plus unlocks **GPT-5.4 Thinking**; Pro gets **GPT-5.4 Pro** with 1M context. GPT-5.2 Thinking moved to Legacy Models with a 90-day retirement window."
+> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free and Go users now get **GPT-5.4 Mini** (via the Thinking menu); Plus unlocks **GPT-5.4 Thinking**; Pro gets **GPT-5.4 Pro** with 1M context. **GPT-5.4 Nano** is **API-only** ($0.20/1M input tokens). GPT-5.2 Thinking moved to Legacy Models with a 90-day retirement window."
 
 ### Sources
 
 - [ChatGPT](https://chatgpt.com)
 - [ChatGPT Pricing](https://chatgpt.com/pricing)
 - [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/)
+- [Introducing GPT-5.4 Mini and Nano](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
+- [OpenAI Developer Community: GPT-5.4 Mini and Nano](https://community.openai.com/t/introducing-gpt-5-4-mini-and-nano-our-most-capable-small-models-yet/1377015)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] GPT-5.4 Mini and Nano released: Mini available in ChatGPT (Free/Go via Thinking menu), API, and Codex; Nano is API-only; Mini $0.75/$4.50 per 1M tokens, Nano $0.20/$1.25 per 1M tokens; 400K context; vision support |
 | 2026-03-14T12:00Z | [Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool |
 | 2026-03-07T12:00Z | Initial entry |
 | 2022-11-30T12:00Z | ChatGPT launched publicly |
