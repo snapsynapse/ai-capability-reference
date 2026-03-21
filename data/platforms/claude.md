@@ -587,7 +587,7 @@ Available globally.
 | Chrome | ❌ |  |
 | web | ✅ | claude.ai |
 | terminal | ❌ |  |
-| API | ❌ | Not available via API |
+| API | ✅ | Memory Tool (type: memory_20250818) for developers |
 
 ### Regional
 
@@ -600,11 +600,13 @@ Available globally where Claude is available. May be off by default in some regi
 ### Sources
 
 - [Claude Memory Guide](https://aiadopters.club/p/set-up-my-claude-memory)
+- [API Memory Tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] API Memory Tool now available for developers (type: memory_20250818); 3-layer architecture: Chat Memory, CLAUDE.md, API Memory Tool |
 | 2026-03-07T12:00Z | Initial entry |
 | 2026-03-02T12:00Z | Free on all plans; memory import tool launched |
 | 2025-10-01T12:00Z | Memory feature launched (paid plans only) |

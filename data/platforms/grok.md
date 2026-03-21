@@ -331,9 +331,9 @@ Available globally where Grok is available.
 | iOS | ✅ | X app + standalone |
 | Android | ✅ | X app + standalone |
 | Chrome | ❌ |  |
-| web | ❌ | Mobile only |
+| web | ✅ | grok.com |
 | terminal | ❌ |  |
-| API | ✅ | xAI API |
+| API | ✅ | xAI API + TTS API (5 voices) |
 
 ### Regional
 
@@ -341,7 +341,7 @@ Available globally where X is available.
 
 ### Talking Point
 
-> "Grok Voice Mode allows natural voice conversations with Grok. **Now free for all users** on iOS and Android with 11 voice modes. TTS API available for developers with 5 voice personalities. Supports attachments and photos in voice conversations (Mar 2026)."
+> "Grok Voice Mode allows natural voice conversations with Grok. **Now free for all users** on iOS, Android, and web (grok.com) with 11 voice modes. TTS API available for developers with 5 voice personalities. Supports attachments and photos in voice conversations (Mar 2026)."
 
 ### Sources
 
