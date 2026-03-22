@@ -4,7 +4,7 @@ vendor: Microsoft
 logo: https://copilot.microsoft.com/favicon.ico
 status_page: https://status.office.com
 pricing_page: https://www.microsoft.com/en-us/microsoft-copilot
-last_verified: 2026-03-07
+last_verified: 2026-03-21
 ---
 
 ## Pricing
@@ -26,8 +26,8 @@ last_verified: 2026-03-07
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -64,7 +64,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 
 - [Agent Builder Documentation](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder)
 - [Build Agents Guide](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder-build-agents)
-- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--february-2026/4496489)
+- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/whats-new-in-microsoft-365-copilot--february-2026/4496489)
 
 ### Changelog
 
@@ -85,8 +85,8 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | Gating | paid |
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -122,7 +122,7 @@ Available globally where M365 Copilot is available.
 
 - [Copilot Connectors Overview](https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector)
 - [Copilot Connectors Gallery](https://learn.microsoft.com/en-us/microsoftsearch/connectors-gallery)
-- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/what%E2%80%99s-new-in-microsoft-365-copilot--february-2026/4496489)
+- [What's New in M365 Copilot Feb 2026](https://techcommunity.microsoft.com/blog/microsoft365copilotblog/whats-new-in-microsoft-365-copilot--february-2026/4496489)
 
 ### Changelog
 
@@ -143,8 +143,8 @@ Available globally where M365 Copilot is available.
 | Gating | paid |
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
 | Launched | 2023-11-01T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -198,7 +198,7 @@ Available globally.
 | URL | https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -255,8 +255,8 @@ Available in the United States. Broader rollout planned.
 | Gating | free |
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
 | Launched | 2024-10-01T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -308,8 +308,8 @@ Available globally.
 | Gating | paid |
 | URL | https://copilot.microsoft.com/ |
 | Launched | 2023-02-07T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -361,15 +361,15 @@ Available globally.
 | Gating | paid |
 | URL | https://designer.microsoft.com/ |
 | Launched | 2023-03-21T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-21|
+| Checked | 2026-03-22|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ✅ | 15 boosts/day | Basic generation |
-| Copilot Pro | ✅ | 100 boosts/day | Faster, priority |
+| Free | ✅ | 15 AI credits/mo | Basic generation (Classic M365); 60 credits/mo for M365 Personal |
+| Copilot Pro | ✅ | 100 boosts/day | Priority generation |
 
 ### Platforms
 
@@ -391,16 +391,18 @@ Available globally.
 
 ### Talking Point
 
-> "Image generation with Designer is **available on free Copilot** with 15 boosts per day. Pro gets 100 boosts and priority generation."
+> "Image generation with Designer is **available on free Copilot** using AI credits (15–60/month depending on plan). Now powered by **GPT-Image-1.5** (upgraded from GPT-4o). Designer bot in Teams retired Feb 2026—use Copilot image generation instead."
 
 ### Sources
 
 - [Microsoft Designer](https://designer.microsoft.com/)
+- [AI Credits in M365](https://support.microsoft.com/en-us/office/ai-credits-and-limits-for-microsoft-365-personal-family-and-premium-68530f1a-4459-4d02-9818-8233c1f673b8)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Credits system replaced boosts (15-60 credits/month); Designer bot retired in Teams (Feb 27); model upgraded to GPT-Image-1.5 |
 | 2023-03-21T12:00Z | Initial entry |
 
 ---
@@ -414,7 +416,7 @@ Available globally.
 | Gating   | free |
 | URL      | https://copilot.microsoft.com |
 | Launched | 2023-02-07T12:00Z |
-| Verified | 2026-03-15|
+| Verified | 2026-03-22|
 | Checked  | 2026-03-07 |
 
 ### Availability

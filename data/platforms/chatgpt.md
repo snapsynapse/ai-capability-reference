@@ -4,15 +4,15 @@ vendor: OpenAI
 logo: https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg
 status_page: https://status.openai.com
 pricing_page: https://chatgpt.com/pricing
-last_verified: 2026-03-14
+last_verified: 2026-03-21
 ---
 
 ## Pricing
 
 | Plan | Price | Notes |
 |------|-------|-------|
-| Free | $0 | GPT-5.3 Instant, ~10 msgs/5hrs then fallback to Mini |
-| Go | $8/mo | 10x free limits, longer memory, may have ads |
+| Free | $0 | GPT-5.4 Mini (Thinking menu); ~10 msgs/5hrs then fallback |
+| Go | $8/mo | GPT-5.4 Mini; 10x free limits, longer memory, may have ads |
 | Plus | $20/mo | GPT-5.4 Thinking, 5x Go limits, ad-free |
 | Pro | $200/mo | Unlimited GPT-5.4 Pro, Sora 2 Pro, 1M context |
 | Team | $25-30/user/mo | Plus features + admin, 2 user minimum |
@@ -30,7 +30,7 @@ last_verified: 2026-03-14
 | URL | https://help.openai.com/en/articles/8400625-voice-mode |
 | Launched | 2024-09-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -101,8 +101,8 @@ OpenAI has indicated this may be temporary, with voice potentially returning to 
 | Gating | paid |
 | URL | https://openai.com/index/introducing-chatgpt-agent/ |
 | Launched | 2025-07-17T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -161,8 +161,8 @@ Available globally including EEA. Some Connector-based agent actions remain rest
 | Gating | free |
 | URL | https://openai.com/index/introducing-chatgpt-atlas/ |
 | Launched | 2025-10-21T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -219,7 +219,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | URL | https://openai.com/index/introducing-canvas/ |
 | Launched | 2024-10-03T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -275,8 +275,8 @@ Available globally where ChatGPT is available.
 | Gating | free |
 | URL | https://openai.com/index/introducing-chatgpt-search/ |
 | Launched | 2024-10-31T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -336,7 +336,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/introducing-codex/ |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -397,7 +397,7 @@ Available globally.
 | URL | https://openai.com/index/codex-security-now-in-research-preview/ |
 | Launched | 2026-03-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -458,7 +458,7 @@ Available globally.
 | URL | https://chatgpt.com/gpts |
 | Launched | 2023-11-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -517,8 +517,8 @@ Available globally where ChatGPT is available.
 | Gating | paid |
 | URL | https://openai.com/index/dall-e-3/ |
 | Launched | 2023-10-01T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -572,8 +572,8 @@ Available globally.
 | Gating | free |
 | URL | https://help.openai.com/en/articles/11011518-chatgpt-deep-research |
 | Launched | 2025-02-03T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -631,7 +631,7 @@ Available globally.
 | URL | https://openai.com/index/memory-and-new-controls-for-chatgpt/ |
 | Launched | 2024-09-05T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -690,8 +690,8 @@ Available globally; off by default in EEA/UK/Switzerland (must enable manually).
 | Gating | free |
 | URL | https://help.openai.com/en/articles/10169521-using-projects-in-chatgpt |
 | Launched | 2024-12-13T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -747,8 +747,8 @@ Available globally where ChatGPT is available.
 | Gating | paid |
 | URL | https://openai.com/index/sora-is-here/ |
 | Launched | 2024-12-09T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -807,8 +807,8 @@ Available in US, Canada, Japan, Korea, Thailand, Vietnam, Taiwan. Not available 
 | Gating | free |
 | URL | https://openai.com/index/hello-gpt-4o/ |
 | Launched | 2024-05-13T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -866,17 +866,17 @@ Available globally where ChatGPT is available.
 | Gating   | free |
 | URL      | https://chatgpt.com |
 | Launched | 2022-11-30T12:00Z |
-| Verified | 2026-03-15|
-| Checked  | 2026-03-07 |
+| Verified | 2026-03-21|
+| Checked  | 2026-03-21 |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ✅ | Rate-limited | GPT-5.3 Instant; ~10 msgs/5 hrs then fallback |
-| Go | ✅ | Higher | 10× free limits |
-| Plus | ✅ | Higher | GPT-5.4 Thinking; 5× Go limits |
-| Pro | ✅ | Unlimited | GPT-5.4 Pro; no rate caps; 1M context |
+| Free | ✅ | Rate-limited | GPT-5.4 Mini (Thinking menu); ~10 msgs/5 hrs then fallback |
+| Go | ✅ | Higher | GPT-5.4 Mini; 10× free limits |
+| Plus | ✅ | Higher | GPT-5.4 Thinking + Mini; 5× Go limits |
+| Pro | ✅ | Unlimited | GPT-5.4 Pro + Mini; no rate caps; 1M context |
 | Team | ✅ | Full | Plus features + workspace admin |
 | Enterprise | ✅ | Custom | SSO, advanced security |
 
@@ -892,7 +892,7 @@ Available globally where ChatGPT is available.
 | Chrome   | ❌ | |
 | web      | ✅ | chatgpt.com |
 | terminal | ❌ | |
-| API      | ✅ | OpenAI API (GPT-5.4, 1M context) |
+| API      | ✅ | OpenAI API (GPT-5.4, Mini, Nano; 1M context) |
 
 ### Regional
 
@@ -900,18 +900,21 @@ Available globally where ChatGPT is permitted. Some advanced features may be US-
 
 ### Talking Point
 
-> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free users get GPT-5.3 Instant with standard rate limits; Plus unlocks **GPT-5.4 Thinking**; Pro gets **GPT-5.4 Pro** with 1M context. GPT-5.2 Thinking moved to Legacy Models with a 90-day retirement window."
+> "ChatGPT's core text conversation is **available on all plans including free** at chatgpt.com, with apps for iOS, Android, Windows, and macOS. Free and Go users now get **GPT-5.4 Mini** (via the Thinking menu); Plus unlocks **GPT-5.4 Thinking**; Pro gets **GPT-5.4 Pro** with 1M context. **GPT-5.4 Nano** is **API-only** ($0.20/1M input tokens). GPT-5.2 Thinking moved to Legacy Models with a 90-day retirement window."
 
 ### Sources
 
 - [ChatGPT](https://chatgpt.com)
 - [ChatGPT Pricing](https://chatgpt.com/pricing)
 - [Introducing GPT-5.4](https://openai.com/index/introducing-gpt-5-4/)
+- [Introducing GPT-5.4 Mini and Nano](https://openai.com/index/introducing-gpt-5-4-mini-and-nano/)
+- [OpenAI Developer Community: GPT-5.4 Mini and Nano](https://community.openai.com/t/introducing-gpt-5-4-mini-and-nano-our-most-capable-small-models-yet/1377015)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] GPT-5.4 Mini and Nano released: Mini available in ChatGPT (Free/Go via Thinking menu), API, and Codex; Nano is API-only; Mini $0.75/$4.50 per 1M tokens, Nano $0.20/$1.25 per 1M tokens; 400K context; vision support |
 | 2026-03-14T12:00Z | [Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool |
 | 2026-03-07T12:00Z | Initial entry |
 | 2022-11-30T12:00Z | ChatGPT launched publicly |

@@ -24,8 +24,8 @@ build_visibility: hidden
 | Gating | free |
 | URL | https://mistral.ai/news/codestral/ |
 | Launched | 2024-05-29T12:00Z |
-| Verified | 2026-02-22|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -77,8 +77,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://mistral.ai/technology/ |
 | Launched | 2024-07-18T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-21|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -106,7 +106,7 @@ No restrictions - runs locally.
 
 ### Talking Point
 
-> "Mistral offers several open models. **Mistral Nemo (12B) runs on consumer hardware**-great for local use. Mistral Large (123B) needs serious GPU power but rivals GPT-4 quality."
+> "Mistral offers several open models. **Mistral Nemo (12B) runs on consumer hardware**—great for local use. Mistral Large (123B) needs serious GPU power. Note: both are **deprecated on hosted platforms** (Vertex AI, La Plateforme) in favor of Mistral Small 4, but **open weights remain available** for self-hosted via Ollama and LM Studio."
 
 ### Sources
 
@@ -117,6 +117,7 @@ No restrictions - runs locally.
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Models deprecated on hosted platforms (Vertex AI, La Plateforme); open weights still available for self-hosted; Mistral Small 4 now recommended |
 | 2024-07-18T12:00Z | Initial entry |
 
 ---
@@ -131,7 +132,7 @@ No restrictions - runs locally.
 | URL | https://mistral.ai/news/mistral-small-3 |
 | Launched | 2025-01-30T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -186,8 +187,8 @@ No restrictions (Apache 2.0 license).
 | Gating | free |
 | URL | https://mistral.ai/news/mistral-small-4 |
 | Launched | 2026-03-16T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -242,8 +243,8 @@ No restrictions (Apache 2.0 license). Mistral API availability may vary.
 | Gating | free |
 | URL | https://mistral.ai/news/leanstral |
 | Launched | 2026-03-16T12:00Z |
-| Verified | 2026-03-17|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 

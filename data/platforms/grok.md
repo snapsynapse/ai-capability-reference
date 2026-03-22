@@ -4,7 +4,7 @@ vendor: xAI
 logo: https://x.ai/favicon.ico
 status_page: https://status.x.ai
 pricing_page: https://x.ai/grok
-last_verified: 2026-03-07
+last_verified: 2026-03-21
 ---
 
 ## Pricing
@@ -27,8 +27,8 @@ last_verified: 2026-03-07
 | Gating | paid |
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -82,8 +82,8 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -138,8 +138,8 @@ Available globally where X is available.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-image-generation |
 | Launched | 2024-12-09T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -194,8 +194,8 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-imagine |
 | Launched | 2025-08-04T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -253,8 +253,8 @@ Available globally where X is available.
 | Gating | free |
 | URL | https://grok.com |
 | Launched | 2025-04-16T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -306,17 +306,17 @@ Available globally where Grok is available.
 |----------|-------|
 | Category | voice |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://x.ai/blog/grok-voice |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Verified | 2026-03-21|
+| Checked | 2026-03-21|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | iOS only | Free on iOS; Android requires subscription |
+| Free | ✅ | Standard | 11 voice modes, now free for all users |
 | Premium | ✅ | Standard | Voice conversations |
 | Premium+ | ✅ | Enhanced | Priority |
 | SuperGrok | ✅ | Highest | Best quality |
@@ -331,9 +331,9 @@ Available globally where Grok is available.
 | iOS | ✅ | X app + standalone |
 | Android | ✅ | X app + standalone |
 | Chrome | ❌ |  |
-| web | ❌ | Mobile only |
+| web | ✅ | grok.com |
 | terminal | ❌ |  |
-| API | ✅ | xAI API |
+| API | ✅ | xAI API + TTS API (5 voices) |
 
 ### Regional
 
@@ -341,7 +341,7 @@ Available globally where X is available.
 
 ### Talking Point
 
-> "Grok Voice Mode allows natural voice conversations with Grok. **Free on iOS** for all users; Android requires a paid subscription (Premium $8/mo or higher). Currently mobile only (iOS and Android)."
+> "Grok Voice Mode allows natural voice conversations with Grok. **Now free for all users** on iOS, Android, and web (grok.com) with 11 voice modes. TTS API available for developers with 5 voice personalities. Supports attachments and photos in voice conversations (Mar 2026)."
 
 ### Sources
 
@@ -351,6 +351,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Voice mode now free for all users on iOS and Android; 11 voice modes; TTS API launched (Mar 16); attachment/photo support in voice added; gating changed from paid to free |
 | 2026-02-28T12:00Z | [Verified] Free access confirmed for iOS users; Android still requires subscription |
 | 2025-02-24T12:00Z | Initial entry |
 
@@ -366,7 +367,7 @@ Available globally where X is available.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -420,8 +421,8 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -475,8 +476,8 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-2 |
 | Launched | 2024-08-13T12:00Z |
-| Verified | 2026-03-07|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -532,7 +533,7 @@ Available globally where Grok is available.
 | URL | https://grok.com |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-07 |
-| Checked | 2026-03-19|
+| Checked | 2026-03-21|
 
 ### Availability
 

@@ -24,8 +24,8 @@ build_visibility: hidden
 | Gating | free |
 | URL | https://lmstudio.ai/ |
 | Launched | 2023-05 |
-| Verified | 2026-03-07|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-20|
 
 ### Availability
 

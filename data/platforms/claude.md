@@ -4,7 +4,7 @@ vendor: Anthropic
 logo: https://cdn.simpleicons.org/anthropic
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-03-07
+last_verified: 2026-03-21
 ---
 
 ## Pricing
@@ -29,8 +29,8 @@ last_verified: 2026-03-07
 | Gating | free |
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
-| Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -85,8 +85,8 @@ Available globally.
 | Gating | paid |
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -145,8 +145,8 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | Gating | paid |
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
-| Verified | 2026-03-04|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -179,7 +179,7 @@ Available globally where Claude is available.
 
 ### Talking Point
 
-> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Pro and above get full access**; free users can only use desktop extensions and GitHub. Browse available connectors at claude.ai/directory."
+> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Pro and above get full access** including Deep Connectors (Google Drive, Gmail, DocuSign, FactSet) and a plugin marketplace. Free users can only use desktop extensions and GitHub. Custom connectors via MCP server URLs available on paid plans. Browse available connectors at claude.ai/directory."
 
 ### Sources
 
@@ -191,6 +191,7 @@ Available globally where Claude is available.
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans |
 | 2026-03-04T12:00Z | [Verified] Fixed broken URL: support.claude.com → support.anthropic.com |
 | 2025-07-14T12:00Z | Connectors Directory launched |
 | 2025-06-03T12:00Z | Expanded to Pro plan |
@@ -208,7 +209,7 @@ Available globally where Claude is available.
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -266,8 +267,8 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | Gating | paid |
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -323,8 +324,8 @@ Available globally.
 | Gating | free |
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
-| Verified | 2026-03-08|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -381,8 +382,8 @@ Available globally where Claude is available.
 | Gating | free |
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -438,8 +439,8 @@ Available globally.
 | Gating | paid |
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
-| Verified | 2026-03-08|
-| Checked | 2026-03-19|
+| Verified | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -504,8 +505,8 @@ Available globally where Claude is available.
 | Gating | free |
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -561,7 +562,7 @@ Available globally.
 | URL | https://support.anthropic.com/en/articles/10166267-how-does-memory-work |
 | Launched | 2025-10-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -586,7 +587,7 @@ Available globally.
 | Chrome | ❌ |  |
 | web | ✅ | claude.ai |
 | terminal | ❌ |  |
-| API | ❌ | Not available via API |
+| API | ✅ | Memory Tool (type: memory_20250818) for developers |
 
 ### Regional
 
@@ -599,11 +600,13 @@ Available globally where Claude is available. May be off by default in some regi
 ### Sources
 
 - [Claude Memory Guide](https://aiadopters.club/p/set-up-my-claude-memory)
+- [API Memory Tool](https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] API Memory Tool now available for developers (type: memory_20250818); 3-layer architecture: Chat Memory, CLAUDE.md, API Memory Tool |
 | 2026-03-07T12:00Z | Initial entry |
 | 2026-03-02T12:00Z | Free on all plans; memory import tool launched |
 | 2025-10-01T12:00Z | Memory feature launched (paid plans only) |
@@ -619,7 +622,7 @@ Available globally where Claude is available. May be off by default in some regi
 | Gating   | free |
 | URL      | https://claude.ai |
 | Launched | 2023-07-11T12:00Z |
-| Verified | 2026-03-15|
+| Verified | 2026-03-20|
 | Checked  | 2026-03-07 |
 
 ### Availability

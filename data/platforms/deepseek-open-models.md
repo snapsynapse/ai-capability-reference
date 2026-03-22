@@ -3,7 +3,7 @@ name: DeepSeek Open Models
 vendor: DeepSeek
 logo: https://deepseek.com/favicon.ico
 pricing_page: https://github.com/deepseek-ai
-last_verified: 2026-02-22
+last_verified: 2026-03-21
 build_visibility: hidden
 ---
 
@@ -15,7 +15,7 @@ build_visibility: hidden
 
 ---
 
-## DeepSeek-V3 / DeepSeek-R1
+## DeepSeek-V3.2 (unified V3 + R1)
 
 | Property | Value |
 |----------|-------|
@@ -24,14 +24,14 @@ build_visibility: hidden
 | Gating | free |
 | URL | https://github.com/deepseek-ai/DeepSeek-V3 |
 | Launched | 2024-12-27T12:00Z |
-| Verified | 2026-03-19|
-| Checked | 2026-03-19|
+| Verified | 2026-03-21|
+| Checked | 2026-03-22|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Self-hosted | ✅ | Your hardware | V3: 671B MoE, R1: reasoning model |
+| Self-hosted | ✅ | Your hardware | V3.2: unified chat + reasoning model (replaces V3 and R1) |
 
 ### Platforms
 
@@ -53,16 +53,18 @@ No restrictions - runs locally. Note: DeepSeek is a Chinese company; some orgs r
 
 ### Talking Point
 
-> "DeepSeek-R1 is an open reasoning model that rivals o1. **The distilled versions (1.5B-70B) run locally**. Full V3 (671B) needs enterprise hardware, but quantized versions work on high-end consumer GPUs."
+> "DeepSeek-V3.2 is a unified open model that combines chat and reasoning in one engine, **replacing the separate V3 and R1 models**. Features DeepSeek Sparse Attention for long-context, thinking-with-tools capability, and performance rivaling GPT-5. **Distilled versions (1.5B-70B) run locally**; full model needs enterprise hardware."
 
 ### Sources
 
 - [DeepSeek-V3](https://github.com/deepseek-ai/DeepSeek-V3)
 - [DeepSeek-R1](https://github.com/deepseek-ai/DeepSeek-R1)
+- [DeepSeek-V3.2 Release Notes](https://api-docs.deepseek.com/news/news251201)
 - [Ollama DeepSeek](https://ollama.com/library/deepseek-r1)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] V3.2 unified model replaces separate V3 and R1; integrates thinking into tool-use; DeepSeek Sparse Attention for long-context |
 | 2024-12-27T12:00Z | Initial entry |

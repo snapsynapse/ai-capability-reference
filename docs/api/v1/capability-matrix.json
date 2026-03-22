@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-22T15:49:31.953Z",
+    "generated": "2026-03-22T16:13:33.667Z",
     "version": "1.0"
   },
   "capabilities": [
@@ -65,7 +65,7 @@
         "implementations": [
           "grok-voice-mode"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       },
       "perplexity": {
         "available": true,
@@ -193,7 +193,7 @@
         "implementations": [
           "grok-voice-mode"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       },
       "perplexity": {
         "available": true,

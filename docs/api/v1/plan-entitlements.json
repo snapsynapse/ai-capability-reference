@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-22T15:49:31.953Z",
+    "generated": "2026-03-22T16:13:33.667Z",
     "version": "1.0"
   },
   "products": {
@@ -752,15 +752,18 @@
           "price": "$0",
           "implementations": [
             "grok-studio",
+            "grok-voice-mode",
             "grok-memory"
           ],
           "capabilities": [
             "make-and-edit-documents",
             "write-and-edit-code",
+            "hear-audio-and-speech",
+            "speak-back-in-real-time",
             "remember-context-over-time"
           ],
-          "implementation_count": 2,
-          "capability_count": 3
+          "implementation_count": 3,
+          "capability_count": 5
         }
       }
     },

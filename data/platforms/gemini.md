@@ -4,7 +4,7 @@ vendor: Google
 logo: https://cdn.simpleicons.org/googlegemini
 status_page: https://status.cloud.google.com
 pricing_page: https://one.google.com/intl/en/about/google-ai-plans/
-last_verified: 2026-03-14
+last_verified: 2026-03-21
 ---
 
 ## Pricing
@@ -29,7 +29,7 @@ last_verified: 2026-03-14
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -139,7 +139,7 @@ Available globally; initially English only, now 50+ languages.
 | URL | https://gemini.google/overview/canvas/ |
 | Launched | 2025-03-18T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -193,7 +193,7 @@ Available globally where Gemini is available.
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -247,7 +247,7 @@ Available globally where Gemini Advanced is available.
 | URL | https://gemini.google.com/extensions |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -304,7 +304,7 @@ Available globally where Gemini is available.
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -359,7 +359,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -417,7 +417,7 @@ Docs, Sheets, Slides features available globally in English. Drive AI features (
 | URL | https://blog.google/products/gemini/gemini-live-audio-updates/ |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -470,7 +470,7 @@ Available in supported regions.
 | URL | https://blog.google/products-and-platforms/products/gemini/google-gemini-update-august-2024/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -524,7 +524,7 @@ Available globally.
 | URL | https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -577,7 +577,7 @@ Limited in some regions due to content policies.
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-03-19|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -634,7 +634,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Checked | 2026-03-20|
 
 ### Availability
 
@@ -688,7 +688,7 @@ Available globally where Google services are available.
 | URL | https://deepmind.google/models/project-astra/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-19|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -744,7 +744,7 @@ Available globally where Gemini is available.
 | URL | https://deepmind.google/models/veo/ |
 | Launched | 2024-05-14T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-19|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -804,8 +804,8 @@ Available in supported regions where Gemini is available. Some features limited 
 | Gating | free |
 | URL | https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438 |
 | Launched | 2026-03-03T12:00Z |
-| Verified | 2026-03-07|
-| Checked | 2026-03-19|
+| Verified | 2026-03-21|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -822,7 +822,7 @@ Available in supported regions where Gemini is available. Some features limited 
 | macOS | ❌ |  |
 | Linux | ❌ |  |
 | iOS | ❌ | Android only |
-| Android | ✅ | Pixel 6+ and Samsung S26 devices |
+| Android | ✅ | Pixel 10 series and Samsung Galaxy S26 series |
 | Chrome | ❌ |  |
 | web | ❌ | Mobile only |
 | terminal | ❌ |  |
@@ -830,11 +830,11 @@ Available in supported regions where Gemini is available. Some features limited 
 
 ### Regional
 
-Beta available in select regions including the US.
+Beta available in the US and South Korea.
 
 ### Talking Point
 
-> "Gemini can now **take actions inside third-party apps on Android**—ordering groceries, completing tasks, filling forms—with minimal user supervision. Rolled out in the **March 2026 Pixel Drop**, available on **Pixel 6 and newer plus Samsung S26 devices**. Still in beta, select apps only. No paid plan required."
+> "Gemini can now **take actions inside third-party apps on Android**—ordering rides, placing food orders, and completing tasks with minimal user supervision. Available on **Pixel 10 series and Samsung Galaxy S26 series** in the **US and South Korea**. Still in beta with select apps (Uber, DoorDash, Grubhub, Starbucks, Instacart, Lyft). No paid plan required."
 
 ### Sources
 
@@ -844,6 +844,8 @@ Beta available in select regions including the US.
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Device support corrected to Pixel 10 series and Samsung Galaxy S26 series; regional availability updated to US and South Korea; supported apps listed |
+| 2026-03-12T12:00Z | Expanded to Samsung Galaxy S26 series |
 | 2026-03-03T12:00Z | Initial entry — agentic app actions launched via March 2026 Pixel Drop |
 
 ---
@@ -858,7 +860,7 @@ Beta available in select regions including the US.
 | URL | https://support.google.com/gemini/answer/14901455 |
 | Launched | 2026-02-26T12:00Z |
 | Verified | 2026-03-07 |
-| Checked | 2026-03-19|
+| Checked | 2026-03-21|
 
 ### Availability
 
@@ -914,16 +916,16 @@ Available where Gemini Apps are available (230+ countries on web, 150+ on mobile
 | Gating   | free |
 | URL      | https://gemini.google.com |
 | Launched | 2024-02-08T12:00Z |
-| Verified | 2026-03-07 |
-| Checked  | 2026-03-07 |
+| Verified | 2026-03-21 |
+| Checked  | 2026-03-21 |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ✅ | Standard | Gemini 2.0 Flash; rate-limited |
+| Free | ✅ | Standard | Gemini 3 Flash; rate-limited |
 | Google AI Plus | ✅ | Higher | Access to advanced models |
-| Google AI Pro | ✅ | Full | Gemini 2.5 Ultra, highest limits |
+| Google AI Pro | ✅ | Full | Gemini 3.1 Pro, highest limits |
 | Google AI Ultra | ✅ | Highest | Maximum limits, extended context |
 | Workspace add-on | ✅ | Full | Gemini in G Suite context |
 
@@ -936,7 +938,7 @@ Available where Gemini Apps are available (230+ countries on web, 150+ on mobile
 | Linux    | ❌ | No native desktop app; use web |
 | iOS      | ✅ | Gemini iOS app |
 | Android  | ✅ | Gemini Android app (default assistant) |
-| Chrome   | ❌ | |
+| Chrome   | ✅ | Gemini side panel (Jan 2026); Auto Browse for AI Pro/Ultra |
 | web      | ✅ | gemini.google.com |
 | terminal | ❌ | |
 | API      | ✅ | Google AI Studio / Gemini API |
@@ -947,16 +949,18 @@ Available in 230+ countries and territories on web; 150+ countries on mobile. Ag
 
 ### Talking Point
 
-> "Gemini's core text Q&A is **available for free** at gemini.google.com to anyone with a Google account, in 230+ countries on web and 150+ countries on mobile. Free tier uses Gemini 2.0 Flash; AI Pro and Ultra unlock Gemini 2.5 Ultra with higher limits."
+> "Gemini's core text Q&A is **available for free** at gemini.google.com to anyone with a Google account, in 230+ countries on web and 150+ countries on mobile. Free tier uses **Gemini 3 Flash**; AI Pro and Ultra unlock **Gemini 3.1 Pro** with higher limits. **Gemini side panel now available in Chrome** (Jan 2026) with Auto Browse for AI Pro/Ultra subscribers."
 
 ### Sources
 
 - [Gemini](https://gemini.google.com)
 - [Google AI Plans](https://one.google.com/intl/en/about/google-ai-plans/)
+- [Gemini in Chrome](https://blog.google/products-and-platforms/products/chrome/gemini-3-auto-browse/)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-21T12:00Z | [Verified] Chrome side panel added (Jan 2026); model names updated to Gemini 3 Flash (free) and Gemini 3.1 Pro (paid) |
 | 2026-03-07T12:00Z | Initial entry |
 | 2024-02-08T12:00Z | Gemini launched (rebranded from Bard) |
