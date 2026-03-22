@@ -24,8 +24,8 @@ build_visibility: hidden
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5/ |
 | Launched | 2024-09-19T12:00Z |
-| Verified | 2026-03-20|
-| Checked | 2026-03-20|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -77,8 +77,8 @@ No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs re
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen3/ |
 | Launched | 2025-04-28T12:00Z |
-| Verified | 2026-03-20|
-| Checked | 2026-03-20|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -132,7 +132,7 @@ No restrictions (Apache 2.0 license).
 | URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
 | Launched | 2024-09-19T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-03-20|
+| Checked | 2026-03-22|
 
 ### Availability
 
@@ -184,8 +184,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://huggingface.co/Qwen/Qwen3.5-397B-A17B |
 | Launched | 2026-02-16T12:00Z |
-| Verified | 2026-03-20|
-| Checked | 2026-03-20|
+| Verified | 2026-03-22|
+| Checked | 2026-03-22|
 
 ### Availability
 
