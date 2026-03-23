@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-23T03:43:18.512Z",
+    "generated": "2026-03-23T20:29:13.363Z",
     "version": "1.0",
     "count": 72
   },
@@ -2401,6 +2401,12 @@
           "available": true,
           "limits": "Standard",
           "notes": "Shared projects"
+        },
+        {
+          "plan": "Enterprise",
+          "available": true,
+          "limits": "Custom",
+          "notes": "SSO, admin controls"
         }
       ],
       "surfaces": [
@@ -2461,7 +2467,7 @@
       ],
       "talking_point": "Projects let you organize conversations and documents into workspaces with persistent context. **Now available on all plans including free** as of February 2026.",
       "launched": "2024-06-25T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-23",
       "evidence_id": "implementation-claude-projects",
       "evidence_verified": "2026-03-15"
     },
@@ -3479,7 +3485,7 @@
         "generate-images"
       ],
       "category": "image-gen",
-      "gating": "paid",
+      "gating": "free",
       "status": "ga",
       "plans": [
         {
@@ -3551,9 +3557,9 @@
           "notes": "No consumer API"
         }
       ],
-      "talking_point": "Image generation with Designer is **available on free Copilot** using AI credits (15–60/month depending on plan). Now powered by **GPT-Image-1.5** (upgraded from GPT-4o). Designer bot in Teams retired Feb 2026—use Copilot image generation instead.",
+      "talking_point": "Image generation with Designer is **available on all plans including free** using AI credits (15–60/month depending on plan). Now powered by **GPT-Image-1.5** (upgraded from GPT-4o). Designer bot in Teams retired Feb 2026—use Copilot image generation instead.",
       "launched": "2023-03-21T12:00Z",
-      "verified": "2026-03-21",
+      "verified": "2026-03-23",
       "evidence_id": "implementation-copilot-image-generation-designer",
       "evidence_verified": "2026-03-15"
     },
@@ -3945,7 +3951,7 @@
           "plan": "AI Pro",
           "available": true,
           "limits": "Full",
-          "notes": "Full Gemini 2.5 Pro research"
+          "notes": "Full Gemini 3.0 Pro research"
         }
       ],
       "surfaces": [
@@ -4004,9 +4010,9 @@
           "notes": "Gemini API"
         }
       ],
-      "talking_point": "Gemini's Deep Research creates comprehensive reports on complex topics. **Now available on the free tier (~5 reports/month via Gemini Flash)**; AI Pro ($19.99/mo) gets full access with Gemini 2.5 Pro for deeper research.",
+      "talking_point": "Gemini's Deep Research creates comprehensive reports on complex topics. **Now available on the free tier (~5 reports/month via Gemini Flash)**; AI Pro ($19.99/mo) gets full access with Gemini 3.0 Pro for deeper research.",
       "launched": "2024-12-11T12:00Z",
-      "verified": "2026-03-04",
+      "verified": "2026-03-23",
       "evidence_id": "implementation-gemini-deep-research",
       "evidence_verified": "2026-03-04"
     },
@@ -4127,7 +4133,7 @@
           "plan": "AI Pro",
           "available": true,
           "limits": "Full",
-          "notes": "Gemini 2.5 Pro access + 2TB storage"
+          "notes": "Gemini 3.0 Pro access + 2TB storage"
         }
       ],
       "surfaces": [
@@ -4188,7 +4194,7 @@
       ],
       "talking_point": "Gemini Advanced gives you access to Google's most capable models. **Google AI Pro ($19.99/mo)** includes Gemini Advanced plus 2TB storage. The new **Google AI Plus ($7.99/mo)** also includes Gemini Advanced access at a lower price point. Google AI Ultra ($249.99/mo) adds the highest limits and 30TB storage.",
       "launched": "2024-02-08T12:00Z",
-      "verified": "2026-03-04",
+      "verified": "2026-03-23",
       "evidence_id": "implementation-gemini-gemini-advanced",
       "evidence_verified": "2026-03-04"
     },

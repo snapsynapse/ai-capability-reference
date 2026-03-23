@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-23T03:43:18.512Z",
+    "generated": "2026-03-23T20:29:13.363Z",
     "version": "1.0"
   },
   "products": {
@@ -406,6 +406,7 @@
             "claude-connectors",
             "claude-cowork-mode",
             "claude-mcp-model-context-protocol",
+            "claude-projects",
             "claude-skills",
             "claude-memory",
             "claude-chat"
@@ -416,12 +417,14 @@
             "use-it-on-my-surfaces",
             "connect-to-external-systems",
             "do-multi-step-research",
+            "organize-work-in-projects",
+            "use-files-i-provide",
             "build-reusable-ai-workflows",
             "remember-context-over-time",
             "write-and-explain"
           ],
-          "implementation_count": 7,
-          "capability_count": 8
+          "implementation_count": 8,
+          "capability_count": 10
         }
       }
     },
