@@ -122,7 +122,7 @@ No restrictions (Apache 2.0 license).
 
 ---
 
-## Qwen-Coder
+## Qwen 2.5 Coder (Alibaba)
 
 | Property | Value |
 |----------|-------|
@@ -131,8 +131,8 @@ No restrictions (Apache 2.0 license).
 | Gating | free |
 | URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
 | Launched | 2024-09-19T12:00Z |
-| Verified | 2026-03-20|
-| Checked | 2026-03-22|
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -160,18 +160,71 @@ No restrictions - runs locally.
 
 ### Talking Point
 
-> "Qwen-Coder is **optimized specifically for coding tasks**. The 7B version runs locally and rivals much larger models for code generation and completion."
+> "Qwen 2.5 Coder is **optimized specifically for coding tasks**. The 7B version runs locally and rivals much larger models for code generation and completion. See also Qwen3-Coder-Next for the latest generation."
 
 ### Sources
 
-- [Qwen-Coder](https://qwenlm.github.io/blog/qwen2.5-coder/)
-- [Ollama Qwen-Coder](https://ollama.com/library/qwen2.5-coder)
+- [Qwen 2.5 Coder](https://qwenlm.github.io/blog/qwen2.5-coder/)
+- [Ollama Qwen 2.5 Coder](https://ollama.com/library/qwen2.5-coder)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-03-23T12:00Z | [Verified] Renamed from "Qwen-Coder" to "Qwen 2.5 Coder (Alibaba)" to distinguish from newer Qwen3-Coder-Next |
 | 2024-09-19T12:00Z | Initial entry |
+
+---
+
+## Qwen3-Coder-Next (Alibaba)
+
+| Property | Value |
+|----------|-------|
+| Category | coding |
+| Status | ga |
+| Gating | free |
+| URL | https://huggingface.co/Qwen/Qwen3-Coder-Next |
+| Launched | 2026-02-03T12:00Z |
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
+
+### Availability
+
+| Plan | Available | Limits | Notes |
+|------|-----------|--------|-------|
+| Self-hosted | ✅ | Your hardware | MoE: 80B total, 3B active — runs on consumer GPUs |
+
+### Platforms
+
+| Platform | Available | Notes |
+|----------|-----------|-------|
+| Windows | ✅ | Via Ollama, LM Studio |
+| macOS | ✅ | Via Ollama, LM Studio |
+| Linux | ✅ | Native support |
+| iOS | ❌ | Not practical |
+| Android | ❌ | Not practical |
+| Chrome | ❌ |  |
+| web | ❌ | Local only |
+| terminal | ✅ | Ollama CLI |
+| API | ✅ | Ollama REST API |
+
+### Regional
+
+No restrictions - runs locally. Note: Alibaba Cloud also offers cloud-hosted Coding Plans for managed access.
+
+### Talking Point
+
+> "Qwen3-Coder-Next is Alibaba's latest coding model — **MoE architecture with 80B total params but only 3B active**, so it runs on consumer hardware (RTX 5090, 64GB Mac). **256K context**, Apache 2.0 licensed, designed for agentic coding workflows. SWE-Bench Pro score of 44.3%."
+
+### Sources
+
+- [Qwen3-Coder-Next on HuggingFace](https://huggingface.co/Qwen/Qwen3-Coder-Next)
+
+### Changelog
+
+| Date | Change |
+|------|--------|
+| 2026-03-23T12:00Z | Initial entry — new model tracked per issue #400 verification |
 
 ---
 

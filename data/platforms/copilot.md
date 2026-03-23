@@ -198,7 +198,7 @@ Available globally.
 | URL | https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -358,11 +358,11 @@ Available globally.
 |----------|-------|
 | Category | image-gen |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://designer.microsoft.com/ |
 | Launched | 2023-03-21T12:00Z |
-| Verified | 2026-03-21|
-| Checked | 2026-03-22|
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -391,7 +391,7 @@ Available globally.
 
 ### Talking Point
 
-> "Image generation with Designer is **available on free Copilot** using AI credits (15–60/month depending on plan). Now powered by **GPT-Image-1.5** (upgraded from GPT-4o). Designer bot in Teams retired Feb 2026—use Copilot image generation instead."
+> "Image generation with Designer is **available on all plans including free** using AI credits (15–60/month depending on plan). Now powered by **GPT-Image-1.5** (upgraded from GPT-4o). Designer bot in Teams retired Feb 2026—use Copilot image generation instead."
 
 ### Sources
 
@@ -402,6 +402,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-03-23T12:00Z | [Verified] Gating corrected from paid to free — free users have access with 15 AI credits/mo; data was internally inconsistent |
 | 2026-03-21T12:00Z | [Verified] Credits system replaced boosts (15-60 credits/month); Designer bot retired in Teams (Feb 27); model upgraded to GPT-Image-1.5 |
 | 2023-03-21T12:00Z | Initial entry |
 

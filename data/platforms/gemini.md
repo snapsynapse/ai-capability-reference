@@ -29,7 +29,7 @@ last_verified: 2026-03-21
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -139,7 +139,7 @@ Available globally; initially English only, now 50+ languages.
 | URL | https://gemini.google/overview/canvas/ |
 | Launched | 2025-03-18T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -192,15 +192,15 @@ Available globally where Gemini is available.
 | Gating | free |
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
-| Verified | 2026-03-04|
-| Checked | 2026-03-22|
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ⚠️ | ~5/month | Gemini Flash model only |
-| AI Pro | ✅ | Full | Full Gemini 2.5 Pro research |
+| AI Pro | ✅ | Full | Full Gemini 3.0 Pro research |
 
 ### Platforms
 
@@ -222,7 +222,7 @@ Available globally where Gemini Advanced is available.
 
 ### Talking Point
 
-> "Gemini's Deep Research creates comprehensive reports on complex topics. **Now available on the free tier (~5 reports/month via Gemini Flash)**; AI Pro ($19.99/mo) gets full access with Gemini 2.5 Pro for deeper research."
+> "Gemini's Deep Research creates comprehensive reports on complex topics. **Now available on the free tier (~5 reports/month via Gemini Flash)**; AI Pro ($19.99/mo) gets full access with Gemini 3.0 Pro for deeper research."
 
 ### Sources
 
@@ -232,6 +232,7 @@ Available globally where Gemini Advanced is available.
 
 | Date | Change |
 |------|--------|
+| 2026-03-23T12:00Z | [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro for AI Pro tier |
 | 2026-03-04T12:00Z | [Verified] Gating changed from paid to free; free tier now gets ~5 reports/month via Gemini Flash |
 | 2024-12-11T12:00Z | Initial entry |
 
@@ -247,7 +248,7 @@ Available globally where Gemini Advanced is available.
 | URL | https://gemini.google.com/extensions |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -303,8 +304,8 @@ Available globally where Gemini is available.
 | Gating | paid |
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
-| Verified | 2026-03-04|
-| Checked | 2026-03-22|
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -312,7 +313,7 @@ Available globally where Gemini is available.
 |------|-----------|--------|-------|
 | Free | ❌ | — | Standard Gemini only |
 | AI Plus | ✅ | Standard | Gemini Advanced access |
-| AI Pro | ✅ | Full | Gemini 2.5 Pro access + 2TB storage |
+| AI Pro | ✅ | Full | Gemini 3.0 Pro access + 2TB storage |
 
 ### Platforms
 
@@ -344,6 +345,7 @@ Available in most countries; some features limited in EU.
 
 | Date | Change |
 |------|--------|
+| 2026-03-23T12:00Z | [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro |
 | 2026-03-04T12:00Z | [Verified] Google One AI Premium renamed to Google AI Pro ($19.99/mo); Google AI Plus ($7.99/mo) and AI Ultra ($249.99/mo) added; AI Plus also includes Gemini Advanced |
 | 2024-02-08T12:00Z | Initial entry |
 
@@ -359,7 +361,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -417,7 +419,7 @@ Docs, Sheets, Slides features available globally in English. Drive AI features (
 | URL | https://blog.google/products/gemini/gemini-live-audio-updates/ |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -470,7 +472,7 @@ Available in supported regions.
 | URL | https://blog.google/products-and-platforms/products/gemini/google-gemini-update-august-2024/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -524,7 +526,7 @@ Available globally.
 | URL | https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -577,7 +579,7 @@ Limited in some regions due to content policies.
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 

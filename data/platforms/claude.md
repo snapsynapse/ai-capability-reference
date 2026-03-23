@@ -209,7 +209,7 @@ Available globally where Claude is available.
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -382,8 +382,8 @@ Available globally where Claude is available.
 | Gating | free |
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
-| Verified | 2026-03-20|
-| Checked | 2026-03-22|
+| Verified | 2026-03-23|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -394,6 +394,7 @@ Available globally where Claude is available.
 | Max 5x | ✅ | Extended | Higher limits |
 | Max 20x | ✅ | Extended | Higher limits |
 | Team | ✅ | Standard | Shared projects |
+| Enterprise | ✅ | Custom | SSO, admin controls |
 
 ### Platforms
 
@@ -425,6 +426,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-03-23T12:00Z | [Verified] Added missing Enterprise row to availability table (SSO, admin controls, custom limits) |
 | 2026-02-28T12:00Z | [Verified] Free tier access added as part of Anthropic's February 2026 free tier expansion; gating changed from paid to free |
 | 2024-06-25T12:00Z | Initial entry |
 
@@ -440,7 +442,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -562,7 +564,7 @@ Available globally.
 | URL | https://support.anthropic.com/en/articles/10166267-how-does-memory-work |
 | Launched | 2025-10-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-22|
+| Checked | 2026-03-23|
 
 ### Availability
 
@@ -623,7 +625,7 @@ Available globally where Claude is available. May be off by default in some regi
 | URL      | https://claude.ai |
 | Launched | 2023-07-11T12:00Z |
 | Verified | 2026-03-20|
-| Checked  | 2026-03-07 |
+| Checked  | 2026-03-23 |
 
 ### Availability
 
