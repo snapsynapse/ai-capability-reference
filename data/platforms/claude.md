@@ -30,7 +30,7 @@ last_verified: 2026-03-21
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
@@ -86,7 +86,7 @@ Available globally.
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
@@ -146,7 +146,7 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
@@ -268,7 +268,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
@@ -325,7 +325,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
@@ -508,7 +508,7 @@ Available globally where Claude is available.
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-03-22|
+| Checked | 2026-03-24|
 
 ### Availability
 
