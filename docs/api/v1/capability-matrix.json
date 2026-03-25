@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-23T20:35:56.816Z",
+    "generated": "2026-03-25T20:16:15.765Z",
     "version": "1.0"
   },
   "capabilities": [
@@ -115,7 +115,7 @@
         "implementations": [
           "perplexity-collections-spaces"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       }
     },
     "see-images-and-screens": {
@@ -452,7 +452,7 @@
         "implementations": [
           "perplexity-collections-spaces"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       }
     },
     "remember-context-over-time": {
@@ -534,7 +534,7 @@
           "perplexity-agent-mode-agentic-actions",
           "perplexity-collections-spaces"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       }
     },
     "do-multi-step-research": {
@@ -625,7 +625,7 @@
           "perplexity-focus-modes",
           "perplexity-pro-search"
         ],
-        "best_gating": "paid"
+        "best_gating": "free"
       }
     },
     "take-actions-and-run-tools": {

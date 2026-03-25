@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-03-23T20:35:56.816Z",
+    "generated": "2026-03-25T20:16:15.765Z",
     "version": "1.0",
     "count": 72
   },
@@ -5335,7 +5335,7 @@
       ],
       "talking_point": "DeepSearch is Grok's multi-step research mode. **Premium+ or SuperGrok recommended** for full access; basic Premium has limited DeepSearch.",
       "launched": "2025-02-17T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-deepsearch",
       "evidence_verified": "2026-02-28"
     },
@@ -5437,7 +5437,7 @@
       ],
       "talking_point": "Grok is xAI's chatbot, available through X (Twitter) or via grok.com. **No official desktop apps exist**—access is via web, iOS, or Android. **Free users get very limited access; Premium ($8/mo) unlocks regular use.** SuperGrok at $30/mo gets you the highest limits.",
       "launched": "2023-11-04T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-chat",
       "evidence_verified": "2026-02-28"
     },
@@ -5538,7 +5538,7 @@
       ],
       "talking_point": "Grok can generate images using Aurora. **Free users get ~10 generations per 2-hour window**; paid tiers unlock higher daily limits. SuperGrok gets the most generations per day.",
       "launched": "2024-12-09T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-image-generation-aurora",
       "evidence_verified": "2026-02-28"
     },
@@ -5639,7 +5639,7 @@
       ],
       "talking_point": "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Free users get very limited access (~3/day at 480p)**; paid tiers unlock higher limits (up to 500/day on SuperGrok). Supports text-to-video and image-to-video. 'Spicy Mode' requires paid subscription.",
       "launched": "2025-08-04T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-imagine-video-generation",
       "evidence_verified": "2026-02-28"
     },
@@ -6043,7 +6043,7 @@
       ],
       "talking_point": "Think Mode lets Grok reason through complex problems step-by-step. **Available on all paid tiers**, with SuperGrok getting the longest thinking time.",
       "launched": "2025-02-17T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-think-mode",
       "evidence_verified": "2026-03-01"
     },
@@ -6245,7 +6245,7 @@
       ],
       "talking_point": "Grok 2 understands images—upload photos, screenshots, or diagrams and Grok will analyze them. **Requires a paid plan (Premium $8/mo or higher)**. Available on web and mobile.",
       "launched": "2024-08-13T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-vision-image-understanding",
       "evidence_verified": "2026-03-07"
     },
@@ -6462,7 +6462,7 @@
         "read-text-and-documents"
       ],
       "category": "local-files",
-      "gating": "paid",
+      "gating": "free",
       "status": "ga",
       "plans": [
         {
@@ -6542,7 +6542,7 @@
       ],
       "talking_point": "Collections let you organize research into projects. **Available on all plans**, with more features on Pro.",
       "launched": "2024-10-17T12:00Z",
-      "verified": "2026-02-07",
+      "verified": "2026-03-25",
       "evidence_id": "implementation-perplexity-collections-spaces",
       "evidence_verified": "2026-02-07"
     },
@@ -6558,7 +6558,7 @@
         "take-actions-and-run-tools"
       ],
       "category": "browser",
-      "gating": "paid",
+      "gating": "free",
       "status": "ga",
       "plans": [
         {
@@ -6644,7 +6644,7 @@
       ],
       "talking_point": "Perplexity's Comet browser is **free for all users**—available on Mac, Windows, Linux, Android, and now iPhone. **Comet Enterprise** (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security.",
       "launched": "2025-07-09T12:00Z",
-      "verified": "2026-03-19",
+      "verified": "2026-03-25",
       "evidence_id": "implementation-perplexity-comet-browser",
       "evidence_verified": "2026-02-07"
     },
@@ -6760,7 +6760,7 @@
         "search-the-web"
       ],
       "category": "search",
-      "gating": "paid",
+      "gating": "free",
       "status": "ga",
       "plans": [
         {
@@ -6840,7 +6840,7 @@
       ],
       "talking_point": "Focus modes let you search specific sources—Academic, YouTube, Reddit, etc. **Available on all plans including free.**",
       "launched": "2024-01-01T12:00Z",
-      "verified": "2026-01-29",
+      "verified": "2026-03-25",
       "evidence_id": "implementation-perplexity-focus-modes",
       "evidence_verified": "2026-01-29"
     },
