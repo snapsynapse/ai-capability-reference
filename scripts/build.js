@@ -3637,7 +3637,305 @@ function generateBridgePages(ontologyData) {
 /**
  * Generate sitemap.xml including all bridge pages.
  */
+/**
+ * Generate robots.txt with references to sitemap, llms.txt, agents.json, and feed.
+ */
+function generateRobotsTxt() {
+    return `# ${DASHBOARD_TITLE} - ${SITE_URL}
+# The JSON API at /api/v1/ is intended for machine consumption.
+# Please cache responses and avoid polling more than once per hour.
+
+User-agent: *
+Allow: /
+
+# Crawl-delay is advisory; we ask that automated consumers
+# space requests by at least 1 second.
+Crawl-delay: 1
+
+Sitemap: ${SITE_URL}sitemap.xml
+# LLM-readable site summary
+# ${SITE_URL}llms.txt
+# Agent capability manifest
+# ${SITE_URL}agents.json
+# RSS feed of recent changes
+# ${SITE_URL}index.xml
+`;
+}
+
+/**
+ * Generate llms.txt following the llms.txt spec (H1, blockquote, details, H2 link lists).
+ * Dynamic counts from ontologyData keep it current with each build.
+ */
+function generateLlmsTxt(ontologyData) {
+    const capCount = ontologyData.capabilities.length;
+    const implCount = ontologyData.implementations.filter(i => i.source).length;
+    const prodCount = ontologyData.products.filter(p => p.product_kind !== 'runtime').length;
+    const providerCount = ontologyData.providers.length;
+    const modelCount = (ontologyData.model_access || []).length;
+
+    return `# ${DASHBOARD_TITLE}
+
+> What can this AI actually do?
+
+A plain-English reference for AI capabilities, plans, constraints, and implementations across major subscription AI products (ChatGPT, Claude, Gemini, Copilot, Grok, Perplexity) and open models.
+
+Maintained by SnapSynapse. Updated weekly via multi-model verification cascade.
+
+## What this site covers
+
+- ${capCount} capabilities (e.g., Search the Web, Generate Images, Write and Edit Code)
+- ${implCount} implementations across ${prodCount} subscription AI products
+- ${modelCount} open-model access records (Llama, Qwen, DeepSeek, Mistral, Codestral)
+- Plan-level availability (which subscription tier unlocks what)
+- Surface availability (web, desktop, mobile, terminal, API)
+- Gating (free, paid, limited)
+- Evidence with sources and changelog for every claim
+
+## Machine-readable API
+
+Stable JSON exports at: ${SITE_URL}api/v1/
+
+Start with the index: ${SITE_URL}api/v1/index.json
+
+### Available files
+
+- [capabilities.json](${SITE_URL}api/v1/capabilities.json): All capabilities with search terms, definitions, and cross-links
+- [products.json](${SITE_URL}api/v1/products.json): All products with provider links and implementation lists
+- [implementations.json](${SITE_URL}api/v1/implementations.json): All implementations with capability mappings and evidence
+- [providers.json](${SITE_URL}api/v1/providers.json): All providers with product lists
+- [model-access.json](${SITE_URL}api/v1/model-access.json): Model access records with deployment and constraint details
+- [evidence.json](${SITE_URL}api/v1/evidence.json): Evidence records with sources and changelog
+- [capability-matrix.json](${SITE_URL}api/v1/capability-matrix.json): Capability x product availability grid
+- [product-comparisons.json](${SITE_URL}api/v1/product-comparisons.json): Pairwise product capability overlap
+- [plan-entitlements.json](${SITE_URL}api/v1/plan-entitlements.json): What each plan tier unlocks per product
+
+### Data contract
+
+- IDs are stable and safe to use as foreign keys
+- Every record includes \`verified\` and \`checked\` dates for freshness
+- File paths under /api/v1/ are stable within the version
+- New fields may be added; existing fields will not be removed within v1
+
+### Usage guidance
+
+- Always include the \`verified\` date when citing data — the AI landscape changes weekly
+- Respect gating and constraints — "available" does not mean "available to everyone"
+- Don't strip caveats from talking points — they contain important context about restrictions
+- Cache for up to 24 hours; don't poll more than once per hour
+- Attribution appreciated: "Data from AI Capability Reference (${SITE_URL}) by SnapSynapse"
+
+## Agent access
+
+- [agents.json](${SITE_URL}agents.json): Agent capability manifest describing API endpoints and MCP tools
+- [MCP server](${REPO_URL}/blob/main/scripts/mcp-server.js): 15 read-only tools over stdio JSON-RPC
+- [RSS feed](${SITE_URL}index.xml): Recent feature changes as RSS 2.0
+
+## Site pages
+
+- [Capabilities](${SITE_URL}): Capability-first homepage (what can AI do?)
+- [Products](${SITE_URL}implementations.html): Product-first detailed availability
+- [Compare](${SITE_URL}compare.html): Side-by-side product comparison
+- [Limits](${SITE_URL}constraints.html): Access tiers, surfaces, and limits
+- [Timeline](${SITE_URL}timeline.html): Chronological view of feature launches and changes
+- [About](${SITE_URL}about.html): About the project
+- [Pattern](${SITE_URL}pattern.html): Knowledge as Code: the development pattern behind this project
+
+## Bridge pages (programmatic)
+
+### Capability checks: /can/{product}/{capability}/
+Answers "Can {product} {capability}?" with plan tables, constraints, and evidence.
+Example: ${SITE_URL}can/chatgpt/search-the-web/
+
+### Product comparisons: /compare/{product-a}-vs-{product-b}/
+Side-by-side capability overlap between two products.
+Example: ${SITE_URL}compare/chatgpt-vs-claude/
+
+### Capability landings: /capability/{slug}/
+All implementations of a capability across products.
+Example: ${SITE_URL}capability/search-the-web/
+
+### Use-case pages: /best-for/{use-case}/
+Product coverage grid for a use-case category.
+Example: ${SITE_URL}best-for/creative-work/
+
+## Source
+
+- [Repository](${REPO_URL}): GitHub
+- License: MIT
+- [Contact](${REPO_ISSUES_URL}): GitHub Issues
+`;
+}
+
+/**
+ * Generate agents.json — an agent capability manifest describing
+ * the reference's queryable endpoints and MCP tools.
+ */
+function generateAgentsJson(ontologyData) {
+    const timestamp = new Date().toISOString();
+    const capCount = ontologyData.capabilities.length;
+    const implCount = ontologyData.implementations.filter(i => i.source).length;
+    const prodCount = ontologyData.products.filter(p => p.product_kind !== 'runtime').length;
+
+    const manifest = {
+        schema_version: '1.0',
+        name: 'ai-capability-reference',
+        display_name: DASHBOARD_TITLE,
+        description: `A structured, version-controlled reference tracking ${capCount} AI capabilities across ${prodCount} products with ${implCount} implementations. Updated weekly via multi-model verification cascade.`,
+        url: SITE_URL,
+        repository: REPO_URL,
+        license: 'MIT',
+        maintainer: 'SnapSynapse',
+        generated: timestamp,
+        capabilities: {
+            read: true,
+            write: false,
+            search: true,
+            compare: true,
+            description: 'Read-only access to AI capability, product, and implementation data with search and comparison support.'
+        },
+        data_freshness: {
+            update_frequency: 'weekly',
+            verification_method: 'Multi-model cascade (Gemini, Perplexity, Grok, Claude)',
+            freshness_fields: ['verified', 'checked', 'launched'],
+            cache_ttl_hours: 24
+        },
+        api: {
+            base_url: `${SITE_URL}api/v1/`,
+            format: 'JSON',
+            authentication: 'none',
+            rate_limit: 'advisory: 1 request per second',
+            stability: 'Paths and field names are stable within v1. New fields may be added.',
+            endpoints: [
+                { path: 'index.json', description: 'API manifest with all available file paths and counts' },
+                { path: 'capabilities.json', description: 'All capabilities with search terms, definitions, and cross-links' },
+                { path: 'products.json', description: 'All products with provider links and implementation lists' },
+                { path: 'implementations.json', description: 'All implementations with plan/surface availability and evidence' },
+                { path: 'providers.json', description: 'All providers with logos, websites, and product lists' },
+                { path: 'model-access.json', description: 'Open-model records with deployment modes and constraints' },
+                { path: 'evidence.json', description: 'Evidence records with sources, changelog, and verification dates' },
+                { path: 'capability-matrix.json', description: 'Capability x product availability grid with best-gating per cell' },
+                { path: 'product-comparisons.json', description: 'Pairwise product capability overlap for all hosted product pairs' },
+                { path: 'plan-entitlements.json', description: 'Per-product breakdown of what each subscription plan unlocks' }
+            ]
+        },
+        mcp: {
+            transport: 'stdio',
+            server_script: 'scripts/mcp-server.js',
+            tools_count: 15,
+            description: 'Read-only MCP server with 15 tools for querying capabilities, products, implementations, and evidence.',
+            tools: [
+                { name: 'list_capabilities', description: 'List all capabilities with IDs, names, and groups' },
+                { name: 'get_capability', description: 'Full details for a capability by ID' },
+                { name: 'list_products', description: 'List products, optionally filter by kind (hosted/runtime)' },
+                { name: 'get_product', description: 'Full details for a product including plan names' },
+                { name: 'compare_products', description: 'Pairwise capability overlap between two products' },
+                { name: 'check_availability', description: 'Whether a product implements a capability, with gating and plan details' },
+                { name: 'search', description: 'Keyword search across capabilities, products, implementations, and models' },
+                { name: 'get_plan', description: 'Capabilities and implementations included in a specific product plan' },
+                { name: 'list_providers', description: 'All providers with websites, status pages, and product lists' },
+                { name: 'get_provider', description: 'Full details for a provider by ID' },
+                { name: 'find_products_by_capabilities', description: 'Find products supporting ALL specified capabilities' },
+                { name: 'get_evidence', description: 'Verification sources, changelog, and freshness dates for an implementation' },
+                { name: 'list_model_access', description: 'All open/self-hostable models with deployment modes' },
+                { name: 'get_model_access', description: 'Full details for an open model by ID' },
+                { name: 'get_staleness_report', description: 'Evidence records whose verified date exceeds a threshold' }
+            ]
+        },
+        discovery: {
+            llms_txt: `${SITE_URL}llms.txt`,
+            robots_txt: `${SITE_URL}robots.txt`,
+            sitemap: `${SITE_URL}sitemap.xml`,
+            rss_feed: `${SITE_URL}index.xml`,
+            agents_json: `${SITE_URL}agents.json`
+        }
+    };
+
+    return JSON.stringify(manifest, null, 2) + '\n';
+}
+
+/**
+ * Generate RSS 2.0 feed (index.xml) from recent changelog entries.
+ * Collects the same data as the timeline page, limited to the 50 most recent entries.
+ */
+function generateFeedXml(platforms) {
+    const hostedPlatforms = platforms.filter(isPublicPlatform);
+    const events = [];
+
+    for (const platform of hostedPlatforms) {
+        for (const feature of platform.features) {
+            const featureId = featureCardId(platform.name, feature.name);
+            const launchedDate = formatDateForDisplay(feature.launched);
+
+            if (launchedDate) {
+                events.push({
+                    date: launchedDate,
+                    product: platform.name,
+                    feature: feature.name,
+                    event: `${feature.name} launched`,
+                    featureId
+                });
+            }
+
+            for (const entry of (feature.changelog || [])) {
+                const entryDate = formatDateForDisplay(entry.date);
+                if (!entryDate) continue;
+                if (entryDate === launchedDate && /launch/i.test(entry.change || '')) continue;
+                events.push({
+                    date: entryDate,
+                    product: platform.name,
+                    feature: feature.name,
+                    event: entry.change || `${feature.name} updated`,
+                    featureId
+                });
+            }
+        }
+    }
+
+    events.sort((a, b) => b.date.localeCompare(a.date));
+    const recent = events.slice(0, 50);
+    const lastBuildDate = new Date().toUTCString();
+
+    let xml = `<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+    <title>${escapeXml(DASHBOARD_TITLE)}</title>
+    <link>${SITE_URL}</link>
+    <description>Recent AI feature launches and changes across ChatGPT, Claude, Gemini, Copilot, Grok, and Perplexity.</description>
+    <language>en-us</language>
+    <lastBuildDate>${lastBuildDate}</lastBuildDate>
+    <atom:link href="${SITE_URL}index.xml" rel="self" type="application/rss+xml"/>
+`;
+
+    for (const ev of recent) {
+        const link = `${SITE_URL}implementations.html#impl-${ev.featureId}`;
+        const pubDate = new Date(ev.date + 'T12:00:00Z').toUTCString();
+        xml += `    <item>
+        <title>${escapeXml(ev.product)} — ${escapeXml(ev.event)}</title>
+        <link>${link}</link>
+        <guid isPermaLink="true">${link}?d=${ev.date}</guid>
+        <pubDate>${pubDate}</pubDate>
+        <description>${escapeXml(ev.product)}: ${escapeXml(ev.event)}</description>
+    </item>
+`;
+    }
+
+    xml += `</channel>
+</rss>
+`;
+    return xml;
+}
+
+function escapeXml(str) {
+    return String(str || '')
+        .replace(/&/g, '&amp;')
+        .replace(/</g, '&lt;')
+        .replace(/>/g, '&gt;')
+        .replace(/"/g, '&quot;')
+        .replace(/'/g, '&apos;');
+}
+
 function generateSitemap(bridgePagePaths) {
+    const lastmod = new Date().toISOString().split('T')[0];
     const staticPages = [
         { path: '', changefreq: 'weekly', priority: '1.0' },
         { path: 'implementations.html', changefreq: 'weekly', priority: '0.9' },
@@ -3652,7 +3950,7 @@ function generateSitemap(bridgePagePaths) {
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
 
     for (const page of staticPages) {
-        xml += `  <url>\n    <loc>${SITE_URL}${page.path}</loc>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>\n`;
+        xml += `  <url>\n    <loc>${SITE_URL}${page.path}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>\n`;
     }
 
     // Bridge pages — grouped by type for priority
@@ -3663,7 +3961,7 @@ function generateSitemap(bridgePagePaths) {
         else if (urlPath.startsWith('capability/')) priority = '0.7';
         else if (urlPath.startsWith('can/')) priority = '0.6';
         else if (urlPath.startsWith('best-for/')) priority = '0.7';
-        xml += `  <url>\n    <loc>${SITE_URL}${urlPath}</loc>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
+        xml += `  <url>\n    <loc>${SITE_URL}${urlPath}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
     }
 
     xml += `</urlset>\n`;
@@ -3783,6 +4081,23 @@ function main() {
     const sitemapXml = generateSitemap(Object.keys(bridgePages));
     fs.writeFileSync(path.join(outputDir, 'sitemap.xml'), sitemapXml);
     console.log(`✅ Sitemap written with ${6 + bridgeCount} URLs`);
+
+    // Generate machine-readable discovery files
+    const robotsTxt = generateRobotsTxt();
+    fs.writeFileSync(path.join(outputDir, 'robots.txt'), robotsTxt);
+    console.log(`✅ robots.txt written`);
+
+    const llmsTxt = generateLlmsTxt(ontologyData);
+    fs.writeFileSync(path.join(outputDir, 'llms.txt'), llmsTxt);
+    console.log(`✅ llms.txt written (${(llmsTxt.length / 1024).toFixed(1)} KB)`);
+
+    const agentsJson = generateAgentsJson(ontologyData);
+    fs.writeFileSync(path.join(outputDir, 'agents.json'), agentsJson);
+    console.log(`✅ agents.json written (${(agentsJson.length / 1024).toFixed(1)} KB)`);
+
+    const feedXml = generateFeedXml(platforms);
+    fs.writeFileSync(path.join(outputDir, 'index.xml'), feedXml);
+    console.log(`✅ index.xml (RSS feed) written (${(feedXml.length / 1024).toFixed(1)} KB)`);
 }
 
 main();
