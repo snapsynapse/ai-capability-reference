@@ -1,10 +1,10 @@
-# AI Capability Reference
+# AI Tool Watch
 
 > What can this AI actually do?
 
 A plain-English reference for AI capabilities, plans, constraints, and implementations across major subscription AI products (ChatGPT, Claude, Gemini, Copilot, Grok, Perplexity) and open models.
 
-Maintained by SnapSynapse. Updated weekly via multi-model verification cascade.
+Maintained by PAICE.work. Updated weekly via multi-model verification cascade.
 
 ## What this site covers
 
@@ -18,21 +18,21 @@ Maintained by SnapSynapse. Updated weekly via multi-model verification cascade.
 
 ## Machine-readable API
 
-Stable JSON exports at: https://airef.snapsynapse.com/api/v1/
+Stable JSON exports at: https://aitool.watch/api/v1/
 
-Start with the index: https://airef.snapsynapse.com/api/v1/index.json
+Start with the index: https://aitool.watch/api/v1/index.json
 
 ### Available files
 
-- [capabilities.json](https://airef.snapsynapse.com/api/v1/capabilities.json): All capabilities with search terms, definitions, and cross-links
-- [products.json](https://airef.snapsynapse.com/api/v1/products.json): All products with provider links and implementation lists
-- [implementations.json](https://airef.snapsynapse.com/api/v1/implementations.json): All implementations with capability mappings and evidence
-- [providers.json](https://airef.snapsynapse.com/api/v1/providers.json): All providers with product lists
-- [model-access.json](https://airef.snapsynapse.com/api/v1/model-access.json): Model access records with deployment and constraint details
-- [evidence.json](https://airef.snapsynapse.com/api/v1/evidence.json): Evidence records with sources and changelog
-- [capability-matrix.json](https://airef.snapsynapse.com/api/v1/capability-matrix.json): Capability x product availability grid
-- [product-comparisons.json](https://airef.snapsynapse.com/api/v1/product-comparisons.json): Pairwise product capability overlap
-- [plan-entitlements.json](https://airef.snapsynapse.com/api/v1/plan-entitlements.json): What each plan tier unlocks per product
+- [capabilities.json](https://aitool.watch/api/v1/capabilities.json): All capabilities with search terms, definitions, and cross-links
+- [products.json](https://aitool.watch/api/v1/products.json): All products with provider links and implementation lists
+- [implementations.json](https://aitool.watch/api/v1/implementations.json): All implementations with capability mappings and evidence
+- [providers.json](https://aitool.watch/api/v1/providers.json): All providers with product lists
+- [model-access.json](https://aitool.watch/api/v1/model-access.json): Model access records with deployment and constraint details
+- [evidence.json](https://aitool.watch/api/v1/evidence.json): Evidence records with sources and changelog
+- [capability-matrix.json](https://aitool.watch/api/v1/capability-matrix.json): Capability x product availability grid
+- [product-comparisons.json](https://aitool.watch/api/v1/product-comparisons.json): Pairwise product capability overlap
+- [plan-entitlements.json](https://aitool.watch/api/v1/plan-entitlements.json): What each plan tier unlocks per product
 
 ### Data contract
 
@@ -47,41 +47,41 @@ Start with the index: https://airef.snapsynapse.com/api/v1/index.json
 - Respect gating and constraints — "available" does not mean "available to everyone"
 - Don't strip caveats from talking points — they contain important context about restrictions
 - Cache for up to 24 hours; don't poll more than once per hour
-- Attribution appreciated: "Data from AI Capability Reference (https://airef.snapsynapse.com/) by SnapSynapse"
+- Attribution appreciated: "Data from AI Tool Watch (https://aitool.watch/) by PAICE.work"
 
 ## Agent access
 
-- [agents.json](https://airef.snapsynapse.com/agents.json): Agent capability manifest describing API endpoints and MCP tools
+- [agents.json](https://aitool.watch/agents.json): Agent capability manifest describing API endpoints and MCP tools
 - [MCP server](https://github.com/snapsynapse/ai-capability-reference/blob/main/scripts/mcp-server.js): 15 read-only tools over stdio JSON-RPC
-- [RSS feed](https://airef.snapsynapse.com/index.xml): Recent feature changes as RSS 2.0
+- [RSS feed](https://aitool.watch/index.xml): Recent feature changes as RSS 2.0
 
 ## Site pages
 
-- [Capabilities](https://airef.snapsynapse.com/): Capability-first homepage (what can AI do?)
-- [Products](https://airef.snapsynapse.com/implementations.html): Product-first detailed availability
-- [Compare](https://airef.snapsynapse.com/compare.html): Side-by-side product comparison
-- [Limits](https://airef.snapsynapse.com/constraints.html): Access tiers, surfaces, and limits
-- [Timeline](https://airef.snapsynapse.com/timeline.html): Chronological view of feature launches and changes
-- [About](https://airef.snapsynapse.com/about.html): About the project
-- [Pattern](https://airef.snapsynapse.com/pattern.html): Knowledge as Code: the development pattern behind this project
+- [Capabilities](https://aitool.watch/): Capability-first homepage (what can AI do?)
+- [Products](https://aitool.watch/implementations.html): Product-first detailed availability
+- [Compare](https://aitool.watch/compare.html): Side-by-side product comparison
+- [Limits](https://aitool.watch/constraints.html): Access tiers, surfaces, and limits
+- [Timeline](https://aitool.watch/timeline.html): Chronological view of feature launches and changes
+- [About](https://aitool.watch/about.html): About the project
+- [Pattern](https://aitool.watch/pattern.html): Knowledge as Code: the development pattern behind this project
 
 ## Bridge pages (programmatic)
 
 ### Capability checks: /can/{product}/{capability}/
 Answers "Can {product} {capability}?" with plan tables, constraints, and evidence.
-Example: https://airef.snapsynapse.com/can/chatgpt/search-the-web/
+Example: https://aitool.watch/can/chatgpt/search-the-web/
 
 ### Product comparisons: /compare/{product-a}-vs-{product-b}/
 Side-by-side capability overlap between two products.
-Example: https://airef.snapsynapse.com/compare/chatgpt-vs-claude/
+Example: https://aitool.watch/compare/chatgpt-vs-claude/
 
 ### Capability landings: /capability/{slug}/
 All implementations of a capability across products.
-Example: https://airef.snapsynapse.com/capability/search-the-web/
+Example: https://aitool.watch/capability/search-the-web/
 
 ### Use-case pages: /best-for/{use-case}/
 Product coverage grid for a use-case category.
-Example: https://airef.snapsynapse.com/best-for/creative-work/
+Example: https://aitool.watch/best-for/creative-work/
 
 ## Source
 

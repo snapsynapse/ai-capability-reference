@@ -1,4 +1,4 @@
-# AI Capability Reference - https://airef.snapsynapse.com/
+# AI Tool Watch - https://aitool.watch/
 # The JSON API at /api/v1/ is intended for machine consumption.
 # Please cache responses and avoid polling more than once per hour.
 
@@ -9,10 +9,10 @@ Allow: /
 # space requests by at least 1 second.
 Crawl-delay: 1
 
-Sitemap: https://airef.snapsynapse.com/sitemap.xml
+Sitemap: https://aitool.watch/sitemap.xml
 # LLM-readable site summary
-# https://airef.snapsynapse.com/llms.txt
+# https://aitool.watch/llms.txt
 # Agent capability manifest
-# https://airef.snapsynapse.com/agents.json
+# https://aitool.watch/agents.json
 # RSS feed of recent changes
-# https://airef.snapsynapse.com/index.xml
+# https://aitool.watch/index.xml

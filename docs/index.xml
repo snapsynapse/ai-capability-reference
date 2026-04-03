@@ -1,359 +1,359 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-    <title>AI Capability Reference</title>
-    <link>https://airef.snapsynapse.com/</link>
+    <title>AI Tool Watch</title>
+    <link>https://aitool.watch/</link>
     <description>Recent AI feature launches and changes across ChatGPT, Claude, Gemini, Copilot, Grok, and Perplexity.</description>
     <language>en-us</language>
-    <lastBuildDate>Thu, 26 Mar 2026 23:25:10 GMT</lastBuildDate>
-    <atom:link href="https://airef.snapsynapse.com/index.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>Thu, 02 Apr 2026 21:00:26 GMT</lastBuildDate>
+    <atom:link href="https://aitool.watch/index.xml" rel="self" type="application/rss+xml"/>
     <item>
         <title>Perplexity — [Verified] Gating corrected from paid to free — availability table shows Free tier has access (limited)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-collections-spaces</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-collections-spaces?d=2026-03-25</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-collections-spaces</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-collections-spaces?d=2026-03-25</guid>
         <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Gating corrected from paid to free — availability table shows Free tier has access (limited)</description>
     </item>
     <item>
         <title>Perplexity — [Verified] Gating corrected from paid to free — availability table shows Free tier has full browser access</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-comet-browser</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-comet-browser?d=2026-03-25</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-comet-browser</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-comet-browser?d=2026-03-25</guid>
         <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Gating corrected from paid to free — availability table shows Free tier has full browser access</description>
     </item>
     <item>
         <title>Perplexity — [Verified] Gating corrected from paid to free — availability table shows Free tier has full access to all focus modes</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-focus-modes</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-focus-modes?d=2026-03-25</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-focus-modes</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-focus-modes?d=2026-03-25</guid>
         <pubDate>Wed, 25 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Gating corrected from paid to free — availability table shows Free tier has full access to all focus modes</description>
     </item>
     <item>
         <title>Claude — [Verified] Added missing Enterprise row to availability table (SSO, admin controls, custom limits)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-projects</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-projects?d=2026-03-23</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-projects</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-projects?d=2026-03-23</guid>
         <pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Added missing Enterprise row to availability table (SSO, admin controls, custom limits)</description>
     </item>
     <item>
         <title>Microsoft Copilot — [Verified] Gating corrected from paid to free — free users have access with 15 AI credits/mo; data was internally inconsistent</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-image-generation-designer</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-image-generation-designer?d=2026-03-23</guid>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-image-generation-designer</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-image-generation-designer?d=2026-03-23</guid>
         <pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
         <description>Microsoft Copilot: [Verified] Gating corrected from paid to free — free users have access with 15 AI credits/mo; data was internally inconsistent</description>
     </item>
     <item>
         <title>Gemini — [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro for AI Pro tier</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-deep-research</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-deep-research?d=2026-03-23</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-deep-research</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-deep-research?d=2026-03-23</guid>
         <pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro for AI Pro tier</description>
     </item>
     <item>
         <title>Gemini — [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-advanced</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-advanced?d=2026-03-23</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-gemini-advanced</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-gemini-advanced?d=2026-03-23</guid>
         <pubDate>Mon, 23 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] GPT-5.4 Mini and Nano released: Mini available in ChatGPT (Free/Go via Thinking menu), API, and Codex; Nano is API-only; Mini $0.75/$4.50 per 1M tokens, Nano $0.20/$1.25 per 1M tokens; 400K context; vision support</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-chat?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] GPT-5.4 Mini and Nano released: Mini available in ChatGPT (Free/Go via Thinking menu), API, and Codex; Nano is API-only; Mini $0.75/$4.50 per 1M tokens, Nano $0.20/$1.25 per 1M tokens; 400K context; vision support</description>
     </item>
     <item>
         <title>Claude — [Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-connectors</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-connectors?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-connectors</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-connectors?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans</description>
     </item>
     <item>
         <title>Claude — [Verified] API Memory Tool now available for developers (type: memory_20250818); 3-layer architecture: Chat Memory, CLAUDE.md, API Memory Tool</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-memory</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-memory?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-memory?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] API Memory Tool now available for developers (type: memory_20250818); 3-layer architecture: Chat Memory, CLAUDE.md, API Memory Tool</description>
     </item>
     <item>
         <title>Microsoft Copilot — [Verified] Credits system replaced boosts (15-60 credits/month); Designer bot retired in Teams (Feb 27); model upgraded to GPT-Image-1.5</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-image-generation-designer</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-image-generation-designer?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-image-generation-designer</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-image-generation-designer?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Microsoft Copilot: [Verified] Credits system replaced boosts (15-60 credits/month); Designer bot retired in Teams (Feb 27); model upgraded to GPT-Image-1.5</description>
     </item>
     <item>
         <title>Gemini — [Verified] Device support corrected to Pixel 10 series and Samsung Galaxy S26 series; regional availability updated to US and South Korea; supported apps listed</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Device support corrected to Pixel 10 series and Samsung Galaxy S26 series; regional availability updated to US and South Korea; supported apps listed</description>
     </item>
     <item>
         <title>Gemini — [Verified] Chrome side panel added (Jan 2026); model names updated to Gemini 3 Flash (free) and Gemini 3.1 Pro (paid)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-chat?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-chat?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Chrome side panel added (Jan 2026); model names updated to Gemini 3 Flash (free) and Gemini 3.1 Pro (paid)</description>
     </item>
     <item>
         <title>Grok — [Verified] Voice mode now free for all users on iOS and Android; 11 voice modes; TTS API launched (Mar 16); attachment/photo support in voice added; gating changed from paid to free</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-grok-grok-voice-mode</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-grok-grok-voice-mode?d=2026-03-21</guid>
+        <link>https://aitool.watch/implementations.html#impl-grok-grok-voice-mode</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-grok-voice-mode?d=2026-03-21</guid>
         <pubDate>Sat, 21 Mar 2026 12:00:00 GMT</pubDate>
         <description>Grok: [Verified] Voice mode now free for all users on iOS and Android; 11 voice modes; TTS API launched (Mar 16); attachment/photo support in voice added; gating changed from paid to free</description>
     </item>
     <item>
         <title>Perplexity — [Verified] Major expansion: Personal Computer (dedicated Mac mini, Max plan, waitlist); Computer for Enterprise (Slack/Snowflake/Salesforce, Enterprise plan); 4 platform APIs (Search, Agent, Embeddings, Sandbox); Samsung Galaxy S26 integration; section renamed to include &quot;Perplexity Computer&quot;</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer?d=2026-03-19</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer?d=2026-03-19</guid>
         <pubDate>Thu, 19 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Major expansion: Personal Computer (dedicated Mac mini, Max plan, waitlist); Computer for Enterprise (Slack/Snowflake/Salesforce, Enterprise plan); 4 platform APIs (Search, Agent, Embeddings, Sandbox); Samsung Galaxy S26 integration; section renamed to include &quot;Perplexity Computer&quot;</description>
     </item>
     <item>
         <title>Perplexity — [Verified] Comet Enterprise launched (Mar 2026): managed browser with admin controls, MDM deployment, audit logs, CrowdStrike Falcon integration; iOS now available (Comet for iPhone); Enterprise Pro row added</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-comet-browser</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-comet-browser?d=2026-03-19</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-comet-browser</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-comet-browser?d=2026-03-19</guid>
         <pubDate>Thu, 19 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Comet Enterprise launched (Mar 2026): managed browser with admin controls, MDM deployment, audit logs, CrowdStrike Falcon integration; iOS now available (Comet for iPhone); Enterprise Pro row added</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] Added Team and Enterprise rows to availability table</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-advanced-voice-mode</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-advanced-voice-mode?d=2026-03-15</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-advanced-voice-mode</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-advanced-voice-mode?d=2026-03-15</guid>
         <pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] Added Team and Enterprise rows to availability table</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] Temporary Free/Go promotional access; paid plan rate limits doubled</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-code-agent</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-code-agent?d=2026-03-15</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-codex-code-agent</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-codex-code-agent?d=2026-03-15</guid>
         <pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] Temporary Free/Go promotional access; paid plan rate limits doubled</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] Terminal/CLI access added (Codex CLI on macOS/Linux/Windows WSL); Linux support corrected; sources expanded</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-code-agent</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-code-agent?d=2026-03-15</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-codex-code-agent</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-codex-code-agent?d=2026-03-15</guid>
         <pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] Terminal/CLI access added (Codex CLI on macOS/Linux/Windows WSL); Linux support corrected; sources expanded</description>
     </item>
     <item>
         <title>Claude — [Verified] Corrected gating from paid to free — availability table and external sources confirm free-tier access</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-vision-image-understanding</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-vision-image-understanding?d=2026-03-15</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-vision-image-understanding</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-vision-image-understanding?d=2026-03-15</guid>
         <pubDate>Sun, 15 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Corrected gating from paid to free — availability table and external sources confirm free-tier access</description>
     </item>
     <item>
         <title>ChatGPT — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-security</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-security?d=2026-03-14</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-codex-security</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-codex-security?d=2026-03-14</guid>
         <pubDate>Sat, 14 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: Initial entry</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat?d=2026-03-14</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-chat?d=2026-03-14</guid>
         <pubDate>Sat, 14 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool</description>
     </item>
     <item>
         <title>Gemini — [Verified] URL updated: support.google.com/gemini/answer/13695044 → gemini.google.com/extensions (old URL 404)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-extensions</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-extensions?d=2026-03-14</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-extensions</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-extensions?d=2026-03-14</guid>
         <pubDate>Sat, 14 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] URL updated: support.google.com/gemini/answer/13695044 → gemini.google.com/extensions (old URL 404)</description>
     </item>
     <item>
         <title>Gemini — [Verified] March 2026 beta rollout: Help me create (Docs), Fill with Gemini (Sheets), new slide creation (Slides), AI Overviews + Ask Gemini (Drive); AI Ultra tier added; Drive features US-only initially; English-only; full Slides deck gen coming soon</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-in-workspace-docs-sheets-etc</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-in-workspace-docs-sheets-etc?d=2026-03-14</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-gemini-in-workspace-docs-sheets-etc</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-gemini-in-workspace-docs-sheets-etc?d=2026-03-14</guid>
         <pubDate>Sat, 14 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] March 2026 beta rollout: Help me create (Docs), Fill with Gemini (Sheets), new slide creation (Slides), AI Overviews + Ask Gemini (Drive); AI Ultra tier added; Drive features US-only initially; English-only; full Slides deck gen coming soon</description>
     </item>
     <item>
         <title>Gemini — Expanded to Samsung Galaxy S26 series</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-12</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-12</guid>
         <pubDate>Thu, 12 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: Expanded to Samsung Galaxy S26 series</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] Windows note updated from &quot;Expected late Feb 2026&quot; to &quot;Expected 2026 (not yet released)&quot; — both models confirmed still macOS-only</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-atlas-browser</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-atlas-browser?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-atlas-browser</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-atlas-browser?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] Windows note updated from &quot;Expected late Feb 2026&quot; to &quot;Expected 2026 (not yet released)&quot; — both models confirmed still macOS-only</description>
     </item>
     <item>
         <title>ChatGPT — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-vision-image-understanding</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-vision-image-understanding?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-vision-image-understanding</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-vision-image-understanding?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: Initial entry</description>
     </item>
     <item>
         <title>ChatGPT — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-chat?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: Initial entry</description>
     </item>
     <item>
         <title>Claude — [Verified] Gating corrected from paid to free — free users have full access; data was internally inconsistent</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-artifacts</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-artifacts?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-artifacts</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-artifacts?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Gating corrected from paid to free — free users have full access; data was internally inconsistent</description>
     </item>
     <item>
         <title>Claude — [Verified] Free tier now includes prebuilt skills (confirmed in Sonnet 4.6 announcement); talking point corrected to match availability table</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-skills</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-skills?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-skills</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-skills?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Free tier now includes prebuilt skills (confirmed in Sonnet 4.6 announcement); talking point corrected to match availability table</description>
     </item>
     <item>
         <title>Claude — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-memory</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-memory?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-memory?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: Initial entry</description>
     </item>
     <item>
         <title>Claude — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-chat?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: Initial entry</description>
     </item>
     <item>
         <title>Microsoft Copilot — [Verified] Multi-agent coordination added (agents can call other agents as tools); new agent surfaces: Outlook, OneDrive, Teams communities; PowerPoint agentic mode</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-agent-builder</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-agent-builder?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-agent-builder</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-agent-builder?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Microsoft Copilot: [Verified] Multi-agent coordination added (agents can call other agents as tools); new agent surfaces: Outlook, OneDrive, Teams communities; PowerPoint agentic mode</description>
     </item>
     <item>
         <title>Microsoft Copilot — [Verified] Federated connectors added: Notion, HubSpot, Linear, Intercom, Google Contacts, Google Calendar (live data via Researcher tool)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-copilot-connectors</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-copilot-connectors?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-connectors</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-connectors?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Microsoft Copilot: [Verified] Federated connectors added: Notion, HubSpot, Linear, Intercom, Google Contacts, Google Calendar (live data via Researcher tool)</description>
     </item>
     <item>
         <title>Microsoft Copilot — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-microsoft-copilot-chat?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Microsoft Copilot: Initial entry</description>
     </item>
     <item>
         <title>Gemini — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-past-chats-memory</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-past-chats-memory?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-past-chats-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-past-chats-memory?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: Initial entry</description>
     </item>
     <item>
         <title>Gemini — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-chat?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: Initial entry</description>
     </item>
     <item>
         <title>Grok — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-grok-vision-image-understanding</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-grok-vision-image-understanding?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-grok-vision-image-understanding</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-vision-image-understanding?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Grok: Initial entry</description>
     </item>
     <item>
         <title>Grok — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-grok-memory</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-grok-memory?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-grok-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-memory?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Grok: Initial entry</description>
     </item>
     <item>
         <title>Perplexity — [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer</description>
     </item>
     <item>
         <title>Perplexity — Initial entry</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-perplexity-chat</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-perplexity-chat?d=2026-03-07</guid>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Perplexity: Initial entry</description>
     </item>
     <item>
         <title>ChatGPT — Codex Security launched</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-security</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-codex-security?d=2026-03-06</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-codex-security</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-codex-security?d=2026-03-06</guid>
         <pubDate>Fri, 06 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: Codex Security launched</description>
     </item>
     <item>
         <title>ChatGPT — [Verified] Regional section updated: EEA now available for basic agent tasks (rolled out late July 2025); Connector-based actions still restricted in EEA/CH/UK</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-chatgpt-agent-mode</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-chatgpt-agent-mode?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-agent-mode</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-agent-mode?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>ChatGPT: [Verified] Regional section updated: EEA now available for basic agent tasks (rolled out late July 2025); Connector-based actions still restricted in EEA/CH/UK</description>
     </item>
     <item>
         <title>Claude — [Verified] Fixed broken URL: support.claude.com → support.anthropic.com</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-connectors</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-connectors?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-connectors</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-connectors?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: [Verified] Fixed broken URL: support.claude.com → support.anthropic.com</description>
     </item>
     <item>
         <title>Gemini — [Verified] Gating changed from paid to free; free tier now gets ~5 reports/month via Gemini Flash</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-deep-research</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-deep-research?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-deep-research</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-deep-research?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Gating changed from paid to free; free tier now gets ~5 reports/month via Gemini Flash</description>
     </item>
     <item>
         <title>Gemini — [Verified] Fixed broken URL (removed ?hl=en parameter)</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-extensions</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-extensions?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-extensions</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-extensions?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Fixed broken URL (removed ?hl=en parameter)</description>
     </item>
     <item>
         <title>Gemini — [Verified] Google One AI Premium renamed to Google AI Pro ($19.99/mo); Google AI Plus ($7.99/mo) and AI Ultra ($249.99/mo) added; AI Plus also includes Gemini Advanced</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-advanced</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-gemini-advanced?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-gemini-advanced</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-gemini-advanced?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Google One AI Premium renamed to Google AI Pro ($19.99/mo); Google AI Plus ($7.99/mo) and AI Ultra ($249.99/mo) added; AI Plus also includes Gemini Advanced</description>
     </item>
     <item>
         <title>Gemini — [Verified] Gating changed from free to paid; Nano Banana 2 became default for all users (Feb 26, 2026); free users no longer get Nano Banana Pro</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-nano-banana-pro</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-nano-banana-pro?d=2026-03-04</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-nano-banana-pro</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-nano-banana-pro?d=2026-03-04</guid>
         <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: [Verified] Gating changed from free to paid; Nano Banana 2 became default for all users (Feb 26, 2026); free users no longer get Nano Banana Pro</description>
     </item>
     <item>
         <title>Gemini — Agentic App Actions (Android) launched</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-03</guid>
+        <link>https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-agentic-app-actions-android?d=2026-03-03</guid>
         <pubDate>Tue, 03 Mar 2026 12:00:00 GMT</pubDate>
         <description>Gemini: Agentic App Actions (Android) launched</description>
     </item>
     <item>
         <title>Claude — Free on all plans; memory import tool launched</title>
-        <link>https://airef.snapsynapse.com/implementations.html#impl-claude-memory</link>
-        <guid isPermaLink="true">https://airef.snapsynapse.com/implementations.html#impl-claude-memory?d=2026-03-02</guid>
+        <link>https://aitool.watch/implementations.html#impl-claude-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-memory?d=2026-03-02</guid>
         <pubDate>Mon, 02 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: Free on all plans; memory import tool launched</description>
     </item>
