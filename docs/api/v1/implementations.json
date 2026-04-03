@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-03T02:06:37.366Z",
+    "generated": "2026-04-03T17:46:48.002Z",
     "version": "1.0",
     "count": 72
   },
@@ -2141,7 +2141,7 @@
       ],
       "talking_point": "Cowork is Claude's background agent—**it launched January 2026 and expanded to all paid plans in February**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. It's still a research preview but already useful for delegating multi-step tasks.",
       "launched": "2026-01-12T12:00Z",
-      "verified": "2026-03-27",
+      "verified": "2026-04-03",
       "evidence_id": "implementation-claude-cowork-mode",
       "evidence_verified": "2026-02-28"
     },
@@ -2580,7 +2580,7 @@
       ],
       "talking_point": "Skills are modular folders of instructions and resources that Claude can load on demand to perform specialized tasks—like creating Office documents or running workflows. **Prebuilt skills are available on all plans including free** (added Feb 2026 with Sonnet 4.6). **Custom skills require Pro and above.**",
       "launched": "2025-10-16T12:00Z",
-      "verified": "2026-03-20",
+      "verified": "2026-04-03",
       "evidence_id": "implementation-claude-skills",
       "evidence_verified": "2026-03-08"
     },

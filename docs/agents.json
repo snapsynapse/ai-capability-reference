@@ -7,7 +7,7 @@
   "repository": "https://github.com/snapsynapse/ai-capability-reference",
   "license": "MIT",
   "maintainer": "PAICE.work",
-  "generated": "2026-04-03T02:06:37.432Z",
+  "generated": "2026-04-03T17:46:48.060Z",
   "capabilities": {
     "read": true,
     "write": false,
