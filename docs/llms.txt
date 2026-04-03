@@ -52,7 +52,7 @@ Start with the index: https://aitool.watch/api/v1/index.json
 ## Agent access
 
 - [agents.json](https://aitool.watch/agents.json): Agent capability manifest describing API endpoints and MCP tools
-- [MCP server](https://github.com/snapsynapse/ai-capability-reference/blob/main/scripts/mcp-server.js): 15 read-only tools over stdio JSON-RPC
+- [MCP server](https://github.com/snapsynapse/ai-tool-watch/blob/main/scripts/mcp-server.js): 15 read-only tools over stdio JSON-RPC
 - [RSS feed](https://aitool.watch/index.xml): Recent feature changes as RSS 2.0
 
 ## Site pages
@@ -85,6 +85,6 @@ Example: https://aitool.watch/best-for/creative-work/
 
 ## Source
 
-- [Repository](https://github.com/snapsynapse/ai-capability-reference): GitHub
+- [Repository](https://github.com/snapsynapse/ai-tool-watch): GitHub
 - License: MIT
-- [Contact](https://github.com/snapsynapse/ai-capability-reference/issues): GitHub Issues
+- [Contact](https://github.com/snapsynapse/ai-tool-watch/issues): GitHub Issues

@@ -1,13 +1,13 @@
 {
   "schema_version": "1.0",
-  "name": "ai-capability-reference",
+  "name": "ai-tool-watch",
   "display_name": "AI Tool Watch",
   "description": "A structured, version-controlled reference tracking 18 AI capabilities across 6 products with 72 implementations. Updated weekly via multi-model verification cascade.",
   "url": "https://aitool.watch/",
-  "repository": "https://github.com/snapsynapse/ai-capability-reference",
+  "repository": "https://github.com/snapsynapse/ai-tool-watch",
   "license": "MIT",
   "maintainer": "PAICE.work",
-  "generated": "2026-04-03T17:46:48.060Z",
+  "generated": "2026-04-03T18:38:52.528Z",
   "capabilities": {
     "read": true,
     "write": false,

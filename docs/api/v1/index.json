@@ -1,10 +1,10 @@
 {
   "meta": {
-    "generated": "2026-04-03T17:46:48.002Z",
+    "generated": "2026-04-03T18:38:52.480Z",
     "version": "1.0"
   },
   "description": "AI Tool Watch — Machine-readable API",
-  "documentation": "https://github.com/snapsynapse/ai-capability-reference",
+  "documentation": "https://github.com/snapsynapse/ai-tool-watch",
   "files": {
     "capabilities": {
       "path": "capabilities.json",
