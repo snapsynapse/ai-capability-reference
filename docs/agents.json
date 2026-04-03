@@ -6,8 +6,8 @@
   "url": "https://aitool.watch/",
   "repository": "https://github.com/snapsynapse/ai-capability-reference",
   "license": "MIT",
-  "maintainer": "PAICE.work",
-  "generated": "2026-04-02T21:00:26.661Z",
+  "maintainer": "SnapSynapse",
+  "generated": "2026-04-02T03:43:11.500Z",
   "capabilities": {
     "read": true,
     "write": false,

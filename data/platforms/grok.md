@@ -254,7 +254,7 @@ Available globally where X is available.
 | URL | https://grok.com |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-03-25 |
+| Checked | 2026-03-31|
 
 ### Availability
 
@@ -310,7 +310,7 @@ Available globally where Grok is available.
 | URL | https://x.ai/blog/grok-voice |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-03-25 |
+| Checked | 2026-03-31|
 
 ### Availability
 
@@ -367,7 +367,7 @@ Available globally where X is available.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-03-25 |
+| Checked | 2026-03-31|
 
 ### Availability
 
@@ -533,7 +533,7 @@ Available globally where Grok is available.
 | URL | https://grok.com |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-07 |
-| Checked | 2026-03-25 |
+| Checked | 2026-03-31|
 
 ### Availability
 

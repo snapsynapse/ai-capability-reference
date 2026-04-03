@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-02T21:00:26.593Z",
+    "generated": "2026-04-02T03:43:11.430Z",
     "version": "1.0",
     "count": 72
   },
@@ -6644,7 +6644,7 @@
       ],
       "talking_point": "Perplexity's Comet browser is **free for all users**—available on Mac, Windows, Linux, Android, and now iPhone. **Comet Enterprise** (Mar 2026) adds managed deployment with admin controls, domain permissions, MDM support, audit logs, and CrowdStrike Falcon integration for enterprise security.",
       "launched": "2025-07-09T12:00Z",
-      "verified": "2026-03-25",
+      "verified": "2026-03-31",
       "evidence_id": "implementation-perplexity-comet-browser",
       "evidence_verified": "2026-02-07"
     },
@@ -6745,7 +6745,7 @@
       ],
       "talking_point": "Enterprise App Connectors let you search across company files and connected apps like Google Drive, Confluence, and Slack. **Enterprise Pro only ($40/user/mo)**—not available on consumer plans.",
       "launched": "2024-09-01T12:00Z",
-      "verified": "2026-02-07",
+      "verified": "2026-03-31",
       "evidence_id": "implementation-perplexity-enterprise-app-connectors",
       "evidence_verified": "2026-02-07"
     },

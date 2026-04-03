@@ -26,7 +26,7 @@ build_visibility: hidden
 | URL | https://ai.meta.com/llama/ |
 | Launched | 2024-12-06T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-03-25 |
+| Checked | 2026-03-31|
 
 ### Availability
 
