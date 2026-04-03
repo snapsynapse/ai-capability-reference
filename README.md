@@ -179,7 +179,7 @@ MIT - see [LICENSE](LICENSE)
 
 ## Credits
 
-Created by [PAICE.work](https://paice.work) for the AI community.
+Created for [PAICE.work](https://paice.work) and the larger AI community.
 With help from Claude Code, of course.
 
 ---
