@@ -155,7 +155,7 @@ What does the declaration eventually become? These are not mutually exclusive �
 |---|---|---|---|---|---|
 | 1 | **Markdown doc in this repo** | Developers studying the approach | Low | Low — only people who find the repo | [ ] |
 | 2 | **Pattern page on the site itself** | Site visitors, AI consumers | Low | Medium — meta: the description is an instance of the pattern | [x] `docs/pattern.html` |
-| 3 | **GitHub Discussion thread** | OSS contributors, adjacent builders | Low | Medium — invites contribution, surfaces similar work | [x] [discussions/284](https://github.com/snapsynapse/ai-capability-reference/discussions/284) |
+| 3 | **GitHub Discussion thread** | OSS contributors, adjacent builders | Low | Medium — invites contribution, surfaces similar work | [x] [discussions/284](https://github.com/snapsynapse/ai-tool-watch/discussions/284) |
 | 4 | **Social post (LinkedIn / X)** | Broad dev community | Low | High — discovery layer, ephemeral but shareable | [ ] |
 | 5 | **Blog post** | Broader dev community | Medium | High — shareable, searchable, permanent | [ ] |
 | 6 | **Short video / demo walkthrough** | Visual learners, non-readers | Medium | High — YouTube + social clips travel far | [ ] |

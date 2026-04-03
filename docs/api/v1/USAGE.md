@@ -107,7 +107,7 @@ This API is served as static files from GitHub Pages. There is no rate limit enf
 
 - Don't poll for changes more than once per hour
 - Cache responses locally rather than re-fetching on every request
-- If you need real-time change notification, watch the [GitHub repository](https://github.com/snapsynapse/ai-capability-reference) for commits instead
+- If you need real-time change notification, watch the [GitHub repository](https://github.com/snapsynapse/ai-tool-watch) for commits instead
 
 ## Limitations
 

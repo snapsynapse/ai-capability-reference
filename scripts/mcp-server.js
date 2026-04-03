@@ -49,7 +49,7 @@ const VALID_IDS = {
 // Helpers
 // ---------------------------------------------------------------------------
 
-const SERVER_INFO = { name: 'ai-capability-reference', version: '2.0.0' };
+const SERVER_INFO = { name: 'ai-tool-watch', version: '2.0.0' };
 
 function meta() {
     return {

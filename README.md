@@ -1,10 +1,10 @@
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/snapsynapse/ai-capability-reference/blob/main/LICENSE)
-[![Latest release](https://img.shields.io/github/v/release/snapsynapse/ai-capability-reference)](https://github.com/snapsynapse/ai-capability-reference/releases/latest)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://github.com/snapsynapse/ai-tool-watch/blob/main/LICENSE)
+[![Latest release](https://img.shields.io/github/v/release/snapsynapse/ai-tool-watch)](https://github.com/snapsynapse/ai-tool-watch/releases/latest)
 # AI Tool Watch
 
 **Plain-English reference for AI capabilities, plans, constraints, and implementations — for humans and agents.**
 
-![AI Tool Watch](docs/assets/og-image.jpg)
+![AI Tool Watch](imgs/og.png)
 
 ---
 
@@ -109,8 +109,8 @@ Quick version:
 ## Local development
 
 ```bash
-git clone https://github.com/snapsynapse/ai-capability-reference.git
-cd ai-capability-reference
+git clone https://github.com/snapsynapse/ai-tool-watch.git
+cd ai-tool-watch
 
 node scripts/build.js               # Build the site
 node scripts/sync-evidence.js       # Sync evidence records
@@ -157,7 +157,7 @@ To enable GitHub Pages on a fork:
 
 1. Go to **Settings → Pages**
 2. Under "Build and deployment", select **GitHub Actions**
-3. The workflow will deploy to `https://<username>.github.io/ai-capability-reference/`
+3. The workflow will deploy to `https://<username>.github.io/ai-tool-watch/`
 
 ## Design documentation
 
@@ -184,4 +184,4 @@ With help from Claude Code, of course.
 
 ---
 
-**Found an error?** [Open an issue](https://github.com/snapsynapse/ai-capability-reference/issues) or submit a PR!
+**Found an error?** [Open an issue](https://github.com/snapsynapse/ai-tool-watch/issues) or submit a PR!

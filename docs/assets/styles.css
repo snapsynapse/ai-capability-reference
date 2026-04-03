@@ -2391,6 +2391,21 @@ html.light-mode .about-banner-light { display: block; }
     color: var(--text-secondary);
 }
 
+.timeline-item {
+    margin-top: 4px;
+}
+
+.timeline-event-link {
+    font-size: 0.85rem;
+    color: var(--text-secondary);
+    text-decoration: none;
+}
+
+.timeline-event-link:hover {
+    color: var(--accent);
+    text-decoration: underline;
+}
+
 .timeline-category {
     font-size: 0.7rem;
     padding: 1px 6px;

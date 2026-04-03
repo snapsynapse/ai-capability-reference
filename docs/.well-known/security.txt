@@ -1,7 +1,7 @@
 # Security contact for AI Tool Watch
 # https://securitytxt.org/
 
-Contact: https://github.com/snapsynapse/ai-capability-reference/issues
+Contact: https://github.com/snapsynapse/ai-tool-watch/issues
 Preferred-Languages: en
 Canonical: https://aitool.watch/.well-known/security.txt
-Policy: https://github.com/snapsynapse/ai-capability-reference/blob/main/SECURITY.md
+Policy: https://github.com/snapsynapse/ai-tool-watch/blob/main/SECURITY.md

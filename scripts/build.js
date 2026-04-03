@@ -27,7 +27,7 @@ const CAPABILITIES_REDIRECT_FILE = path.join(__dirname, '..', 'docs', 'capabilit
 const COMPARE_OUTPUT_FILE = path.join(__dirname, '..', 'docs', 'compare.html');
 const TIMELINE_OUTPUT_FILE = path.join(__dirname, '..', 'docs', 'timeline.html');
 const DATA_EXPORT_FILE = path.join(__dirname, '..', 'docs', 'assets', 'data.json');
-const REPO_URL = 'https://github.com/snapsynapse/ai-capability-reference';
+const REPO_URL = 'https://github.com/snapsynapse/ai-tool-watch';
 const REPO_ISSUES_URL = `${REPO_URL}/issues`;
 const REPO_PULLS_URL = `${REPO_URL}/pulls`;
 const SITE_URL = 'https://aitool.watch/';
@@ -933,18 +933,18 @@ function renderSiteNav(activePage, prefix) {
 function renderSharedFooter() {
     return `<footer>
             <p>
-                Maintained by <a href="https://paice.work/">PAICE.work</a>, with public issues and pull requests welcome.
+                Maintained by <a href="https://github.com/snapsynapse">SnapSynapse</a>, with public issues and pull requests welcome.
                 <a href="${REPO_ISSUES_URL}">Open an issue</a> or
                 <a href="${REPO_PULLS_URL}">submit a PR</a>.
             </p>
             <p style="margin-top: 8px;">
-                &copy; 2026 | Made by <a href="https://paice.work/">PAICE.work</a> via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | No trackers here, you're welcome.
+                &copy; 2026 <a href="https://paice.work/">PAICE.work PBC</a> | via <a href="https://docs.anthropic.com/en/docs/claude-code/overview">Claude Code</a> | 🤓+🤖 | No trackers here, you're welcome.
             </p>
             <p style="margin-top: 12px; display: flex; align-items: center; justify-content: center; flex-wrap: wrap; gap: 8px;">
                 <a href="${REPO_URL}" class="footer-social" title="Star on GitHub">⭐ Star</a>
-                <a href="https://signalsandsubtractions.substack.com/" class="footer-social" title="Subscribe on Substack"><img src="https://substack.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Substack</a>
+                <a href="https://paice.substack.com/" class="footer-social" title="Subscribe on Substack"><img src="https://substack.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">Substack</a>
                 <a href="https://www.linkedin.com/in/samrogers/" class="footer-social" title="Connect on LinkedIn"><img src="https://www.linkedin.com/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">LinkedIn</a>
-                <a href="https://paice.work" class="footer-social" title="AI Collaboration"><img src="https://paice.work/favicon.ico" alt="" width="14" height="14" style="vertical-align: middle; margin-right: 4px;">AI Collaboration</a>
+                <a href="https://everyailaw.com/" class="footer-social" title="Every AI Law">Every AI Law</a>
                 <a href="https://www.w3.org/WAI/WCAG2AA-Conformance" title="Explanation of WCAG 2 Level AA conformance"><img height="32" width="88" src="https://www.w3.org/WAI/WCAG21/wcag2.1AA-blue-v" alt="Level AA conformance, W3C WAI Web Content Accessibility Guidelines 2.1"></a>
             </p>
         </footer>`;
@@ -1064,13 +1064,13 @@ function generateHTML(platforms, ontologyData) {
     <meta property="og:type" content="website">
     <meta property="og:title" content="${DASHBOARD_TITLE} - ${FEATURE_VIEW_TITLE}">
     <meta property="og:description" content="Detailed plan-by-plan availability for AI features across ChatGPT, Claude, Gemini, Copilot, and more.">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
     <meta property="og:url" content="${SITE_URL}implementations.html">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="${DASHBOARD_TITLE} - ${FEATURE_VIEW_TITLE}">
     <meta name="twitter:description" content="Detailed plan-by-plan availability for AI features across ChatGPT, Claude, Gemini, Copilot, and more.">
-    <meta name="twitter:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta name="twitter:image" content="${SITE_URL}imgs/og.png">
 
     <script type="application/ld+json">
     {
@@ -1772,13 +1772,13 @@ function generateCapabilitiesHTML(ontologyData) {
     <meta property="og:type" content="website">
     <meta property="og:title" content="AI Tool Watch">
     <meta property="og:description" content="A maintained reference for AI capability availability across plans, platforms, and access tiers.">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
     <meta property="og:url" content="${SITE_URL}">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="AI Tool Watch">
     <meta name="twitter:description" content="A maintained reference for AI capability availability across plans, platforms, and access tiers.">
-    <meta name="twitter:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta name="twitter:image" content="${SITE_URL}imgs/og.png">
 
     <script type="application/ld+json">
     {
@@ -2096,12 +2096,12 @@ function generateAboutHTML() {
     <meta property="og:type" content="website">
     <meta property="og:title" content="About - ${DASHBOARD_TITLE}">
     <meta property="og:description" content="About the AI Tool Watch - a plain-English resource for AI capabilities, plans, constraints, and implementations.">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="About - ${DASHBOARD_TITLE}">
     <meta name="twitter:description" content="About the AI Tool Watch - a plain-English resource for AI capabilities, plans, constraints, and implementations.">
-    <meta name="twitter:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta name="twitter:image" content="${SITE_URL}imgs/og.png">
 
     <script type="application/ld+json">
     {
@@ -2223,32 +2223,48 @@ function generateTimelineHTML(platforms, ontologyData) {
 
     events.sort((a, b) => b.date.localeCompare(a.date));
 
+    // Group events by date + product so same-day entries from one company merge
+    const grouped = [];
+    for (const ev of events) {
+        const last = grouped[grouped.length - 1];
+        if (last && last.date === ev.date && last.product === ev.product) {
+            last.items.push(ev);
+        } else {
+            grouped.push({ date: ev.date, product: ev.product, items: [ev] });
+        }
+    }
+
     // Group by year
     const byYear = {};
-    for (const ev of events) {
-        const year = ev.date.slice(0, 4);
+    for (const g of grouped) {
+        const year = g.date.slice(0, 4);
         if (!byYear[year]) byYear[year] = [];
-        byYear[year].push(ev);
+        byYear[year].push(g);
     }
 
     const timelineHtml = Object.keys(byYear).sort().reverse().map(year => {
-        const yearEvents = byYear[year].map(ev => {
-            const isPast = ev.date <= today;
+        const yearEntries = byYear[year].map(g => {
+            const isPast = g.date <= today;
             const cls = isPast ? 'past' : 'future';
-            const categoryTag = ev.category
-                ? `<span class="timeline-category">${escapeHTML(ev.category)}</span>`
-                : '';
+            const itemsHtml = g.items.map(ev => {
+                const categoryTag = ev.category
+                    ? `<span class="timeline-category">${escapeHTML(ev.category)}</span>`
+                    : '';
+                return `<div class="timeline-item">
+                        <a href="implementations.html#impl-${ev.featureId}" onclick="passTheme(this)" class="timeline-event-link">${escapeHTML(ev.event)}</a>
+                        ${categoryTag}
+                    </div>`;
+            }).join('\n');
             return `<div class="timeline-entry ${cls}">
-                <div class="timeline-date">${escapeHTML(ev.date)}</div>
+                <div class="timeline-date">${escapeHTML(g.date)}</div>
                 <div class="timeline-content">
-                    <a href="implementations.html#impl-${ev.featureId}" onclick="passTheme(this)" class="timeline-product">${escapeHTML(ev.product)}</a>
-                    <span class="timeline-event">${escapeHTML(ev.event)}</span>
-                    ${categoryTag}
+                    <span class="timeline-product">${escapeHTML(g.product)}</span>
+                    ${itemsHtml}
                 </div>
             </div>`;
         }).join('\n');
 
-        return `<div class="timeline-year">${year}</div>\n${yearEvents}`;
+        return `<div class="timeline-year">${year}</div>\n${yearEntries}`;
     }).join('\n');
 
     const eventCount = events.length;
@@ -2272,12 +2288,12 @@ function generateTimelineHTML(platforms, ontologyData) {
     <meta property="og:type" content="website">
     <meta property="og:title" content="Timeline - ${DASHBOARD_TITLE}">
     <meta property="og:description" content="${desc}">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
 
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:title" content="Timeline - ${DASHBOARD_TITLE}">
     <meta name="twitter:description" content="${desc}">
-    <meta name="twitter:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta name="twitter:image" content="${SITE_URL}imgs/og.png">
 
     <link rel="stylesheet" href="assets/styles.css">
     ${renderThemeInit()}
@@ -2289,7 +2305,7 @@ function generateTimelineHTML(platforms, ontologyData) {
         <div style="max-width: 800px; margin: 0 auto; padding: 2rem;">
             <h2 style="margin-top: 0.5rem;">Timeline</h2>
             <p style="color: var(--text-secondary); margin-bottom: 1rem;">
-                ${eventCount} events across all tracked AI products. Solid dots are past; hollow dots are future.
+                ${eventCount} events across all tracked AI products.
             </p>
 
             <div class="timeline">
@@ -2416,7 +2432,7 @@ function generateConstraintsHTML(ontologyData, platforms) {
     <meta property="og:type" content="website">
     <meta property="og:title" content="AI Tool Watch - Access & Limits">
     <meta property="og:description" content="Find AI features by access tier, platform support, and regional availability. Filter by free, paid, surface, and more.">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
     <meta property="og:url" content="${SITE_URL}constraints.html">
 
     <script type="application/ld+json">
@@ -2955,7 +2971,7 @@ function buildAPIExport(ontologyData, platforms) {
     const index = {
         meta: { generated: timestamp, version: '1.0' },
         description: 'AI Tool Watch — Machine-readable API',
-        documentation: 'https://github.com/snapsynapse/ai-capability-reference',
+        documentation: 'https://github.com/snapsynapse/ai-tool-watch',
         files: {
             capabilities: { path: 'capabilities.json', description: 'All capabilities with search terms, definitions, and cross-links', count: capabilities.length },
             products: { path: 'products.json', description: 'All products with provider links and implementation lists', count: products.length },
@@ -3009,7 +3025,7 @@ function generateCompareHTML(ontologyData) {
     <meta property="og:type" content="website">
     <meta property="og:title" content="Compare Products - ${DASHBOARD_TITLE}">
     <meta property="og:description" content="Side-by-side comparison of AI product capabilities across ChatGPT, Claude, Gemini, Copilot, Grok, and Perplexity.">
-    <meta property="og:image" content="${SITE_URL}assets/og-image.jpg">
+    <meta property="og:image" content="${SITE_URL}imgs/og.png">
     <meta property="og:url" content="${SITE_URL}compare.html">
 
     <script type="application/ld+json">
@@ -3778,7 +3794,7 @@ function generateAgentsJson(ontologyData) {
 
     const manifest = {
         schema_version: '1.0',
-        name: 'ai-capability-reference',
+        name: 'ai-tool-watch',
         display_name: DASHBOARD_TITLE,
         description: `A structured, version-controlled reference tracking ${capCount} AI capabilities across ${prodCount} products with ${implCount} implementations. Updated weekly via multi-model verification cascade.`,
         url: SITE_URL,

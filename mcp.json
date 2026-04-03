@@ -1,6 +1,6 @@
 {
   "mcpServers": {
-    "ai-capability-reference": {
+    "ai-tool-watch": {
       "command": "node",
       "args": ["scripts/mcp-server.js"],
       "type": "stdio"
