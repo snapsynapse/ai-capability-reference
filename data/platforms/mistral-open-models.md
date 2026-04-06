@@ -25,7 +25,7 @@ build_visibility: hidden
 | URL | https://mistral.ai/news/codestral/ |
 | Launched | 2024-05-29T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-03-31|
+| Checked | 2026-04-06|
 
 ### Availability
 
@@ -78,7 +78,7 @@ No restrictions - runs locally.
 | URL | https://mistral.ai/technology/ |
 | Launched | 2024-07-18T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-03-31|
+| Checked | 2026-04-06|
 
 ### Availability
 
@@ -131,8 +131,8 @@ No restrictions - runs locally.
 | Gating | free |
 | URL | https://mistral.ai/news/mistral-small-3 |
 | Launched | 2025-01-30T12:00Z |
-| Verified | 2026-02-22|
-| Checked | 2026-03-31|
+| Verified | 2026-04-06|
+| Checked | 2026-04-06|
 
 ### Availability
 
