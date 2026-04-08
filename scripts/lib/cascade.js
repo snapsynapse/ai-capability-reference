@@ -288,12 +288,11 @@ async function runCascade(platform, feature, options = {}) {
                 break;
             }
 
-            // Check for contradictions with previous results
-            if (results.length > 1) {
-                const prevResult = results[results.length - 2];
-
-                if (detectContradiction(prevResult, result)) {
-                    log(`\n⚠ Contradiction detected between ${prevResult.model} and ${result.model}`);
+            // Check for contradictions with previous non-error results
+            const prevSubstantive = results.slice(0, -1).filter(r => r.type !== ResultType.ERROR && r.type !== ResultType.SKIPPED).pop();
+            if (prevSubstantive) {
+                if (detectContradiction(prevSubstantive, result)) {
+                    log(`\n⚠ Contradiction detected between ${prevSubstantive.model} and ${result.model}`);
                     outcome = CascadeOutcome.CONTRADICTION;
                     break;
                 }
