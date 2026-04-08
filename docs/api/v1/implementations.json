@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-08T05:59:23.718Z",
+    "generated": "2026-04-08T22:40:14.401Z",
     "version": "1.0",
     "count": 72
   },
@@ -213,7 +213,7 @@
           "surface": "web",
           "name": "web",
           "available": true,
-          "notes": "chat.openai.com"
+          "notes": "chatgpt.com"
         },
         {
           "surface": "terminal",
@@ -897,7 +897,7 @@
           "surface": "web",
           "name": "web",
           "available": true,
-          "notes": "chat.openai.com"
+          "notes": "chatgpt.com"
         },
         {
           "surface": "terminal",
@@ -930,31 +930,31 @@
       ],
       "category": "image-gen",
       "gating": "paid",
-      "status": "ga",
+      "status": "deprecated",
       "plans": [
         {
           "plan": "Free",
           "available": false,
           "limits": "~2/day",
-          "notes": "Very limited"
+          "notes": "Very limited; now uses GPT Image 1.5"
         },
         {
           "plan": "Go",
           "available": true,
           "limits": "10x free",
-          "notes": "Standard access"
+          "notes": "Standard access; now uses GPT Image 1.5"
         },
         {
           "plan": "Plus",
           "available": true,
           "limits": "50x free",
-          "notes": "Priority"
+          "notes": "Priority; now uses GPT Image 1.5"
         },
         {
           "plan": "Pro",
           "available": true,
           "limits": "Unlimited",
-          "notes": "No limits"
+          "notes": "No limits; now uses GPT Image 1.5"
         }
       ],
       "surfaces": [
@@ -1010,12 +1010,12 @@
           "surface": "api",
           "name": "API",
           "available": true,
-          "notes": "OpenAI API"
+          "notes": "OpenAI API (DALL-E 3 API deprecated May 12, 2026; migrate to gpt-image-1)"
         }
       ],
-      "talking_point": "DALL-E image generation is available on **all plans including free**, but free users get very limited generations per day. Plus and Pro have much higher or unlimited limits.",
+      "talking_point": "ChatGPT image generation now uses **GPT Image 1.5**, replacing DALL-E 3 (March 2025). Available on **all plans including free** with tiered limits. The DALL-E 3 API is **deprecated May 12, 2026**—developers should migrate to `gpt-image-1` or `gpt-image-1-mini`.",
       "launched": "2023-10-01T12:00Z",
-      "verified": "2026-03-22",
+      "verified": "2026-04-08",
       "evidence_id": "implementation-chatgpt-dall-e-image-generation",
       "evidence_verified": "2026-03-08"
     },
