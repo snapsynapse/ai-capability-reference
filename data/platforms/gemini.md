@@ -639,7 +639,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -693,7 +693,7 @@ Available globally where Google services are available.
 | URL | https://deepmind.google/models/project-astra/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -810,7 +810,7 @@ Available in supported regions where Gemini is available. Some features limited 
 | URL | https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438 |
 | Launched | 2026-03-03T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -922,7 +922,7 @@ Available where Gemini Apps are available (230+ countries on web, 150+ on mobile
 | URL      | https://gemini.google.com |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-03-21 |
-| Checked  | 2026-03-21 |
+| Checked  | 2026-04-08 |
 
 ### Availability
 

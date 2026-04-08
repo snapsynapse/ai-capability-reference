@@ -30,7 +30,7 @@ last_verified: 2026-03-21
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-04-06|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -86,7 +86,7 @@ Available globally.
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -142,17 +142,17 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 |----------|-------|
 | Category | integrations |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
-| Verified | 2026-03-22|
-| Checked | 2026-04-06|
+| Verified | 2026-04-08|
+| Checked | 2026-04-08|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Desktop extensions + GitHub only |
+| Free | ✅ | Standard | Full remote MCP connectors |
 | Pro | ✅ | Full | All remote connectors |
 | Max 5x | ✅ | Full | All remote connectors |
 | Max 20x | ✅ | Full | All remote connectors |
@@ -179,7 +179,7 @@ Available globally where Claude is available.
 
 ### Talking Point
 
-> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Pro and above get full access** including Deep Connectors (Google Drive, Gmail, DocuSign, FactSet) and a plugin marketplace. Free users can only use desktop extensions and GitHub. Custom connectors via MCP server URLs available on paid plans. Browse available connectors at claude.ai/directory."
+> "Connectors let Claude access 75+ services—Google Drive, Notion, Slack, Stripe, and more. **Now free on all plans** including full remote MCP connectors. Deep Connectors (Google Drive, Gmail, DocuSign, FactSet) and a plugin marketplace available. Custom connectors via MCP server URLs available. Browse available connectors at claude.ai/directory."
 
 ### Sources
 
@@ -191,6 +191,7 @@ Available globally where Claude is available.
 
 | Date | Change |
 |------|--------|
+| 2026-04-08T12:00Z | [Verified] Gating changed from paid to free — Free plan now has full remote MCP connector access (not just desktop extensions + GitHub) |
 | 2026-03-21T12:00Z | [Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans |
 | 2026-03-04T12:00Z | [Verified] Fixed broken URL: support.claude.com → support.anthropic.com |
 | 2025-07-14T12:00Z | Connectors Directory launched |
@@ -264,18 +265,18 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 |----------|-------|
 | Category | other |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
-| Verified | 2026-04-06|
-| Checked | 2026-04-06|
+| Verified | 2026-04-08|
+| Checked | 2026-04-08|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
-| Pro | ⚠️ | Limited | Some access via claude.ai |
+| Free | ⚠️ | Limited | Available with usage restrictions |
+| Pro | ✅ | Full | Full access, no restrictions |
 | Max 5x | ✅ | Full | Adaptive thinking with effort levels |
 | Max 20x | ✅ | Full | Adaptive thinking with effort levels |
 
@@ -299,7 +300,7 @@ Available globally.
 
 ### Talking Point
 
-> "Extended Thinking lets Claude reason through complex problems step-by-step. With Opus 4.6, **adaptive thinking** is now the recommended mode—Claude decides when deeper reasoning is needed, with four effort levels (low/medium/high/max). Manual thinking mode is deprecated on Opus 4.6. **Max plan gets full access**; Pro has limited access. Not available on free."
+> "Extended Thinking lets Claude reason through complex problems step-by-step. With Opus 4.6, **adaptive thinking** is now the recommended mode—Claude decides when deeper reasoning is needed, with four effort levels (low/medium/high/max). Manual thinking mode is deprecated on Opus 4.6. **Now available on all plans including free** (with usage limits); Pro and above get full unrestricted access."
 
 ### Sources
 
@@ -310,6 +311,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-04-08T12:00Z | [Verified] Gating changed from paid to free — Free plan now has limited Extended Thinking access; Pro upgraded from limited to full access |
 | 2026-02-17T12:00Z | [Verified] Adaptive thinking introduced with Opus 4.6; effort levels (low/medium/high/max) added; manual mode deprecated on Opus 4.6; URL updated to platform.claude.com |
 | 2025-02-24T12:00Z | Initial entry |
 
@@ -325,7 +327,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -508,7 +510,7 @@ Available globally where Claude is available.
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -625,7 +627,7 @@ Available globally where Claude is available. May be off by default in some regi
 | URL      | https://claude.ai |
 | Launched | 2023-07-11T12:00Z |
 | Verified | 2026-03-20|
-| Checked  | 2026-03-23 |
+| Checked  | 2026-04-08 |
 
 ### Availability
 
