@@ -372,7 +372,7 @@ async function runCascade(platform, feature, options = {}) {
  * @param {Array<{platform: Object, feature: Object}>} features - Features to verify
  * @param {Object} options - Configuration options
  * @param {Function} onProgress - Progress callback
- * @returns {Promise<Array<Object>>} Array of cascade results
+ * @returns {Promise<Object>} { results: Array, providerHealth: Object }
  */
 async function runBatchCascade(features, options = {}, onProgress = null) {
     const {
@@ -382,6 +382,7 @@ async function runBatchCascade(features, options = {}, onProgress = null) {
 
     const toVerify = features.slice(0, maxFeatures);
     const results = [];
+    const providerHealth = {};
 
     for (let i = 0; i < toVerify.length; i++) {
         const { platform, feature } = toVerify[i];
@@ -398,13 +399,28 @@ async function runBatchCascade(features, options = {}, onProgress = null) {
         const result = await runCascade(platform, feature, options);
         results.push(result);
 
+        // Track per-provider health from individual model results
+        for (const modelResult of result.results) {
+            const provider = modelResult.modelName || modelResult.model;
+            if (!providerHealth[provider]) {
+                providerHealth[provider] = { total: 0, errors: 0, skipped: 0, lastError: null };
+            }
+            providerHealth[provider].total++;
+            if (modelResult.type === ResultType.ERROR) {
+                providerHealth[provider].errors++;
+                providerHealth[provider].lastError = modelResult.error;
+            } else if (modelResult.type === ResultType.SKIPPED) {
+                providerHealth[provider].skipped++;
+            }
+        }
+
         // Delay between features
         if (i < toVerify.length - 1) {
             await new Promise(resolve => setTimeout(resolve, delayBetweenFeatures));
         }
     }
 
-    return results;
+    return { results, providerHealth };
 }
 
 /**

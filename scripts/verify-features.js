@@ -47,7 +47,8 @@ const {
     generateConsistencyIssue,
     generateStalenessReport,
     printResults,
-    createGitHubIssue
+    createGitHubIssue,
+    generateCascadeHealthIssue
 } = require('./lib/reporter');
 
 const { checkConsistency } = require('./lib/consistency');
@@ -301,7 +302,7 @@ async function main() {
     // Run verification
     console.log('\nStarting verification cascade...\n');
 
-    const results = await runBatchCascade(
+    const { results, providerHealth } = await runBatchCascade(
         featuresToVerify,
         {
             verbose: options.verbose,
@@ -317,6 +318,37 @@ async function main() {
     );
 
     console.log('\n');
+
+    // Check provider health and alert on degraded providers
+    const degradedProviders = [];
+    console.log('\nProvider health:');
+    for (const [name, stats] of Object.entries(providerHealth)) {
+        const queriesUsed = stats.total - stats.skipped;
+        if (queriesUsed === 0) continue;
+        const errorRate = stats.errors / queriesUsed;
+        const pct = (errorRate * 100).toFixed(0);
+        const status = errorRate > 0.8 ? '✗' : errorRate > 0 ? '~' : '✓';
+        console.log(`  ${status} ${name}: ${stats.errors}/${queriesUsed} errors (${pct}%)`);
+        if (errorRate > 0.8) {
+            degradedProviders.push(name);
+        }
+    }
+
+    if (degradedProviders.length > 0) {
+        const names = degradedProviders.join(', ');
+        console.log(`\n⚠ DEGRADED PROVIDERS: ${names}`);
+        // Emit GitHub Actions warning annotation
+        console.log(`::warning::Cascade health degraded — providers failing at >80%: ${names}`);
+
+        if (!options.dryRun) {
+            const title = `[Cascade Health] Degraded providers: ${names}`;
+            const body = generateCascadeHealthIssue(providerHealth, results.length);
+            const issueUrl = createGitHubIssue(title, body, ['cascade-health']);
+            if (issueUrl) {
+                console.log(`  Health issue: ${issueUrl}`);
+            }
+        }
+    }
 
     // Summarize results
     const summary = summarizeResults(results);
