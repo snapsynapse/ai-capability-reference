@@ -30,7 +30,7 @@ last_verified: 2026-03-21
 | URL | https://help.openai.com/en/articles/8400625-voice-mode |
 | Launched | 2024-09-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-07|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -125,7 +125,7 @@ OpenAI has indicated this may be temporary, with voice potentially returning to 
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
 | Chrome | ❌ |  |
-| web | ✅ | chat.openai.com |
+| web | ✅ | chatgpt.com |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
 
@@ -219,7 +219,7 @@ Available where ChatGPT is available. Same regional restrictions apply.
 | URL | https://openai.com/index/introducing-canvas/ |
 | Launched | 2024-10-03T12:00Z |
 | Verified | 2026-04-07|
-| Checked | 2026-04-07|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -336,7 +336,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/introducing-codex/ |
 | Launched | 2025-04-16T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -458,7 +458,7 @@ Available globally.
 | URL | https://chatgpt.com/gpts |
 | Launched | 2023-11-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-06|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -481,7 +481,7 @@ Available globally.
 | iOS | ✅ | Mobile app |
 | Android | ✅ | Mobile app |
 | Chrome | ❌ |  |
-| web | ✅ | chat.openai.com |
+| web | ✅ | chatgpt.com |
 | terminal | ❌ |  |
 | API | ✅ | OpenAI API |
 
@@ -513,21 +513,21 @@ Available globally where ChatGPT is available.
 | Property | Value |
 |----------|-------|
 | Category | image-gen |
-| Status | ga |
+| Status | deprecated |
 | Gating | paid |
 | URL | https://openai.com/index/dall-e-3/ |
 | Launched | 2023-10-01T12:00Z |
-| Verified | 2026-03-22|
-| Checked | 2026-04-06|
+| Verified | 2026-04-08|
+| Checked | 2026-04-08|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | ~2/day | Very limited |
-| Go | ✅ | 10x free | Standard access |
-| Plus | ✅ | 50x free | Priority |
-| Pro | ✅ | Unlimited | No limits |
+| Free | ⚠️ | ~2/day | Very limited; now uses GPT Image 1.5 |
+| Go | ✅ | 10x free | Standard access; now uses GPT Image 1.5 |
+| Plus | ✅ | 50x free | Priority; now uses GPT Image 1.5 |
+| Pro | ✅ | Unlimited | No limits; now uses GPT Image 1.5 |
 
 ### Platforms
 
@@ -541,7 +541,7 @@ Available globally where ChatGPT is available.
 | Chrome | ❌ |  |
 | web | ✅ |  |
 | terminal | ❌ |  |
-| API | ✅ | OpenAI API |
+| API | ✅ | OpenAI API (DALL-E 3 API deprecated May 12, 2026; migrate to gpt-image-1) |
 
 ### Regional
 
@@ -549,16 +549,18 @@ Available globally.
 
 ### Talking Point
 
-> "DALL-E image generation is available on **all plans including free**, but free users get very limited generations per day. Plus and Pro have much higher or unlimited limits."
+> "ChatGPT image generation now uses **GPT Image 1.5**, replacing DALL-E 3 (March 2025). Available on **all plans including free** with tiered limits. The DALL-E 3 API is **deprecated May 12, 2026**—developers should migrate to `gpt-image-1` or `gpt-image-1-mini`."
 
 ### Sources
 
 - [ChatGPT Pricing](https://chatgpt.com/pricing)
+- [OpenAI API Deprecations](https://developers.openai.com/api/docs/deprecations)
 
 ### Changelog
 
 | Date | Change |
 |------|--------|
+| 2026-04-08T12:00Z | [Verified] DALL-E 3 replaced by GPT Image 1.5 in ChatGPT (March 2025); DALL-E 3 API deprecated May 12, 2026; status changed to deprecated |
 | 2023-10-01T12:00Z | Initial entry |
 
 ---
@@ -867,7 +869,7 @@ Available globally where ChatGPT is available.
 | URL      | https://chatgpt.com |
 | Launched | 2022-11-30T12:00Z |
 | Verified | 2026-03-21|
-| Checked  | 2026-03-21 |
+| Checked  | 2026-04-08 |
 
 ### Availability
 
