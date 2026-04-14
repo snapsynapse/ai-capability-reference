@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-14T04:15:16.977Z",
+    "generated": "2026-04-14T04:15:53.065Z",
     "version": "1.0",
     "count": 72
   },
@@ -1029,7 +1029,7 @@
       "launched": "2023-10-01T12:00Z",
       "verified": "2026-04-08",
       "evidence_id": "implementation-chatgpt-dall-e-image-generation",
-      "evidence_verified": "2026-03-22"
+      "evidence_verified": "2026-04-08"
     },
     {
       "id": "chatgpt-deep-research",
@@ -2041,7 +2041,7 @@
       "launched": "2025-05-01T12:00Z",
       "verified": "2026-04-08",
       "evidence_id": "implementation-claude-connectors",
-      "evidence_verified": "2026-03-22"
+      "evidence_verified": "2026-04-08"
     },
     {
       "id": "claude-cowork-mode",
@@ -2254,7 +2254,7 @@
       "launched": "2025-02-24T12:00Z",
       "verified": "2026-04-08",
       "evidence_id": "implementation-claude-extended-thinking",
-      "evidence_verified": "2026-04-06"
+      "evidence_verified": "2026-04-08"
     },
     {
       "id": "claude-mcp-model-context-protocol",
@@ -7265,7 +7265,7 @@
       "launched": "2024-10-24T12:00Z",
       "verified": "2026-04-08",
       "evidence_id": "implementation-perplexity-voice-mode",
-      "evidence_verified": "2026-01-29"
+      "evidence_verified": "2026-04-08"
     },
     {
       "id": "perplexity-chat",
