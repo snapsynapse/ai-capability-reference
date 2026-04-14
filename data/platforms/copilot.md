@@ -4,7 +4,7 @@ vendor: Microsoft
 logo: https://copilot.microsoft.com/favicon.ico
 status_page: https://status.office.com
 pricing_page: https://www.microsoft.com/en-us/microsoft-copilot
-last_verified: 2026-03-21
+last_verified: 2026-04-13
 ---
 
 ## Pricing
@@ -193,12 +193,12 @@ Available globally.
 | Property | Value |
 |----------|-------|
 | Category | browser |
-| Status | preview |
+| Status | ga |
 | Gating | free |
 | URL | https://support.microsoft.com/en-us/topic/using-copilot-vision-with-microsoft-copilot-3c67686f-fa97-40f6-8a3e-0e45265d425f |
 | Launched | 2024-10-01T12:00Z |
-| Verified | 2026-03-15|
-| Checked | 2026-04-07|
+| Verified | 2026-04-13|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -214,8 +214,8 @@ Available globally.
 | Windows | ✅ | Edge browser required |
 | macOS | ✅ | Edge on Mac |
 | Linux | ❌ |  |
-| iOS | ❌ | Not available |
-| Android | ❌ | Not available |
+| iOS | ✅ | Copilot app |
+| Android | ✅ | Copilot app |
 | Chrome | ❌ | Edge only |
 | web | ❌ | Edge browser only (not web Copilot) |
 | terminal | ❌ |  |
@@ -227,7 +227,7 @@ Available in the United States. Broader rollout planned.
 
 ### Talking Point
 
-> "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Now free for all Edge users** in the US with a Microsoft account—no Pro subscription needed. Still in preview and Edge-only."
+> "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Now free for all Edge users** in the US with a Microsoft account—no Pro subscription needed. Now GA and available via the Copilot app on iOS and Android as well as Edge"
 
 ### Sources
 
@@ -239,6 +239,7 @@ Available in the United States. Broader rollout planned.
 
 | Date | Change |
 |------|--------|
+| 2026-04-13T12:00Z | [Verified] Status changed from preview to GA; iOS and Android now available via Copilot app |
 | 2026-02-17T12:00Z | [Verified] Gating changed from paid to free for Edge users; macOS Edge confirmed; US availability confirmed |
 | 2025-03-01T12:00Z | Paywall removed — now free for all Edge users with Microsoft account |
 | 2024-12-05T12:00Z | Preview launched in Edge |
@@ -256,7 +257,7 @@ Available in the United States. Broader rollout planned.
 | URL | https://www.microsoft.com/en-us/microsoft-copilot |
 | Launched | 2024-10-01T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -309,14 +310,14 @@ Available globally.
 | URL | https://copilot.microsoft.com/ |
 | Launched | 2023-02-07T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | Limited | Falls back to faster models at peak |
-| Copilot Pro | ✅ | Priority | Consistent GPT-4 access |
+| Free | ⚠️ | Limited | GPT-4o/GPT-4.1 with fallback at peak; GPT-5 preview available |
+| Copilot Pro | ✅ | Priority | Priority GPT-4o/GPT-4.1/GPT-5 access |
 
 ### Platforms
 

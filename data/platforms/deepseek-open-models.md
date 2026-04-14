@@ -3,7 +3,7 @@ name: DeepSeek Open Models
 vendor: DeepSeek
 logo: https://deepseek.com/favicon.ico
 pricing_page: https://github.com/deepseek-ai
-last_verified: 2026-03-21
+last_verified: 2026-04-13
 build_visibility: hidden
 ---
 
@@ -25,7 +25,7 @@ build_visibility: hidden
 | URL | https://github.com/deepseek-ai/DeepSeek-V3 |
 | Launched | 2024-12-27T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -43,9 +43,9 @@ build_visibility: hidden
 | iOS | ❌ | Not practical |
 | Android | ❌ | Not practical |
 | Chrome | ❌ |  |
-| web | ❌ | Local only |
+| web | ❌ | Local only (hosted at chat.deepseek.com separately) |
 | terminal | ✅ | Ollama CLI |
-| API | ✅ | Ollama REST API |
+| API | ✅ | Ollama REST API; also via DeepSeek hosted API |
 
 ### Regional
 

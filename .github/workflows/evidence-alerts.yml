@@ -24,12 +24,15 @@ jobs:
           const threshold = 30;
           const now = Date.now();
           const stale = evidence.evidence
-            .filter(e => e.verified)
-            .map(e => ({
-              id: e.entity_id,
-              verified: e.verified,
-              days: Math.floor((now - new Date(e.verified).getTime()) / 86400000)
-            }))
+            .filter(e => e.verified || e.checked)
+            .map(e => {
+              const freshest = [e.checked, e.verified].filter(Boolean).sort().pop();
+              return {
+                id: e.entity_id,
+                verified: freshest,
+                days: Math.floor((now - new Date(freshest).getTime()) / 86400000)
+              };
+            })
             .filter(e => e.days > threshold)
             .sort((a, b) => b.days - a.days);
 

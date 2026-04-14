@@ -26,6 +26,9 @@ jobs:
         with:
           node-version: '20'
 
+      - name: Sync evidence records
+        run: node scripts/sync-evidence.js
+
       - name: Build dashboard
         run: node scripts/build.js
 

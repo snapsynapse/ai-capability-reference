@@ -4,7 +4,7 @@ vendor: xAI
 logo: https://x.ai/favicon.ico
 status_page: https://status.x.ai
 pricing_page: https://x.ai/grok
-last_verified: 2026-03-21
+last_verified: 2026-04-13
 ---
 
 ## Pricing
@@ -24,17 +24,17 @@ last_verified: 2026-03-21
 |----------|-------|
 | Category | research |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
+| Free | ⚠️ | Limited | Basic access with daily caps |
 | Premium | ⚠️ | Limited | Basic access |
 | Premium+ | ✅ | Standard | Full access |
 | SuperGrok | ✅ | Unlimited | Priority |
@@ -59,7 +59,7 @@ Available globally.
 
 ### Talking Point
 
-> "DeepSearch is Grok's multi-step research mode. **Premium+ or SuperGrok recommended** for full access; basic Premium has limited DeepSearch."
+> "DeepSearch is Grok's multi-step research mode. **Free users get limited access with daily caps**; Premium+ or SuperGrok recommended for full access."
 
 ### Sources
 
@@ -69,6 +69,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-04-13T12:00Z | [Verified] Gating changed from paid to free — limited free-tier access now available |
 | 2025-02-17T12:00Z | Initial entry |
 
 ---
@@ -79,11 +80,11 @@ Available globally.
 |----------|-------|
 | Category | other |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -125,6 +126,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
+| 2026-04-13T12:00Z | [Verified] Gating corrected from paid to free — availability table already documented free-tier access |
 | 2023-11-04T12:00Z | Initial entry |
 
 ---
@@ -135,11 +137,11 @@ Available globally where X is available.
 |----------|-------|
 | Category | image-gen |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://x.ai/blog/grok-image-generation |
 | Launched | 2024-12-09T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -180,6 +182,7 @@ Available globally.
 
 | Date | Change |
 |------|--------|
+| 2026-04-13T12:00Z | [Verified] Gating corrected from paid to free — availability table already documented free-tier access |
 | 2026-02-28T12:00Z | [Verified] Free tier access confirmed (~10 generations per 2-hour window); paid tier limits updated |
 | 2024-12-09T12:00Z | Initial entry |
 
@@ -194,17 +197,17 @@ Available globally.
 | Gating | paid |
 | URL | https://x.ai/blog/grok-imagine |
 | Launched | 2025-08-04T12:00Z |
-| Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Verified | 2026-04-13|
+| Checked | 2026-04-13|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ⚠️ | Very limited | ~3/day, 480p previews |
-| Premium | ✅ | 50/day | Basic video generation |
-| Premium+ | ✅ | 100/day | More generations |
-| SuperGrok | ✅ | 500/day | Priority + most generations |
+| Free | ❌ | — | Removed March 2026 |
+| Premium | ✅ | ~10/8hrs | Basic video generation, 720p |
+| Premium+ | ✅ | Higher | Enhanced generation, 720p |
+| SuperGrok | ✅ | Highest | Priority + most generations, 720p |
 
 ### Platforms
 
@@ -226,7 +229,7 @@ Available globally where X is available.
 
 ### Talking Point
 
-> "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Free users get very limited access (~3/day at 480p)**; paid tiers unlock higher limits (up to 500/day on SuperGrok). Supports text-to-video and image-to-video. 'Spicy Mode' requires paid subscription."
+> "Grok Imagine generates 6-15 second video clips with synchronized audio. **Free access was removed in March 2026**—now requires Premium ($8/mo) or higher. Resolution upgraded to 720p. Supports text-to-video and image-to-video."
 
 ### Sources
 
@@ -237,6 +240,7 @@ Available globally where X is available.
 
 | Date | Change |
 |------|--------|
+| 2026-04-13T12:00Z | [Verified] Free tier access removed (March 2026); paid tier limits reduced; resolution upgraded from 480p to 720p |
 | 2026-02-28T12:00Z | [Verified] Free tier access confirmed (very limited, ~3/day at 480p); paid tier daily limits updated |
 | 2025-11-01T12:00Z | Text-to-video generation added |
 | 2025-10-06T12:00Z | Major update announced by Elon Musk |
@@ -422,7 +426,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -477,7 +481,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-2 |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-07|
+| Checked | 2026-04-13|
 
 ### Availability
 

@@ -7,7 +7,7 @@
     "source_heading": "Advanced Voice Mode",
     "launched": "2024-09-24T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Voice Mode Help",
@@ -41,8 +41,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Agent Mode",
     "launched": "2025-07-17T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-20",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "ChatGPT Agent Help",
@@ -76,8 +76,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Atlas Browser",
     "launched": "2025-10-21T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-27",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Introducing ChatGPT Atlas",
@@ -89,6 +89,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Added missing Team and Enterprise rows to availability table"
+      },
       {
         "date": "2026-03-07T12:00Z",
         "change": "[Verified] Windows note updated from \"Expected late Feb 2026\" to \"Expected 2026 (not yet released)\" — both models confirmed still macOS-only"
@@ -107,8 +111,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Canvas",
     "launched": "2024-10-03T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-04-07",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Introducing Canvas",
@@ -116,6 +120,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] iOS and Android now available (since Oct 2024); mobile platform status corrected"
+      },
       {
         "date": "2024-10-03T12:00Z",
         "change": "Initial entry"
@@ -130,8 +138,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Chat",
     "launched": "2022-11-30T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-07",
+    "verified": "2026-03-21",
+    "checked": "2026-03-21",
     "sources": [
       {
         "title": "ChatGPT",
@@ -144,9 +152,21 @@
       {
         "title": "Introducing GPT-5.4",
         "url": "https://openai.com/index/introducing-gpt-5-4/"
+      },
+      {
+        "title": "Introducing GPT-5.4 Mini and Nano",
+        "url": "https://openai.com/index/introducing-gpt-5-4-mini-and-nano/"
+      },
+      {
+        "title": "OpenAI Developer Community: GPT-5.4 Mini and Nano",
+        "url": "https://community.openai.com/t/introducing-gpt-5-4-mini-and-nano-our-most-capable-small-models-yet/1377015"
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] GPT-5.4 Mini and Nano released: Mini available in ChatGPT (Free/Go via Thinking menu), API, and Codex; Nano is API-only; Mini $0.75/$4.50 per 1M tokens, Nano $0.20/$1.25 per 1M tokens; 400K context; vision support"
+      },
       {
         "date": "2026-03-14T12:00Z",
         "change": "[Verified] GPT-5.4 family released: Plus gets GPT-5.4 Thinking, Pro gets GPT-5.4 Pro; GPT-5.2 Thinking moved to Legacy Models (90-day retirement); 1M context in API; native computer use tool"
@@ -170,7 +190,7 @@
     "source_heading": "Codex (Code Agent)",
     "launched": "2025-04-16T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "ChatGPT Pricing",
@@ -209,7 +229,7 @@
     "source_heading": "Codex Security",
     "launched": "2026-03-06T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Codex Security: now in research preview",
@@ -222,8 +242,12 @@
     ],
     "changelog": [
       {
-        "date": "2026-03-15T12:00Z",
+        "date": "2026-03-14T12:00Z",
         "change": "Initial entry"
+      },
+      {
+        "date": "2026-03-06T12:00Z",
+        "change": "Research preview launched for Pro/Enterprise/Business/Edu"
       }
     ],
     "notes": ""
@@ -236,7 +260,7 @@
     "source_heading": "Custom GPTs + Actions",
     "launched": "2023-11-06T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Creating a GPT",
@@ -270,8 +294,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "DALL-E Image Generation",
     "launched": "2023-10-01T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "ChatGPT Pricing",
@@ -293,8 +317,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Deep Research",
     "launched": "2025-02-03T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-20",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Deep Research Help",
@@ -320,8 +344,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Memory",
     "launched": "2024-09-05T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-19",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Memory and new controls for ChatGPT",
@@ -355,8 +379,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Projects",
     "launched": "2024-12-13T12:00Z",
-    "verified": "2026-03-01",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Using Projects in ChatGPT",
@@ -378,8 +402,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "ChatGPT Search",
     "launched": "2024-10-31T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-20",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Introducing ChatGPT Search",
@@ -413,8 +437,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Sora (Video Generation)",
     "launched": "2024-12-09T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-13",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Sora is here",
@@ -426,6 +450,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Sora discontinued: web/app shutdown April 26, 2026; API shutdown September 24, 2026"
+      },
       {
         "date": "2026-01-10T12:00Z",
         "change": "Free tier access discontinued"
@@ -448,8 +476,8 @@
     "source_file": "data/platforms/chatgpt.md",
     "source_heading": "Vision (Image Understanding)",
     "launched": "2024-05-13T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Hello GPT-4o",
@@ -479,8 +507,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Artifacts",
     "launched": "2024-06-20T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-15",
+    "verified": "2026-04-06",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Artifacts Documentation",
@@ -506,8 +534,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Chat",
     "launched": "2023-07-11T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-07",
+    "verified": "2026-03-20",
+    "checked": "2026-03-23",
     "sources": [
       {
         "title": "Claude",
@@ -537,8 +565,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Claude Code",
     "launched": "2025-02-24T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Claude Code Documentation",
@@ -572,8 +600,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Connectors",
     "launched": "2025-05-01T12:00Z",
-    "verified": "2026-03-04",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Claude Integrations",
@@ -589,6 +617,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans"
+      },
       {
         "date": "2026-03-04T12:00Z",
         "change": "[Verified] Fixed broken URL: support.claude.com → support.anthropic.com"
@@ -615,8 +647,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Cowork Mode",
     "launched": "2026-01-12T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-15",
+    "verified": "2026-04-13",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Getting Started with Cowork",
@@ -628,6 +660,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Status changed from preview to GA (April 9, 2026); enterprise features added (RBAC, observability, Dispatch upgrades)"
+      },
       {
         "date": "2026-02-17T12:00Z",
         "change": "[Verified] Expanded to all paid plans (Pro, Team, Enterprise); Windows x64 support added"
@@ -646,8 +682,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Extended Thinking",
     "launched": "2025-02-24T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-06",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Extended Thinking Documentation",
@@ -677,8 +713,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "MCP (Model Context Protocol)",
     "launched": "2024-11-25T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Introducing Model Context Protocol",
@@ -704,15 +740,23 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Memory",
     "launched": "2025-10-01T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-15",
+    "verified": "2026-03-19",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Claude Memory Guide",
         "url": "https://aiadopters.club/p/set-up-my-claude-memory"
+      },
+      {
+        "title": "API Memory Tool",
+        "url": "https://platform.claude.com/docs/en/agents-and-tools/tool-use/memory-tool"
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] API Memory Tool now available for developers (type: memory_20250818); 3-layer architecture: Chat Memory, CLAUDE.md, API Memory Tool"
+      },
       {
         "date": "2026-03-07T12:00Z",
         "change": "Initial entry"
@@ -735,8 +779,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Projects",
     "launched": "2024-06-25T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-13",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Projects Documentation",
@@ -744,6 +788,14 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Gating corrected from free to paid — external sources confirm Projects not available on Free tier; Feb 2026 free expansion did not include Projects"
+      },
+      {
+        "date": "2026-03-23T12:00Z",
+        "change": "[Verified] Added missing Enterprise row to availability table (SSO, admin controls, custom limits)"
+      },
       {
         "date": "2026-02-28T12:00Z",
         "change": "[Verified] Free tier access added as part of Anthropic's February 2026 free tier expansion; gating changed from paid to free"
@@ -762,8 +814,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Skills",
     "launched": "2025-10-16T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-04-03",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Introducing Skills",
@@ -797,8 +849,8 @@
     "source_file": "data/platforms/claude.md",
     "source_heading": "Vision (Image Understanding)",
     "launched": "2024-03-04T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Vision Documentation",
@@ -824,8 +876,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Agent Builder",
     "launched": "2025-02-24T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Agent Builder Documentation",
@@ -863,8 +915,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Chat",
     "launched": "2023-02-07T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-07",
+    "verified": "2026-03-22",
+    "checked": "2026-03-25",
     "sources": [
       {
         "title": "Microsoft Copilot",
@@ -898,8 +950,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Copilot Connectors",
     "launched": "2023-11-01T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Copilot Connectors Overview",
@@ -937,8 +989,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "GPT-4 Access",
     "launched": "2023-02-07T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Copilot Pro Features",
@@ -960,15 +1012,27 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Image Generation (Designer)",
     "launched": "2023-03-21T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-23",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Microsoft Designer",
         "url": "https://designer.microsoft.com/"
+      },
+      {
+        "title": "AI Credits in M365",
+        "url": "https://support.microsoft.com/en-us/office/ai-credits-and-limits-for-microsoft-365-personal-family-and-premium-68530f1a-4459-4d02-9818-8233c1f673b8"
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-23T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — free users have access with 15 AI credits/mo; data was internally inconsistent"
+      },
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Credits system replaced boosts (15-60 credits/month); Designer bot retired in Teams (Feb 27); model upgraded to GPT-Image-1.5"
+      },
       {
         "date": "2023-03-21T12:00Z",
         "change": "Initial entry"
@@ -983,8 +1047,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Copilot in Office Apps",
     "launched": "2023-11-01T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Copilot Pro",
@@ -1006,8 +1070,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Copilot Vision",
     "launched": "2024-10-01T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-13",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Using Copilot Vision",
@@ -1023,6 +1087,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Status changed from preview to GA; iOS and Android now available via Copilot app"
+      },
       {
         "date": "2026-02-17T12:00Z",
         "change": "[Verified] Gating changed from paid to free for Edge users; macOS Edge confirmed; US availability confirmed"
@@ -1049,8 +1117,8 @@
     "source_file": "data/platforms/copilot.md",
     "source_heading": "Copilot Voice",
     "launched": "2024-10-01T12:00Z",
-    "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Microsoft Copilot",
@@ -1072,8 +1140,8 @@
     "source_file": "data/platforms/gemini.md",
     "source_heading": "Agentic App Actions (Android)",
     "launched": "2026-03-03T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-08",
+    "verified": "2026-03-21",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "March 2026 Pixel Drop",
@@ -1081,6 +1149,14 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Device support corrected to Pixel 10 series and Samsung Galaxy S26 series; regional availability updated to US and South Korea; supported apps listed"
+      },
+      {
+        "date": "2026-03-12T12:00Z",
+        "change": "Expanded to Samsung Galaxy S26 series"
+      },
       {
         "date": "2026-03-03T12:00Z",
         "change": "Initial entry — agentic app actions launched via March 2026 Pixel Drop"
@@ -1096,7 +1172,7 @@
     "source_heading": "AI Studio",
     "launched": "2023-12-13T12:00Z",
     "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Google AI Studio",
@@ -1123,7 +1199,7 @@
     "source_heading": "Audio Overview",
     "launched": "2024-09-11T12:00Z",
     "verified": "2026-02-22",
-    "checked": "2026-03-15",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "NotebookLM Audio Overviews",
@@ -1158,7 +1234,7 @@
     "source_heading": "Canvas",
     "launched": "2025-03-18T12:00Z",
     "verified": "2026-03-01",
-    "checked": "2026-03-15",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Gemini Canvas",
@@ -1184,8 +1260,8 @@
     "source_file": "data/platforms/gemini.md",
     "source_heading": "Chat",
     "launched": "2024-02-08T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "verified": "2026-03-21",
+    "checked": "2026-03-21",
     "sources": [
       {
         "title": "Gemini",
@@ -1194,9 +1270,17 @@
       {
         "title": "Google AI Plans",
         "url": "https://one.google.com/intl/en/about/google-ai-plans/"
+      },
+      {
+        "title": "Gemini in Chrome",
+        "url": "https://blog.google/products-and-platforms/products/chrome/gemini-3-auto-browse/"
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Chrome side panel added (Jan 2026); model names updated to Gemini 3 Flash (free) and Gemini 3.1 Pro (paid)"
+      },
       {
         "date": "2026-03-07T12:00Z",
         "change": "Initial entry"
@@ -1215,8 +1299,8 @@
     "source_file": "data/platforms/gemini.md",
     "source_heading": "Deep Research",
     "launched": "2024-12-11T12:00Z",
-    "verified": "2026-03-04",
-    "checked": "2026-03-15",
+    "verified": "2026-04-07",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Gemini Deep Research",
@@ -1224,6 +1308,14 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-07T12:00Z",
+        "change": "[Verified] API platform row corrected to ❌ — Deep Research is a consumer UI feature with no dedicated Gemini API endpoint; two independent sources found no evidence of API access"
+      },
+      {
+        "date": "2026-03-23T12:00Z",
+        "change": "[Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro for AI Pro tier"
+      },
       {
         "date": "2026-03-04T12:00Z",
         "change": "[Verified] Gating changed from paid to free; free tier now gets ~5 reports/month via Gemini Flash"
@@ -1243,7 +1335,7 @@
     "source_heading": "Extensions",
     "launched": "2023-09-19T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Gemini Extensions",
@@ -1281,8 +1373,8 @@
     "source_file": "data/platforms/gemini.md",
     "source_heading": "Gemini Advanced",
     "launched": "2024-02-08T12:00Z",
-    "verified": "2026-03-04",
-    "checked": "2026-03-15",
+    "verified": "2026-04-07",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Google AI Plans",
@@ -1290,6 +1382,14 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-07T12:00Z",
+        "change": "[Verified] Removed AI Plus tier (two April 2026 sources confirm Gemini Advanced access is Pro/Ultra only; Plus not mentioned); added AI Ultra row; updated talking point"
+      },
+      {
+        "date": "2026-03-23T12:00Z",
+        "change": "[Verified] Model updated from Gemini 2.5 Pro to Gemini 3.0 Pro"
+      },
       {
         "date": "2026-03-04T12:00Z",
         "change": "[Verified] Google One AI Premium renamed to Google AI Pro ($19.99/mo); Google AI Plus ($7.99/mo) and AI Ultra ($249.99/mo) added; AI Plus also includes Gemini Advanced"
@@ -1309,7 +1409,7 @@
     "source_heading": "Gems (Custom Chatbots)",
     "launched": "2024-08-01T12:00Z",
     "verified": "2026-03-08",
-    "checked": "2026-03-15",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Introducing Gems",
@@ -1335,8 +1435,8 @@
     "source_file": "data/platforms/gemini.md",
     "source_heading": "Imagen",
     "launched": "2024-08-01T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-07",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Imagen on Gemini",
@@ -1344,6 +1444,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-07T12:00Z",
+        "change": "[Verified] Gating changed from paid to free; Imagen 4 now available to all Gemini users; free tier ~10-20/day, AI Pro ~100-150/day; model updated from Imagen 3 to Imagen 4"
+      },
       {
         "date": "2024-08-01T12:00Z",
         "change": "Initial entry"
@@ -1359,7 +1463,7 @@
     "source_heading": "Gemini Live (Voice Mode)",
     "launched": "2024-08-13T12:00Z",
     "verified": "2026-02-28",
-    "checked": "2026-03-15",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Gemini Live",
@@ -1382,7 +1486,7 @@
     "source_heading": "Nano Banana Pro",
     "launched": "2025-08-01T12:00Z",
     "verified": "2026-03-04",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Gemini Image Generation",
@@ -1398,6 +1502,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Added Plus and Ultra tier rows with daily limits per April 11 tier update"
+      },
       {
         "date": "2026-03-04T12:00Z",
         "change": "[Verified] Gating changed from free to paid; Nano Banana 2 became default for all users (Feb 26, 2026); free users no longer get Nano Banana Pro"
@@ -1421,7 +1529,7 @@
     "source_heading": "NotebookLM",
     "launched": "2023-12-01T12:00Z",
     "verified": "2026-02-28",
-    "checked": "2026-03-08",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "NotebookLM",
@@ -1448,7 +1556,7 @@
     "source_heading": "Past Chats (Memory)",
     "launched": "2026-02-26T12:00Z",
     "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Gemini Past Chats Free (9to5Google)",
@@ -1479,7 +1587,7 @@
     "source_heading": "Project Astra",
     "launched": "2024-12-11T12:00Z",
     "verified": "2026-02-28",
-    "checked": "2026-03-08",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Project Astra",
@@ -1514,7 +1622,7 @@
     "source_heading": "Veo (Video Generation)",
     "launched": "2024-05-14T12:00Z",
     "verified": "2026-02-22",
-    "checked": "2026-03-08",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Veo - Google DeepMind",
@@ -1534,6 +1642,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Added Plus and Ultra tier rows with daily limits"
+      },
       {
         "date": "2026-01-13T12:00Z",
         "change": "Veo 3.1 4K resolution and vertical video support"
@@ -1565,7 +1677,7 @@
     "source_heading": "Gemini in Workspace (Docs, Sheets, etc.)",
     "launched": "2024-06-24T12:00Z",
     "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Gemini for Google Workspace",
@@ -1599,8 +1711,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Grok Chat",
     "launched": "2023-11-04T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-08",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok Official",
@@ -1612,6 +1724,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — availability table already documented free-tier access"
+      },
       {
         "date": "2023-11-04T12:00Z",
         "change": "Initial entry"
@@ -1626,8 +1742,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "DeepSearch",
     "launched": "2025-02-17T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-08",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok DeepSearch",
@@ -1635,6 +1751,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Gating changed from paid to free — limited free-tier access now available"
+      },
       {
         "date": "2025-02-17T12:00Z",
         "change": "Initial entry"
@@ -1649,8 +1769,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Grok Image Generation (Aurora)",
     "launched": "2024-12-09T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-04",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok Image Generation",
@@ -1658,6 +1778,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — availability table already documented free-tier access"
+      },
       {
         "date": "2026-02-28T12:00Z",
         "change": "[Verified] Free tier access confirmed (~10 generations per 2-hour window); paid tier limits updated"
@@ -1676,8 +1800,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Grok Imagine (Video Generation)",
     "launched": "2025-08-04T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-04",
+    "verified": "2026-04-13",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok Imagine - TechCrunch",
@@ -1689,6 +1813,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-04-13T12:00Z",
+        "change": "[Verified] Free tier access removed (March 2026); paid tier limits reduced; resolution upgraded from 480p to 720p"
+      },
       {
         "date": "2026-02-28T12:00Z",
         "change": "[Verified] Free tier access confirmed (very limited, ~3/day at 480p); paid tier daily limits updated"
@@ -1716,7 +1844,7 @@
     "source_heading": "Memory",
     "launched": "2025-02-17T12:00Z",
     "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "How Grok Memory Works",
@@ -1746,8 +1874,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Real-time X/Twitter Data",
     "launched": "2023-11-04T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-03-04",
+    "verified": "2026-03-19",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Grok Official",
@@ -1769,8 +1897,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Grok Studio",
     "launched": "2025-04-16T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-04",
+    "verified": "2026-03-20",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Grok Studio Announcement",
@@ -1796,8 +1924,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Think Mode",
     "launched": "2025-02-17T12:00Z",
-    "verified": "2026-03-01",
-    "checked": "2026-03-04",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok Think Mode",
@@ -1819,8 +1947,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Vision (Image Understanding)",
     "launched": "2024-08-13T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Grok 2 Announcement",
@@ -1846,8 +1974,8 @@
     "source_file": "data/platforms/grok.md",
     "source_heading": "Grok Voice Mode",
     "launched": "2025-02-24T12:00Z",
-    "verified": "2026-02-28",
-    "checked": "2026-03-04",
+    "verified": "2026-03-21",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Grok Voice",
@@ -1855,6 +1983,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Voice mode now free for all users on iOS and Android; 11 voice modes; TTS API launched (Mar 16); attachment/photo support in voice added; gating changed from paid to free"
+      },
       {
         "date": "2026-02-28T12:00Z",
         "change": "[Verified] Free access confirmed for iOS users; Android still requires subscription"
@@ -1871,14 +2003,18 @@
     "entity_type": "implementation",
     "entity_id": "perplexity-agent-mode-agentic-actions",
     "source_file": "data/platforms/perplexity.md",
-    "source_heading": "Agent Mode (Agentic Actions)",
+    "source_heading": "Agent Mode (Agentic Actions) / Perplexity Computer",
     "launched": "2024-11-01T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "verified": "2026-03-21",
+    "checked": "2026-04-06",
     "sources": [
       {
-        "title": "Comet Browser",
-        "url": "https://www.perplexity.ai/comet"
+        "title": "Everything is Computer",
+        "url": "https://www.perplexity.ai/hub/blog/everything-is-computer"
+      },
+      {
+        "title": "Introducing Perplexity Computer",
+        "url": "https://www.perplexity.ai/hub/blog/introducing-perplexity-computer"
       },
       {
         "title": "Perplexity Computer Voice Mode announcement",
@@ -1886,6 +2022,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-19T12:00Z",
+        "change": "[Verified] Major expansion: Personal Computer (dedicated Mac mini, Max plan, waitlist); Computer for Enterprise (Slack/Snowflake/Salesforce, Enterprise plan); 4 platform APIs (Search, Agent, Embeddings, Sandbox); Samsung Galaxy S26 integration; section renamed to include \"Perplexity Computer\""
+      },
       {
         "date": "2026-03-07T12:00Z",
         "change": "[Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer"
@@ -1905,7 +2045,7 @@
     "source_heading": "Buy with Pro (Shopping)",
     "launched": "2024-11-18T12:00Z",
     "verified": "2026-02-07",
-    "checked": "2026-02-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Shop like a Pro",
@@ -1940,7 +2080,7 @@
     "source_heading": "Chat",
     "launched": "2022-12-07T12:00Z",
     "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity AI",
@@ -1974,8 +2114,8 @@
     "source_file": "data/platforms/perplexity.md",
     "source_heading": "Collections (Spaces)",
     "launched": "2024-10-17T12:00Z",
-    "verified": "2026-02-07",
-    "checked": "2026-02-07",
+    "verified": "2026-03-25",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Spaces",
@@ -1983,6 +2123,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-25T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — availability table shows Free tier has access (limited)"
+      },
       {
         "date": "2024-10-17T12:00Z",
         "change": "Initial entry"
@@ -1997,8 +2141,8 @@
     "source_file": "data/platforms/perplexity.md",
     "source_heading": "Comet Browser",
     "launched": "2025-07-09T12:00Z",
-    "verified": "2026-02-07",
-    "checked": "2026-02-07",
+    "verified": "2026-03-31",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Comet Browser",
@@ -2011,9 +2155,21 @@
       {
         "title": "Comet for Android",
         "url": "https://www.perplexity.ai/hub/blog/comet-for-android-is-here"
+      },
+      {
+        "title": "Comet Enterprise",
+        "url": "https://www.perplexity.ai/hub/blog/comet-enterprise-is-here"
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-19T12:00Z",
+        "change": "[Verified] Comet Enterprise launched (Mar 2026): managed browser with admin controls, MDM deployment, audit logs, CrowdStrike Falcon integration; iOS now available (Comet for iPhone); Enterprise Pro row added"
+      },
+      {
+        "date": "2026-03-25T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — availability table shows Free tier has full browser access"
+      },
       {
         "date": "2025-07-09T12:00Z",
         "change": "Initial entry"
@@ -2028,8 +2184,8 @@
     "source_file": "data/platforms/perplexity.md",
     "source_heading": "Enterprise App Connectors",
     "launched": "2024-09-01T12:00Z",
-    "verified": "2026-02-07",
-    "checked": "2026-02-07",
+    "verified": "2026-03-31",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Enterprise App Connectors",
@@ -2051,8 +2207,8 @@
     "source_file": "data/platforms/perplexity.md",
     "source_heading": "Focus Modes",
     "launched": "2024-01-01T12:00Z",
-    "verified": "2026-01-29",
-    "checked": "2026-02-07",
+    "verified": "2026-03-25",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Help",
@@ -2060,6 +2216,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-25T12:00Z",
+        "change": "[Verified] Gating corrected from paid to free — availability table shows Free tier has full access to all focus modes"
+      },
       {
         "date": "2024-01-01T12:00Z",
         "change": "Initial entry"
@@ -2075,7 +2235,7 @@
     "source_heading": "Model Selection",
     "launched": "2024-01-01T12:00Z",
     "verified": "2026-01-29",
-    "checked": "2026-02-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Pro Features",
@@ -2098,7 +2258,7 @@
     "source_heading": "Pages",
     "launched": "2024-05-30T12:00Z",
     "verified": "2026-01-29",
-    "checked": "2026-02-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Pages",
@@ -2125,7 +2285,7 @@
     "source_heading": "Pro Search",
     "launched": "2024-07-02T12:00Z",
     "verified": "2026-02-07",
-    "checked": "2026-02-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Pro",
@@ -2148,7 +2308,7 @@
     "source_heading": "Voice Mode",
     "launched": "2024-10-24T12:00Z",
     "verified": "2026-01-29",
-    "checked": "2026-02-07",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Perplexity Mobile App",
@@ -2170,8 +2330,8 @@
     "source_file": "data/platforms/mistral-open-models.md",
     "source_heading": "Codestral (Mistral)",
     "launched": "2024-05-29T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-02-22",
+    "verified": "2026-03-20",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Codestral",
@@ -2191,31 +2351,27 @@
     "notes": ""
   },
   {
-    "id": "model-access-deepseek-v3-r1",
+    "id": "model-access-leanstral",
     "entity_type": "model_access",
-    "entity_id": "deepseek-v3-r1",
-    "source_file": "data/platforms/deepseek-open-models.md",
-    "source_heading": "DeepSeek-V3 / DeepSeek-R1",
-    "launched": "2024-12-27T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "entity_id": "leanstral",
+    "source_file": "data/platforms/mistral-open-models.md",
+    "source_heading": "Leanstral (Mistral)",
+    "launched": "2026-03-16T12:00Z",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
-        "title": "DeepSeek-V3",
-        "url": "https://github.com/deepseek-ai/DeepSeek-V3"
+        "title": "Leanstral Announcement",
+        "url": "https://mistral.ai/news/leanstral"
       },
       {
-        "title": "DeepSeek-R1",
-        "url": "https://github.com/deepseek-ai/DeepSeek-R1"
-      },
-      {
-        "title": "Ollama DeepSeek",
-        "url": "https://ollama.com/library/deepseek-r1"
+        "title": "Mistral Docs Changelog",
+        "url": "https://docs.mistral.ai/getting-started/changelog"
       }
     ],
     "changelog": [
       {
-        "date": "2024-12-27T12:00Z",
+        "date": "2026-03-16T12:00Z",
         "change": "Initial entry"
       }
     ],
@@ -2228,8 +2384,8 @@
     "source_file": "data/platforms/meta-open-models.md",
     "source_heading": "Llama 3.3 (Meta)",
     "launched": "2024-12-06T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-02-22",
+    "verified": "2026-03-20",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Llama 3.3 Release",
@@ -2255,8 +2411,8 @@
     "source_file": "data/platforms/meta-open-models.md",
     "source_heading": "Llama 4 (Meta)",
     "launched": "2025-04-05T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-02-22",
+    "verified": "2026-04-07",
+    "checked": "2026-04-07",
     "sources": [
       {
         "title": "Llama 4 Blog",
@@ -2286,8 +2442,8 @@
     "source_file": "data/platforms/mistral-open-models.md",
     "source_heading": "Mistral Large / Mistral Nemo",
     "launched": "2024-07-18T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-02-22",
+    "verified": "2026-03-21",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Mistral Models",
@@ -2299,6 +2455,10 @@
       }
     ],
     "changelog": [
+      {
+        "date": "2026-03-21T12:00Z",
+        "change": "[Verified] Models deprecated on hosted platforms (Vertex AI, La Plateforme); open weights still available for self-hosted; Mistral Small 4 now recommended"
+      },
       {
         "date": "2024-07-18T12:00Z",
         "change": "Initial entry"
@@ -2313,8 +2473,8 @@
     "source_file": "data/platforms/mistral-open-models.md",
     "source_heading": "Mistral Small 3",
     "launched": "2025-01-30T12:00Z",
-    "verified": "2026-02-22",
-    "checked": "2026-02-22",
+    "verified": "2026-04-06",
+    "checked": "2026-04-06",
     "sources": [
       {
         "title": "Mistral Small 3",
@@ -2346,14 +2506,45 @@
     "notes": ""
   },
   {
+    "id": "model-access-mistral-small-4",
+    "entity_type": "model_access",
+    "entity_id": "mistral-small-4",
+    "source_file": "data/platforms/mistral-open-models.md",
+    "source_heading": "Mistral Small 4",
+    "launched": "2026-03-16T12:00Z",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
+    "sources": [
+      {
+        "title": "Mistral Small 4 Announcement",
+        "url": "https://mistral.ai/news/mistral-small-4"
+      },
+      {
+        "title": "Mistral Small 4 Docs",
+        "url": "https://docs.mistral.ai/models/mistral-small-4-0-26-03"
+      },
+      {
+        "title": "HuggingFace Model Card",
+        "url": "https://huggingface.co/mistralai/Mistral-Small-4-119B-2603"
+      }
+    ],
+    "changelog": [
+      {
+        "date": "2026-03-16T12:00Z",
+        "change": "Initial entry"
+      }
+    ],
+    "notes": ""
+  },
+  {
     "id": "model-access-qwen-2-5",
     "entity_type": "model_access",
     "entity_id": "qwen-2-5",
     "source_file": "data/platforms/alibaba-open-models.md",
     "source_heading": "Qwen 2.5 (Alibaba)",
     "launched": "2024-09-19T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-03-22",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Qwen 2.5",
@@ -2379,8 +2570,8 @@
     "source_file": "data/platforms/alibaba-open-models.md",
     "source_heading": "Qwen 3 (Alibaba)",
     "launched": "2025-04-28T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
+    "verified": "2026-04-06",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Qwen 3 Blog",
@@ -2398,33 +2589,6 @@
     "changelog": [
       {
         "date": "2025-04-28T12:00Z",
-        "change": "Initial entry"
-      }
-    ],
-    "notes": ""
-  },
-  {
-    "id": "model-access-qwen-coder",
-    "entity_type": "model_access",
-    "entity_id": "qwen-coder",
-    "source_file": "data/platforms/alibaba-open-models.md",
-    "source_heading": "Qwen-Coder",
-    "launched": "2024-09-19T12:00Z",
-    "verified": "2026-03-15",
-    "checked": "2026-03-15",
-    "sources": [
-      {
-        "title": "Qwen-Coder",
-        "url": "https://qwenlm.github.io/blog/qwen2.5-coder/"
-      },
-      {
-        "title": "Ollama Qwen-Coder",
-        "url": "https://ollama.com/library/qwen2.5-coder"
-      }
-    ],
-    "changelog": [
-      {
-        "date": "2024-09-19T12:00Z",
         "change": "Initial entry"
       }
     ],
@@ -2527,8 +2691,8 @@
     "source_file": "data/platforms/lm-studio-runtime.md",
     "source_heading": "LM Studio",
     "launched": "2023-05",
-    "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "LM Studio",
@@ -2562,8 +2726,8 @@
     "source_file": "data/platforms/ollama-runtime.md",
     "source_heading": "Ollama",
     "launched": "2023-08-01T12:00Z",
-    "verified": "2026-03-07",
-    "checked": "2026-03-07",
+    "verified": "2026-03-24",
+    "checked": "2026-04-13",
     "sources": [
       {
         "title": "Ollama",

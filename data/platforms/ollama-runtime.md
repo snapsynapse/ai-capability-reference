@@ -3,7 +3,7 @@ name: Ollama Runtime
 vendor: Ollama
 logo: https://cdn.simpleicons.org/ollama
 pricing_page: https://ollama.com/
-last_verified: 2026-03-07
+last_verified: 2026-04-13
 build_visibility: hidden
 ---
 
@@ -25,7 +25,7 @@ build_visibility: hidden
 | URL | https://ollama.com/ |
 | Launched | 2023-08-01T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-06|
+| Checked | 2026-04-13|
 
 ### Availability
 
@@ -43,7 +43,7 @@ build_visibility: hidden
 | iOS | ❌ |  |
 | Android | ❌ |  |
 | Chrome | ❌ |  |
-| web | ❌ | No built-in browser UI |
+| web | ❌ | No built-in browser UI (Ollama Cloud available separately) |
 | terminal | ✅ | Ollama CLI |
 | API | ✅ | Ollama REST API |
 
