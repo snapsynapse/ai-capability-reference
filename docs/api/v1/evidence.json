@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-14T00:28:47.490Z",
+    "generated": "2026-04-14T04:15:16.977Z",
     "version": "1.0",
     "count": 90
   },
@@ -145,7 +145,7 @@
       "source_heading": "Chat",
       "launched": "2022-11-30T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-03-21",
       "sources": [
         {
           "title": "ChatGPT",
@@ -196,7 +196,7 @@
       "source_heading": "Codex (Code Agent)",
       "launched": "2025-04-16T12:00Z",
       "verified": "2026-03-15",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "ChatGPT Pricing",
@@ -266,7 +266,7 @@
       "source_heading": "Custom GPTs + Actions",
       "launched": "2023-11-06T12:00Z",
       "verified": "2026-03-15",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Creating a GPT",
@@ -300,23 +300,15 @@
       "source_file": "data/platforms/chatgpt.md",
       "source_heading": "DALL-E Image Generation",
       "launched": "2023-10-01T12:00Z",
-      "verified": "2026-04-08",
-      "checked": "2026-04-08",
+      "verified": "2026-03-22",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "ChatGPT Pricing",
           "url": "https://chatgpt.com/pricing"
-        },
-        {
-          "title": "OpenAI API Deprecations",
-          "url": "https://developers.openai.com/api/docs/deprecations"
         }
       ],
       "changelog": [
-        {
-          "date": "2026-04-08T12:00Z",
-          "change": "[Verified] DALL-E 3 replaced by GPT Image 1.5 in ChatGPT (March 2025); DALL-E 3 API deprecated May 12, 2026; status changed to deprecated"
-        },
         {
           "date": "2023-10-01T12:00Z",
           "change": "Initial entry"
@@ -522,7 +514,7 @@
       "source_heading": "Artifacts",
       "launched": "2024-06-20T12:00Z",
       "verified": "2026-04-06",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Artifacts Documentation",
@@ -549,7 +541,7 @@
       "source_heading": "Chat",
       "launched": "2023-07-11T12:00Z",
       "verified": "2026-03-20",
-      "checked": "2026-04-08",
+      "checked": "2026-03-23",
       "sources": [
         {
           "title": "Claude",
@@ -580,7 +572,7 @@
       "source_heading": "Claude Code",
       "launched": "2025-02-24T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Claude Code Documentation",
@@ -614,8 +606,8 @@
       "source_file": "data/platforms/claude.md",
       "source_heading": "Connectors",
       "launched": "2025-05-01T12:00Z",
-      "verified": "2026-04-08",
-      "checked": "2026-04-08",
+      "verified": "2026-03-22",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Claude Integrations",
@@ -631,10 +623,6 @@
         }
       ],
       "changelog": [
-        {
-          "date": "2026-04-08T12:00Z",
-          "change": "[Verified] Gating changed from paid to free — Free plan now has full remote MCP connector access (not just desktop extensions + GitHub)"
-        },
         {
           "date": "2026-03-21T12:00Z",
           "change": "[Verified] Deep Connectors added (Google Drive, Gmail, DocuSign, FactSet); plugin marketplace launched; custom MCP connectors on paid plans"
@@ -700,8 +688,8 @@
       "source_file": "data/platforms/claude.md",
       "source_heading": "Extended Thinking",
       "launched": "2025-02-24T12:00Z",
-      "verified": "2026-04-08",
-      "checked": "2026-04-08",
+      "verified": "2026-04-06",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Extended Thinking Documentation",
@@ -713,10 +701,6 @@
         }
       ],
       "changelog": [
-        {
-          "date": "2026-04-08T12:00Z",
-          "change": "[Verified] Gating changed from paid to free — Free plan now has limited Extended Thinking access; Pro upgraded from limited to full access"
-        },
         {
           "date": "2026-02-17T12:00Z",
           "change": "[Verified] Adaptive thinking introduced with Opus 4.6; effort levels (low/medium/high/max) added; manual mode deprecated on Opus 4.6; URL updated to platform.claude.com"
@@ -736,7 +720,7 @@
       "source_heading": "MCP (Model Context Protocol)",
       "launched": "2024-11-25T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Introducing Model Context Protocol",
@@ -872,7 +856,7 @@
       "source_heading": "Vision (Image Understanding)",
       "launched": "2024-03-04T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Vision Documentation",
@@ -899,7 +883,7 @@
       "source_heading": "Agent Builder",
       "launched": "2025-02-24T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Agent Builder Documentation",
@@ -938,7 +922,7 @@
       "source_heading": "Chat",
       "launched": "2023-02-07T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-03-25",
       "sources": [
         {
           "title": "Microsoft Copilot",
@@ -973,7 +957,7 @@
       "source_heading": "Copilot Connectors",
       "launched": "2023-11-01T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Copilot Connectors Overview",
@@ -1070,7 +1054,7 @@
       "source_heading": "Copilot in Office Apps",
       "launched": "2023-11-01T12:00Z",
       "verified": "2026-03-22",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Copilot Pro",
@@ -1163,7 +1147,7 @@
       "source_heading": "Agentic App Actions (Android)",
       "launched": "2026-03-03T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "March 2026 Pixel Drop",
@@ -1283,7 +1267,7 @@
       "source_heading": "Chat",
       "launched": "2024-02-08T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-03-21",
       "sources": [
         {
           "title": "Gemini",
@@ -1551,7 +1535,7 @@
       "source_heading": "NotebookLM",
       "launched": "2023-12-01T12:00Z",
       "verified": "2026-02-28",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "NotebookLM",
@@ -1609,7 +1593,7 @@
       "source_heading": "Project Astra",
       "launched": "2024-12-11T12:00Z",
       "verified": "2026-02-28",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Project Astra",
@@ -1866,7 +1850,7 @@
       "source_heading": "Memory",
       "launched": "2025-02-17T12:00Z",
       "verified": "2026-03-07",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "How Grok Memory Works",
@@ -1897,7 +1881,7 @@
       "source_heading": "Real-time X/Twitter Data",
       "launched": "2023-11-04T12:00Z",
       "verified": "2026-03-19",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Grok Official",
@@ -1920,7 +1904,7 @@
       "source_heading": "Grok Studio",
       "launched": "2025-04-16T12:00Z",
       "verified": "2026-03-20",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Grok Studio Announcement",
@@ -1997,7 +1981,7 @@
       "source_heading": "Grok Voice Mode",
       "launched": "2025-02-24T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Grok Voice",
@@ -2028,7 +2012,7 @@
       "source_heading": "Agent Mode (Agentic Actions) / Perplexity Computer",
       "launched": "2024-11-01T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Everything is Computer",
@@ -2067,7 +2051,7 @@
       "source_heading": "Buy with Pro (Shopping)",
       "launched": "2024-11-18T12:00Z",
       "verified": "2026-02-07",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Shop like a Pro",
@@ -2102,7 +2086,7 @@
       "source_heading": "Chat",
       "launched": "2022-12-07T12:00Z",
       "verified": "2026-03-07",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity AI",
@@ -2137,7 +2121,7 @@
       "source_heading": "Collections (Spaces)",
       "launched": "2024-10-17T12:00Z",
       "verified": "2026-03-25",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Spaces",
@@ -2164,7 +2148,7 @@
       "source_heading": "Comet Browser",
       "launched": "2025-07-09T12:00Z",
       "verified": "2026-03-31",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Comet Browser",
@@ -2207,7 +2191,7 @@
       "source_heading": "Enterprise App Connectors",
       "launched": "2024-09-01T12:00Z",
       "verified": "2026-03-31",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Enterprise App Connectors",
@@ -2230,7 +2214,7 @@
       "source_heading": "Focus Modes",
       "launched": "2024-01-01T12:00Z",
       "verified": "2026-03-25",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Help",
@@ -2257,7 +2241,7 @@
       "source_heading": "Model Selection",
       "launched": "2024-01-01T12:00Z",
       "verified": "2026-01-29",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Pro Features",
@@ -2280,7 +2264,7 @@
       "source_heading": "Pages",
       "launched": "2024-05-30T12:00Z",
       "verified": "2026-01-29",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Pages",
@@ -2307,7 +2291,7 @@
       "source_heading": "Pro Search",
       "launched": "2024-07-02T12:00Z",
       "verified": "2026-02-07",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Pro",
@@ -2329,8 +2313,8 @@
       "source_file": "data/platforms/perplexity.md",
       "source_heading": "Voice Mode",
       "launched": "2024-10-24T12:00Z",
-      "verified": "2026-04-08",
-      "checked": "2026-04-08",
+      "verified": "2026-01-29",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Perplexity Mobile App",
@@ -2353,7 +2337,7 @@
       "source_heading": "Codestral (Mistral)",
       "launched": "2024-05-29T12:00Z",
       "verified": "2026-03-20",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Codestral",
@@ -2465,7 +2449,7 @@
       "source_heading": "Mistral Large / Mistral Nemo",
       "launched": "2024-07-18T12:00Z",
       "verified": "2026-03-21",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Mistral Models",
@@ -2496,7 +2480,7 @@
       "source_heading": "Mistral Small 3",
       "launched": "2025-01-30T12:00Z",
       "verified": "2026-04-06",
-      "checked": "2026-04-08",
+      "checked": "2026-04-06",
       "sources": [
         {
           "title": "Mistral Small 3",

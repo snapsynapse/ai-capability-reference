@@ -20,6 +20,8 @@ const PRODUCTS_DIR = path.join(__dirname, '..', 'data', 'products');
 const MODEL_ACCESS_DIR = path.join(__dirname, '..', 'data', 'model-access');
 const IMPLEMENTATIONS_FILE = path.join(__dirname, '..', 'data', 'implementations', 'index.yml');
 const EVIDENCE_FILE = path.join(__dirname, '..', 'data', 'evidence', 'index.json');
+const DISCOVERY_FILE = path.join(__dirname, '..', 'data', 'discovery.yml');
+const FRAMING_CACHE_FILE = path.join(__dirname, '..', 'data', 'framing-cache.json');
 const IMPLEMENTATIONS_OUTPUT_FILE = path.join(__dirname, '..', 'docs', 'implementations.html');
 const HOMEPAGE_OUTPUT_FILE = path.join(__dirname, '..', 'docs', 'index.html');
 const CONSTRAINTS_OUTPUT_FILE = path.join(__dirname, '..', 'docs', 'constraints.html');
@@ -468,8 +470,193 @@ function loadEvidenceIndex(filepath) {
     return JSON.parse(fs.readFileSync(filepath, 'utf-8'));
 }
 
+/**
+ * Parse discovery.yml — a simple YAML file with nested lists and scalars.
+ * Returns { sitemap_strategy, discovery_set, type_defaults, coverage_pages }
+ */
+function parseDiscoveryYml(filepath) {
+    if (!fs.existsSync(filepath)) {
+        return { sitemap_strategy: 'all', discovery_set: [], type_defaults: {}, coverage_pages: [] };
+    }
+    const lines = fs.readFileSync(filepath, 'utf-8').split('\n');
+    const result = { sitemap_strategy: 'all', discovery_set: [], type_defaults: {}, coverage_pages: [] };
+
+    let section = null;          // top-level key currently being parsed
+    let currentItem = null;      // current object in a list section
+    let typeDefaultsSection = false;
+
+    for (const rawLine of lines) {
+        const line = rawLine.replace(/\r$/, '');
+        // Skip comments and blank lines
+        if (line.trim() === '' || line.trim().startsWith('#')) continue;
+
+        // Top-level key detection (no leading spaces)
+        const topKeyMatch = line.match(/^([a-zA-Z_]+):\s*(.*)$/);
+        if (topKeyMatch && !line.startsWith(' ')) {
+            const key = topKeyMatch[1];
+            // Strip inline comments (e.g. "curated  # curated | tiered | all")
+            const val = topKeyMatch[2].trim().replace(/\s+#.*$/, '').trim();
+            if (key === 'sitemap_strategy') {
+                result.sitemap_strategy = val;
+            } else if (key === 'discovery_set') {
+                section = 'discovery_set';
+                currentItem = null;
+                typeDefaultsSection = false;
+            } else if (key === 'type_defaults') {
+                // Flush any pending item from previous section
+                if (currentItem) {
+                    if (section === 'discovery_set') result.discovery_set.push(currentItem);
+                    else if (section === 'coverage_pages') result.coverage_pages.push(currentItem);
+                    currentItem = null;
+                }
+                section = 'type_defaults';
+                typeDefaultsSection = true;
+            } else if (key === 'coverage_pages') {
+                // Flush any pending item from previous section
+                if (currentItem) {
+                    if (section === 'discovery_set') result.discovery_set.push(currentItem);
+                    else if (section === 'coverage_pages') result.coverage_pages.push(currentItem);
+                    currentItem = null;
+                }
+                section = 'coverage_pages';
+                typeDefaultsSection = false;
+            }
+            continue;
+        }
+
+        // List item start: "  - path: /foo" or "  - id: free-tools"
+        const listItemMatch = line.match(/^  - ([a-zA-Z_]+):\s*(.*)$/);
+        if (listItemMatch) {
+            if (currentItem) {
+                if (section === 'discovery_set') result.discovery_set.push(currentItem);
+                else if (section === 'coverage_pages') result.coverage_pages.push(currentItem);
+            }
+            currentItem = { [listItemMatch[1]]: listItemMatch[2].trim().replace(/^"(.*)"$/, '$1') };
+            continue;
+        }
+
+        // Continuation of list item: "    tier: 1" or "    reason: ..."
+        if (currentItem && line.match(/^    [a-zA-Z_]+:/)) {
+            const contMatch = line.match(/^    ([a-zA-Z_]+):\s*(.*)$/);
+            if (contMatch) {
+                let val = contMatch[2].trim().replace(/^"(.*)"$/, '$1');
+                // Handle inline object like { gating: free }
+                if (val.startsWith('{')) {
+                    const objMatch = val.match(/^\{([^}]+)\}$/);
+                    if (objMatch) {
+                        const obj = {};
+                        for (const pair of objMatch[1].split(',')) {
+                            const [k, v] = pair.split(':').map(s => s.trim());
+                            obj[k] = v;
+                        }
+                        currentItem[contMatch[1]] = obj;
+                    } else {
+                        currentItem[contMatch[1]] = val;
+                    }
+                } else {
+                    // parse number
+                    const num = Number(val);
+                    currentItem[contMatch[1]] = isNaN(num) ? val : num;
+                }
+            }
+            continue;
+        }
+
+        // type_defaults entries: "  compare: { tier: 2 }"
+        if (typeDefaultsSection && line.match(/^  [a-zA-Z_-]+:/)) {
+            const tdMatch = line.match(/^  ([a-zA-Z_-]+):\s*\{([^}]+)\}$/);
+            if (tdMatch) {
+                const obj = {};
+                for (const pair of tdMatch[2].split(',')) {
+                    const [k, v] = pair.split(':').map(s => s.trim());
+                    obj[k] = isNaN(Number(v)) ? v : Number(v);
+                }
+                result.type_defaults[tdMatch[1]] = obj;
+            }
+            continue;
+        }
+    }
+
+    // Push last item
+    if (currentItem) {
+        if (section === 'discovery_set') result.discovery_set.push(currentItem);
+        else if (section === 'coverage_pages') result.coverage_pages.push(currentItem);
+    }
+
+    return result;
+}
+
 function evidenceKey(entityType, entityId) {
     return `${entityType}:${entityId}`;
+}
+
+/**
+ * Load framing cache from data/framing-cache.json.
+ * Returns a Map of { pagePath -> framingText }.
+ * If the file doesn't exist, returns an empty Map.
+ */
+function loadFramingCache(filepath) {
+    if (!fs.existsSync(filepath)) return new Map();
+    try {
+        const data = JSON.parse(fs.readFileSync(filepath, 'utf-8'));
+        return new Map(Object.entries(data));
+    } catch (e) {
+        return new Map();
+    }
+}
+
+/**
+ * Generate template-based framing for a page.
+ * Falls back to templates when LLM framing is not in the cache.
+ *
+ * @param {string} pageType - 'capability' | 'comparison' | 'changes' | 'coverage'
+ * @param {Object} context - page-specific context
+ * @returns {string} 2-3 sentence framing text
+ */
+function generateTemplateFraming(pageType, context) {
+    const now = new Date();
+    const monthYear = now.toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+
+    switch (pageType) {
+        case 'capability': {
+            const { capName, count, changeNote } = context;
+            const change = changeNote || 'support has changed in recent months';
+            return `This page tracks AI tools that currently support ${capName.toLowerCase()}. Unlike marketing claims, inclusion here requires verified functionality. As of ${monthYear}, ${count} product${count !== 1 ? 's support' : ' supports'} this, and ${change}.`;
+        }
+        case 'comparison': {
+            const { nameA, nameB, sharedCount, uniqueA, uniqueB } = context;
+            const uniqueAList = (uniqueA || []).slice(0, 3).join(', ') || 'nothing unique';
+            const uniqueBList = (uniqueB || []).slice(0, 3).join(', ') || 'nothing unique';
+            return `Side-by-side comparison of ${nameA} and ${nameB} capabilities based on verified data. They share ${sharedCount} capabilities. ${nameA} uniquely offers: ${uniqueAList}. ${nameB} uniquely offers: ${uniqueBList}.`;
+        }
+        case 'changes': {
+            const { scope, count30d, latestChange } = context;
+            const latest = latestChange ? ` Most recent: ${latestChange}.` : '';
+            return `This page tracks verified changes to ${scope}. ${count30d} change${count30d !== 1 ? 's' : ''} recorded in the last 30 days.${latest}`;
+        }
+        case 'coverage': {
+            const { coverageContext, productCount } = context;
+            return `What can you actually do ${coverageContext}? This page shows verified capability coverage across ${productCount} AI product${productCount !== 1 ? 's' : ''}, based on tested functionality, not marketing pages.`;
+        }
+        default:
+            return '';
+    }
+}
+
+/**
+ * Get framing text for a page: from cache if available, otherwise from template.
+ *
+ * @param {Map} framingCache - loaded framing cache
+ * @param {string} pagePath - canonical page path (e.g. "capability/generate-images/")
+ * @param {string} pageType - page type for template fallback
+ * @param {Object} context - context for template
+ * @returns {string} HTML paragraph with page-framing class, or empty string
+ */
+function renderPageFraming(framingCache, pagePath, pageType, context) {
+    const cached = framingCache.get(pagePath);
+    const text = cached || generateTemplateFraming(pageType, context);
+    if (!text) return '';
+    return `<p class="page-framing">${escapeHTML(text)}</p>\n`;
 }
 
 /**
@@ -911,6 +1098,7 @@ function renderSiteNav(activePage, prefix) {
         { id: 'home', label: 'Capabilities', href: `${prefix}index.html` },
         { id: 'implementations', label: 'Features', href: `${prefix}implementations.html` },
         { id: 'compare', label: 'Compare', href: `${prefix}compare.html` },
+        { id: 'changes', label: 'Changes', href: `${prefix}changes/` },
         { id: 'constraints', label: 'Limits', href: `${prefix}constraints.html` },
         { id: 'timeline', label: 'Timeline', href: `${prefix}timeline.html` },
         { id: 'about', label: 'About', href: `${prefix}about.html` }
@@ -1848,6 +2036,37 @@ function generateCapabilitiesHTML(ontologyData) {
                 </li>
             </ol>
         </div>
+
+        <!-- Discovery hub: quick links to high-value pages -->
+        <nav class="discovery-hub" aria-label="Quick access to key pages">
+            <div class="discovery-hub-row">
+                <a href="compare/chatgpt-vs-claude/" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">⚖️</span>
+                    <span class="discovery-hub-label">ChatGPT vs Claude</span>
+                </a>
+                <a href="compare/chatgpt-vs-gemini/" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">⚖️</span>
+                    <span class="discovery-hub-label">ChatGPT vs Gemini</span>
+                </a>
+                <a href="coverage/free-tools/" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">🆓</span>
+                    <span class="discovery-hub-label">Free AI Tools</span>
+                </a>
+                <a href="coverage/coding-tools/" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">💻</span>
+                    <span class="discovery-hub-label">AI Coding Tools</span>
+                </a>
+                <a href="changes/" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">📋</span>
+                    <span class="discovery-hub-label">Recent Changes</span>
+                </a>
+                <a href="compare.html" class="discovery-hub-link" onclick="passTheme(this)">
+                    <span class="discovery-hub-icon">🔀</span>
+                    <span class="discovery-hub-label">Compare All</span>
+                </a>
+            </div>
+        </nav>
+
         <div class="filter-bar">
             <nav class="capability-nav" aria-label="Capability groups">
                 ${groupOrder.map(group => `<a href="#group-${group}" class="provider-toggle active">${groupLabels[group]}</a>`).join('')}
@@ -3380,7 +3599,7 @@ function generateCanPage(productId, capId, ontologyData) {
 /**
  * Generate a /compare/{a}-vs-{b}/ page.
  */
-function generateCompareBridgePage(comparison, ontologyData) {
+function generateCompareBridgePage(comparison, ontologyData, framingCache) {
     const [idA, idB] = comparison.products;
     const productA = ontologyData.products.find(p => p.id === idA);
     const productB = ontologyData.products.find(p => p.id === idB);
@@ -3392,6 +3611,13 @@ function generateCompareBridgePage(comparison, ontologyData) {
     let content = `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../compare.html">Compare</a> › ${escapeHTML(nameA)} vs ${escapeHTML(nameB)}</nav>\n`;
     content += `<h1>${escapeHTML(nameA)} vs ${escapeHTML(nameB)}</h1>\n`;
     content += `<p class="bridge-summary">${comparison.shared_count} shared capabilities, ${comparison.only_a_count} unique to ${escapeHTML(nameA)}, ${comparison.only_b_count} unique to ${escapeHTML(nameB)}.</p>\n`;
+
+    // Framing after summary
+    const uniqueANames = comparison.only_a.slice(0, 3).map(cid => { const c = ontologyData.capabilities.find(x => x.id === cid); return c ? c.name : humanizeId(cid); });
+    const uniqueBNames = comparison.only_b.slice(0, 3).map(cid => { const c = ontologyData.capabilities.find(x => x.id === cid); return c ? c.name : humanizeId(cid); });
+    content += renderPageFraming(framingCache || new Map(), `compare/${idA}-vs-${idB}/`, 'comparison', {
+        nameA, nameB, sharedCount: comparison.shared_count, uniqueA: uniqueANames, uniqueB: uniqueBNames
+    });
 
     // Shared capabilities
     if (comparison.shared_capabilities.length > 0) {
@@ -3436,6 +3662,9 @@ function generateCompareBridgePage(comparison, ontologyData) {
         content += `</section>\n`;
     }
 
+    // See Also section
+    content += generateSeeAlso('comparison', { productIds: [idA, idB] }, ontologyData, '../../');
+
     content += `<p class="bridge-cta"><a href="../../compare.html">← Compare other products</a></p>\n`;
 
     const structuredData = {
@@ -3463,7 +3692,7 @@ function generateCompareBridgePage(comparison, ontologyData) {
 /**
  * Generate a /capability/{slug}/ page.
  */
-function generateCapabilityPage(cap, ontologyData) {
+function generateCapabilityPage(cap, ontologyData, framingCache) {
     const capName = cap.name;
 
     let content = `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> › ${escapeHTML(capName)}</nav>\n`;
@@ -3534,6 +3763,9 @@ function generateCapabilityPage(cap, ontologyData) {
         content += `<ul>${cap.common_constraints.map(c => `<li>${escapeHTML(c)}</li>`).join('')}</ul>\n</section>\n`;
     }
 
+    // See Also section
+    content += generateSeeAlso('capability', { capId: cap.id }, ontologyData, '../../');
+
     content += `<p class="bridge-cta"><a href="../../index.html">← Browse all capabilities</a></p>\n`;
 
     // Structured data
@@ -3552,6 +3784,20 @@ function generateCapabilityPage(cap, ontologyData) {
 
     const productCount = Object.keys(implsByProduct).length;
     const description = `${cap.summary || capName}. Available on ${productCount} products. Compare plans, surfaces, and availability.`;
+
+    // Insert framing after h1 (splice into content before definition section)
+    const framingContext = { capName, count: productCount, changeNote: null };
+    const framingHtml = renderPageFraming(framingCache || new Map(), `capability/${cap.id}/`, 'capability', framingContext);
+    // Insert after breadcrumb + h1 + summary block
+    const insertAfterPattern = cap.summary
+        ? `<p class="bridge-summary">${escapeHTML(cap.summary)}</p>\n`
+        : `<h1>${escapeHTML(capName)}</h1>\n`;
+    if (framingHtml) {
+        const insertIdx = content.indexOf(insertAfterPattern);
+        if (insertIdx !== -1) {
+            content = content.slice(0, insertIdx + insertAfterPattern.length) + framingHtml + content.slice(insertIdx + insertAfterPattern.length);
+        }
+    }
 
     return renderBridgeShell({
         title: `${capName} — Which AI Products Support It?`,
@@ -3633,6 +3879,96 @@ function generateBestForPage(groupId, groupCaps, ontologyData) {
 }
 
 /**
+ * Generate a "See Also" section linking to related pages of different types.
+ *
+ * @param {string} currentType - 'capability' | 'comparison' | 'changes' | 'coverage'
+ * @param {Object} context - { capId, productIds, productId }
+ * @param {Object} ontologyData
+ * @param {string} prefix - path prefix (e.g. '../../')
+ * @returns {string} HTML section
+ */
+function generateSeeAlso(currentType, context, ontologyData, prefix) {
+    const links = [];
+    const hostedProducts = ontologyData.products.filter(p => p.product_kind !== 'runtime');
+
+    if (currentType === 'capability' && context.capId) {
+        const capId = context.capId;
+        // 1. Link to compare pages involving products with this capability
+        const productsWithCap = hostedProducts.filter(p =>
+            ontologyData.implementations.some(i => i.product === p.id && i.capabilities && i.capabilities.includes(capId))
+        );
+        // Pick 2 compare pairs
+        for (let i = 0; i < Math.min(2, productsWithCap.length - 1); i++) {
+            const pA = productsWithCap[i];
+            const pB = productsWithCap[i + 1];
+            if (pA && pB) {
+                const [idA, idB] = [pA.id, pB.id].sort();
+                links.push({ href: `${prefix}compare/${idA}-vs-${idB}/`, text: `Compare ${pA.name} vs ${pB.name}` });
+            }
+        }
+        // 2. Link to related coverage pages (first matching one)
+        const coverageMap = {
+            'write-and-edit-code': { id: 'coding-tools', label: 'AI Coding Tools Coverage' },
+            'hear-audio-and-speech': { id: 'voice-tools', label: 'AI Voice Tools Coverage' },
+            'speak-back-in-real-time': { id: 'voice-tools', label: 'AI Voice Tools Coverage' },
+            'generate-images': { id: 'image-tools', label: 'AI Image Tools Coverage' },
+            'see-images-and-screens': { id: 'image-tools', label: 'AI Image Tools Coverage' },
+            'search-the-web': { id: 'research-tools', label: 'AI Research Tools Coverage' },
+            'do-multi-step-research': { id: 'research-tools', label: 'AI Research Tools Coverage' },
+            'take-actions-and-run-tools': { id: 'agent-tools', label: 'AI Agent Tools Coverage' },
+            'build-reusable-ai-workflows': { id: 'agent-tools', label: 'AI Agent Tools Coverage' },
+        };
+        if (coverageMap[capId]) {
+            links.push({ href: `${prefix}coverage/${coverageMap[capId].id}/`, text: coverageMap[capId].label });
+        } else {
+            links.push({ href: `${prefix}coverage/free-tools/`, text: 'Free AI Tools Coverage' });
+        }
+        // 3. Link to changes index
+        links.push({ href: `${prefix}changes/`, text: 'Recent AI Tool Changes' });
+    }
+
+    if (currentType === 'comparison' && context.productIds) {
+        const [idA, idB] = context.productIds;
+        // 1. Link to other comparisons involving each product
+        for (const prod of hostedProducts.slice(0, 2)) {
+            if (prod.id !== idA && prod.id !== idB) {
+                const [pA, pB] = [idA, prod.id].sort();
+                links.push({ href: `${prefix}compare/${pA}-vs-${pB}/`, text: `Compare ${hostedProducts.find(p => p.id === idA)?.name || idA} vs ${prod.name}` });
+                break;
+            }
+        }
+        // 2. Links to changes pages for each product
+        links.push({ href: `${prefix}changes/${idA}/`, text: `${hostedProducts.find(p => p.id === idA)?.name || idA} Recent Changes` });
+        links.push({ href: `${prefix}changes/${idB}/`, text: `${hostedProducts.find(p => p.id === idB)?.name || idB} Recent Changes` });
+        // 3. Link to a coverage page
+        links.push({ href: `${prefix}coverage/free-tools/`, text: 'Free AI Tools Coverage' });
+    }
+
+    if (currentType === 'changes' && context.productId) {
+        const productId = context.productId;
+        const prod = hostedProducts.find(p => p.id === productId);
+        // 1. Compare pages involving this product
+        const otherProds = hostedProducts.filter(p => p.id !== productId).slice(0, 2);
+        for (const other of otherProds) {
+            const [pA, pB] = [productId, other.id].sort();
+            links.push({ href: `${prefix}compare/${pA}-vs-${pB}/`, text: `${prod?.name || productId} vs ${other.name}` });
+        }
+        // 2. Coverage pages
+        links.push({ href: `${prefix}coverage/free-tools/`, text: 'Free AI Tools Coverage' });
+        links.push({ href: `${prefix}changes/`, text: 'All AI Tool Changes' });
+    }
+
+    if (links.length === 0) return '';
+
+    let html = `<section class="bridge-section see-also-section">\n<h2>See Also</h2>\n<ul>\n`;
+    for (const link of links.slice(0, 5)) {
+        html += `<li><a href="${escapeHTML(link.href)}">${escapeHTML(link.text)}</a></li>\n`;
+    }
+    html += `</ul>\n</section>\n`;
+    return html;
+}
+
+/**
  * Find the best (most accessible) gating level for a product+capability combo.
  */
 function findBestGating(productId, capId, ontologyData) {
@@ -3650,11 +3986,411 @@ function findBestGating(productId, capId, ontologyData) {
 }
 
 /**
- * Generate all bridge pages and return a map of { relativePath: html }.
+ * Generate /coverage/{id}/ pages — capability coverage sliced by user intent.
+ * Each coverage page shows a matrix of products x capabilities for a given filter.
+ *
+ * @param {Object} ontologyData
+ * @param {Object} discoveryConfig - parsed discovery.yml with coverage_pages
+ * @param {Map} framingCache
  */
-function generateBridgePages(ontologyData) {
+function generateCoveragePages(ontologyData, discoveryConfig, framingCache) {
     const pages = {};
     const hostedProducts = ontologyData.products.filter(p => p.product_kind !== 'runtime');
+    const fc = framingCache || new Map();
+
+    // Coverage page definitions from discovery.yml
+    const coverageDefs = discoveryConfig && discoveryConfig.coverage_pages ? discoveryConfig.coverage_pages : [];
+
+    // Predefined capability sets for each coverage page (fallback if not in discovery.yml)
+    const COVERAGE_CAP_SETS = {
+        'free-tools': null, // uses gating filter
+        'coding-tools': ['write-and-edit-code', 'build-reusable-ai-workflows', 'take-actions-and-run-tools'],
+        'voice-tools': ['hear-audio-and-speech', 'speak-back-in-real-time'],
+        'image-tools': ['generate-images', 'see-images-and-screens', 'generate-video'],
+        'research-tools': ['search-the-web', 'do-multi-step-research'],
+        'agent-tools': ['take-actions-and-run-tools', 'build-reusable-ai-workflows', 'connect-to-external-systems']
+    };
+
+    const COVERAGE_CONTEXT = {
+        'free-tools': 'for free across AI tools',
+        'coding-tools': 'with AI coding tools',
+        'voice-tools': 'with AI voice and audio tools',
+        'image-tools': 'with AI image tools',
+        'research-tools': 'with AI research tools',
+        'agent-tools': 'with AI agent tools'
+    };
+
+    // Ensure we have coverage defs for all expected pages
+    const allCoverageIds = ['free-tools', 'coding-tools', 'voice-tools', 'image-tools', 'research-tools', 'agent-tools'];
+    const effectiveDefs = allCoverageIds.map(id => {
+        const fromYml = coverageDefs.find(d => d.id === id);
+        if (fromYml) return fromYml;
+        // Fallback defaults
+        const titles = {
+            'free-tools': 'Free AI Tools: What You Can Actually Do Without Paying',
+            'coding-tools': 'AI Coding Tools Compared',
+            'voice-tools': 'AI Voice and Audio Tools',
+            'image-tools': 'AI Image Tools: Generation and Vision',
+            'research-tools': 'AI Research Tools',
+            'agent-tools': 'AI Agent Tools'
+        };
+        return { id, title: titles[id] };
+    });
+
+    for (const def of effectiveDefs) {
+        const { id, title } = def;
+        const pagePath = `coverage/${id}/`;
+
+        // Determine which capabilities to show
+        let targetCapIds = COVERAGE_CAP_SETS[id];
+        let useGatingFilter = id === 'free-tools';
+
+        // For filter-based pages, determine capabilities dynamically
+        if (useGatingFilter) {
+            // All capabilities that have at least one free implementation
+            targetCapIds = ontologyData.capabilities
+                .filter(cap => ontologyData.implementations.some(
+                    impl => impl.capabilities && impl.capabilities.includes(cap.id) && impl.source?.feature?.gating === 'free'
+                ))
+                .map(c => c.id);
+        }
+
+        // Filter to caps that actually exist in our data
+        const targetCaps = (targetCapIds || [])
+            .map(cid => ontologyData.capabilities.find(c => c.id === cid))
+            .filter(Boolean);
+
+        if (targetCaps.length === 0) continue;
+
+        // Build coverage matrix: for each cap x product, determine coverage level
+        // cov-yes = free, cov-limited = limited/free-with-limits, cov-paid = paid only, cov-no = not available
+        function getCoverageLevel(productId, capId) {
+            const impls = ontologyData.implementations.filter(
+                i => i.product === productId && i.capabilities && i.capabilities.includes(capId)
+            );
+            if (impls.length === 0) return 'no';
+            const gatings = impls.map(i => i.source?.feature?.gating).filter(Boolean);
+            if (gatings.includes('free')) return 'free';
+            if (gatings.includes('limited')) return 'limited';
+            if (gatings.includes('paid')) return 'paid';
+            return 'unknown';
+        }
+
+        // For free-tools page, only show products+caps with at least one free option
+        const relevantProducts = useGatingFilter
+            ? hostedProducts.filter(p => targetCaps.some(cap => getCoverageLevel(p.id, cap.id) === 'free'))
+            : hostedProducts;
+
+        // Compute framing context
+        const framingContext = {
+            coverageContext: COVERAGE_CONTEXT[id] || 'with AI tools',
+            productCount: relevantProducts.length
+        };
+
+        // Build matrix HTML
+        function coverageCell(level) {
+            switch (level) {
+                case 'free': return { cls: 'cov-yes', text: '✓ Free' };
+                case 'limited': return { cls: 'cov-limited', text: '~ Limited' };
+                case 'paid': return { cls: 'cov-paid', text: '$ Paid' };
+                case 'unknown': return { cls: 'cov-limited', text: '?' };
+                default: return { cls: 'cov-no', text: '—' };
+            }
+        }
+
+        let matrixHtml = '<div class="coverage-matrix">\n<table>\n<thead>\n<tr>\n';
+        matrixHtml += '<th>Capability</th>\n';
+        for (const prod of relevantProducts) {
+            matrixHtml += `<th>${escapeHTML(prod.name)}</th>\n`;
+        }
+        matrixHtml += '</tr>\n</thead>\n<tbody>\n';
+
+        // Find gaps: capabilities no product has for free
+        const gaps = [];
+        for (const cap of targetCaps) {
+            matrixHtml += `<tr>\n<td><a href="../../capability/${escapeHTML(cap.id)}/">${escapeHTML(cap.name)}</a></td>\n`;
+            let hasFree = false;
+            for (const prod of relevantProducts) {
+                const level = getCoverageLevel(prod.id, cap.id);
+                if (level === 'free') hasFree = true;
+                const cell = coverageCell(level);
+                matrixHtml += `<td class="${cell.cls}">${cell.text}</td>\n`;
+            }
+            if (!hasFree && useGatingFilter) {
+                gaps.push(cap.name);
+            }
+            matrixHtml += '</tr>\n';
+        }
+        matrixHtml += '</tbody>\n</table>\n</div>\n';
+
+        // Build page content
+        let content = `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> › Coverage › ${escapeHTML(title)}</nav>\n`;
+        content += `<h1>${escapeHTML(title)}</h1>\n`;
+        content += renderPageFraming(fc, pagePath, 'coverage', framingContext);
+
+        // Legend
+        content += `<p class="bridge-summary"><span style="color:#22c55e">✓ Free</span> = available on free plan · <span style="color:#f59e0b">~ Limited</span> = limited free access · <span style="color:#3b82f6">$ Paid</span> = paid plan required · — = not available</p>\n`;
+
+        content += matrixHtml;
+
+        // Gap callouts
+        if (gaps.length > 0) {
+            content += `<div class="coverage-gap-callout"><strong>Gap:</strong> No product currently offers ${gaps.slice(0, 3).map(g => escapeHTML(g)).join(', ')} for free.</div>\n`;
+        }
+
+        // Cross-links to related pages
+        content += `<h2>Related Pages</h2>\n`;
+        content += `<nav class="coverage-hub-links" aria-label="Coverage related pages">\n`;
+        for (const cap of targetCaps.slice(0, 6)) {
+            content += `<a href="../../capability/${escapeHTML(cap.id)}/" class="coverage-hub-link">${escapeHTML(cap.name)}</a>\n`;
+        }
+        // Link to compare pages for top products
+        for (const prod of relevantProducts.slice(0, 2)) {
+            const compareId = `compare/${prod.id}-vs-${relevantProducts[0]?.id === prod.id ? relevantProducts[1]?.id : relevantProducts[0]?.id}/`;
+            if (compareId && !compareId.includes('undefined')) {
+                content += `<a href="../../${escapeHTML(compareId)}" class="coverage-hub-link">Compare ${escapeHTML(prod.name)}</a>\n`;
+            }
+        }
+        content += `</nav>\n`;
+        content += `<p class="bridge-cta"><a href="../../index.html">← Browse all capabilities</a></p>\n`;
+
+        // Structured data
+        const structuredData = {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: title,
+            description: `Coverage of ${targetCaps.map(c => c.name).join(', ')} across ${relevantProducts.length} AI products.`,
+            numberOfItems: targetCaps.length,
+            itemListElement: targetCaps.map((cap, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name: cap.name,
+                url: `${SITE_URL}capability/${cap.id}/`
+            }))
+        };
+
+        const description = `${title}. Coverage of ${targetCaps.length} capabilities across ${relevantProducts.length} AI products, with verified data on free vs paid access.`;
+
+        pages[`coverage/${id}/index.html`] = renderBridgeShell({
+            title,
+            canonicalPath: pagePath,
+            depth: 2,
+            content,
+            structuredData,
+            description
+        });
+    }
+
+    return pages;
+}
+
+/**
+ * Generate /changes/ index and per-product change history pages.
+ * Data source: evidence/index.json changelog entries.
+ *
+ * Returns a map of { relativePath: html } like other bridge page generators.
+ */
+function generateChangesPages(ontologyData, framingCache) {
+    const pages = {};
+    const fc = framingCache || new Map();
+    const evidenceRecords = ontologyData.evidence || [];
+    const hostedProducts = ontologyData.products.filter(p => p.product_kind !== 'runtime');
+
+    // Build a flat list of all changelog events enriched with product/impl context
+    const allChanges = [];
+    const implById = new Map(ontologyData.implementations.map(i => [i.id, i]));
+
+    for (const rec of evidenceRecords) {
+        if (!rec.changelog || rec.changelog.length === 0) continue;
+        const productMatch = rec.source_file && rec.source_file.match(/platforms\/(\w+)\.md/);
+        if (!productMatch) continue;
+        const productId = productMatch[1];
+        const product = hostedProducts.find(p => p.id === productId);
+        if (!product) continue;
+
+        // Find the corresponding implementation to get capabilities
+        const implId = `implementation-${rec.entity_id}`;
+        const impl = implById.get(rec.entity_id) || implById.get(implId) ||
+            ontologyData.implementations.find(i => i.id === rec.entity_id || i.id === implId);
+        const caps = impl ? (impl.capabilities || []) : [];
+
+        for (const entry of rec.changelog) {
+            if (!entry.date || !entry.change) continue;
+            allChanges.push({
+                date: entry.date.split('T')[0],
+                dateRaw: entry.date,
+                productId,
+                productName: product.name,
+                featureName: rec.source_heading || rec.entity_id,
+                change: entry.change,
+                capabilities: caps,
+                entityId: rec.entity_id,
+                implId: impl ? impl.id : null,
+            });
+        }
+    }
+
+    // Sort reverse chronological
+    allChanges.sort((a, b) => b.dateRaw.localeCompare(a.dateRaw));
+
+    // Helper: render a list of change entries as timeline HTML
+    function renderChangesList(changes, depth) {
+        if (changes.length === 0) return '<p class="no-changes">No changes recorded.</p>\n';
+        const prefix = depth > 0 ? '../'.repeat(depth) : '';
+
+        // Group by date
+        const byDate = new Map();
+        for (const c of changes) {
+            if (!byDate.has(c.date)) byDate.set(c.date, []);
+            byDate.get(c.date).push(c);
+        }
+
+        let html = '<div class="changes-timeline">\n';
+        for (const [date, entries] of byDate) {
+            html += `<div class="changes-date-group">\n`;
+            html += `<h3 class="changes-date">${escapeHTML(date)}</h3>\n`;
+            html += '<ul class="changes-entries">\n';
+            for (const e of entries) {
+                const productLink = `<a href="${prefix}changes/${escapeHTML(e.productId)}/">${escapeHTML(e.productName)}</a>`;
+                const capLinks = e.capabilities.map(capId => {
+                    const cap = ontologyData.capabilities.find(c => c.id === capId);
+                    return cap ? `<a href="${prefix}capability/${escapeHTML(capId)}/">${escapeHTML(cap.name)}</a>` : '';
+                }).filter(Boolean).join(', ');
+                html += `<li class="change-entry">\n`;
+                html += `  <span class="change-product-badge">${productLink}</span>\n`;
+                html += `  <span class="change-feature">${escapeHTML(e.featureName)}</span>\n`;
+                html += `  <span class="change-text">${escapeHTML(e.change)}</span>\n`;
+                if (capLinks) html += `  <span class="change-caps">Affects: ${capLinks}</span>\n`;
+                html += `</li>\n`;
+            }
+            html += '</ul>\n';
+            html += '</div>\n';
+        }
+        html += '</div>\n';
+        return html;
+    }
+
+    // Helper: compute lastmod from changes list
+    function changesLastmod(changes) {
+        const dates = changes.map(c => c.dateRaw).sort();
+        return dates.slice(-1)[0] ? dates.slice(-1)[0].split('T')[0] : new Date().toISOString().split('T')[0];
+    }
+
+    // --- /changes/ index page ---
+    const recentChanges = allChanges.slice(0, 100); // cap for index page
+    const lastmodAll = changesLastmod(allChanges);
+    const changesCount30d = allChanges.filter(c => {
+        const d = new Date(c.dateRaw);
+        const cutoff = new Date();
+        cutoff.setDate(cutoff.getDate() - 30);
+        return d >= cutoff;
+    }).length;
+
+    const latestChangeText = allChanges[0] ? allChanges[0].change.slice(0, 80) : null;
+    let indexContent = `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../index.html">Home</a> › Recent Changes</nav>\n`;
+    indexContent += `<h1>Recent AI Tool Changes</h1>\n`;
+    indexContent += renderPageFraming(fc, 'changes/', 'changes', {
+        scope: 'AI tools across ChatGPT, Claude, Gemini, Copilot, Grok, and Perplexity',
+        count30d: changesCount30d,
+        latestChange: latestChangeText
+    });
+
+    // Per-product quick links
+    indexContent += `<nav class="changes-product-nav" aria-label="Changes by product">\n`;
+    for (const prod of hostedProducts) {
+        const count = allChanges.filter(c => c.productId === prod.id).length;
+        if (count > 0) {
+            indexContent += `<a href="../changes/${escapeHTML(prod.id)}/" class="changes-product-link">${escapeHTML(prod.name)} (${count})</a>\n`;
+        }
+    }
+    indexContent += `</nav>\n`;
+
+    indexContent += `<h2>All Recent Changes</h2>\n`;
+    indexContent += renderChangesList(recentChanges, 1);
+    indexContent += `<p class="bridge-cta"><a href="../index.html">← Browse capabilities</a></p>\n`;
+
+    const indexStructuredData = {
+        '@context': 'https://schema.org',
+        '@type': 'ItemList',
+        name: 'Recent AI Tool Changes',
+        description: `Verified changes to AI tools. ${changesCount30d} changes in the last 30 days.`,
+        numberOfItems: recentChanges.length,
+        itemListElement: recentChanges.slice(0, 20).map((c, i) => ({
+            '@type': 'ListItem',
+            position: i + 1,
+            name: `${c.productName}: ${c.featureName} — ${c.change.slice(0, 100)}`,
+            description: c.change,
+        }))
+    };
+
+    pages[`changes/index.html`] = renderBridgeShell({
+        title: 'Recent AI Tool Changes',
+        canonicalPath: 'changes/',
+        depth: 1,
+        content: indexContent,
+        structuredData: indexStructuredData,
+        description: `Verified changelog for AI tools: ChatGPT, Claude, Gemini, Copilot, Grok, Perplexity. ${changesCount30d} changes in the last 30 days. Last updated ${lastmodAll}.`
+    });
+
+    // --- /changes/{product}/ pages ---
+    for (const prod of hostedProducts) {
+        const productChanges = allChanges.filter(c => c.productId === prod.id);
+        if (productChanges.length === 0) continue;
+
+        const lastmod = changesLastmod(productChanges);
+        const count30d = productChanges.filter(c => {
+            const d = new Date(c.dateRaw);
+            const cutoff = new Date();
+            cutoff.setDate(cutoff.getDate() - 30);
+            return d >= cutoff;
+        }).length;
+
+        const latestProdChange = productChanges[0] ? productChanges[0].change.slice(0, 80) : null;
+        let prodContent = `<nav class="breadcrumb" aria-label="Breadcrumb"><a href="../../index.html">Home</a> › <a href="../../changes/">Changes</a> › ${escapeHTML(prod.name)}</nav>\n`;
+        prodContent += `<h1>${escapeHTML(prod.name)} Recent Changes</h1>\n`;
+        prodContent += renderPageFraming(fc, `changes/${prod.id}/`, 'changes', {
+            scope: prod.name,
+            count30d,
+            latestChange: latestProdChange
+        });
+        prodContent += renderChangesList(productChanges, 2);
+        prodContent += generateSeeAlso('changes', { productId: prod.id }, ontologyData, '../../');
+        prodContent += `<p class="bridge-cta"><a href="../../changes/">← All product changes</a> · <a href="../../index.html">Browse capabilities</a></p>\n`;
+
+        const prodStructuredData = {
+            '@context': 'https://schema.org',
+            '@type': 'ItemList',
+            name: `${prod.name} Recent Changes`,
+            description: `Verified changelog for ${prod.name}. ${productChanges.length} changes recorded.`,
+            numberOfItems: productChanges.length,
+            itemListElement: productChanges.slice(0, 20).map((c, i) => ({
+                '@type': 'ListItem',
+                position: i + 1,
+                name: `${c.featureName} — ${c.change.slice(0, 100)}`,
+                description: c.change,
+            }))
+        };
+
+        pages[`changes/${prod.id}/index.html`] = renderBridgeShell({
+            title: `${prod.name} Recent Changes`,
+            canonicalPath: `changes/${prod.id}/`,
+            depth: 2,
+            content: prodContent,
+            structuredData: prodStructuredData,
+            description: `Verified changelog for ${prod.name}. ${productChanges.length} total changes, ${count30d} in the last 30 days. Last updated ${lastmod}.`
+        });
+    }
+
+    return pages;
+}
+
+/**
+ * Generate all bridge pages and return a map of { relativePath: html }.
+ */
+function generateBridgePages(ontologyData, framingCache, discoveryConfig) {
+    const pages = {};
+    const hostedProducts = ontologyData.products.filter(p => p.product_kind !== 'runtime');
+    const fc = framingCache || new Map();
 
     // 1. /can/{product}/{capability}/ pages
     for (const prod of hostedProducts) {
@@ -3694,14 +4430,14 @@ function generateBridgePages(ontologyData) {
                 only_a_count: onlyA.length,
                 only_b_count: onlyB.length
             };
-            const html = generateCompareBridgePage(comparison, ontologyData);
+            const html = generateCompareBridgePage(comparison, ontologyData, fc);
             if (html) pages[`compare/${idA}-vs-${idB}/index.html`] = html;
         }
     }
 
     // 3. /capability/{slug}/ pages
     for (const cap of ontologyData.capabilities) {
-        const html = generateCapabilityPage(cap, ontologyData);
+        const html = generateCapabilityPage(cap, ontologyData, fc);
         if (html) pages[`capability/${cap.id}/index.html`] = html;
     }
 
@@ -3718,6 +4454,14 @@ function generateBridgePages(ontologyData) {
             if (html) pages[`best-for/${GROUP_SLUG_MAP[groupId]}/index.html`] = html;
         }
     }
+
+    // 5. /changes/ and /changes/{product}/ pages
+    const changesPages = generateChangesPages(ontologyData, fc);
+    Object.assign(pages, changesPages);
+
+    // 6. /coverage/{id}/ pages
+    const coveragePages = generateCoveragePages(ontologyData, discoveryConfig, fc);
+    Object.assign(pages, coveragePages);
 
     return pages;
 }
@@ -4023,37 +4767,107 @@ function escapeXml(str) {
         .replace(/'/g, '&apos;');
 }
 
-function generateSitemap(bridgePagePaths) {
-    const lastmod = new Date().toISOString().split('T')[0];
-    const staticPages = [
-        { path: '', changefreq: 'weekly', priority: '1.0' },
-        { path: 'implementations.html', changefreq: 'weekly', priority: '0.9' },
-        { path: 'compare.html', changefreq: 'weekly', priority: '0.8' },
-        { path: 'constraints.html', changefreq: 'weekly', priority: '0.8' },
-        { path: 'timeline.html', changefreq: 'weekly', priority: '0.7' },
-        { path: 'about.html', changefreq: 'monthly', priority: '0.5' },
-        { path: 'pattern.html', changefreq: 'monthly', priority: '0.6' },
-        { path: 'api/v1/index.json', changefreq: 'weekly', priority: '0.7' }
-    ];
+/**
+ * Generate a curated sitemap from discovery.yml tier-1 pages.
+ * Only tier-1 pages from discovery_set are included. Bridge pages not in the
+ * discovery_set are excluded — they're still served but not proactively pushed
+ * to crawlers until the site gains authority.
+ *
+ * @param {string[]} bridgePagePaths - keys like "compare/chatgpt-vs-claude/index.html"
+ * @param {Object} discoveryConfig - parsed discovery.yml
+ * @param {Object[]} evidenceRecords - parsed evidence/index.json for lastmod
+ */
+function generateSitemap(bridgePagePaths, discoveryConfig, evidenceRecords) {
+    const buildDate = new Date().toISOString().split('T')[0];
+    const discovery = discoveryConfig || { sitemap_strategy: 'all', discovery_set: [] };
+
+    // Build a product -> latest-changelog-date map for per-page lastmod
+    const productLastmod = {};
+    for (const rec of (evidenceRecords || [])) {
+        const m = rec.source_file && rec.source_file.match(/platforms\/(\w+)\.md/);
+        if (!m) continue;
+        const prod = m[1];
+        for (const entry of (rec.changelog || [])) {
+            const d = entry.date ? entry.date.split('T')[0] : '';
+            if (!productLastmod[prod] || d > productLastmod[prod]) productLastmod[prod] = d;
+        }
+    }
+    const overallLatest = Object.values(productLastmod).sort().slice(-1)[0] || buildDate;
+
+    // Build a set of bridge page URL paths for fast lookup
+    const bridgeSet = new Set(bridgePagePaths.map(p => '/' + p.replace(/index\.html$/, '')));
+
+    // Build sitemap entries from discovery_set (tier 1 only in curated mode)
+    const included = [];
+    const excluded = [];
+
+    if (discovery.sitemap_strategy === 'curated') {
+        const tier1 = (discovery.discovery_set || []).filter(e => e.tier === 1);
+        const tier2 = (discovery.discovery_set || []).filter(e => e.tier === 2);
+        for (const entry of tier1) {
+            const urlPath = entry.path; // e.g. "/compare/chatgpt-vs-claude/"
+            const relativePath = urlPath.replace(/^\//, '').replace(/\/$/, '/');
+            // Determine lastmod: use product date if we can extract product from path
+            let lastmod = overallLatest;
+            const prodMatch = urlPath.match(/\/(changes|compare)\/([^/]+)/);
+            if (prodMatch && productLastmod[prodMatch[2]]) {
+                lastmod = productLastmod[prodMatch[2]];
+            }
+            included.push({ loc: `${SITE_URL}${relativePath}`, lastmod, priority: '0.9', changefreq: 'weekly' });
+        }
+        // Add tier 2 pages at lower priority
+        for (const entry of tier2) {
+            const urlPath = entry.path;
+            const relativePath = urlPath.replace(/^\//, '').replace(/\/$/, '/');
+            included.push({ loc: `${SITE_URL}${relativePath}`, lastmod: buildDate, priority: '0.7', changefreq: 'weekly' });
+        }
+        // Always include homepage at 1.0 if present
+        const homepageEntry = included.find(e => e.loc === `${SITE_URL}` || e.loc === `${SITE_URL}/`);
+        if (!homepageEntry) {
+            included.unshift({ loc: `${SITE_URL}`, lastmod: overallLatest, priority: '1.0', changefreq: 'weekly' });
+        } else {
+            homepageEntry.priority = '1.0';
+        }
+
+        // Log excluded bridge pages
+        for (const p of bridgePagePaths.sort()) {
+            const urlPath = '/' + p.replace(/index\.html$/, '');
+            const inDiscovery = (discovery.discovery_set || []).some(e => e.path === urlPath);
+            if (!inDiscovery) excluded.push(urlPath);
+        }
+        if (excluded.length > 0) {
+            console.log(`   Sitemap: excluded ${excluded.length} non-discovery-set pages (tier 3+)`);
+        }
+    } else {
+        // Fallback: include everything (old behavior)
+        included.push({ loc: `${SITE_URL}`, lastmod: overallLatest, priority: '1.0', changefreq: 'weekly' });
+        const staticFallback = [
+            { path: 'implementations.html', priority: '0.9' },
+            { path: 'compare.html', priority: '0.8' },
+            { path: 'constraints.html', priority: '0.8' },
+            { path: 'timeline.html', priority: '0.7' },
+            { path: 'about.html', priority: '0.5' },
+        ];
+        for (const p of staticFallback) {
+            included.push({ loc: `${SITE_URL}${p.path}`, lastmod: buildDate, priority: p.priority, changefreq: 'weekly' });
+        }
+        for (const pagePath of bridgePagePaths.sort()) {
+            const urlPath = pagePath.replace(/index\.html$/, '');
+            let priority = '0.6';
+            if (urlPath.startsWith('compare/')) priority = '0.7';
+            else if (urlPath.startsWith('capability/')) priority = '0.7';
+            else if (urlPath.startsWith('best-for/')) priority = '0.7';
+            included.push({ loc: `${SITE_URL}${urlPath}`, lastmod: buildDate, priority, changefreq: 'weekly' });
+        }
+    }
 
     let xml = `<?xml version="1.0" encoding="UTF-8"?>\n<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n`;
-
-    for (const page of staticPages) {
-        xml += `  <url>\n    <loc>${SITE_URL}${page.path}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>${page.changefreq}</changefreq>\n    <priority>${page.priority}</priority>\n  </url>\n`;
+    for (const entry of included) {
+        xml += `  <url>\n    <loc>${escapeXml(entry.loc)}</loc>\n    <lastmod>${entry.lastmod}</lastmod>\n    <changefreq>${entry.changefreq}</changefreq>\n    <priority>${entry.priority}</priority>\n  </url>\n`;
     }
-
-    // Bridge pages — grouped by type for priority
-    for (const pagePath of bridgePagePaths.sort()) {
-        const urlPath = pagePath.replace(/index\.html$/, '');
-        let priority = '0.6';
-        if (urlPath.startsWith('compare/')) priority = '0.7';
-        else if (urlPath.startsWith('capability/')) priority = '0.7';
-        else if (urlPath.startsWith('can/')) priority = '0.6';
-        else if (urlPath.startsWith('best-for/')) priority = '0.7';
-        xml += `  <url>\n    <loc>${SITE_URL}${urlPath}</loc>\n    <lastmod>${lastmod}</lastmod>\n    <changefreq>weekly</changefreq>\n    <priority>${priority}</priority>\n  </url>\n`;
-    }
-
     xml += `</urlset>\n`;
+
+    console.log(`   Sitemap strategy: ${discovery.sitemap_strategy} — ${included.length} URLs included`);
     return xml;
 }
 
@@ -4079,6 +4893,16 @@ function main() {
     // Count features
     const totalFeatures = platforms.reduce((sum, p) => sum + p.features.length, 0);
     console.log(`\nParsed ${totalFeatures} features across ${platforms.length} platforms.`);
+
+    // Load discovery configuration
+    const discoveryConfig = parseDiscoveryYml(DISCOVERY_FILE);
+    console.log(`\nDiscovery strategy: ${discoveryConfig.sitemap_strategy} — ${discoveryConfig.discovery_set.length} discovery pages, ${discoveryConfig.coverage_pages.length} coverage pages`);
+
+    // Load framing cache (LLM-generated framing, pre-generated by generate-framing.js)
+    const framingCache = loadFramingCache(FRAMING_CACHE_FILE);
+    if (framingCache.size > 0) {
+        console.log(`Loaded ${framingCache.size} framing entries from cache`);
+    }
 
     // Load and enrich ontology data
     const ontologyData = loadOntologyData(platforms);
@@ -4156,8 +4980,8 @@ function main() {
     console.log(`✅ About page written to ${aboutFile}`);
     console.log(`   File size: ${(aboutHTML.length / 1024).toFixed(1)} KB`);
 
-    // Phase 5C: Generate bridge pages
-    const bridgePages = generateBridgePages(ontologyData);
+    // Phase 5C: Generate bridge pages (includes changes + coverage pages)
+    const bridgePages = generateBridgePages(ontologyData, framingCache, discoveryConfig);
     let bridgeCount = 0;
     let bridgeTotalSize = 0;
     for (const [relPath, html] of Object.entries(bridgePages)) {
@@ -4170,10 +4994,10 @@ function main() {
     }
     console.log(`✅ Bridge pages written: ${bridgeCount} pages (${(bridgeTotalSize / 1024).toFixed(1)} KB total)`);
 
-    // Generate sitemap with bridge pages
-    const sitemapXml = generateSitemap(Object.keys(bridgePages));
+    // Generate sitemap with bridge pages (curated via discovery.yml)
+    const sitemapXml = generateSitemap(Object.keys(bridgePages), discoveryConfig, ontologyData.evidence);
     fs.writeFileSync(path.join(outputDir, 'sitemap.xml'), sitemapXml);
-    console.log(`✅ Sitemap written with ${6 + bridgeCount} URLs`);
+    console.log(`✅ Sitemap written`);
 
     // Generate machine-readable discovery files
     const robotsTxt = generateRobotsTxt();

@@ -1,0 +1,104 @@
+# Discovery layer configuration
+# Controls which pages appear in sitemap and at what tier
+# Do NOT change this file's structure — it is consumed by scripts/build.js
+
+sitemap_strategy: curated  # curated | tiered | all
+
+# Top 20 discovery pages — the only ones in sitemap initially
+discovery_set:
+  - path: /
+    tier: 1
+    reason: "homepage entry point"
+  - path: /compare/chatgpt-vs-claude/
+    tier: 1
+    reason: "highest-demand comparison"
+  - path: /compare/chatgpt-vs-gemini/
+    tier: 1
+    reason: "high-demand comparison"
+  - path: /compare/claude-vs-gemini/
+    tier: 1
+    reason: "high-demand comparison"
+  - path: /capability/generate-images/
+    tier: 1
+    reason: "high-search-volume capability"
+  - path: /capability/search-the-web/
+    tier: 1
+    reason: "high-search-volume capability"
+  - path: /capability/write-and-edit-code/
+    tier: 1
+    reason: "high-search-volume capability"
+  - path: /capability/see-images-and-screens/
+    tier: 1
+    reason: "high-search-volume capability"
+  - path: /capability/speak-back-in-real-time/
+    tier: 1
+    reason: "voice is differentiating"
+  - path: /capability/take-actions-and-run-tools/
+    tier: 1
+    reason: "agents are high-intent"
+  - path: /changes/
+    tier: 1
+    reason: "crawl magnet, freshness signal"
+  - path: /implementations.html
+    tier: 1
+    reason: "full matrix, core product"
+  - path: /compare.html
+    tier: 1
+    reason: "comparison tool hub"
+  - path: /constraints.html
+    tier: 1
+    reason: "unique: plan-level gating"
+  - path: /best-for/creative-work/
+    tier: 1
+    reason: "use-case entry"
+  - path: /best-for/working-with-files/
+    tier: 1
+    reason: "use-case entry"
+  - path: /coverage/free-tools/
+    tier: 1
+    reason: "high-intent: free tier"
+  - path: /coverage/coding-tools/
+    tier: 1
+    reason: "high-intent: developers"
+  - path: /timeline.html
+    tier: 2
+    reason: "chronological changelog"
+  - path: /about.html
+    tier: 2
+    reason: "trust/authority signal"
+
+# Page-type-level importance (fallback for unlisted pages)
+type_defaults:
+  compare: { tier: 2 }
+  capability: { tier: 2 }
+  can: { tier: 3 }
+  best-for: { tier: 2 }
+  changes: { tier: 2 }
+  coverage: { tier: 2 }
+
+# Coverage page definitions
+coverage_pages:
+  - id: free-tools
+    title: "Free AI Tools: What You Can Actually Do Without Paying"
+    filter: { gating: free }
+    description_prompt: "Coverage of AI capabilities available on free tiers"
+  - id: coding-tools
+    title: "AI Coding Tools Compared"
+    filter: { category: coding }
+    description_prompt: "Coverage of coding capabilities across AI products"
+  - id: voice-tools
+    title: "AI Voice and Audio Tools"
+    filter: { capabilities: [hear-audio-and-speech, speak-back-in-real-time] }
+    description_prompt: "Coverage of voice and audio capabilities across AI products"
+  - id: image-tools
+    title: "AI Image Tools: Generation and Vision"
+    filter: { capabilities: [generate-images, see-images-and-screens] }
+    description_prompt: "Coverage of image generation and vision capabilities across AI products"
+  - id: research-tools
+    title: "AI Research Tools"
+    filter: { capabilities: [search-the-web, do-multi-step-research] }
+    description_prompt: "Coverage of web search and deep research capabilities across AI products"
+  - id: agent-tools
+    title: "AI Agent Tools"
+    filter: { capabilities: [take-actions-and-run-tools, build-reusable-ai-workflows] }
+    description_prompt: "Coverage of agentic capabilities across AI products"
