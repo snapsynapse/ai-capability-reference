@@ -2414,7 +2414,274 @@ html.light-mode .about-banner-light { display: block; }
     color: var(--text-secondary);
 }
 
+/* ===== Discovery Hub ===== */
+
+.discovery-hub {
+    margin: 1.5rem 0 2rem;
+}
+
+.discovery-hub-row {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.75rem;
+    justify-content: center;
+}
+
+.discovery-hub-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    background: var(--card-bg, #1e1e2e);
+    border: 1px solid var(--border, #333);
+    border-radius: 8px;
+    color: var(--text-primary, #e0e0e0);
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: border-color 0.2s, background 0.2s;
+}
+
+.discovery-hub-link:hover {
+    border-color: var(--accent, #6c9bff);
+    background: var(--card-hover-bg, #252538);
+}
+
+.discovery-hub-icon {
+    font-size: 1.1rem;
+}
+
+.discovery-hub-label {
+    font-weight: 500;
+}
+
+/* ===== Page Framing (interpretive intros) ===== */
+
+.page-framing {
+    font-size: 0.95rem;
+    color: var(--text-secondary, #aaa);
+    font-style: italic;
+    border-left: 3px solid var(--accent, #6c9bff);
+    padding: 0.75rem 1rem;
+    margin: 1rem 0 1.5rem;
+    background: var(--card-bg, #1e1e2e);
+    border-radius: 0 6px 6px 0;
+}
+
+/* ===== Changes Timeline ===== */
+
+.changes-timeline {
+    margin: 1.5rem 0;
+}
+
+.changes-date-group {
+    margin-bottom: 1.5rem;
+}
+
+.changes-date-group h3 {
+    font-size: 0.95rem;
+    color: var(--text-secondary, #aaa);
+    border-bottom: 1px solid var(--border, #333);
+    padding-bottom: 0.4rem;
+    margin-bottom: 0.75rem;
+}
+
+.change-entry {
+    display: flex;
+    gap: 0.75rem;
+    padding: 0.5rem 0;
+    border-bottom: 1px solid var(--border-light, #2a2a3a);
+    align-items: baseline;
+}
+
+.change-entry:last-child {
+    border-bottom: none;
+}
+
+.change-product-badge {
+    display: inline-block;
+    font-size: 0.7rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 2px 8px;
+    border-radius: 4px;
+    background: var(--accent, #6c9bff);
+    color: #fff;
+    white-space: nowrap;
+    text-decoration: none;
+}
+
+.change-product-badge:hover {
+    opacity: 0.85;
+}
+
+.change-feature {
+    font-weight: 500;
+    color: var(--text-primary, #e0e0e0);
+    min-width: 120px;
+}
+
+.change-description {
+    color: var(--text-secondary, #aaa);
+    flex: 1;
+}
+
+.change-affects {
+    font-size: 0.85rem;
+    color: var(--text-secondary, #aaa);
+    margin-top: 0.25rem;
+}
+
+.change-affects a {
+    color: var(--accent, #6c9bff);
+    text-decoration: none;
+}
+
+.change-affects a:hover {
+    text-decoration: underline;
+}
+
+/* ===== Coverage Matrix ===== */
+
+.coverage-matrix {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.85rem;
+    margin: 1.5rem 0;
+}
+
+.coverage-matrix th,
+.coverage-matrix td {
+    padding: 8px 12px;
+    text-align: center;
+    border-bottom: 1px solid var(--border, #333);
+}
+
+.coverage-matrix th {
+    font-weight: 600;
+    color: var(--text-primary, #e0e0e0);
+    background: var(--card-bg, #1e1e2e);
+    position: sticky;
+    top: 0;
+}
+
+.coverage-matrix td:first-child {
+    text-align: left;
+    font-weight: 500;
+}
+
+.coverage-matrix td:first-child a {
+    color: var(--accent, #6c9bff);
+    text-decoration: none;
+}
+
+.coverage-matrix td:first-child a:hover {
+    text-decoration: underline;
+}
+
+.coverage-free {
+    color: #4caf50;
+}
+
+.coverage-limited {
+    color: #ff9800;
+}
+
+.coverage-paid {
+    color: #9e9e9e;
+}
+
+.coverage-unavailable {
+    color: #555;
+}
+
+/* ===== See Also Section ===== */
+
+.see-also {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--border, #333);
+}
+
+.see-also h3 {
+    font-size: 0.9rem;
+    color: var(--text-secondary, #aaa);
+    margin-bottom: 0.75rem;
+}
+
+.see-also-links {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+}
+
+.see-also-links a {
+    display: inline-block;
+    padding: 0.35rem 0.75rem;
+    background: var(--card-bg, #1e1e2e);
+    border: 1px solid var(--border, #333);
+    border-radius: 6px;
+    color: var(--accent, #6c9bff);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.see-also-links a:hover {
+    border-color: var(--accent, #6c9bff);
+}
+
+/* ===== Changes Product Nav ===== */
+
+.changes-product-nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    margin: 1rem 0;
+}
+
+.changes-product-nav a {
+    padding: 0.4rem 0.8rem;
+    background: var(--card-bg, #1e1e2e);
+    border: 1px solid var(--border, #333);
+    border-radius: 6px;
+    color: var(--text-primary, #e0e0e0);
+    text-decoration: none;
+    font-size: 0.85rem;
+}
+
+.changes-product-nav a:hover {
+    border-color: var(--accent, #6c9bff);
+}
+
+/* ===== Coverage Legend ===== */
+
+.coverage-legend {
+    font-size: 0.85rem;
+    color: var(--text-secondary, #aaa);
+    margin: 1rem 0;
+}
+
 /* ===== Mobile adjustments for search ===== */
+
+@media (max-width: 768px) {
+    .discovery-hub-row {
+        gap: 0.5rem;
+    }
+    .discovery-hub-link {
+        padding: 0.4rem 0.75rem;
+        font-size: 0.8rem;
+    }
+    .change-entry {
+        flex-direction: column;
+        gap: 0.25rem;
+    }
+    .coverage-matrix {
+        font-size: 0.75rem;
+    }
+    .coverage-matrix th,
+    .coverage-matrix td {
+        padding: 6px 8px;
+    }
+}
 
 @media (max-width: 768px) {
     .search-input { width: 120px; font-size: 0.8rem; }
