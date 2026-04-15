@@ -4,7 +4,7 @@ vendor: Meta
 logo: https://cdn.simpleicons.org/meta
 status_page: https://ai.meta.com/llama/
 pricing_page: https://llama.meta.com/
-last_verified: 2026-02-22
+last_verified: 2026-04-14
 build_visibility: hidden
 ---
 
@@ -79,7 +79,7 @@ No restrictions - runs locally.
 | URL | https://www.llama.com/models/llama-4/ |
 | Launched | 2025-04-05T12:00Z |
 | Verified | 2026-04-07|
-| Checked | 2026-04-07|
+| Checked | 2026-04-14|
 
 ### Availability
 

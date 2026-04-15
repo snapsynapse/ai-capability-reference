@@ -4,7 +4,7 @@ vendor: Anthropic
 logo: https://cdn.simpleicons.org/anthropic
 status_page: https://status.anthropic.com
 pricing_page: https://claude.ai/pricing
-last_verified: 2026-04-13
+last_verified: 2026-04-14
 ---
 
 ## Pricing
@@ -30,7 +30,7 @@ last_verified: 2026-04-13
 | URL | https://support.anthropic.com/en/articles/9487310-what-are-artifacts-and-how-do-i-use-them |
 | Launched | 2024-06-20T12:00Z |
 | Verified | 2026-04-06|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -86,7 +86,7 @@ Available globally.
 | URL | https://code.claude.com/docs/en/features-overview |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -146,7 +146,7 @@ Available globally via CLI and VS Code extension (Windows, macOS, Linux).
 | URL | https://claude.ai/directory |
 | Launched | 2025-05-01T12:00Z |
 | Verified | 2026-04-08|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -205,23 +205,23 @@ Available globally where Claude is available.
 | Property | Value |
 |----------|-------|
 | Category | agents |
-| Status | ga |
+| Status | preview |
 | Gating | paid |
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
-| Verified | 2026-04-13|
-| Checked | 2026-04-13|
+| Verified | 2026-04-07|
+| Checked | 2026-04-07|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
-| Pro | ✅ | Standard | Full access |
-| Max 5x | ✅ | Subject to Max limits | Full access |
-| Max 20x | ✅ | Subject to Max limits | Full access |
-| Team | ✅ | Standard | Full access |
-| Enterprise | ✅ | Custom | Full access |
+| Pro | ✅ | Standard | Research preview |
+| Max 5x | ✅ | Subject to Max limits | Research preview |
+| Max 20x | ✅ | Subject to Max limits | Research preview |
+| Team | ✅ | Standard | Research preview |
+| Enterprise | ✅ | Custom | Research preview |
 
 ### Platforms
 
@@ -243,7 +243,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 
 ### Talking Point
 
-> "Cowork is Claude's background agent—**it launched January 2026 and reached GA in April 2026**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. Useful for delegating multi-step tasks while you work on other things."
+> "Cowork is Claude's background agent—**it launched January 2026 and expanded to all paid plans in February**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. It's still a research preview but already useful for delegating multi-step tasks."
 
 ### Sources
 
@@ -254,7 +254,6 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 
 | Date | Change |
 |------|--------|
-| 2026-04-13T12:00Z | [Verified] Status changed from preview to GA (April 9, 2026); enterprise features added (RBAC, observability, Dispatch upgrades) |
 | 2026-02-17T12:00Z | [Verified] Expanded to all paid plans (Pro, Team, Enterprise); Windows x64 support added |
 | 2026-01-12T12:00Z | Initial entry |
 
@@ -328,7 +327,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/model-context-protocol |
 | Launched | 2024-11-25T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -382,17 +381,17 @@ Available globally where Claude is available.
 |----------|-------|
 | Category | local-files |
 | Status | ga |
-| Gating | paid |
+| Gating | free |
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
-| Verified | 2026-04-13|
-| Checked | 2026-04-13|
+| Verified | 2026-03-23|
+| Checked | 2026-04-07|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
-| Free | ❌ | — | Not available |
+| Free | ✅ | Standard | Full access (added Feb 2026) |
 | Pro | ✅ | Standard | Full access |
 | Max 5x | ✅ | Extended | Higher limits |
 | Max 20x | ✅ | Extended | Higher limits |
@@ -419,7 +418,7 @@ Available globally.
 
 ### Talking Point
 
-> "Projects let you organize conversations and documents into workspaces with persistent context. **Available on Pro and above.** Team plans get shared projects; Enterprise adds SSO and admin controls."
+> "Projects let you organize conversations and documents into workspaces with persistent context. **Now available on all plans including free** as of February 2026."
 
 ### Sources
 
@@ -429,7 +428,6 @@ Available globally.
 
 | Date | Change |
 |------|--------|
-| 2026-04-13T12:00Z | [Verified] Gating corrected from free to paid — external sources confirm Projects not available on Free tier; Feb 2026 free expansion did not include Projects |
 | 2026-03-23T12:00Z | [Verified] Added missing Enterprise row to availability table (SSO, admin controls, custom limits) |
 | 2026-02-28T12:00Z | [Verified] Free tier access added as part of Anthropic's February 2026 free tier expansion; gating changed from paid to free |
 | 2024-06-25T12:00Z | Initial entry |
@@ -446,7 +444,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-04-03|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
@@ -512,7 +510,7 @@ Available globally where Claude is available.
 | URL | https://docs.anthropic.com/en/docs/build-with-claude/vision |
 | Launched | 2024-03-04T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -568,7 +566,7 @@ Available globally.
 | URL | https://support.anthropic.com/en/articles/10166267-how-does-memory-work |
 | Launched | 2025-10-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
@@ -629,7 +627,7 @@ Available globally where Claude is available. May be off by default in some regi
 | URL      | https://claude.ai |
 | Launched | 2023-07-11T12:00Z |
 | Verified | 2026-03-20|
-| Checked  | 2026-04-08 |
+| Checked  | 2026-04-14 |
 
 ### Availability
 

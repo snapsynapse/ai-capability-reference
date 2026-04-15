@@ -3,7 +3,7 @@ name: Alibaba Open Models
 vendor: Alibaba
 logo: https://www.alibaba.com/favicon.ico
 pricing_page: https://qwenlm.github.io/
-last_verified: 2026-04-13
+last_verified: 2026-04-14
 build_visibility: hidden
 ---
 
@@ -25,7 +25,7 @@ build_visibility: hidden
 | URL | https://qwenlm.github.io/blog/qwen2.5/ |
 | Launched | 2024-09-19T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-13|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -78,7 +78,7 @@ No restrictions - runs locally. Note: Qwen is from Alibaba (China); some orgs re
 | URL | https://qwenlm.github.io/blog/qwen3/ |
 | Launched | 2025-04-28T12:00Z |
 | Verified | 2026-04-06|
-| Checked | 2026-04-13|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -132,7 +132,7 @@ No restrictions (Apache 2.0 license).
 | URL | https://qwenlm.github.io/blog/qwen2.5-coder/ |
 | Launched | 2024-09-19T12:00Z |
 | Verified | 2026-03-23|
-| Checked | 2026-04-13|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -186,7 +186,7 @@ No restrictions - runs locally.
 | URL | https://huggingface.co/Qwen/Qwen3-Coder-Next |
 | Launched | 2026-02-03T12:00Z |
 | Verified | 2026-03-31|
-| Checked | 2026-04-13|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -238,7 +238,7 @@ No restrictions - runs locally. Note: Alibaba Cloud also offers cloud-hosted Cod
 | URL | https://huggingface.co/Qwen/Qwen3.5-397B-A17B |
 | Launched | 2026-02-16T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-13|
+| Checked | 2026-04-08|
 
 ### Availability
 
@@ -253,7 +253,7 @@ No restrictions - runs locally. Note: Alibaba Cloud also offers cloud-hosted Cod
 | Windows | ✅ | Ollama, LM Studio, vLLM |
 | macOS | ✅ | Ollama, LM Studio |
 | Linux | ✅ | All options |
-| iOS | ⚠️ | Small models only (0.8B) via MLX/llama.cpp |
+| iOS | ❌ |  |
 | Android | ⚠️ | Small models only (0.8B-2B) |
 | Chrome | ❌ |  |
 | web | ✅ | Web UIs, Alibaba Cloud Model Studio |

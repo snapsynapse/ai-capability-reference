@@ -4,7 +4,7 @@ vendor: Google
 logo: https://cdn.simpleicons.org/googlegemini
 status_page: https://status.cloud.google.com
 pricing_page: https://one.google.com/intl/en/about/google-ai-plans/
-last_verified: 2026-04-13
+last_verified: 2026-04-14
 ---
 
 ## Pricing
@@ -29,7 +29,7 @@ last_verified: 2026-04-13
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-04-07|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -193,7 +193,7 @@ Available globally where Gemini is available.
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-07 |
+| Checked | 2026-04-14 |
 
 ### Availability
 
@@ -249,7 +249,7 @@ Available globally where Gemini Advanced is available.
 | URL | https://gemini.google.com/extensions |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
@@ -306,14 +306,14 @@ Available globally where Gemini is available.
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-13 |
+| Checked | 2026-04-07 |
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Standard Gemini only |
-| AI Pro | ✅ | Full | Gemini 3.1 Pro access + 2TB storage |
+| AI Pro | ✅ | Full | Gemini 3.0 Pro access + 2TB storage |
 | AI Ultra | ✅ | Highest | Maximum limits + 30TB storage |
 
 ### Platforms
@@ -363,7 +363,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
@@ -394,7 +394,7 @@ Docs, Sheets, Slides features available globally in English. Drive AI features (
 
 ### Talking Point
 
-> "Gemini integrates directly into Google Docs, Sheets, Slides, and Drive. **The base Workspace integration is GA**, but the **March 2026 enhancements are in beta rollout**: 'Help me create' in Docs (instant drafts from files/emails), 'Fill with Gemini' in Sheets (auto-populate tables), new slide creation in Slides, and AI Overviews + 'Ask Gemini' in Drive. **Requires AI Pro ($19.99/mo), AI Ultra ($249.99/mo), or Workspace add-on.** Drive features are US-only for now; full deck generation in Slides is coming soon."
+> "Gemini integrates directly into Google Docs, Sheets, Slides, and Drive. **March 2026 beta rollout** adds 'Help me create' in Docs (instant drafts from files/emails), 'Fill with Gemini' in Sheets (auto-populate tables), new slide creation in Slides, and AI Overviews + 'Ask Gemini' in Drive. **Requires AI Pro ($19.99/mo), AI Ultra ($249.99/mo), or Workspace add-on.** Drive features are US-only for now; full deck generation in Slides is coming soon."
 
 ### Sources
 
@@ -528,7 +528,7 @@ Available globally.
 | URL | https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-07 |
+| Checked | 2026-04-14 |
 
 ### Availability
 
@@ -582,16 +582,14 @@ Limited in some regions due to content policies.
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Nano Banana 2 (default) only |
-| Google AI Plus | ✅ | 50/day | Nano Banana Pro access |
 | AI Pro | ✅ | Full | Nano Banana Pro via three-dot menu |
-| Google AI Ultra | ✅ | 1000/day | Highest daily limit |
 
 ### Platforms
 
@@ -625,7 +623,6 @@ Available globally where Gemini is available. Some content restrictions in certa
 
 | Date | Change |
 |------|--------|
-| 2026-04-13T12:00Z | [Verified] Added Plus and Ultra tier rows with daily limits per April 11 tier update |
 | 2026-03-04T12:00Z | [Verified] Gating changed from free to paid; Nano Banana 2 became default for all users (Feb 26, 2026); free users no longer get Nano Banana Pro |
 | 2025-11-20T12:00Z | Nano Banana Pro launched (Gemini 3 Pro Image) |
 | 2025-08-01T12:00Z | Initial Nano Banana launched (Gemini 2.5 Flash Image) |
@@ -642,7 +639,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -752,16 +749,14 @@ Available globally where Gemini is available.
 | URL | https://deepmind.google/models/veo/ |
 | Launched | 2024-05-14T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
 | Plan | Available | Limits | Notes |
 |------|-----------|--------|-------|
 | Free | ❌ | — | Not available |
-| Google AI Plus | ✅ | 2-3/day | Veo 3.1 Fast |
 | AI Pro | ✅ | Full | Veo 3.1 via Gemini app and Flow |
-| Google AI Ultra | ✅ | Highest | Full Veo 3.1 with audio |
 | Workspace add-on | ⚠️ | Limited | Veo 3.1 avatars in Google Vids |
 
 ### Platforms
@@ -797,7 +792,6 @@ Available in supported regions where Gemini is available. Some features limited 
 
 | Date | Change |
 |------|--------|
-| 2026-04-13T12:00Z | [Verified] Added Plus and Ultra tier rows with daily limits |
 | 2026-01-13T12:00Z | Veo 3.1 4K resolution and vertical video support |
 | 2025-10-01T12:00Z | Veo 3.1 released in Gemini API |
 | 2025-05-01T12:00Z | Veo 3 released with native audio generation |
@@ -816,7 +810,7 @@ Available in supported regions where Gemini is available. Some features limited 
 | URL | https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438 |
 | Launched | 2026-03-03T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-04-08|
+| Checked | 2026-04-14|
 
 ### Availability
 
@@ -871,7 +865,7 @@ Beta available in the US and South Korea.
 | URL | https://support.google.com/gemini/answer/14901455 |
 | Launched | 2026-02-26T12:00Z |
 | Verified | 2026-03-07 |
-| Checked | 2026-04-13|
+| Checked | 2026-04-07|
 
 ### Availability
 
