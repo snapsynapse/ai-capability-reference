@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-14T04:49:12.988Z",
+    "generated": "2026-04-15T04:38:29.089Z",
     "version": "1.0"
   },
   "products": {
@@ -53,6 +53,7 @@
             "chatgpt-memory",
             "chatgpt-projects",
             "chatgpt-vision-image-understanding",
+            "chatgpt-sora-video-generation",
             "chatgpt-chat"
           ],
           "capabilities": [
@@ -71,11 +72,12 @@
             "use-files-i-provide",
             "read-text-and-documents",
             "see-images-and-screens",
+            "generate-video",
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 13,
-          "capability_count": 17
+          "implementation_count": 14,
+          "capability_count": 18
         },
         "Pro": {
           "price": "$200/mo",
@@ -93,6 +95,7 @@
             "chatgpt-memory",
             "chatgpt-projects",
             "chatgpt-vision-image-understanding",
+            "chatgpt-sora-video-generation",
             "chatgpt-chat"
           ],
           "capabilities": [
@@ -111,18 +114,18 @@
             "use-files-i-provide",
             "read-text-and-documents",
             "see-images-and-screens",
+            "generate-video",
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 14,
-          "capability_count": 17
+          "implementation_count": 15,
+          "capability_count": 18
         },
         "Team": {
           "price": "$25-30/user/mo",
           "implementations": [
             "chatgpt-advanced-voice-mode",
             "chatgpt-agent-mode",
-            "chatgpt-atlas-browser",
             "chatgpt-canvas",
             "chatgpt-search",
             "chatgpt-codex-code-agent",
@@ -139,9 +142,9 @@
             "do-multi-step-research",
             "take-actions-and-run-tools",
             "connect-to-external-systems",
-            "search-the-web",
             "make-and-edit-documents",
             "write-and-edit-code",
+            "search-the-web",
             "build-reusable-ai-workflows",
             "remember-context-over-time",
             "organize-work-in-projects",
@@ -151,7 +154,7 @@
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 12,
+          "implementation_count": 11,
           "capability_count": 16
         },
         "Enterprise": {
@@ -159,7 +162,6 @@
           "implementations": [
             "chatgpt-advanced-voice-mode",
             "chatgpt-agent-mode",
-            "chatgpt-atlas-browser",
             "chatgpt-canvas",
             "chatgpt-search",
             "chatgpt-codex-code-agent",
@@ -177,9 +179,9 @@
             "do-multi-step-research",
             "take-actions-and-run-tools",
             "connect-to-external-systems",
-            "search-the-web",
             "make-and-edit-documents",
             "write-and-edit-code",
+            "search-the-web",
             "build-reusable-ai-workflows",
             "remember-context-over-time",
             "organize-work-in-projects",
@@ -189,7 +191,7 @@
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 13,
+          "implementation_count": 12,
           "capability_count": 16
         },
         "Free": {
@@ -253,6 +255,7 @@
             "claude-artifacts",
             "claude-connectors",
             "claude-mcp-model-context-protocol",
+            "claude-projects",
             "claude-vision-image-understanding",
             "claude-memory",
             "claude-chat"
@@ -261,14 +264,16 @@
             "make-and-edit-documents",
             "write-and-edit-code",
             "connect-to-external-systems",
+            "organize-work-in-projects",
+            "use-files-i-provide",
             "see-images-and-screens",
             "read-text-and-documents",
             "remember-context-over-time",
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 6,
-          "capability_count": 8
+          "implementation_count": 7,
+          "capability_count": 10
         },
         "Pro": {
           "price": "$20/mo",
@@ -606,41 +611,33 @@
         "Google AI Plus": {
           "price": "$7.99/mo",
           "implementations": [
-            "gemini-nano-banana-pro",
-            "gemini-veo-video-generation",
             "gemini-past-chats-memory",
             "gemini-chat"
           ],
           "capabilities": [
-            "generate-images",
-            "generate-video",
             "remember-context-over-time",
             "write-and-explain",
             "use-it-on-my-surfaces"
           ],
-          "implementation_count": 4,
-          "capability_count": 5
-        },
-        "Google AI Ultra": {
-          "price": "$249.99/mo",
-          "implementations": [
-            "gemini-nano-banana-pro",
-            "gemini-veo-video-generation",
-            "gemini-past-chats-memory",
-            "gemini-chat"
-          ],
-          "capabilities": [
-            "generate-images",
-            "generate-video",
-            "remember-context-over-time",
-            "write-and-explain",
-            "use-it-on-my-surfaces"
-          ],
-          "implementation_count": 4,
-          "capability_count": 5
+          "implementation_count": 2,
+          "capability_count": 3
         },
         "Google AI Pro": {
           "price": "$19.99/mo",
+          "implementations": [
+            "gemini-past-chats-memory",
+            "gemini-chat"
+          ],
+          "capabilities": [
+            "remember-context-over-time",
+            "write-and-explain",
+            "use-it-on-my-surfaces"
+          ],
+          "implementation_count": 2,
+          "capability_count": 3
+        },
+        "Google AI Ultra": {
+          "price": "$249.99/mo",
           "implementations": [
             "gemini-past-chats-memory",
             "gemini-chat"

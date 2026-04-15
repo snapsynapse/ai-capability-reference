@@ -1,6 +1,6 @@
 {
   "meta": {
-    "generated": "2026-04-14T04:49:12.988Z",
+    "generated": "2026-04-15T04:38:29.089Z",
     "version": "1.0",
     "count": 72
   },
@@ -272,18 +272,6 @@
           "available": true,
           "limits": "400/month",
           "notes": "Full agent capabilities"
-        },
-        {
-          "plan": "Team",
-          "available": true,
-          "limits": "40/month",
-          "notes": "Agent Mode in Atlas"
-        },
-        {
-          "plan": "Enterprise",
-          "available": true,
-          "limits": "Custom",
-          "notes": "Agent Mode in Atlas"
         }
       ],
       "surfaces": [
@@ -422,14 +410,14 @@
         {
           "surface": "ios",
           "name": "iOS",
-          "available": true,
-          "notes": "Mobile app"
+          "available": false,
+          "notes": "Coming soon"
         },
         {
           "surface": "android",
           "name": "Android",
-          "available": true,
-          "notes": "Mobile app"
+          "available": false,
+          "notes": "Coming soon"
         },
         {
           "surface": "chrome",
@@ -456,7 +444,7 @@
           "notes": "Not available via API"
         }
       ],
-      "talking_point": "Canvas is ChatGPT's split-screen workspace for writing and coding projects—edit inline, get suggestions, and refine together. **Available on all plans including free**, across desktop, web, and mobile.",
+      "talking_point": "Canvas is ChatGPT's split-screen workspace for writing and coding projects—edit inline, get suggestions, and refine together. **Available on all plans including free**, but currently desktop and web only. Mobile is coming soon.",
       "launched": "2024-10-03T12:00Z",
       "verified": "2026-04-07",
       "evidence_id": "implementation-chatgpt-canvas",
@@ -1498,7 +1486,7 @@
       ],
       "category": "video-gen",
       "gating": "paid",
-      "status": "deprecated",
+      "status": "ga",
       "plans": [
         {
           "plan": "Free",
@@ -1514,21 +1502,21 @@
         },
         {
           "plan": "Plus",
-          "available": false,
-          "limits": "—",
-          "notes": "Discontinued April 26, 2026"
+          "available": true,
+          "limits": "1000 credits/mo",
+          "notes": "~50 videos at 480p"
         },
         {
           "plan": "Pro",
-          "available": false,
-          "limits": "—",
-          "notes": "Discontinued April 26, 2026"
+          "available": true,
+          "limits": "10000 credits/mo",
+          "notes": "Unlimited relaxed mode"
         },
         {
           "plan": "Team",
           "available": false,
-          "limits": "—",
-          "notes": "Discontinued April 26, 2026"
+          "limits": "Limited",
+          "notes": "Consumer ToS applies"
         },
         {
           "plan": "Enterprise",
@@ -1593,11 +1581,11 @@
           "notes": "Async processing"
         }
       ],
-      "talking_point": "Sora video generation has been **discontinued**. Web and app access ends **April 26, 2026**; API access ends **September 24, 2026**. Previously required Plus ($20/mo) or Pro ($200/mo).",
+      "talking_point": "Sora generates videos from text prompts—up to 25 seconds at 1080p. **Requires Plus ($20/mo) or Pro ($200/mo)**. Plus gets 1,000 credits/month (~50 short videos); Pro gets 10,000 credits plus unlimited relaxed-mode generations. Not available in Europe.",
       "launched": "2024-12-09T12:00Z",
-      "verified": "2026-04-13",
+      "verified": "2026-03-22",
       "evidence_id": "implementation-chatgpt-sora-video-generation",
-      "evidence_verified": "2026-04-13"
+      "evidence_verified": "2026-03-22"
     },
     {
       "id": "chatgpt-chat",
@@ -2056,7 +2044,7 @@
       ],
       "category": "agents",
       "gating": "paid",
-      "status": "ga",
+      "status": "preview",
       "plans": [
         {
           "plan": "Free",
@@ -2068,31 +2056,31 @@
           "plan": "Pro",
           "available": true,
           "limits": "Standard",
-          "notes": "Full access"
+          "notes": "Research preview"
         },
         {
           "plan": "Max 5x",
           "available": true,
           "limits": "Subject to Max limits",
-          "notes": "Full access"
+          "notes": "Research preview"
         },
         {
           "plan": "Max 20x",
           "available": true,
           "limits": "Subject to Max limits",
-          "notes": "Full access"
+          "notes": "Research preview"
         },
         {
           "plan": "Team",
           "available": true,
           "limits": "Standard",
-          "notes": "Full access"
+          "notes": "Research preview"
         },
         {
           "plan": "Enterprise",
           "available": true,
           "limits": "Custom",
-          "notes": "Full access"
+          "notes": "Research preview"
         }
       ],
       "surfaces": [
@@ -2151,11 +2139,11 @@
           "notes": "Desktop feature only"
         }
       ],
-      "talking_point": "Cowork is Claude's background agent—**it launched January 2026 and reached GA in April 2026**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. Useful for delegating multi-step tasks while you work on other things.",
+      "talking_point": "Cowork is Claude's background agent—**it launched January 2026 and expanded to all paid plans in February**. It's available on Pro ($20/mo) and above, on macOS and Windows desktop. It's still a research preview but already useful for delegating multi-step tasks.",
       "launched": "2026-01-12T12:00Z",
-      "verified": "2026-04-13",
+      "verified": "2026-04-07",
       "evidence_id": "implementation-claude-cowork-mode",
-      "evidence_verified": "2026-04-13"
+      "evidence_verified": "2026-04-07"
     },
     {
       "id": "claude-extended-thinking",
@@ -2381,14 +2369,14 @@
         "use-files-i-provide"
       ],
       "category": "local-files",
-      "gating": "paid",
+      "gating": "free",
       "status": "ga",
       "plans": [
         {
           "plan": "Free",
-          "available": false,
-          "limits": "—",
-          "notes": "Not available"
+          "available": true,
+          "limits": "Standard",
+          "notes": "Full access (added Feb 2026)"
         },
         {
           "plan": "Pro",
@@ -2477,11 +2465,11 @@
           "notes": "Anthropic API"
         }
       ],
-      "talking_point": "Projects let you organize conversations and documents into workspaces with persistent context. **Available on Pro and above.** Team plans get shared projects; Enterprise adds SSO and admin controls.",
+      "talking_point": "Projects let you organize conversations and documents into workspaces with persistent context. **Now available on all plans including free** as of February 2026.",
       "launched": "2024-06-25T12:00Z",
-      "verified": "2026-04-13",
+      "verified": "2026-03-23",
       "evidence_id": "implementation-claude-projects",
-      "evidence_verified": "2026-04-13"
+      "evidence_verified": "2026-03-23"
     },
     {
       "id": "claude-skills",
@@ -3232,7 +3220,7 @@
       ],
       "category": "browser",
       "gating": "free",
-      "status": "ga",
+      "status": "preview",
       "plans": [
         {
           "plan": "Free",
@@ -3269,14 +3257,14 @@
         {
           "surface": "ios",
           "name": "iOS",
-          "available": true,
-          "notes": "Copilot app"
+          "available": false,
+          "notes": "Not available"
         },
         {
           "surface": "android",
           "name": "Android",
-          "available": true,
-          "notes": "Copilot app"
+          "available": false,
+          "notes": "Not available"
         },
         {
           "surface": "chrome",
@@ -3303,11 +3291,11 @@
           "notes": "No consumer API"
         }
       ],
-      "talking_point": "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Now free for all Edge users** in the US with a Microsoft account—no Pro subscription needed. Now GA and available via the Copilot app on iOS and Android as well as Edge",
+      "talking_point": "Copilot Vision lets Copilot see and discuss the webpage you're viewing in Edge. **Now free for all Edge users** in the US with a Microsoft account—no Pro subscription needed. Still in preview and Edge-only.",
       "launched": "2024-10-01T12:00Z",
-      "verified": "2026-04-13",
+      "verified": "2026-03-15",
       "evidence_id": "implementation-copilot-vision",
-      "evidence_verified": "2026-04-13"
+      "evidence_verified": "2026-03-15"
     },
     {
       "id": "copilot-voice",
@@ -3415,13 +3403,13 @@
           "plan": "Free",
           "available": false,
           "limits": "Limited",
-          "notes": "GPT-4o/GPT-4.1 with fallback at peak; GPT-5 preview available"
+          "notes": "Falls back to faster models at peak"
         },
         {
           "plan": "Copilot Pro",
           "available": true,
           "limits": "Priority",
-          "notes": "Priority GPT-4o/GPT-4.1/GPT-5 access"
+          "notes": "Consistent GPT-4 access"
         }
       ],
       "surfaces": [
@@ -4139,7 +4127,7 @@
           "plan": "AI Pro",
           "available": true,
           "limits": "Full",
-          "notes": "Gemini 3.1 Pro access + 2TB storage"
+          "notes": "Gemini 3.0 Pro access + 2TB storage"
         },
         {
           "plan": "AI Ultra",
@@ -4309,7 +4297,7 @@
           "notes": "Gemini API"
         }
       ],
-      "talking_point": "Gemini integrates directly into Google Docs, Sheets, Slides, and Drive. **The base Workspace integration is GA**, but the **March 2026 enhancements are in beta rollout**: 'Help me create' in Docs (instant drafts from files/emails), 'Fill with Gemini' in Sheets (auto-populate tables), new slide creation in Slides, and AI Overviews + 'Ask Gemini' in Drive. **Requires AI Pro ($19.99/mo), AI Ultra ($249.99/mo), or Workspace add-on.** Drive features are US-only for now; full deck generation in Slides is coming soon.",
+      "talking_point": "Gemini integrates directly into Google Docs, Sheets, Slides, and Drive. **March 2026 beta rollout** adds 'Help me create' in Docs (instant drafts from files/emails), 'Fill with Gemini' in Sheets (auto-populate tables), new slide creation in Slides, and AI Overviews + 'Ask Gemini' in Drive. **Requires AI Pro ($19.99/mo), AI Ultra ($249.99/mo), or Workspace add-on.** Drive features are US-only for now; full deck generation in Slides is coming soon.",
       "launched": "2024-06-24T12:00Z",
       "verified": "2026-03-15",
       "evidence_id": "implementation-gemini-workspace",
@@ -4604,22 +4592,10 @@
           "notes": "Nano Banana 2 (default) only"
         },
         {
-          "plan": "Google AI Plus",
-          "available": true,
-          "limits": "50/day",
-          "notes": "Nano Banana Pro access"
-        },
-        {
           "plan": "AI Pro",
           "available": true,
           "limits": "Full",
           "notes": "Nano Banana Pro via three-dot menu"
-        },
-        {
-          "plan": "Google AI Ultra",
-          "available": true,
-          "limits": "1000/day",
-          "notes": "Highest daily limit"
         }
       ],
       "surfaces": [
@@ -4888,22 +4864,10 @@
           "notes": "Not available"
         },
         {
-          "plan": "Google AI Plus",
-          "available": true,
-          "limits": "2-3/day",
-          "notes": "Veo 3.1 Fast"
-        },
-        {
           "plan": "AI Pro",
           "available": true,
           "limits": "Full",
           "notes": "Veo 3.1 via Gemini app and Flow"
-        },
-        {
-          "plan": "Google AI Ultra",
-          "available": true,
-          "limits": "Highest",
-          "notes": "Full Veo 3.1 with audio"
         },
         {
           "plan": "Workspace add-on",
@@ -5285,14 +5249,14 @@
         "search-the-web"
       ],
       "category": "research",
-      "gating": "free",
+      "gating": "paid",
       "status": "ga",
       "plans": [
         {
           "plan": "Free",
           "available": false,
-          "limits": "Limited",
-          "notes": "Basic access with daily caps"
+          "limits": "—",
+          "notes": "Not available"
         },
         {
           "plan": "Premium",
@@ -5369,7 +5333,7 @@
           "notes": "xAI API"
         }
       ],
-      "talking_point": "DeepSearch is Grok's multi-step research mode. **Free users get limited access with daily caps**; Premium+ or SuperGrok recommended for full access.",
+      "talking_point": "DeepSearch is Grok's multi-step research mode. **Premium+ or SuperGrok recommended** for full access; basic Premium has limited DeepSearch.",
       "launched": "2025-02-17T12:00Z",
       "verified": "2026-03-24",
       "evidence_id": "implementation-grok-deepsearch",
@@ -5387,7 +5351,7 @@
         "use-it-on-my-surfaces"
       ],
       "category": "other",
-      "gating": "free",
+      "gating": "paid",
       "status": "ga",
       "plans": [
         {
@@ -5488,7 +5452,7 @@
         "generate-images"
       ],
       "category": "image-gen",
-      "gating": "free",
+      "gating": "paid",
       "status": "ga",
       "plans": [
         {
@@ -5595,26 +5559,26 @@
         {
           "plan": "Free",
           "available": false,
-          "limits": "—",
-          "notes": "Removed March 2026"
+          "limits": "Very limited",
+          "notes": "~3/day, 480p previews"
         },
         {
           "plan": "Premium",
           "available": true,
-          "limits": "~10/8hrs",
-          "notes": "Basic video generation, 720p"
+          "limits": "50/day",
+          "notes": "Basic video generation"
         },
         {
           "plan": "Premium+",
           "available": true,
-          "limits": "Higher",
-          "notes": "Enhanced generation, 720p"
+          "limits": "100/day",
+          "notes": "More generations"
         },
         {
           "plan": "SuperGrok",
           "available": true,
-          "limits": "Highest",
-          "notes": "Priority + most generations, 720p"
+          "limits": "500/day",
+          "notes": "Priority + most generations"
         }
       ],
       "surfaces": [
@@ -5673,11 +5637,11 @@
           "notes": "xAI API"
         }
       ],
-      "talking_point": "Grok Imagine generates 6-15 second video clips with synchronized audio. **Free access was removed in March 2026**—now requires Premium ($8/mo) or higher. Resolution upgraded to 720p. Supports text-to-video and image-to-video.",
+      "talking_point": "Grok Imagine generates 6-15 second video clips with synchronized audio in under 20 seconds. **Free users get very limited access (~3/day at 480p)**; paid tiers unlock higher limits (up to 500/day on SuperGrok). Supports text-to-video and image-to-video. 'Spicy Mode' requires paid subscription.",
       "launched": "2025-08-04T12:00Z",
-      "verified": "2026-04-13",
+      "verified": "2026-03-24",
       "evidence_id": "implementation-grok-imagine-video-generation",
-      "evidence_verified": "2026-04-13"
+      "evidence_verified": "2026-03-24"
     },
     {
       "id": "grok-studio",

@@ -5,92 +5,8 @@
     <link>https://aitool.watch/</link>
     <description>Recent AI feature launches and changes across ChatGPT, Claude, Gemini, Copilot, Grok, and Perplexity.</description>
     <language>en-us</language>
-    <lastBuildDate>Tue, 14 Apr 2026 04:49:13 GMT</lastBuildDate>
+    <lastBuildDate>Wed, 15 Apr 2026 04:38:29 GMT</lastBuildDate>
     <atom:link href="https://aitool.watch/index.xml" rel="self" type="application/rss+xml"/>
-    <item>
-        <title>ChatGPT — [Verified] Added missing Team and Enterprise rows to availability table</title>
-        <link>https://aitool.watch/implementations.html#impl-chatgpt-atlas-browser</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-atlas-browser?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>ChatGPT: [Verified] Added missing Team and Enterprise rows to availability table</description>
-    </item>
-    <item>
-        <title>ChatGPT — [Verified] iOS and Android now available (since Oct 2024); mobile platform status corrected</title>
-        <link>https://aitool.watch/implementations.html#impl-chatgpt-canvas</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-canvas?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>ChatGPT: [Verified] iOS and Android now available (since Oct 2024); mobile platform status corrected</description>
-    </item>
-    <item>
-        <title>ChatGPT — [Verified] Sora discontinued: web/app shutdown April 26, 2026; API shutdown September 24, 2026</title>
-        <link>https://aitool.watch/implementations.html#impl-chatgpt-sora-video-generation</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-sora-video-generation?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>ChatGPT: [Verified] Sora discontinued: web/app shutdown April 26, 2026; API shutdown September 24, 2026</description>
-    </item>
-    <item>
-        <title>Claude — [Verified] Status changed from preview to GA (April 9, 2026); enterprise features added (RBAC, observability, Dispatch upgrades)</title>
-        <link>https://aitool.watch/implementations.html#impl-claude-cowork-mode</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-cowork-mode?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Claude: [Verified] Status changed from preview to GA (April 9, 2026); enterprise features added (RBAC, observability, Dispatch upgrades)</description>
-    </item>
-    <item>
-        <title>Claude — [Verified] Gating corrected from free to paid — external sources confirm Projects not available on Free tier; Feb 2026 free expansion did not include Projects</title>
-        <link>https://aitool.watch/implementations.html#impl-claude-projects</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-projects?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Claude: [Verified] Gating corrected from free to paid — external sources confirm Projects not available on Free tier; Feb 2026 free expansion did not include Projects</description>
-    </item>
-    <item>
-        <title>Microsoft Copilot — [Verified] Status changed from preview to GA; iOS and Android now available via Copilot app</title>
-        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-vision</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-vision?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Microsoft Copilot: [Verified] Status changed from preview to GA; iOS and Android now available via Copilot app</description>
-    </item>
-    <item>
-        <title>Gemini — [Verified] Added Plus and Ultra tier rows with daily limits per April 11 tier update</title>
-        <link>https://aitool.watch/implementations.html#impl-gemini-nano-banana-pro</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-nano-banana-pro?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Gemini: [Verified] Added Plus and Ultra tier rows with daily limits per April 11 tier update</description>
-    </item>
-    <item>
-        <title>Gemini — [Verified] Added Plus and Ultra tier rows with daily limits</title>
-        <link>https://aitool.watch/implementations.html#impl-gemini-veo-video-generation</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-veo-video-generation?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Gemini: [Verified] Added Plus and Ultra tier rows with daily limits</description>
-    </item>
-    <item>
-        <title>Grok — [Verified] Gating changed from paid to free — limited free-tier access now available</title>
-        <link>https://aitool.watch/implementations.html#impl-grok-deepsearch</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-deepsearch?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Grok: [Verified] Gating changed from paid to free — limited free-tier access now available</description>
-    </item>
-    <item>
-        <title>Grok — [Verified] Gating corrected from paid to free — availability table already documented free-tier access</title>
-        <link>https://aitool.watch/implementations.html#impl-grok-grok-chat</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-grok-chat?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Grok: [Verified] Gating corrected from paid to free — availability table already documented free-tier access</description>
-    </item>
-    <item>
-        <title>Grok — [Verified] Gating corrected from paid to free — availability table already documented free-tier access</title>
-        <link>https://aitool.watch/implementations.html#impl-grok-grok-image-generation-aurora</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-grok-image-generation-aurora?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Grok: [Verified] Gating corrected from paid to free — availability table already documented free-tier access</description>
-    </item>
-    <item>
-        <title>Grok — [Verified] Free tier access removed (March 2026); paid tier limits reduced; resolution upgraded from 480p to 720p</title>
-        <link>https://aitool.watch/implementations.html#impl-grok-grok-imagine-video-generation</link>
-        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-grok-imagine-video-generation?d=2026-04-13</guid>
-        <pubDate>Mon, 13 Apr 2026 12:00:00 GMT</pubDate>
-        <description>Grok: [Verified] Free tier access removed (March 2026); paid tier limits reduced; resolution upgraded from 480p to 720p</description>
-    </item>
     <item>
         <title>ChatGPT — [Verified] DALL-E 3 replaced by GPT Image 1.5 in ChatGPT (March 2025); DALL-E 3 API deprecated May 12, 2026; status changed to deprecated</title>
         <link>https://aitool.watch/implementations.html#impl-chatgpt-dall-e-image-generation</link>
@@ -356,6 +272,90 @@
         <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-chat?d=2026-03-07</guid>
         <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
         <description>Claude: Initial entry</description>
+    </item>
+    <item>
+        <title>Microsoft Copilot — [Verified] Multi-agent coordination added (agents can call other agents as tools); new agent surfaces: Outlook, OneDrive, Teams communities; PowerPoint agentic mode</title>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-agent-builder</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-agent-builder?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Microsoft Copilot: [Verified] Multi-agent coordination added (agents can call other agents as tools); new agent surfaces: Outlook, OneDrive, Teams communities; PowerPoint agentic mode</description>
+    </item>
+    <item>
+        <title>Microsoft Copilot — [Verified] Federated connectors added: Notion, HubSpot, Linear, Intercom, Google Contacts, Google Calendar (live data via Researcher tool)</title>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-connectors</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-copilot-connectors?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Microsoft Copilot: [Verified] Federated connectors added: Notion, HubSpot, Linear, Intercom, Google Contacts, Google Calendar (live data via Researcher tool)</description>
+    </item>
+    <item>
+        <title>Microsoft Copilot — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-microsoft-copilot-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-microsoft-copilot-chat?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Microsoft Copilot: Initial entry</description>
+    </item>
+    <item>
+        <title>Gemini — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-gemini-past-chats-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-past-chats-memory?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Gemini: Initial entry</description>
+    </item>
+    <item>
+        <title>Gemini — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-gemini-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-gemini-chat?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Gemini: Initial entry</description>
+    </item>
+    <item>
+        <title>Grok — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-grok-vision-image-understanding</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-vision-image-understanding?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Grok: Initial entry</description>
+    </item>
+    <item>
+        <title>Grok — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-grok-memory</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-grok-memory?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Grok: Initial entry</description>
+    </item>
+    <item>
+        <title>Perplexity — [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer</title>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-agent-mode-agentic-actions-perplexity-computer?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Perplexity: [Verified] Computer Voice Mode added (Mar 4, 2026); Max plan ($200/mo) only; hands-free voice commands for agentic Computer</description>
+    </item>
+    <item>
+        <title>Perplexity — Initial entry</title>
+        <link>https://aitool.watch/implementations.html#impl-perplexity-chat</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-perplexity-chat?d=2026-03-07</guid>
+        <pubDate>Sat, 07 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Perplexity: Initial entry</description>
+    </item>
+    <item>
+        <title>ChatGPT — Codex Security launched</title>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-codex-security</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-codex-security?d=2026-03-06</guid>
+        <pubDate>Fri, 06 Mar 2026 12:00:00 GMT</pubDate>
+        <description>ChatGPT: Codex Security launched</description>
+    </item>
+    <item>
+        <title>ChatGPT — [Verified] Regional section updated: EEA now available for basic agent tasks (rolled out late July 2025); Connector-based actions still restricted in EEA/CH/UK</title>
+        <link>https://aitool.watch/implementations.html#impl-chatgpt-agent-mode</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-chatgpt-agent-mode?d=2026-03-04</guid>
+        <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
+        <description>ChatGPT: [Verified] Regional section updated: EEA now available for basic agent tasks (rolled out late July 2025); Connector-based actions still restricted in EEA/CH/UK</description>
+    </item>
+    <item>
+        <title>Claude — [Verified] Fixed broken URL: support.claude.com → support.anthropic.com</title>
+        <link>https://aitool.watch/implementations.html#impl-claude-connectors</link>
+        <guid isPermaLink="true">https://aitool.watch/implementations.html#impl-claude-connectors?d=2026-03-04</guid>
+        <pubDate>Wed, 04 Mar 2026 12:00:00 GMT</pubDate>
+        <description>Claude: [Verified] Fixed broken URL: support.claude.com → support.anthropic.com</description>
     </item>
 </channel>
 </rss>
