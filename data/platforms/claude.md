@@ -210,7 +210,7 @@ Available globally where Claude is available.
 | URL | https://support.claude.com/en/articles/13345190-getting-started-with-cowork |
 | Launched | 2026-01-12T12:00Z |
 | Verified | 2026-04-07|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -269,7 +269,7 @@ Available globally where Claude is available; requires Claude Desktop app (macOS
 | URL | https://platform.claude.com/docs/en/docs/build-with-claude/extended-thinking |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-04-08|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -385,7 +385,7 @@ Available globally where Claude is available.
 | URL | https://support.anthropic.com/en/articles/9517075-what-are-projects |
 | Launched | 2024-06-25T12:00Z |
 | Verified | 2026-03-23|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -444,7 +444,7 @@ Available globally.
 | URL | https://www.anthropic.com/news/skills |
 | Launched | 2025-10-16T12:00Z |
 | Verified | 2026-04-03|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -566,7 +566,7 @@ Available globally.
 | URL | https://support.anthropic.com/en/articles/10166267-how-does-memory-work |
 | Launched | 2025-10-01T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 

@@ -29,7 +29,7 @@ last_verified: 2026-04-14
 | URL | https://aistudio.google.com/ |
 | Launched | 2023-12-13T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -139,7 +139,7 @@ Available globally; initially English only, now 50+ languages.
 | URL | https://gemini.google/overview/canvas/ |
 | Launched | 2025-03-18T12:00Z |
 | Verified | 2026-03-01|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -249,7 +249,7 @@ Available globally where Gemini Advanced is available.
 | URL | https://gemini.google.com/extensions |
 | Launched | 2023-09-19T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -306,7 +306,7 @@ Available globally where Gemini is available.
 | URL | https://gemini.google.com/ |
 | Launched | 2024-02-08T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -363,7 +363,7 @@ Available in most countries; some features limited in EU.
 | URL | https://workspace.google.com/solutions/ai/ |
 | Launched | 2024-06-24T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -421,7 +421,7 @@ Docs, Sheets, Slides features available globally in English. Drive AI features (
 | URL | https://blog.google/products/gemini/gemini-live-audio-updates/ |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -474,7 +474,7 @@ Available in supported regions.
 | URL | https://blog.google/products-and-platforms/products/gemini/google-gemini-update-august-2024/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-03-08|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -582,7 +582,7 @@ Limited in some regions due to content policies.
 | URL | https://gemini.google/overview/image-generation/ |
 | Launched | 2025-08-01T12:00Z |
 | Verified | 2026-03-04|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -693,7 +693,7 @@ Available globally where Google services are available.
 | URL | https://deepmind.google/models/project-astra/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -749,7 +749,7 @@ Available globally where Gemini is available.
 | URL | https://deepmind.google/models/veo/ |
 | Launched | 2024-05-14T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -865,7 +865,7 @@ Beta available in the US and South Korea.
 | URL | https://support.google.com/gemini/answer/14901455 |
 | Launched | 2026-02-26T12:00Z |
 | Verified | 2026-03-07 |
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 

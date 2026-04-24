@@ -458,7 +458,7 @@ Available globally.
 | URL | https://chatgpt.com/gpts |
 | Launched | 2023-11-06T12:00Z |
 | Verified | 2026-03-15|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -575,7 +575,7 @@ Available globally.
 | URL | https://help.openai.com/en/articles/11011518-chatgpt-deep-research |
 | Launched | 2025-02-03T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -633,7 +633,7 @@ Available globally.
 | URL | https://openai.com/index/memory-and-new-controls-for-chatgpt/ |
 | Launched | 2024-09-05T12:00Z |
 | Verified | 2026-03-19|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -750,7 +750,7 @@ Available globally where ChatGPT is available.
 | URL | https://openai.com/index/sora-is-here/ |
 | Launched | 2024-12-09T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -810,7 +810,7 @@ Available in US, Canada, Japan, Korea, Thailand, Vietnam, Taiwan. Not available 
 | URL | https://openai.com/index/hello-gpt-4o/ |
 | Launched | 2024-05-13T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 

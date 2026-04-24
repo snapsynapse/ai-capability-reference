@@ -28,7 +28,7 @@ last_verified: 2026-04-14
 | URL | https://x.ai/blog/grok-deepsearch |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -83,7 +83,7 @@ Available globally.
 | URL | https://x.ai/grok |
 | Launched | 2023-11-04T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -139,7 +139,7 @@ Available globally where X is available.
 | URL | https://x.ai/blog/grok-image-generation |
 | Launched | 2024-12-09T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -195,7 +195,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-imagine |
 | Launched | 2025-08-04T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -422,7 +422,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-3 |
 | Launched | 2025-02-17T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -477,7 +477,7 @@ Available globally.
 | URL | https://x.ai/blog/grok-2 |
 | Launched | 2024-08-13T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-17|
+| Checked | 2026-04-24|
 
 ### Availability
 
