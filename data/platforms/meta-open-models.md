@@ -79,7 +79,7 @@ No restrictions - runs locally.
 | URL | https://www.llama.com/models/llama-4/ |
 | Launched | 2025-04-05T12:00Z |
 | Verified | 2026-04-07|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 

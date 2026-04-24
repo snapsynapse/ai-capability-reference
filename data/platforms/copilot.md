@@ -27,7 +27,7 @@ last_verified: 2026-04-14
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/agent-builder |
 | Launched | 2025-02-24T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -86,7 +86,7 @@ Available in 17 regions including US, Europe, Asia Pacific.
 | URL | https://learn.microsoft.com/en-us/microsoft-365-copilot/extensibility/overview-copilot-connector |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -144,7 +144,7 @@ Available globally where M365 Copilot is available.
 | URL | https://www.microsoft.com/en-us/microsoft-365/copilot |
 | Launched | 2023-11-01T12:00Z |
 | Verified | 2026-03-22|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 

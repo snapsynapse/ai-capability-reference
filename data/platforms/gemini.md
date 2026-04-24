@@ -83,7 +83,7 @@ Available globally where Google services are available.
 | URL | https://blog.google/technology/ai/notebooklm-audio-overviews/ |
 | Launched | 2024-09-11T12:00Z |
 | Verified | 2026-02-22|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -193,7 +193,7 @@ Available globally where Gemini is available.
 | URL | https://blog.google/products/gemini/google-gemini-deep-research/ |
 | Launched | 2024-12-11T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-14 |
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -528,7 +528,7 @@ Available globally.
 | URL | https://blog.google/technology/ai/google-generative-ai-veo-imagen-3/ |
 | Launched | 2024-08-01T12:00Z |
 | Verified | 2026-04-07 |
-| Checked | 2026-04-14 |
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -639,7 +639,7 @@ Available globally where Gemini is available. Some content restrictions in certa
 | URL | https://notebooklm.google.com/ |
 | Launched | 2023-12-01T12:00Z |
 | Verified | 2026-02-28|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 
@@ -810,7 +810,7 @@ Available in supported regions where Gemini is available. Some features limited 
 | URL | https://www.deccanherald.com/technology/artificial-intelligence/march-2026-pixel-drop-google-rolls-out-android-update-with-new-ai-features-3920438 |
 | Launched | 2026-03-03T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-04-14|
+| Checked | 2026-04-24|
 
 ### Availability
 
