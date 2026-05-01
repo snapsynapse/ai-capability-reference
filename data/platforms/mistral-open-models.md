@@ -25,7 +25,7 @@ build_visibility: hidden
 | URL | https://mistral.ai/news/codestral/ |
 | Launched | 2024-05-29T12:00Z |
 | Verified | 2026-03-20|
-| Checked | 2026-04-24|
+| Checked | 2026-05-01|
 
 ### Availability
 
@@ -78,7 +78,7 @@ No restrictions - runs locally.
 | URL | https://mistral.ai/technology/ |
 | Launched | 2024-07-18T12:00Z |
 | Verified | 2026-03-21|
-| Checked | 2026-04-24|
+| Checked | 2026-05-01|
 
 ### Availability
 
@@ -132,7 +132,7 @@ No restrictions - runs locally.
 | URL | https://mistral.ai/news/mistral-small-3 |
 | Launched | 2025-01-30T12:00Z |
 | Verified | 2026-04-06|
-| Checked | 2026-04-24|
+| Checked | 2026-05-01|
 
 ### Availability
 
@@ -188,7 +188,7 @@ No restrictions (Apache 2.0 license).
 | URL | https://mistral.ai/news/mistral-small-4 |
 | Launched | 2026-03-16T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-24|
+| Checked | 2026-05-01|
 
 ### Availability
 
@@ -243,7 +243,7 @@ No restrictions (Apache 2.0 license). Mistral API availability may vary.
 | URL | https://mistral.ai/news/leanstral |
 | Launched | 2026-03-16T12:00Z |
 | Verified | 2026-03-24|
-| Checked | 2026-04-24|
+| Checked | 2026-05-01|
 
 ### Availability
 
