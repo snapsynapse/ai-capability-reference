@@ -8,7 +8,7 @@
   "repository": "https://github.com/snapsynapse/ai-tool-watch",
   "license": "MIT",
   "maintainer": "PAICE.work",
-  "generated": "2026-05-11T04:58:13.764Z",
+  "generated": "2026-05-14T04:42:30.397Z",
   "capabilities": {
     "read": true,
     "write": false,
