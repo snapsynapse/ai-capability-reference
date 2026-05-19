@@ -362,15 +362,17 @@ class ClaudeClient {
         for (const block of data.content || []) {
             if (block.type === 'text') {
                 text += block.text;
+                // Server-side web search citations ride on text blocks
+                if (Array.isArray(block.citations)) {
+                    sources.push(...block.citations);
+                }
             }
-            if (block.type === 'tool_result' && block.citations) {
-                sources.push(...block.citations);
-            }
-            // web_search tool use or result indicates search happened
-            if (block.type === 'tool_use' && block.name === 'web_search') {
+            // The web_search_20250305 server tool emits server_tool_use
+            // and web_search_tool_result blocks; either proves a search ran.
+            if (block.type === 'server_tool_use' && block.name === 'web_search') {
                 hasSearchEvidence = true;
             }
-            if (block.type === 'tool_result') {
+            if (block.type === 'web_search_tool_result') {
                 hasSearchEvidence = true;
             }
         }
